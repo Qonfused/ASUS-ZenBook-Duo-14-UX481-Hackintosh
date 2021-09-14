@@ -3,7 +3,7 @@ Hackintosh installation guide for ASUS ZenBook Pro Duo 15 OLED UX582
 
 
 ## License
-This repo is protected by GNU GPL license. Any commercial use of this project without my authorization is strictively prohabited. Please refer the original repo before you make any distribution.
+This repo is protected by GNU GPL license. Any commercial use of this project without authorization is strictively prohabited. Please refer this repository for any distribution.
 
 
 ## Support this Project
@@ -47,15 +47,12 @@ ADA Wallet: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
 
 
 ## ToDo List
-- [ ] Trackpad stop working sometimes
 - [ ] Windows in main screen misplaced after restart
 - [ ] ScreenPad multi-touch control
-- [ ] Brightness control
-- [ ] Ambient sensor
-- [ ] Camera
-- [ ] Keyboard Backlight and other FN keys
+- [ ] Brightness auto adjustment with ambient sensor
+- [ ] Some FN keys
 - [ ] Numpad
-- [ ] Speaker seems to be a little quiet: may be can boost by this app [eqMac](https://eqmac.app/)
+- [ ] Speaker seems to be a little quiet: may be boosted with [eqMac](https://eqmac.app/)
 - [ ] Thunderbolt 3 for eGPU (Need more SSDT and DROM patches)
 - [ ] Update for macOS Monterey
 
@@ -63,31 +60,34 @@ ADA Wallet: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
 ## Current progress
 ### What's working
 - [x] Intel UHD Graphics 630
-- [x] Intel WiFi 6 (Speed can be slow on very few routers)
-- [x] Intel Bluetooth
-- [x] Internal Speakers
+- [x] Intel WiFi 6 (speed could be slow on some very few routers)
+- [x] Intel bluetooth
+- [x] Internal stereo speaker
 - [x] Internal microphone
 - [x] Combo audio jack
+- [x] Camera
 - [x] Battery indication
-- [x] SpeedStep
-- [x] Main touch screen
-- [x] Secondary ScreenPad Plus (Partially work, single touch as cursor)
-- [x] Brightness control (Use software brightness control workaround with Lunar.app)
-- [x] Stylus pen with both screens
+- [x] CPU SpeedStep
+- [x] Main touchscreen
+- [x] Secondary ScreenPad Plus (partially work, single touch as cursor)
+- [x] Brightness control (software brightness control workaround with <a href="hhttps://github.com/alin23/Lunar/issues/398">Lunar</a>)
+- [x] Stylus pen (works on both screens without sense of pressure)
 - [x] Keyboard
-- [x] Trackpad with multi-touch gestures (Stop working sometimes and start working a few minutes later again)
-- [x] FN Key, volume and brightness
-- [x] Type-A to USB3
-- [x] Type-C to USB3 & USB2
-- [x] Type-C to DP/HDMI
-- [x] Thunderbolt 3 (Only non-eGPU devices work)
-- [x] Stylus, work without sense of pressure
+- [x] Trackpad
+- [x] FN Keys for volume, brightness, and keyboard backlight
+- [x] USB Type-A
+- [x] USB Type-C
+- [x] USB Type-C to DP/HDMI
+- [x] Thunderbolt 3 (Only non-eGPU devices work for now)
+- [x] Power adaptor
 - [x] Sleep/wake
+- [x] iCloud
+- [x] macOS Continuity
 
-### What's not working
+### What's not working for now
 - [ ] Nvidia RTX 3070 and HDMI port (won't work due to no driver in macOS)
-- [ ] Keyboard Backlight (WIP)
-- [ ] Most other FN keys (WIP)
-- [ ] Numpad (need to port driver from Linux)
-- [ ] Camera (?)
-- [ ] Ambient sensor
+- [ ] Numpad (need to port driver from Linux; check <a href="https://github.com/mohamed-badaoui/asus-touchpad-numpad-driver">mohamed-badaoui/asus-touchpad-numpad-driver
+Public</a>)
+- [ ] Ambient sensor (need to port driver from Linux for display brightness control; check <a href="https://github.com/s-light/ASUS-ZenBook-Pro-Duo-UX581GV/tree/master/screen_brightness">s-light/ASUS-ZenBook-Pro-Duo-UX581GV</a>)
+- [ ] Native brightness control with macOS CoreDisplay
+- [ ] Other FN keys (WIP; check <a href="https://github.com/hieplpvip/AsusSMC">hieplpvip/AsusSMC</a>)
