@@ -223,32 +223,23 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				X09TSQ==
-				</data>
+				<data>X09TSQ==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				WE9TSQ==
-				</data>
+				<data>WE9TSQ==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -262,32 +253,23 @@
 				<key>Enabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				R0ZYMA==
-				</data>
+				<data>R0ZYMA==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				SUdQVQ==
-				</data>
+				<data>SUdQVQ==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -301,32 +283,23 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				U0FUMA==
-				</data>
+				<data>U0FUMA==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				U0FUQQ==
-				</data>
+				<data>U0FUQQ==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -340,32 +313,23 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				SERBUw==
-				</data>
+				<data>SERBUw==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				SERFRg==
-				</data>
+				<data>SERFRg==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -379,32 +343,23 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				SEVDSQ==
-				</data>
+				<data>SEVDSQ==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				SU1FSQ==
-				</data>
+				<data>SU1FSQ==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -418,32 +373,23 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				TUVJXw==
-				</data>
+				<data>TUVJXw==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				SU1FSQ==
-				</data>
+				<data>SU1FSQ==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -457,32 +403,23 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				X1EwRQ==
-				</data>
+				<data>X1EwRQ==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				WFEwRQ==
-				</data>
+				<data>WFEwRQ==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -496,32 +433,23 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				X1EwRg==
-				</data>
+				<data>X1EwRg==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				WFEwRg==
-				</data>
+				<data>WFEwRg==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -535,32 +463,23 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				X1EwRA==
-				</data>
+				<data>X1EwRA==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				WFEwRA==
-				</data>
+				<data>WFEwRA==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -574,31 +493,23 @@
 				<key>Enabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				X0RTTQ==
-				</data>
+				<data>X0RTTQ==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				WERTTQ==
-				</data>
+				<data>WERTTQ==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -612,31 +523,23 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				R1BSVwI=
-				</data>
+				<data>R1BSVwI=</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				WFBSVwI=
-				</data>
+				<data>WFBSVwI=</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -650,32 +553,23 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				VVNUUA==
-				</data>
+				<data>VVNUUA==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				WFNUUA==
-				</data>
+				<data>WFNUUA==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
+				<data>RFNEVA==</data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -689,31 +583,23 @@
 				<key>Enabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				X0JJRgA=
-				</data>
+				<data>X0JJRgA=</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				WEJJRgA=
-				</data>
+				<data>WEJJRgA=</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -727,31 +613,23 @@
 				<key>Enabled</key>
 				<false/>
 				<key>Find</key>
-				<data>
-				X0JTVAA=
-				</data>
+				<data>X0JTVAA=</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				WEJTVAA=
-				</data>
+				<data>WEJTVAA=</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				</data>
+				<data></data>
 			</dict>
 			<dict>
 				<key>Base</key>
@@ -765,32 +643,23 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				X1BUUw==
-				</data>
+				<data>X1BUUw==</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>OemTableId</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Replace</key>
-				<data>
-				WlBUUw==
-				</data>
+				<data>WlBUUw==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data>
-				RFNEVA==
-				</data>
+				<data>RFNEVA==</data>
 			</dict>
 		</array>
 		<key>Quirks</key>
@@ -868,70 +737,42 @@
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>layout-id</key>
-				<data>
-				FQAAAA==
-				</data>
+				<data>FQAAAA==</data>
 				<key>model</key>
 				<string>Comet Lake PCH cAVS</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>
-				AACbPg==
-				</data>
+				<data>AACbPg==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,2,0</string>
 				<key>device-id</key>
-				<data>
-				mz4AAA==
-				</data>
+				<data>mz4AAA==</data>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
 				<key>enable-hdmi20</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>enable-lspcon-support</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con0-alldata</key>
-				<data>
-				AAASAAIAAADHAwAA
-				</data>
+				<data>AAASAAIAAADHAwAA</data>
 				<key>framebuffer-con0-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-alldata</key>
-				<data>
-				AQUSAAAEAADHAwAA
-				</data>
+				<data>AQUSAAAEAADHAwAA</data>
 				<key>framebuffer-con1-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
-				<data>
-				AwQSAAAEAADHAwAA
-				</data>
+				<data>AwQSAAAEAADHAwAA</data>
 				<key>framebuffer-con2-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-has-lspcon</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<data>
-				AQAAAA==
-				</data>
+				<data>AQAAAA==</data>
 				<key>framebuffer-unifiedmem</key>
-				<data>
-				AAD//w==
-				</data>
+				<data>AAD//w==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 				<key>model</key>
@@ -1725,11 +1566,9 @@
 		<key>Emulate</key>
 		<dict>
 			<key>Cpuid1Data</key>
-			<data>
-			</data>
+			<data></data>
 			<key>Cpuid1Mask</key>
-			<data>
-			</data>
+			<data></data>
 			<key>DummyPowerManagement</key>
 			<false/>
 			<key>MaxKernel</key>
@@ -1753,26 +1592,21 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Identifier</key>
 				<string>com.apple.driver.AppleRTC</string>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
 				<string>19.0.0</string>
 				<key>Replace</key>
-				<data>
-				ww==
-				</data>
+				<data>ww==</data>
 				<key>ReplaceMask</key>
-				<data>
-				</data>
+				<data></data>
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
@@ -1926,11 +1760,9 @@
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
 			<key>PasswordHash</key>
-			<data>
-			</data>
+			<data></data>
 			<key>PasswordSalt</key>
-			<data>
-			</data>
+			<data></data>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
@@ -1969,34 +1801,25 @@
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<dict>
 				<key>DefaultBackgroundColor</key>
-				<data>
-				AAAAAA==
-				</data>
+				<data>AAAAAA==</data>
 				<key>UIScale</key>
-				<data>
-				Ag==
-				</data>
+				<data>Ag==</data>
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
 				<key>rtc-blacklist</key>
-				<data>
-				</data>
+				<data></data>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>ForceDisplayRotationInEFI</key>
 				<integer>0</integer>
 				<key>SystemAudioVolume</key>
-				<data>
-				Rg==
-				</data>
+				<data>Rg==</data>
 				<key>boot-args</key>
 				<string>-v keepsyms=1 igfxagdc=0 igfxonln=1 igfxrpsc=1 -igfxmpc -cdfon</string>
 				<key>csr-active-config</key>
-				<data>
-				ZwAAAA==
-				</data>
+				<data>ZwAAAA==</data>
 				<key>run-efi-updater</key>
 				<string>No</string>
 			</dict>
@@ -2039,16 +1862,14 @@
 		<dict>
 			<key>AdviseFeatures</key>
 			<false/>
-			<key>MLB</key>
-			<string>C02934405GUN9PRJA</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
+			<key>MLB</key>
+			<string>C02934405GUN9PRJA</string>
 			<key>ProcessorType</key>
-			<integer>1793</integer>
+			<integer>0</integer>
 			<key>ROM</key>
-			<data>
-			DoQRIsAj
-			</data>
+			<data>DoQRIsAj</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
