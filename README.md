@@ -24,7 +24,7 @@ ADA Wallet: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
 ## External Guide
 
 <p>
-<a href="https://www.tonymacx86.com/threads/guide-asus-zenbook-pro-duo-ux582-opencore.315661/">Big Sur Installation Gudie on tonymacx86.com</a></p>
+<a href="https://www.tonymacx86.com/threads/guide-asus-zenbook-pro-duo-15-oled-ux582-opencore.315661/">macOS Big Sur Installation Gudie on tonymacx86.com</a></p>
 
 
 ## Spec
