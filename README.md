@@ -15,10 +15,10 @@ If you like this guide, please consider donating me through PayPal or crypto. De
           height="140"></a><br>
 <a href="https://www.paypal.com/donate/?hosted_button_id=YK65DJNB4UK2L">Donate with PayPal</a></p>
 
-<p>BTC Wallet: 1jUMQVzq9e64erkytLYuD1LTt7nMkAFXs<br>
-ETH Wallet: 0x09bbd23a1fe39cc70aba2232dcd9d1aa64a3fb2d<br>
-SOL Wallet: HPrnqBfDArW3xcQqGZZ1Y51QSbJMFtoVtmtnufySqynD<br>
-ADA Wallet: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
+<p>BTC Address: 1jUMQVzq9e64erkytLYuD1LTt7nMkAFXs<br>
+ETH Address: 0x09bbd23a1fe39cc70aba2232dcd9d1aa64a3fb2d<br>
+SOL Address: HPrnqBfDArW3xcQqGZZ1Y51QSbJMFtoVtmtnufySqynD<br>
+ADA Address: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
 
 
 ## External Guide
@@ -89,8 +89,8 @@ ADA Wallet: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
 ### What's not working for now
 - [ ] Nvidia RTX 3070 (won't work due to no driver in macOS)
 - [ ] HDMI port (routed to Nvidia RTX 3070; same as above)
-- [ ] Ambient sensor (need to port driver from Linux for display brightness control; check <a href="https://github.com/s-light/ASUS-ZenBook-Pro-Duo-UX581GV/tree/master/screen_brightness">s-light/ASUS-ZenBook-Pro-Duo-UX581GV</a>)
-- [ ] Native brightness control with macOS CoreDisplay (same as above)
+- [ ] Native brightness control with macOS CoreDisplay (need to port driver from Linux for display brightness control; check <a href="https://github.com/s-light/ASUS-ZenBook-Pro-Duo-UX581GV/tree/master/screen_brightness">s-light/ASUS-ZenBook-Pro-Duo-UX581GV</a>)
+- [ ] Ambient sensor (same as above)
 - [ ] Thunderbolt eGPU (WIP; need to work with DROM and SSDT)
 - [ ] ScreenPad multi-touch control (WIP; working on VoodooI2C)
 - [ ] Numpad (need to port driver from Linux; check <a href="https://github.com/mohamed-badaoui/asus-touchpad-numpad-driver">mohamed-badaoui/asus-touchpad-numpad-driver</a>)
