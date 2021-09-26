@@ -90,7 +90,7 @@ ADA Address: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
 - [ ] Nvidia RTX 3070 (won't work due to no driver in macOS)
 - [ ] HDMI port (routed to Nvidia RTX 3070; same as above)
 - [ ] Native brightness control with macOS CoreDisplay (need to port driver from Linux for display brightness control; check <a href="https://github.com/s-light/ASUS-ZenBook-Pro-Duo-UX581GV/tree/master/screen_brightness">s-light/ASUS-ZenBook-Pro-Duo-UX581GV</a>)
-- [ ] Ambient sensor (same as above)
+- [ ] Ambient light sensor (same as above)
 - [ ] Thunderbolt eGPU (WIP; need to work with DROM and SSDT)
 - [ ] ScreenPad multi-touch control (WIP; working on VoodooI2C)
 - [ ] Numpad (need to port driver from Linux; check <a href="https://github.com/mohamed-badaoui/asus-touchpad-numpad-driver">mohamed-badaoui/asus-touchpad-numpad-driver</a>)
