@@ -24,7 +24,7 @@ ADA Wallet: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
 ## External Guide
 
 <p>
-<a href="https://www.insanelymac.com/forum/topic/349049-guide-asus-zenbook-pro-duo-15-oled-ux582/">Installation Guide on InsanelyMac</a>
+<a href="https://www.insanelymac.com/forum/topic/349049-guide-asus-zenbook-pro-duo-15-oled-ux582/">macOS Installation Guide on InsanelyMac</a><br>
 <a href="https://www.tonymacx86.com/threads/guide-asus-zenbook-pro-duo-15-oled-ux582-opencore.315661/">macOS Big Sur Installation Guide on Tonymacx86</a></p>
 
 
