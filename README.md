@@ -2,33 +2,13 @@
 Hackintosh installation guide for ASUS ZenBook Pro Duo 15 OLED UX582
 
 
-## License
-This repo is protected by GNU GPL license. Any commercial use of this project without authorization is strictively prohabited. Please refer to this repository when making any distribution.
-
-
-## Support this Project
-If you like this guide, please consider donating me through PayPal or crypto. Developement of this hackintosh consumes a lof of time. You can contribute to this project by buying me a cup of coffee to keep this repo up-to-date.
-
-<p>
-<a href="https://www.paypal.com/donate/?hosted_button_id=YK65DJNB4UK2L">
-         <img alt="Qries" src="https://raw.githubusercontent.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh/main/PayPal.png"
-          height="140"></a><br>
-<a href="https://www.paypal.com/donate/?hosted_button_id=YK65DJNB4UK2L">Donate with PayPal</a></p>
-
-<p>BTC Wallet: 1jUMQVzq9e64erkytLYuD1LTt7nMkAFXs<br>
-ETH Wallet: 0x09bbd23a1fe39cc70aba2232dcd9d1aa64a3fb2d<br>
-SOL Wallet: HPrnqBfDArW3xcQqGZZ1Y51QSbJMFtoVtmtnufySqynD<br>
-ADA Wallet: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
-
-
 ## External Guide
-
 <p>
-<a href="https://www.tonymacx86.com/threads/guide-asus-zenbook-pro-duo-ux582-opencore.315661/">Big Sur Installation Gudie on tonymacx86.com</a></p>
+<a href="https://www.insanelymac.com/forum/topic/349049-guide-asus-zenbook-pro-duo-15-oled-ux582/">macOS Installation Guide on InsanelyMac</a><br>
+<a href="https://www.tonymacx86.com/threads/guide-asus-zenbook-pro-duo-15-oled-ux582-opencore.315661/">macOS Big Sur Installation Guide on Tonymacx86</a></p>
 
 
 ## Spec
-
 | Component | Brand |
 | ----------- | ----------- |
 | CPU | Intel Core i9-10980HK (varient: Intel Core i7-10870H) |
@@ -48,18 +28,19 @@ ADA Wallet: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
 
 
 ## ToDo List
-- [ ] Windows in main screen misplaced after restart
 - [ ] ScreenPad multi-touch control
 - [ ] Brightness auto adjustment with ambient sensor
 - [ ] Some other FN keys (FN+F10, fan control, switch main/scecondary monitors, and disable secondary monitor)
 - [ ] Numpad
 - [ ] Thunderbolt 3 for eGPU (need more SSDT and DROM patches)
-- [ ] Update for macOS Monterey
 
 
 ## Current progress
 
 ### What's working
+- [x] macOS Monterey
+- [x] macOS Big Sur
+- [x] macOS Catalina
 - [x] Intel UHD Graphics 630
 - [x] Intel WiFi 6 (speed could be slow on some very few routers)
 - [x] Intel bluetooth
@@ -88,8 +69,8 @@ ADA Wallet: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
 ### What's not working for now
 - [ ] Nvidia RTX 3070 (won't work due to no driver in macOS)
 - [ ] HDMI port (routed to Nvidia RTX 3070; same as above)
-- [ ] Ambient sensor (need to port driver from Linux for display brightness control; check <a href="https://github.com/s-light/ASUS-ZenBook-Pro-Duo-UX581GV/tree/master/screen_brightness">s-light/ASUS-ZenBook-Pro-Duo-UX581GV</a>)
-- [ ] Native brightness control with macOS CoreDisplay (same as above)
+- [ ] Native brightness control with macOS CoreDisplay (need to port driver from Linux for display brightness control; check <a href="https://github.com/s-light/ASUS-ZenBook-Pro-Duo-UX581GV/tree/master/screen_brightness">s-light/ASUS-ZenBook-Pro-Duo-UX581GV</a>)
+- [ ] Ambient light sensor (same as above)
 - [ ] Thunderbolt eGPU (WIP; need to work with DROM and SSDT)
 - [ ] ScreenPad multi-touch control (WIP; working on VoodooI2C)
 - [ ] Numpad (need to port driver from Linux; check <a href="https://github.com/mohamed-badaoui/asus-touchpad-numpad-driver">mohamed-badaoui/asus-touchpad-numpad-driver</a>)
@@ -98,6 +79,26 @@ ADA Wallet: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
 
 ## Credits
 - Apple for macOS
-- acidanthera for OpenCore
+- acidanthera for OpenCore and most kexts
+- atrslb for many things I couldn't achieve 
 - Rehabman
 - Many others
+
+
+## License
+This repo is protected by GNU GPL license. Any commercial use of this project without authorization is strictively prohabited. Please refer to this repository when making any distribution.
+
+
+## Support this Project
+If you like this guide, please consider donating me through PayPal or crypto. Developement of this hackintosh consumes a lof of time. You can contribute to this project by buying me a cup of coffee to keep this repo up-to-date.
+
+<p>
+<a href="https://www.paypal.com/donate/?hosted_button_id=YK65DJNB4UK2L">
+         <img alt="Qries" src="https://raw.githubusercontent.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh/main/PayPal.png"
+          height="140"></a><br>
+<a href="https://www.paypal.com/donate/?hosted_button_id=YK65DJNB4UK2L">Donate with PayPal</a></p>
+
+<p>BTC Address: 1jUMQVzq9e64erkytLYuD1LTt7nMkAFXs<br>
+ETH Address: 0x09bbd23a1fe39cc70aba2232dcd9d1aa64a3fb2d<br>
+SOL Address: HPrnqBfDArW3xcQqGZZ1Y51QSbJMFtoVtmtnufySqynD<br>
+ADA Address: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
