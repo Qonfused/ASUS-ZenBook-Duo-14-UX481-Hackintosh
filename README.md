@@ -36,7 +36,7 @@ This repo is protected by GNU GPL license. Any commercial use of this project wi
 ## ToDo List
 - [ ] ScreenPad multi-touch control
 - [ ] Brightness auto adjustment with ambient sensor
-- [ ] Some other FN keys (FN+F10, fan control, switch main/scecondary monitors, and disable secondary monitor)
+- [ ] Some other FN keys (FN+F10, fan control, switch main/secondary monitors, and disable secondary monitor)
 - [ ] Numpad
 - [ ] Thunderbolt 3 for eGPU (need more SSDT and DROM patches)
 
