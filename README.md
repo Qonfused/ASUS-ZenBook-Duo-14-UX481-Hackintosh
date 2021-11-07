@@ -2,6 +2,10 @@
 Hackintosh installation guide for ASUS ZenBook Pro Duo 15 OLED UX582
 
 
+## License
+This repo is protected by GNU GPL license. Any commercial use of this project without authorization is strictively prohabited. Please refer to this repository when making any distribution.
+
+
 ## External Guide
 <p>
 <a href="https://www.insanelymac.com/forum/topic/349049-guide-asus-zenbook-pro-duo-15-oled-ux582/">macOS Installation Guide on InsanelyMac</a><br>
@@ -77,17 +81,6 @@ Hackintosh installation guide for ASUS ZenBook Pro Duo 15 OLED UX582
 - [ ] Some other FN keys (WIP; check <a href="https://github.com/hieplpvip/AsusSMC">hieplpvip/AsusSMC</a>)
 
 
-## Credits
-- Apple for macOS
-- acidanthera for OpenCore and most kexts
-- atrslb for many things I couldn't achieve 
-- Rehabman
-- Many others
-
-
-## License
-This repo is protected by GNU GPL license. Any commercial use of this project without authorization is strictively prohabited. Please refer to this repository when making any distribution.
-
 
 ## Support this Project
 If you like this guide, please consider donating me through PayPal or crypto. Developement of this hackintosh consumes a lof of time. You can contribute to this project by buying me a cup of coffee to keep this repo up-to-date.
@@ -102,3 +95,11 @@ If you like this guide, please consider donating me through PayPal or crypto. De
 ETH Address: 0x09bbd23a1fe39cc70aba2232dcd9d1aa64a3fb2d<br>
 SOL Address: HPrnqBfDArW3xcQqGZZ1Y51QSbJMFtoVtmtnufySqynD<br>
 ADA Address: Ae2tdPwUPEZMsWbd5xpjBD9rvurtkdPq4p7mPZMsmbcbTR1wAhsYkGVMGza</p>
+
+
+## Credits
+- Apple for macOS
+- acidanthera for OpenCore and most kexts
+- atrslb for many things I couldn't achieve 
+- Rehabman
+- Many others
