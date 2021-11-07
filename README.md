@@ -1,6 +1,8 @@
 # ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh
 Hackintosh installation guide for ASUS ZenBook Pro Duo 15 OLED UX582
 
+<p>
+<img src="https://raw.githubusercontent.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh/main/images/UX582.png" alt="UX582" class="center"></p>
 
 ## License
 This repo is protected by GNU GPL license. Any commercial use of this project without authorization is strictively prohabited. Please refer to this repository when making any distribution.
@@ -87,7 +89,7 @@ If you like this guide, please consider donating me through PayPal or crypto. De
 
 <p>
 <a href="https://www.paypal.com/donate/?hosted_button_id=YK65DJNB4UK2L">
-         <img alt="Qries" src="https://raw.githubusercontent.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh/main/PayPal.png"
+         <img alt="Paypal" src="https://raw.githubusercontent.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh/main/images/PayPal.png"
           height="140"></a><br>
 <a href="https://www.paypal.com/donate/?hosted_button_id=YK65DJNB4UK2L">Donate with PayPal</a></p>
 
