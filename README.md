@@ -77,7 +77,6 @@ This repo is protected by GNU GPL license. Any commercial use of this project wi
 - [ ] Native brightness control with macOS CoreDisplay (need to port driver from Linux for display brightness control; check <a href="https://github.com/s-light/ASUS-ZenBook-Pro-Duo-UX581GV/tree/master/screen_brightness">s-light/ASUS-ZenBook-Pro-Duo-UX581GV</a>)
 - [ ] Ambient light sensor (same as above)
 - [ ] Thunderbolt eGPU (WIP; need to work with DROM and SSDT)
-- [ ] ScreenPad multi-touch control (WIP; working on VoodooI2C)
 - [ ] Numpad (need to port driver from Linux; check <a href="https://github.com/mohamed-badaoui/asus-touchpad-numpad-driver">mohamed-badaoui/asus-touchpad-numpad-driver</a>)
 - [ ] Some other FN keys (WIP; check <a href="https://github.com/hieplpvip/AsusSMC">hieplpvip/AsusSMC</a>)
 
