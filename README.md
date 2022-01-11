@@ -36,6 +36,7 @@ This repo is protected by GNU GPL license. Any commercial use of this project wi
 ## ToDo List
 - [ ] Brightness auto adjustment with ambient sensor
 - [ ] Some other FN keys (FN+F10, fan control, switch main/secondary monitors, and disable secondary monitor)
+- [ ] Trackpad GPIO mode
 - [ ] Numpad
 - [ ] Thunderbolt 3 for eGPU (need more SSDT and DROM patches)
 
