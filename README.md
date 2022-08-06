@@ -23,7 +23,7 @@ See the original repository license (protected under GNU GPL license).
 > **Note**
 > This repository is still a work in progress.
 >
-> All testing was done using the below hardware configuration and OpenCore configuration for the ASUS Zenbook Duo 14" UX481FL:
+> All testing was done using the below hardware configuration for the ASUS Zenbook Duo 14" UX481FL:
 >
 ><details><summary>Hardware Configuration</summary>
 > 
@@ -32,7 +32,7 @@ See the original repository license (protected under GNU GPL license).
 >  |CPU | Intel Core i7-10510U (Comet Lake) 4-core Processor [^0a]|
 >  |iGPU | Intel UHD Graphics 620|
 >  |dGPU | Nvidia GeForce MX250 2GB (10W 1D52 version; disabled)|
->  |Audio | Realtek ALC???|
+>  |Audio | Realtek ALC294|
 >  |Memory | 16GB LPDDR3 2133MHz Cl16 (4x4 GB Micron Modules)|
 >  |Wifi & Bluetooth | • Intel AX201 WiFi 6<br>• Bluetooth 5.0|
 >  |Storage | Intel 660p 1TB M.2-2280 NVMe SSD|
@@ -43,11 +43,6 @@ See the original repository license (protected under GNU GPL license).
 >  |Ports | (Left)<br>• 1x 4.5mm DC-in (19V; 3.42A)<br>• 1x HDMI 1.4<br>• 1x USB 3.1 Gen 2 Type-A<br>• 1x USB 3.1 Gen 2 Type-C<br>(Right)<br>• 1x USB 3.1 Gen 1 Type-A<br>• 1x 3.5 mm Audio combo jack<br>• 1x MicroSD card reader<br>|
 >  |Battery | Dynapack 70Wh (15.4V; 4440mAh) 4-cell LiPo Battery|
 > [^0a]: [Intel Core i7-10510U - Intel Ark Page](https://ark.intel.com/content/www/us/en/ark/products/196449/intel-core-i710510u-processor-8m-cache-up-to-4-90-ghz.html)
-></details>
-><details><summary>OpenCore Configuration</summary>
->
-> `WIP`
-></details>
 >
 > The below versions were used for testing:
 > * OpenCore Version: [0.7.6](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.6https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.6) (debug version)
@@ -57,18 +52,18 @@ See the original repository license (protected under GNU GPL license).
 
 
 macOS version support:
-- [ ] macOS Ventura (untested)
+- [?] macOS Ventura (untested)
 - [x] macOS Monterey
-- [ ] macOS Big Sur (untested)
+- [?] macOS Big Sur (untested)
 - [x] macOS Catalina
 
 Hardware features:
-- [ ] Intel UHD Graphics 620 (no proper framebuffer id yet)
+- [x] Intel UHD Graphics 620 (has acceleration, but no proper framebuffer id yet)
 - [x] Intel WiFi 6
 - [x] Intel bluetooth
 - [x] Internal stereo speaker
-- [x] Internal microphone
-- [x] Combo audio jack
+- [?] Internal microphone (untested)
+- [?] Combo audio jack (untested)
 - [ ] Camera
 - [ ] Main touchscreen
 - [ ] Secondary ScreenPad Plus
@@ -84,12 +79,12 @@ Software features:
 - [ ] Battery indication (need to adjust set capacity for proper reading)
 - [ ] CPU SpeedStep
 - [x] Brightness control (main screen works, screenpad-plus screen is a WIP)
-- [ ] Stylus pen (untested; supposedly works without pressure data)
-- [ ] Sleep/wake (untested)
+- [?] Stylus pen (untested; supposedly works without pressure data)
+- [?] Sleep/wake (untested)
 - [x] iCloud
-- [ ] Continuity (untested)
+- [?] Continuity (untested)
 
 ### What's not working for now
 - [ ] Brightness auto adjustment with ambient sensor
 - [ ] Trackpad GPIO mode (haven't looked into this)
-- [ ] HDMI port (only if routed to MX 250, which isn't supported by macOS)
+- [?] HDMI port (only if routed to MX 250, which isn't supported by macOS)
