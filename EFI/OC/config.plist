@@ -830,6 +830,10 @@
 				<data>AAAwAQ==</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-alldata</key>
+				<data>AgQKAAIAAACHAQAA</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
