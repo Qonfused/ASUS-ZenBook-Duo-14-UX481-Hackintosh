@@ -1,9 +1,13 @@
+> **Warning** Please follow the below instructions before using this repository.
+> 
+> Please download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and follow [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) for generating SMBIOS data for enabling iServices functionality.
+
 # ASUS-ZenBook-Duo-14-UX481-Hackintosh
 Hackintosh OpenCore configuration for ASUS ZenBook Pro Duo 14 UX481(FA/FL)
 
 <p>
   <img
-    src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/images/UX481FL.png"
+    src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/assets/UX481FL.png"
     alt="UX481FL"
     class="center"
   >
@@ -14,9 +18,10 @@ Hackintosh OpenCore configuration for ASUS ZenBook Pro Duo 14 UX481(FA/FL)
 See the original repository license (protected under GNU GPL license).
 
 
+## Current progress
+
 > **Note**
 > This repository is still a work in progress.
-> This repository contains all OpenCore and macOS fixes for patching & restoring various device functionality for the ASUS Zenbook Duo 14" UX481(FA/FL).
 >
 > All testing was done using the below hardware configuration and OpenCore configuration for the ASUS Zenbook Duo 14" UX481FL:
 >
@@ -50,8 +55,6 @@ See the original repository license (protected under GNU GPL license).
 >
 > All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide from shiecldk](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh).
 
-
-## Current progress
 
 macOS version support:
 - [ ] macOS Ventura (untested)
