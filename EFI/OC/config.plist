@@ -2092,9 +2092,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,1</string>
 			<key>SystemSerialNumber</key>
-			<string># Use GenSMBIOS</string>
+			<string>C02ZVCY7MD6N</string>
 			<key>SystemUUID</key>
-			<string># Use GenSMBIOS</string>
+			<string>C5670478-B9C7-4B2B-A75C-57F4032BB371</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
@@ -2103,11 +2103,11 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string># Use GenSMBIOS</string>
+			<string>C02951102J9N9PRFB</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data></data>
+			<data>q09aK7Nx</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -2115,9 +2115,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,1</string>
 			<key>SystemSerialNumber</key>
-			<string># Use GenSMBIOS</string>
+			<string>C02ZVCY7MD6N</string>
 			<key>SystemUUID</key>
-			<string># Use GenSMBIOS</string>
+			<string>C5670478-B9C7-4B2B-A75C-57F4032BB371</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -2128,13 +2128,13 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wgAAAA=</data>
 			<key>MLB</key>
-			<string># Use GenSMBIOS</string>
+			<string>C02951102J9N9PRFB</string>
 			<key>ROM</key>
-			<data></data>
+			<data>q09aK7Nx</data>
 			<key>SystemSerialNumber</key>
-			<string># Use GenSMBIOS</string>
+			<string>C02ZVCY7MD6N</string>
 			<key>SystemUUID</key>
-			<string># Use GenSMBIOS</string>
+			<string>C5670478-B9C7-4B2B-A75C-57F4032BB371</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
@@ -2153,7 +2153,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-E1008331FDC96864</string>
 			<key>BoardSerialNumber</key>
-			<string># Use GenSMBIOS</string>
+			<string>C02951102J9N9PRFB</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -2163,7 +2163,7 @@
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string># Use GenSMBIOS</string>
+			<string>C02ZVCY7MD6N</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
@@ -2187,9 +2187,9 @@
 			<key>SystemSKUNumber</key>
 			<string>System SKU#</string>
 			<key>SystemSerialNumber</key>
-			<string>&lt;&gt;</string>
+			<string>C02ZVCY7MD6N</string>
 			<key>SystemUUID</key>
-			<string>&lt;&gt;</string>
+			<string>C5670478-B9C7-4B2B-A75C-57F4032BB371</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
