@@ -3,7 +3,7 @@
 > Please download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and follow [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) for generating SMBIOS data for enabling iServices functionality.
 
 # ASUS-ZenBook-Duo-14-UX481-Hackintosh
-Hackintosh OpenCore configuration for ASUS ZenBook Pro Duo 14 UX481(FA/FL)
+Hackintosh OpenCore configuration for ASUS ZenBook Duo 14 UX481(FA/FL)
 
 <p>
   <img
