@@ -52,9 +52,9 @@ See the original repository license (protected under GNU GPL license).
 
 
 macOS version support:
-- [?] macOS Ventura (untested)
+- [ ] macOS Ventura (untested)
 - [x] macOS Monterey
-- [?] macOS Big Sur (untested)
+- [ ] macOS Big Sur (untested)
 - [x] macOS Catalina
 
 Hardware features:
@@ -62,8 +62,8 @@ Hardware features:
 - [x] Intel WiFi 6
 - [x] Intel bluetooth
 - [x] Internal stereo speaker
-- [?] Internal microphone (untested)
-- [?] Combo audio jack (untested)
+- [ ] Internal microphone (untested)
+- [ ] Combo audio jack (untested)
 - [ ] Camera
 - [ ] Main touchscreen
 - [ ] Secondary ScreenPad Plus
@@ -79,12 +79,12 @@ Software features:
 - [ ] Battery indication (need to adjust set capacity for proper reading)
 - [ ] CPU SpeedStep
 - [x] Brightness control (main screen works, screenpad-plus screen is a WIP)
-- [?] Stylus pen (untested; supposedly works without pressure data)
-- [?] Sleep/wake (untested)
+- [ ] Stylus pen (untested; supposedly works without pressure data)
+- [ ] Sleep/wake (untested)
 - [x] iCloud
 - [?] Continuity (untested)
 
 ### What's not working for now
 - [ ] Brightness auto adjustment with ambient sensor
 - [ ] Trackpad GPIO mode (haven't looked into this)
-- [?] HDMI port (only if routed to MX 250, which isn't supported by macOS)
+- [ ] HDMI port (only if routed to MX 250, which isn't supported by macOS)
