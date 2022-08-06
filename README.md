@@ -3,7 +3,7 @@ Hackintosh OpenCore configuration for ASUS ZenBook Pro Duo 14 UX481(FA/FL)
 
 <p>
   <img
-    src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/images/UX481FL.png"
+    src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/assets/UX481FL.png"
     alt="UX481FL"
     class="center"
   >
