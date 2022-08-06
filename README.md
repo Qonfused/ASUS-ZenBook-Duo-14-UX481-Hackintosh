@@ -44,6 +44,8 @@ See the original repository license (protected under GNU GPL license).
 >  |Battery | Dynapack 70Wh (15.4V; 4440mAh) 4-cell LiPo Battery|
 > [^0a]: [Intel Core i7-10510U - Intel Ark Page](https://ark.intel.com/content/www/us/en/ark/products/196449/intel-core-i710510u-processor-8m-cache-up-to-4-90-ghz.html)
 >
+> </details>
+> 
 > The below versions were used for testing:
 > * OpenCore Version: [0.7.6](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.6https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.6) (debug version)
 > * macOS Version: macOS Monterey 12.4 (Build 21F79, Public Release)
