@@ -16,6 +16,7 @@ See the original repository license (protected under GNU GPL license).
 
 > **Note**
 > This repository is still a work in progress.
+>
 > This repository contains all OpenCore and macOS fixes for patching & restoring various device functionality for the ASUS Zenbook Duo 14" UX481(FA/FL).
 >
 > All testing was done using the below hardware configuration and OpenCore configuration for the ASUS Zenbook Duo 14" UX481FL:
