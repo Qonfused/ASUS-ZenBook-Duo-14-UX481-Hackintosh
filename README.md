@@ -82,7 +82,7 @@ Software features:
 - [ ] Stylus pen (untested; supposedly works without pressure data)
 - [ ] Sleep/wake (untested)
 - [x] iCloud
-- [?] Continuity (untested)
+- [ ] Continuity (untested)
 
 ### What's not working for now
 - [ ] Brightness auto adjustment with ambient sensor
