@@ -1,2 +1,21 @@
 .*
 !/.gitignore
+
+# macOS Boot Image
+/com.apple.recovery.boot
+
+# local backups for windows restoration
+BACKUP.zip
+MONTEREY.zip
+VENTURA.zip
+
+# macOS specific caches
+/.fseventsd
+/.Spotlight-V100
+/.Trashes
+
+# windows specific caches
+/$RECYCLE.BIN
+/FOUND.000
+/FOUND.001
+/System Volume Information

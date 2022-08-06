@@ -763,7 +763,7 @@
 			<key>EnableSafeModeSlide</key>
 			<true/>
 			<key>EnableWriteUnprotector</key>
-			<false/>
+			<true/>
 			<key>ForceBooterSignature</key>
 			<false/>
 			<key>ForceExitBootServices</key>
@@ -779,7 +779,7 @@
 			<key>ProvideMaxSlide</key>
 			<integer>0</integer>
 			<key>RebuildAppleMemoryMap</key>
-			<true/>
+			<false/>
 			<key>ResizeAppleGpuBars</key>
 			<integer>-1</integer>
 			<key>SetupVirtualMap</key>
@@ -787,7 +787,7 @@
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -821,43 +821,15 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>CQClPg==</data>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,2,0</string>
-				<key>device_type</key>
-				<string>VGA compatible controller</string>
-				<key>dpcd-max-link-rate</key>
-				<data>FAAAAA==</data>
-				<key>enable-dpcd-max-link-rate-fix</key>
-				<data>AQAAAA==</data>
-				<key>enable-hdmi20</key>
-				<data>AQAAAA==</data>
-				<key>enable-lspcon-support</key>
-				<data>AQAAAA==</data>
-				<key>enable-max-pixel-clock-override</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con1-alldata</key>
-				<data>AQUJAAAEAACHAQAA</data>
-				<key>framebuffer-con1-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con2-alldata</key>
-				<data>AgYJAAAEAACHAQAA</data>
-				<key>framebuffer-con2-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con3-alldata</key>
-				<data>AwQKAAAIAACHAQAA</data>
-				<key>framebuffer-con3-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-con3-has-lspcon</key>
-				<data>AQAAAA==</data>
+				<data>AACbPg==</data>
+				<key>device-id</key>
+				<data>mz4AAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-portcount</key>
-				<data>BAAAAA==</data>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAD//w==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
+				<key>framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+				<key>framebuffer-fbmem</key>
+				<data>AACQAA==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1884,7 +1856,7 @@
 			<key>HibernateMode</key>
 			<string>None</string>
 			<key>HideAuxiliary</key>
-			<false/>
+			<true/>
 			<key>LauncherOption</key>
 			<string>Disabled</string>
 			<key>LauncherPath</key>
@@ -1923,7 +1895,7 @@
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
-			<integer>3</integer>
+			<integer>67</integer>
 		</dict>
 		<key>Entries</key>
 		<array>
@@ -1989,7 +1961,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Flavour</key>
 				<string>Auto</string>
 				<key>Name</key>
@@ -2012,7 +1984,7 @@
 				<key>DefaultBackgroundColor</key>
 				<data>AAAAAA==</data>
 				<key>UIScale</key>
-				<data>Ag==</data>
+				<data>AQ==</data>
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
@@ -2024,9 +1996,9 @@
 				<key>ForceDisplayRotationInEFI</key>
 				<integer>0</integer>
 				<key>SystemAudioVolume</key>
-				<data>Rg==</data>
+				<data>KA==</data>
 				<key>boot-args</key>
-				<string>keepsyms=1 -cdfon -igfxnohdmi igfxonln=1 agdpmod=vit9696</string>
+				<string>-v debug=0x100 keepsyms=1 -wegnoegpu -cdfon -igfxnohdmi igfxonln=1 agdpmod=vit9696</string>
 				<key>csr-active-config</key>
 				<data>ZwAAAA==</data>
 				<key>run-efi-updater</key>
@@ -2120,9 +2092,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZVCY7MD6N</string>
+			<string># Use GenSMBIOS</string>
 			<key>SystemUUID</key>
-			<string>C5670478-B9C7-4B2B-A75C-57F4032BB371</string>
+			<string># Use GenSMBIOS</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
@@ -2131,11 +2103,11 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02951102J9N9PRFB</string>
+			<string># Use GenSMBIOS</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>q09aK7Nx</data>
+			<data></data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
@@ -2143,9 +2115,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro16,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZVCY7MD6N</string>
+			<string># Use GenSMBIOS</string>
 			<key>SystemUUID</key>
-			<string>C5670478-B9C7-4B2B-A75C-57F4032BB371</string>
+			<string># Use GenSMBIOS</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -2156,13 +2128,13 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f////wgAAAA=</data>
 			<key>MLB</key>
-			<string>C02951102J9N9PRFB</string>
+			<string># Use GenSMBIOS</string>
 			<key>ROM</key>
-			<data>q09aK7Nx</data>
+			<data></data>
 			<key>SystemSerialNumber</key>
-			<string>C02ZVCY7MD6N</string>
+			<string># Use GenSMBIOS</string>
 			<key>SystemUUID</key>
-			<string>C5670478-B9C7-4B2B-A75C-57F4032BB371</string>
+			<string># Use GenSMBIOS</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
@@ -2181,7 +2153,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-E1008331FDC96864</string>
 			<key>BoardSerialNumber</key>
-			<string>C02951102J9N9PRFB</string>
+			<string># Use GenSMBIOS</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -2191,7 +2163,7 @@
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02ZVCY7MD6N</string>
+			<string># Use GenSMBIOS</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
@@ -2215,9 +2187,9 @@
 			<key>SystemSKUNumber</key>
 			<string>System SKU#</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZVCY7MD6N</string>
+			<string>&lt;&gt;</string>
 			<key>SystemUUID</key>
-			<string>C5670478-B9C7-4B2B-A75C-57F4032BB371</string>
+			<string>&lt;&gt;</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
