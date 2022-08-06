@@ -92,4 +92,4 @@ Software features:
 ### What's not working for now
 - [ ] Brightness auto adjustment with ambient sensor
 - [ ] Trackpad GPIO mode (haven't looked into this)
-- [ ] HDMI port (routed to MX 250, which isn't supported by macOS)
+- [ ] HDMI port (only if routed to MX 250, which isn't supported by macOS)
