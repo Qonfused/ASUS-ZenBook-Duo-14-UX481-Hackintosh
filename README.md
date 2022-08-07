@@ -82,7 +82,7 @@ Software features:
 - [ ] CPU SpeedStep
 - [x] Brightness control (main screen works, screenpad-plus screen is a WIP)
 - [ ] Stylus pen (untested; supposedly works without pressure data)
-- [ ] Sleep/wake (untested)
+- [x] Sleep/wake
 - [x] iCloud
 - [ ] Continuity (untested)
 
