@@ -821,20 +821,14 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AACbPg==</data>
+				<data>CQClPg==</data>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key># Comment</key>
+				<key># Comment-1</key>
 				<string>Temp fix to disable screenpad plus static</string>
-				<key>framebuffer-con1-enable</key>
+				<key># framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con1-alldata</key>
+				<key># framebuffer-con1-alldata</key>
 				<data>AwAJAAAEAACHAQAA</data>
 			</dict>
 		</dict>
@@ -2004,7 +1998,7 @@
 				<key>SystemAudioVolume</key>
 				<data>KA==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -wegnoegpu -cdfon -igfxnohdmi igfxonln=1 agdpmod=vit9696</string>
+				<string>-v debug=0x100 keepsyms=1 -wegnoegpu -igfxnohdmi igfxonln=1 agdpmod=vit9696</string>
 				<key>csr-active-config</key>
 				<data>ZwAAAA==</data>
 				<key>run-efi-updater</key>
