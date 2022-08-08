@@ -33,9 +33,9 @@ See the original repository license (protected under GNU GPL license).
 >  |iGPU | Intel UHD Graphics 620|
 >  |dGPU | Nvidia GeForce MX250 2GB (10W 1D52 version; disabled)|
 >  |Audio | Realtek ALC294|
->  |Memory | 16GB LPDDR3 2133MHz Cl16 (4x4 GB Micron Modules)|
+>  |Memory | 16GB LPDDR3 2133MHz Cl16<br>(Samsung K4EBE304ED-EGCG)|
 >  |Wifi & Bluetooth | • Intel AX201 WiFi 6<br>• Bluetooth 5.0|
->  |Storage | Intel 660p 1TB M.2-2280 NVMe SSD|
+>  |Storage | Intel 660p 1TB M.2-2280 NVMe SSD<br>(INTEL SSDPEKNW010T8)|
 >  |Camera | Windows Hello HD Camera with IR|
 >  |Trackpad | ELAN????, ?|
 >  |Display | • 14" (1920 x 1080) IPS display<br>• 12.6" (1920 x 515) IPS Screenpad Plus display|
