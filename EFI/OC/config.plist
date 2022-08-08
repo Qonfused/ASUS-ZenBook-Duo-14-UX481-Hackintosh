@@ -830,10 +830,12 @@
 				<data>AAAwAQ==</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
+				<key># Comment</key>
+				<string>Temp fix to disable screenpad plus static</string>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-alldata</key>
-				<data>AgQKAAIAAACHAQAA</data>
+				<data>AwAJAAAEAACHAQAA</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
