@@ -823,8 +823,8 @@
 				<key>AAPL,ig-platform-id</key>
 				<data>AACbPg==</data>
 				<key>device-id</key>
-				<data>mz4AAA==</data>
-				<key># Comment-1</key>
+				<data>PpsAAA==</data>
+				<key>## Disable screenpad plus</key>
 				<string>Temp fix to disable screenpad plus static</string>
 				<key># framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
