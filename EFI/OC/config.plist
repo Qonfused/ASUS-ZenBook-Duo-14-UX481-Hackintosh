@@ -821,7 +821,7 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>CQClPg==</data>
+				<data>AACbPg==</data>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
 				<key># Comment-1</key>
