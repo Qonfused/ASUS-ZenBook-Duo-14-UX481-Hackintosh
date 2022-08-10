@@ -821,9 +821,9 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AACbPg==</data>
+				<data>CQClPg==</data>
 				<key>device-id</key>
-				<data>mz4AAA==</data>
+				<data>pT4AAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con0-enable</key>
@@ -833,11 +833,11 @@
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-alldata</key>
-				<data>AQUJAAAEAACHAQAA</data>
+				<data>AQUJAAAEAADHAQAA</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
-				<data>AgQKAAAIAACHAQAA</data>
+				<data>AgQKAAAIAADHAQAA</data>
 				<key>## Disable screenpad plus</key>
 				<string>Temp fix to disable screenpad plus static</string>
 				<key># framebuffer-con1-enable</key>
