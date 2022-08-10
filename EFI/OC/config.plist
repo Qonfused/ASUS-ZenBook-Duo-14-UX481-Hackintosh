@@ -824,26 +824,24 @@
 				<data>CQClPg==</data>
 				<key>device-id</key>
 				<data>pT4AAA==</data>
-				<key>framebuffer-patch-enable</key>
+				<key>enable-lspcon-support</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con0-enable</key>
+				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con0-alldata</key>
-				<data>AAAIAAIAAACYAAAA</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-alldata</key>
-				<data>AQUJAAAEAADHAQAA</data>
+				<data>AQUJAAAEAACHAQAA</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
-				<data>AgQKAAAIAADHAQAA</data>
-				<key>## Disable screenpad plus</key>
-				<string>Temp fix to disable screenpad plus static</string>
-				<key># framebuffer-con1-enable</key>
+				<data>AgQKAAAIAACHAQAA</data>
+				<key>framebuffer-con2-has-lspcon</key>
 				<data>AQAAAA==</data>
-				<key># framebuffer-con1-alldata</key>
-				<data>AwAJAAAEAACHAQAA</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -2012,7 +2010,7 @@
 				<key>SystemAudioVolume</key>
 				<data>KA==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -wegnoegpu -igfxnohdmi igfxonln=1 agdpmod=vit9696</string>
+				<string>-v debug=0x100 keepsyms=1 -wegnoegpu -igfxnohdmi -cdfon igfxonln=1 agdpmod=vit9696</string>
 				<key>csr-active-config</key>
 				<data>ZwAAAA==</data>
 				<key>run-efi-updater</key>
