@@ -822,6 +822,8 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>CQClPg==</data>
+				<key>AAPL01,override-no-connect</key>
+				<data>AP///////wAJ5X8IAAAAAAEdAQSlHwh4AtItk1FXjSgYTlIAAAABAQEBAQEBAQEBAQEBAQEBlBuAoHADMiAwIFUANVMQAAAaEhaAoHADMiAwIFUANVMQAAAaAAAA/gBCT0UgSEYKICAgICAgAAAA/gBOVjEyNkI1TS1ONDEKAO0=</data>
 				<key>device-id</key>
 				<data>pT4AAA==</data>
 				<key>enable-lspcon-support</key>
@@ -1971,9 +1973,9 @@
 				<key>Auxiliary</key>
 				<false/>
 				<key>Comment</key>
-				<string></string>
+				<string>Tool to modify hidden BIOS settings.</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Flavour</key>
 				<string>Auto</string>
 				<key>Name</key>
