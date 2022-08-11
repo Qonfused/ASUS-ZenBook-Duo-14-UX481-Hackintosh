@@ -4,6 +4,9 @@
 # macOS Boot Image
 /com.apple.recovery.boot
 
+# OpenCore specific caches
+opencore-*[0-9].txt
+
 # local backups for windows restoration
 BACKUP.zip
 MONTEREY.zip
