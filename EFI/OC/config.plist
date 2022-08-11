@@ -1971,7 +1971,7 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<false/>
+				<true/>
 				<key>Comment</key>
 				<string>Tool to modify hidden BIOS settings.</string>
 				<key>Enabled</key>
