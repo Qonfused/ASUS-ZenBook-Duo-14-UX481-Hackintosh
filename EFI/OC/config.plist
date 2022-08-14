@@ -822,8 +822,6 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>CQClPg==</data>
-				<key>#AAPL01,override-no-connect</key>
-				<data>AP///////wAJ5X8IAAAAAAEdAQSlHwh4AtItk1FXjSgYTlIAAAABAQEBAQEBAQEBAQEBAQEBlBuAoHADMiAwIFUANVMQAAAaEhaAoHADMiAwIFUANVMQAAAaAAAA/gBCT0UgSEYKICAgICAgAAAA/gBOVjEyNkI1TS1ONDEKAO0=</data>
 				<key>device-id</key>
 				<data>pT4AAA==</data>
 				<key>enable-lspcon-support</key>
@@ -831,17 +829,19 @@
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-alldata</key>
-				<data>AQUJAAAEAACHAQAA</data>
+				<data>AQUJAAAEAADHAQAA</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
-				<data>AgYKAAAIAACHAQAA</data>
+				<data>AgQKAAAEAADHAQAA</data>
 				<key>framebuffer-con2-has-lspcon</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-preferred-lspcon-mode</key>
 				<data>AAAAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>AAAAgA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 			</dict>
@@ -2012,7 +2012,7 @@
 				<key>SystemAudioVolume</key>
 				<data>KA==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -wegnoegpu -igfxnohdmi -cdfon igfxonln=1 agdpmod=vit9696</string>
+				<string>-v debug=0x100 keepsyms=1 -wegnoegpu -igfxnohdmi igfxonln=1 igfxfw=2 igfxrpsc=1 -cdfon agdpmod=vit9696</string>
 				<key>csr-active-config</key>
 				<data>ZwAAAA==</data>
 				<key>run-efi-updater</key>
