@@ -796,8 +796,6 @@
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
 			<dict>
-				<key></key>
-				<data></data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,31,0</string>
 				<key>device_type</key>
@@ -823,23 +821,29 @@
 				<key>AAPL,ig-platform-id</key>
 				<data>CQClPg==</data>
 				<key>device-id</key>
-				<data>pT4AAA==</data>
+				<data>mz4AAA==</data>
 				<key>enable-lspcon-support</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-alldata</key>
-				<data>AQUJAAAEAADHAQAA</data>
+				<data>AQUJAAAEAACHAQAA</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
-				<data>AgQKAAAIAADHAQAA</data>
-				<key>framebuffer-con2-has-lspcon</key>
+				<data>AgQJAAAEAACHAQAA</data>
+				<key>framebuffer-con3-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con2-preferred-lspcon-mode</key>
+				<key>framebuffer-con3-alldata</key>
+				<data>AwYKAAAIAACHAQAA</data>
+				<key>framebuffer-con3-has-lspcon</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con3-preferred-lspcon-mode</key>
 				<data>AAAAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-portcount</key>
+				<data>BAAAAA==</data>
 				<key>framebuffer-unifiedmem</key>
 				<data>AAAAgA==</data>
 				<key>hda-gfx</key>
