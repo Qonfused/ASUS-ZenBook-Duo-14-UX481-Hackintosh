@@ -2002,7 +2002,7 @@
 			<key>StartupPowerEvents</key>
 			<integer>0</integer>
 			<key>SystemProductName</key>
-			<string>MacBookPro16,1</string>
+			<string>MacBookPro16,3</string>
 			<key>SystemSerialNumber</key>
 			<string>C02ZVCY7MD6N</string>
 			<key>SystemUUID</key>
@@ -2069,7 +2069,7 @@
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
-			<string>MacBookPro16,1</string>
+			<string>MacBookPro16,3</string>
 			<key>ChassisAssetTag</key>
 			<string>Asset Tag#</string>
 			<key>ChassisManufacturer</key>
@@ -2095,7 +2095,7 @@
 			<key>SystemManufacturer</key>
 			<string></string>
 			<key>SystemProductName</key>
-			<string>MacBookPro16,1</string>
+			<string>MacBookPro16,3</string>
 			<key>SystemSKUNumber</key>
 			<string>System SKU#</string>
 			<key>SystemSerialNumber</key>
