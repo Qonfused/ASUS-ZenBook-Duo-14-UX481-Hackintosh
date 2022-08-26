@@ -811,7 +811,7 @@
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Platform for patching macOS.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -829,7 +829,7 @@
 				<key>BundlePath</key>
 				<string>DebugEnhancer.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>A Lilu plugin that enables debug output from the macOS kernel.</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -847,7 +847,7 @@
 				<key>BundlePath</key>
 				<string>BrightnessKeys.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Enables handling brightness keys based on ACPI specification.</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -865,7 +865,7 @@
 				<key>BundlePath</key>
 				<string>ACPIDebug.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Enables debug tracing from ACPI code (DSDT) to system.log.</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -883,7 +883,7 @@
 				<key>BundlePath</key>
 				<string>AnyiSightCam.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Enables non-iSight webcams to work with first-party applications.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -901,7 +901,7 @@
 				<key>BundlePath</key>
 				<string>CPUFriend.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Enables dynamic power management for CPUs; modifies low frequency mode and energy performance preferences.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -919,7 +919,7 @@
 				<key>BundlePath</key>
 				<string>CPUFriendDataProvider.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Source data for CPUFriend.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -937,7 +937,7 @@
 				<key>BundlePath</key>
 				<string>DiskArbitrationFixup.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Disables warning messages for filesystems unknown to macOS.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -955,7 +955,7 @@
 				<key>BundlePath</key>
 				<string>ECEnabler.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Expands read size for embedded controller fields; used for reducing ACPI patching for working battery status.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -973,7 +973,7 @@
 				<key>BundlePath</key>
 				<string>FeatureUnlock.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Enables Apple Silicon features (like sidecar) on unsupported devices.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -991,7 +991,7 @@
 				<key>BundlePath</key>
 				<string>HibernationFixup.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Lilu plugin for fixing hybernation compatibility issues.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -1009,7 +1009,7 @@
 				<key>BundlePath</key>
 				<string>HoRNDIS.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Android USB tethering driver for macOS.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -1027,7 +1027,7 @@
 				<key>BundlePath</key>
 				<string>NoTouchID.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Lilu plugin disabling TouchID support for using the MacBookPro SMBIOS.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -1045,7 +1045,7 @@
 				<key>BundlePath</key>
 				<string>NVMeFix.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Patches for Apple NVMe storage driver, improving compatibility with non-Apple SSDs.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -1063,7 +1063,7 @@
 				<key>BundlePath</key>
 				<string>RTCMemoryFixup.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Enables emulating RTC memory offsets to avoid conflicts between AppleRTC and the device's firmware/BIOS.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -1243,7 +1243,7 @@
 				<key>BundlePath</key>
 				<string>CpuTscSync.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Disables `xcpm_urgency` if TSC is out of sync; solves some kernel panics after wake.</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
