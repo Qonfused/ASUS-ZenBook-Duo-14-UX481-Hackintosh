@@ -776,7 +776,7 @@
 				<data>CQClPg==</data>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
-				<key>enable-lspcon-support</key>
+				<key>#enable-lspcon-support</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
@@ -785,10 +785,10 @@
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
-				<data>AgQJAAAIAACHAQAA</data>
-				<key>framebuffer-con2-has-lspcon</key>
+				<data>AgYJAAAIAACHAQAA</data>
+				<key>#framebuffer-con2-has-lspcon</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con2-preferred-lspcon-mode</key>
+				<key>#framebuffer-con2-preferred-lspcon-mode</key>
 				<data>AAAAAA==</data>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
