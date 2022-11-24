@@ -649,6 +649,8 @@
 				<data>AACbPg==</data>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
+				<key>model</key>
+				<string>Intel UHD Graphics 620</string>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-enable</key>
@@ -657,6 +659,8 @@
 				<data>AQEJAAAEAACHAQAA</data>
 				<key>#framebuffer-con1-index</key>
 				<data>/////w==</data>
+				<key>#AAPL01,override-no-connect</key>
+				<data>AP///////wAJ5X8IAAAAAAEdAQSlHwh4AtItk1FXjSgYTlIAAAABAQEBAQEBAQEBAQEBAQEBlBuAoHADMiAwIFUANVMQAAAaEhaAoHADMiAwIFUANVMQAAAaAAAA/gBCT0UgSEYKICAgICAgAAAA/gBOVjEyNkI1TS1ONDEKAO0=</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
