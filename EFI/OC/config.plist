@@ -645,30 +645,32 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>#AAPL01,override-no-connect</key>
+				<data>AP///////wAJ5X8IAAAAAAEdAQSlHwh4AtItk1FXjSgYTlIAAAABAQEBAQEBAQEBAQEBAQEBlBuAoHADMiAwIFUANVMQAAAaEhaAoHADMiAwIFUANVMQAAAaAAAA/gBCT0UgSEYKICAgICAgAAAA/gBOVjEyNkI1TS1ONDEKAO0=</data>
+				<key>#framebuffer-con1-index</key>
+				<data>/////w==</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>AACbPg==</data>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
-				<key>model</key>
-				<string>Intel UHD Graphics 620</string>
-				<key>framebuffer-patch-enable</key>
+				<key>disable-external-gpu</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con1-enable</key>
+				<key>enable-lspcon-support</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con1-alldata</key>
-				<data>AQEJAAAEAACHAQAA</data>
-				<key>#framebuffer-con1-index</key>
-				<data>/////w==</data>
-				<key>#AAPL01,override-no-connect</key>
-				<data>AP///////wAJ5X8IAAAAAAEdAQSlHwh4AtItk1FXjSgYTlIAAAABAQEBAQEBAQEBAQEBAQEBlBuAoHADMiAwIFUANVMQAAAaEhaAoHADMiAwIFUANVMQAAAaAAAA/gBCT0UgSEYKICAgICAgAAAA/gBOVjEyNkI1TS1ONDEKAO0=</data>
-				<key>framebuffer-con2-enable</key>
+				<data>AQUJAAAEAACHAQAA</data>
+				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
 				<data>AgIKAAAIAACHAQAA</data>
-				<key>enable-lspcon-support</key>
+				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
 				<key>framebuffer-con2-has-lspcon</key>
 				<data>AQAAAA==</data>
+				<key>framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>model</key>
+				<string>Intel UHD Graphics 620</string>
 				<key>rps-control</key>
 				<data>AQAAAA==</data>
 			</dict>
@@ -1931,19 +1933,23 @@
 			</dict>
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<dict>
+				<key>revcpu</key>
+				<integer>1</integer>
+				<key>revcpuname</key>
+				<string>Intel Core i7-10510U CPU @ 1.80GHz</string>
 				<key>rtc-blacklist</key>
 				<data></data>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
+				<key>#Note</key>
+				<string>Generally recommended to set to &lt;00000000&gt; and disable SIP using csrutil via recovery.</string>
 				<key>ForceDisplayRotationInEFI</key>
 				<integer>0</integer>
 				<key>SystemAudioVolume</key>
 				<data>KA==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -wegnoegpu -vi2c-force-polling</string>
-				<key>#Note</key>
-				<string>Generally recommended to set to &lt;00000000&gt; and disable SIP using csrutil via recovery.</string>
+				<string>-v debug=0x100 keepsyms=1 -vi2c-force-polling</string>
 				<key>csr-active-config</key>
 				<data>ZwAAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -1961,6 +1967,8 @@
 			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
 			<array>
 				<string>rtc-blacklist</string>
+				<string>revcpu</string>
+				<string>revcpuname</string>
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
@@ -2016,7 +2024,7 @@
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
-			<integer>0</integer>
+			<integer>1537</integer>
 			<key>ROM</key>
 			<data>6IAu3w0E</data>
 			<key>SpoofVendor</key>
