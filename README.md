@@ -58,7 +58,7 @@ Current macOS version support:
 - [x] macOS Monterey (11.3+)
 
 Hardware features:
-- [x] Intel UHD Graphics 620 (has acceleration, but no proper framebuffer id yet)
+- [x] Intel UHD Graphics 620
 - [x] Intel WiFi 6
 - [x] Intel bluetooth
 - [x] Internal stereo speaker
