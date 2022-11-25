@@ -47,17 +47,15 @@ See the original repository license (protected under GNU GPL license).
 > </details>
 > 
 > The below versions were used for testing:
-> * OpenCore Version: [0.7.6](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.6https://github.com/acidanthera/OpenCorePkg/releases/tag/0.7.6) (debug version)
+> * OpenCore Version: [0.8.6](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.6) (debug version)
 > * macOS Version: macOS Monterey 12.4 (Build 21F79, Public Release)
 >
 > All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide from shiecldk](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh).
 
 
-macOS version support:
-- [ ] macOS Ventura (untested)
-- [x] macOS Monterey
-- [ ] macOS Big Sur (untested)
-- [x] macOS Catalina
+Current macOS version support:
+- [x] macOS Ventura
+- [x] macOS Monterey (11.3+)
 
 Hardware features:
 - [x] Intel UHD Graphics 620 (has acceleration, but no proper framebuffer id yet)
@@ -67,19 +65,18 @@ Hardware features:
 - [ ] Internal microphone (untested)
 - [ ] Combo audio jack (untested)
 - [ ] Camera
-- [ ] Main touchscreen
-- [ ] Secondary ScreenPad Plus
-- [x] Keyboard (doesn't properly map in recovery)
-- [ ] Trackpad
-- [ ] Media FN keys (FN+F10 alt behavior: volume, brightness, keyboard backlight; switch main/secondary monitors, and disable secondary monitor; see <a href="https://github.com/hieplpvip/AsusSMC">hieplpvip/AsusSMC</a>)
-- [x] USB 3.2 Gen2 Type-A (works but haven't done USB mapping)
-- [x] USB 3.1 Gen2 Type-A (works but haven't done USB mapping)
-- [x] USB 3 Type-C (works but haven't done USB mapping)
+- [x] Main touchscreen
+- [x] HDMI port (with hot-plug support!)
+- [x] Keyboard (untested in recovery)
+- [x] Trackpad (with gestures; physical buttons need to remapped)
+- [x] USB 3.2 Gen2 Type-A
+- [x] USB 3.1 Gen2 Type-A
+- [x] USB 3 Type-C
 - [x] Power adapter
 
 Software features:
-- [ ] Battery indication (need to adjust set capacity for proper reading)
-- [ ] CPU SpeedStep
+- [x] Battery indication (still a WIP)
+- [ ] CPU SpeedStep (untested)
 - [x] Brightness control (main screen works, screenpad-plus screen is a WIP)
 - [ ] Stylus pen (untested; supposedly works without pressure data)
 - [x] Sleep/wake
@@ -87,6 +84,6 @@ Software features:
 - [ ] Continuity (untested)
 
 ### What's not working for now
+- [ ] Secondary ScreenPad Plus
 - [ ] Brightness auto adjustment with ambient sensor
 - [ ] Trackpad GPIO mode (haven't looked into this)
-- [ ] HDMI port (only if routed to MX 250, which isn't supported by macOS)
