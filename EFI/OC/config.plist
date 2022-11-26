@@ -50,14 +50,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-DDGPU.aml</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-DDGPU.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-EC-USBX-LAPTOP.aml</string>
 				<key>Enabled</key>
 				<true/>
@@ -127,6 +119,14 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-PTS.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-GPU-DISABLE.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-GPU-DISABLE.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
