@@ -37,9 +37,9 @@ See the original repository license (protected under GNU GPL license).
 >  |Wifi & Bluetooth | • Intel AX201 WiFi 6<br>• Bluetooth 5.0|
 >  |Storage | Intel 660p 1TB M.2-2280 NVMe SSD<br>(INTEL SSDPEKNW010T8)|
 >  |Camera | Windows Hello HD Camera with IR|
->  |Trackpad | ELAN????, ?|
+>  |Trackpad | ELAN1207, _SB.PCI0.I2C1.ETPD, 04F3:310E|
 >  |Display | • 14" (1920 x 1080) IPS display<br>• 12.6" (1920 x 515) IPS Screenpad Plus display|
->  |Touch Screen | • ELAN????, \\_SB.PCI0.I2C?.????, ?<br>• ELAN????, \\_SB.PCI0.I2C?.????, ?|
+>  |Touch Screen | • ELAN9008, \\_SB.PCI0.I2C0.TPL1, 04F3:310E<br>• ELAN9009, \\_SB.PCI0.I2C3.TPL0, 04F3:29DE|
 >  |Ports | (Left)<br>• 1x 4.5mm DC-in (19V; 3.42A)<br>• 1x HDMI 1.4<br>• 1x USB 3.1 Gen 2 Type-A<br>• 1x USB 3.1 Gen 2 Type-C<br>(Right)<br>• 1x USB 3.1 Gen 1 Type-A<br>• 1x 3.5 mm Audio combo jack<br>• 1x MicroSD card reader<br>|
 >  |Battery | Dynapack 70Wh (15.4V; 4440mAh) 4-cell LiPo Battery|
 > [^0a]: [Intel Core i7-10510U - Intel Ark Page](https://ark.intel.com/content/www/us/en/ark/products/196449/intel-core-i710510u-processor-8m-cache-up-to-4-90-ghz.html)
