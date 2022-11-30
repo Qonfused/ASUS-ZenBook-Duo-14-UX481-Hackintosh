@@ -1937,6 +1937,8 @@
 			<dict>
 				<key>revcpu</key>
 				<integer>1</integer>
+				<key>#revcpuname</key>
+				<string>Intel Core i5-10210U CPU @ 1.60GHz</string>
 				<key>revcpuname</key>
 				<string>Intel Core i7-10510U CPU @ 1.80GHz</string>
 				<key>rtc-blacklist</key>
