@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>#OC-VERSION</key>
-	<string>0.8.6-DEBUG</string>
+	<string>0.8.7-DEBUG</string>
 	<key>ACPI</key>
 	<dict>
 		<key>Add</key>
