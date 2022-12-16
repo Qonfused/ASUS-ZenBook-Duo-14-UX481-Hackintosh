@@ -73,6 +73,7 @@ Hardware features:
 - [x] Trackpad (with gestures)
 - [ ] Left/Right Trackpad Buttons (WIP)
 - [x] USB (3.2 Gen2 Type-A, 3.1 Gen2 Type-A, Type-C)
+- [x] MicroSD card reader
 - [x] Power adapter
 
 Software features:
