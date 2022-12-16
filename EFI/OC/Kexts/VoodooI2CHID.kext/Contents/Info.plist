@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19F101</string>
+	<string>20G224</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -27,17 +27,19 @@
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11E801a</string>
+	<string>13A1030d</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>GM</string>
+	<string>12.0</string>
 	<key>DTSDKBuild</key>
-	<string>19G68</string>
+	<string>21A344</string>
 	<key>DTSDKName</key>
-	<string>macosx10.15</string>
+	<string>macosx12.0</string>
 	<key>DTXcode</key>
-	<string>1170</string>
+	<string>1310</string>
 	<key>DTXcodeBuild</key>
-	<string>11E801a</string>
+	<string>13A1030d</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>Intel ACPI Sensor Hub Enabler</key>
@@ -302,8 +304,8 @@
 			<integer>300</integer>
 			<key>IOPropertyMatch</key>
 			<dict>
-				<key>Transport</key>
-				<string>I2C</string>
+				<key>ProductID</key>
+				<integer>12558</integer>
 			</dict>
 			<key>IOProviderClass</key>
 			<string>IOHIDInterface</string>
@@ -351,6 +353,8 @@
 			</array>
 			<key>IOClass</key>
 			<string>VoodooI2CTouchscreenHIDEventDriver</string>
+			<key>IOPCIMatch</key>
+			<string>0x2B6A04f3&amp;0x29DE04f3</string>
 			<key>IOProbeScore</key>
 			<integer>400</integer>
 			<key>IOProviderClass</key>
