@@ -132,7 +132,7 @@
 				<key>Comment</key>
 				<string>DISABLE-SCREENPAD.aml</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>DISABLE-SCREENPAD.aml</string>
 			</dict>
@@ -585,7 +585,7 @@
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>TldBSw==</data>
 				<key>Limit</key>
