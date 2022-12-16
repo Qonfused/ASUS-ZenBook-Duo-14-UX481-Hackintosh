@@ -47,7 +47,7 @@ See the original repository license (protected under GNU GPL license).
 > </details>
 > 
 > The below versions were used for testing:
-> * OpenCore Version: [0.8.6](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.6) (debug version)
+> * OpenCore Version: [0.8.7](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.7) (debug version)
 > * macOS Version: macOS Monterey 12.4 (Build 21F79, Public Release)
 >
 > All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide from shiecldk](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh).
@@ -56,34 +56,30 @@ See the original repository license (protected under GNU GPL license).
 Current macOS version support:
 - [x] macOS Ventura
 - [x] macOS Monterey (11.3+)
+- [ ] macOS Big Sur
+- [ ] macOS Catalina (min supported version)
 
 Hardware features:
 - [x] Intel UHD Graphics 620
-- [x] Intel WiFi 6
-- [x] Intel bluetooth
+- [x] Intel AX201 (WiFi 6 + Bluetooth)
 - [x] Internal stereo speaker
 - [ ] Internal microphone (untested)
 - [ ] Combo audio jack (untested)
-- [ ] Camera
-- [x] Main touchscreen
-- [x] HDMI port (with hot-plug support!)
-- [x] Keyboard (untested in recovery)
-- [x] Trackpad (with gestures; physical buttons need to remapped)
-- [x] USB 3.2 Gen2 Type-A
-- [x] USB 3.1 Gen2 Type-A
-- [x] USB 3 Type-C
+- [ ] Built-in Camera (untested)
+- [x] Primary Display
+- [ ] ScreenPad Plus Display (WIP)
+- [x] HDMI port (with hot-plug support)
+- [x] Keyboard
+- [x] Trackpad (with gestures)
+- [ ] Left/Right Trackpad Buttons (WIP)
+- [x] USB (3.2 Gen2 Type-A, 3.1 Gen2 Type-A, Type-C)
 - [x] Power adapter
 
 Software features:
-- [x] Battery indication (still a WIP)
-- [ ] CPU SpeedStep (untested)
-- [x] Brightness control (main screen works, screenpad-plus screen is a WIP)
-- [ ] Stylus pen (untested; supposedly works without pressure data)
+- [x] Battery indication
+- [x] Touchscreen w/ multitouch gestures (screenpad-plus is a WIP)
+- [x] Brightness control (screenpad-plus screen is a WIP)
+- [ ] Stylus pen (untested; can work but without pressure data)
 - [x] Sleep/wake
 - [x] iCloud
-- [ ] Continuity (untested)
-
-### What's not working for now
-- [ ] Secondary ScreenPad Plus
-- [ ] Brightness auto adjustment with ambient sensor
-- [ ] Trackpad GPIO mode (haven't looked into this)
+- [x] Continuity (only Handoff and Universal Clipboard)
