@@ -10,28 +10,28 @@
 		<dict>
 			<key>cdhash</key>
 			<data>
-			Lw7WBUFEIc2Jc0HmPBvpRFUAfNs=
+			itiVqyzSLeCpF8505QJOBhcjJZg=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"54f01715141f8b54c0ac0418fb1a0166e8a4d67f" or cdhash H"2f0ed605414421cd897341e63c1be94455007cdb"</string>
+			<string>cdhash H"07d4815ca96f846d24a6850cc5baebd5716faee8" or cdhash H"8ad895ab2cd22de0a917ce74e5024e0617232598"</string>
 		</dict>
 		<key>PlugIns/VoodooI2CServices.kext</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			MWHpYCdqwNjOWIv3wlah4DBDgTU=
+			Jvt4nHUeEQSlvmUswc4H51atOM0=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"52ac4aa6054b5fa9bebf53511a9b40bf2012889e" or cdhash H"3161e960276ac0d8ce588bf7c256a1e030438135"</string>
+			<string>cdhash H"4dc44228b76c9bbd70be20508e3750370778b0e6" or cdhash H"26fb789c751e1104a5be652cc1ce07e756ad38cd"</string>
 		</dict>
 		<key>PlugIns/VoodooInput.kext</key>
 		<dict>
 			<key>cdhash</key>
 			<data>
-			H0vUh4+6OkXIZbnBrlCsqe7q5MM=
+			i569O+xki6vheUwDPrxl7cuCAcU=
 			</data>
 			<key>requirement</key>
-			<string>cdhash H"279e475946b1cd2fec5f05a75b85eba79287e18c" or cdhash H"1f4bd4878fba3a45c865b9c1ae50aca9eeeae4c3"</string>
+			<string>cdhash H"5d3aa85bd58778ee5f780c8534efd634c9a0c17f" or cdhash H"8b9ebd3bec648babe1794c033ebc65edcb8201c5"</string>
 		</dict>
 	</dict>
 	<key>rules</key>
