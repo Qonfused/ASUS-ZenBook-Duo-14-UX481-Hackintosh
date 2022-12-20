@@ -45,7 +45,7 @@ See the original repository license (protected under GNU GPL license).
     <tr>
       <td>
         <img
-          src="https://help.apple.com/assets/6328D0A352ABD30BF956EBB2/6328D0AD52ABD30BF956EBBC/en_US/ba4de10ea93536361680a5dea7896f66.png"
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/assets/ventura.png"
           width=25
           hspace=2
           align="top"
@@ -61,7 +61,7 @@ See the original repository license (protected under GNU GPL license).
     <tr>
       <td>
         <img
-          src="https://www.projectwizards.net/media/pages/support/faq/general/system-requirements/a73d13913c-1643835529/monterey.png"
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/assets/monterey.png"
           width=22
           hspace=2
           align="top"
@@ -77,7 +77,7 @@ See the original repository license (protected under GNU GPL license).
     <tr>
       <td>
         <img
-          src="https://km.support.apple.com/resources/sites/APPLE/content/live/IMAGES/0/IM994/en_US/bigsur-240.png"
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/assets/bigsur.png"
           width=25
           hspace=2
           align="top"
@@ -93,7 +93,7 @@ See the original repository license (protected under GNU GPL license).
     <tr>
       <td>
         <img
-          src="https://km.support.apple.com/resources/sites/APPLE/content/live/IMAGES/0/IM935/en_US/macos-catalina-roundel-240.png"
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/assets/catalina.png"
           width=25
           hspace=2
           align="top"
