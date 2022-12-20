@@ -23,58 +23,210 @@ See the original repository license (protected under GNU GPL license).
 > **Note**
 > This repository is still a work in progress.
 >
-> All testing was done using the below hardware configuration for the ASUS Zenbook Duo 14" UX481FL:
->
-><details><summary>Hardware Configuration</summary>
-> 
->  |Component | Brand |
->  |--- | --- |
->  |CPU | Intel Core i7-10510U (Comet Lake) 4-core Processor [^0a]|
->  |iGPU | Intel UHD Graphics 620|
->  |dGPU | Nvidia GeForce MX250 2GB (10W 1D52 version; disabled)|
->  |Audio | Realtek ALC294|
->  |Memory | 16GB LPDDR3 2133MHz Cl16<br>(Micron MT52L1G32D4PG-093)|
->  |Wifi & Bluetooth | • Intel AX201 WiFi 6<br>• Bluetooth 5.0|
->  |Storage | Intel 660p 1TB M.2-2280 NVMe SSD<br>(INTEL SSDPEKNW010T8)|
->  |Camera | Windows Hello HD Camera with IR|
->  |Trackpad | ELAN1207, _SB.PCI0.I2C1.ETPD, 04F3:310E|
->  |Display | • 14" (1920 x 1080) IPS display<br>• 12.6" (1920 x 515) IPS Screenpad Plus display|
->  |Touch Screen | • ELAN9008, \\_SB.PCI0.I2C0.TPL1, 04F3:310E<br>• ELAN9009, \\_SB.PCI0.I2C3.TPL0, 04F3:29DE|
->  |Ports | (Left)<br>• 1x 4.5mm DC-in (19V; 3.42A)<br>• 1x HDMI 1.4<br>• 1x USB 3.1 Gen 2 Type-A<br>• 1x USB 3.1 Gen 2 Type-C<br>(Right)<br>• 1x USB 3.1 Gen 1 Type-A<br>• 1x 3.5 mm Audio combo jack<br>• 1x MicroSD card reader<br>|
->  |Battery | Dynapack 70Wh (15.4V; 4440mAh) 4-cell LiPo Battery|
-> [^0a]: [Intel Core i7-10510U - Intel Ark Page](https://ark.intel.com/content/www/us/en/ark/products/196449/intel-core-i710510u-processor-8m-cache-up-to-4-90-ghz.html)
->
-> </details>
-> 
-> The below versions were used for testing:
-> * OpenCore Version: [0.8.7](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.7) (debug version)
+> The below versions are recommended for testing:
+> * OpenCore Version: [0.8.7](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.7) (DEBUG version)
 > * macOS Version: macOS Monterey 12.4 (Build 21F79, Public Release)
 >
-> All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide from shiecldk](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh).
+> All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) from @shiecldk.
 
 
-Current macOS version support:
-- [x] macOS Ventura
-- [x] macOS Monterey (11.3+)
-- [ ] macOS Big Sur
-- [ ] macOS Catalina (min supported version)
+### Current macOS version support:
+<table>
+  <thead>
+    <tr>
+      <th>Codebase</th>
+      <th>Status</th>
+      <th>Minimum supported version</th>
+      <th>Maximum supported version</th>
+    </tr>
+  </thead>
+  <tbody>
+  <!-- macOS 13 -->
+    <tr>
+      <td>
+        <img
+          src="https://help.apple.com/assets/6328D0A352ABD30BF956EBB2/6328D0AD52ABD30BF956EBBC/en_US/ba4de10ea93536361680a5dea7896f66.png"
+          width=25
+          hspace=2
+          align="top"
+        />
+        macOS Ventura
+      </td>
+      <td style="text-align: center;">✅</td>
+      <td>13.0 Release (Build 22A380)</td>
+      <td><code>(Latest)</code></td>
+    </tr>
+  <!-- macOS 12 -->
+    <tr>
+      <td>
+        <img
+          src="https://www.projectwizards.net/media/pages/support/faq/general/system-requirements/a73d13913c-1643835529/monterey.png"
+          width=22
+          hspace=2
+          align="top"
+        />
+        macOS Monterey
+      </td>
+      <td style="text-align: center;">✅</td>
+      <td>12.3 Beta 5 (21E5227a)</td>
+      <td><code>(Latest)</code></td>
+    </tr>
+  <!-- macOS 11 -->
+    <tr>
+      <td>
+        <img
+          src="https://km.support.apple.com/resources/sites/APPLE/content/live/IMAGES/0/IM994/en_US/bigsur-240.png"
+          width=25
+          hspace=2
+          align="top"
+        />
+        macOS Big Sur
+      </td>
+      <td style="text-align: center;">🚧</td>
+      <td>11.0.1 Release (Build 20B29)</td>
+      <td><code>(Latest)</code></td>
+    </tr>
+<!-- macOS 11 -->
+    <tr>
+      <td>
+        <img
+          src="https://km.support.apple.com/resources/sites/APPLE/content/live/IMAGES/0/IM935/en_US/macos-catalina-roundel-240.png"
+          width=25
+          hspace=2
+          align="top"
+        />
+        macOS Catalina
+      </td>
+      <td style="text-align: center;">🚧</td>
+      <td>10.15.4 Beta 1 (19E224G)</td>
+      <td><code>(Latest)</code></td>
+    </tr>
+</table>
 
-Hardware features:
-- [x] Intel UHD Graphics 620
-- [x] Intel AX201 (WiFi 6 + Bluetooth)
-- [x] Internal stereo speaker
-- [ ] Internal microphone (untested)
-- [ ] Combo audio jack (untested)
-- [ ] Built-in Camera (untested)
-- [x] Primary Display
-- [ ] ScreenPad Plus Display (WIP)
-- [x] HDMI port (with hot-plug support)
-- [x] Keyboard
-- [x] Trackpad (with gestures)
-- [ ] Left/Right Trackpad Buttons (WIP)
-- [x] USB (3.2 Gen2 Type-A, 3.1 Gen2 Type-A, Type-C)
-- [x] MicroSD card reader
-- [x] Power adapter
+### Hardware features:
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Device</th>
+      <th colspan=2>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+  <!-- Processor -->
+    <tr>
+      <td>CPU</td>
+      <td>• Intel Core i7-10510U<br>• Intel Core i5-10210U</td>
+      <td style="text-align: center;">✅</td>
+      <td>Natively supported (since macOS Catalina).</td>
+    </tr>
+  <!-- Graphics -->
+    <tr>
+      <td rowspan=2>Graphics</td>
+      <td>Intel UHD Graphics 620</td>
+      <td style="text-align: center;">✅</td>
+      <td>Full acceleration (with DRM).</td>
+    </tr>
+    <tr>
+      <td>Nvidia GeForce MX250 2GB</td>
+      <td style="text-align: center;">❌</td>
+      <td>Disabled; no macOS support.</td>
+    </tr>
+  <!-- Displays -->
+    <tr>
+      <td rowspan=2>Displays</td>
+      <td>14" Primary Display<br>(IPS, 1920x1080 @ 60 Hz)</td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully supported (with backlight control).</td>
+    </tr>
+    <tr>
+      <td>12.6" Screenpad Plus Display<br>(IPS, 1920x515 @ 60 Hz)</td>
+      <td style="text-align: center;">🚧</td>
+      <td>Work in progress.</td>
+    </tr>
+  <!-- Interfaces -->
+    <tr>
+      <td rowspan=5>Interfaces</td>
+      <td rowspan=2>Touchscreen<br>(Primary Display)<br>(Screenpad Plus Display)</td>
+      <td style="text-align: center;">🚧</td>
+      <td>Work in progress.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">🚧</td>
+      <td>Work in progress.</td>
+    </tr>
+    <tr>
+      <td>Built-in Keyboard</td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully supported (with media keys).</td>
+    </tr>
+    <tr>
+      <td>Built-in Trackpad</td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully supported (with multi-touch gestures)</td>
+    </tr>
+    <tr>
+      <td>(Physical) Trackpad Buttons</td>
+      <td style="text-align: center;">🚧</td>
+      <td>Work in progress.</td>
+    </tr>
+  <!-- Audio -->
+    <tr>
+      <td rowspan=2>Audio<br>(Realtek ALC294)</td>
+      <td>Built-in speakers</td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully supported (with volume control).</td>
+    </tr>
+    <tr>
+      <td>Built-in microphone</td>
+      <td style="text-align: center;">❌</td>
+      <td>Not working.</td>
+    </tr>
+  <!-- Camera -->
+    <tr>
+      <td>Camera</td>
+      <td>Windows Hello HD Camera</td>
+      <td style="text-align: center;">❌</td>
+      <td>Not working.</td>
+    </tr>
+  <!-- Wi-Fi + Bluetooth -->
+    <tr>
+      <td>Wi-Fi</td>
+      <td rowspan=2>Intel AX201<br>(Wi-Fi 6 + Bluetooth 5.0)</td>
+      <td rowspan=2 style="text-align: center;">✅</td>
+      <td rowspan=2>Fully supported (with limited Continuity support).</td>
+    </tr>
+    <tr>
+      <td>Bluetooth</td>
+    </tr>
+  <!-- Storage -->
+    <tr>
+      <td>Storage</td>
+      <td>Intel 660p NVMe SSD</td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully supported (with power management).</td>
+    </tr>
+  <!-- Ports -->
+    <tr>
+      <td>Ports</td>
+      <td>(Left)<br>• 1x 4.5mm DC-in (19V, 3.42A)<br>• 1x HDMI 1.4<br>• 1x USB 3.1 Gen 2 Type-A<br>• 1x USB 3.1 Gen 2 Type-C<br>(Right)<br>• 1x USB 3.1 Gen 1 Type-A<br>• 1x 3.5 mm Audio combo jack<br>• 1x MicroSD card reader</td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully supported.</td>
+    </tr>
+  <!-- Battery and Power -->
+    <tr>
+      <td rowspan=2>Battery</td>
+      <td>Built-in Battery</td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully supported (with power reading).</td>
+    </tr>
+    <tr>
+      <td>AC Power Adapter</td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully supported (with charge limit features).</td>
+    </tr>
+  </tbody>
+</table>
 
 Software features:
 - [x] Battery indication
