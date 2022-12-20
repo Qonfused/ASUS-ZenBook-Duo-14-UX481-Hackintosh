@@ -1,10 +1,5 @@
-> **Warning** Please follow the below instructions before using this repository.
-> 
-> Please download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and follow [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) for generating SMBIOS data for enabling iServices functionality.
-
 # ASUS-ZenBook-Duo-14-UX481-Hackintosh
 Hackintosh OpenCore configuration for ASUS ZenBook Duo 14 UX481(FA/FL)
-
 <p>
   <img
     src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/assets/UX481FL.png"
@@ -19,8 +14,10 @@ See the original repository license (protected under GNU GPL license).
 
 
 ## Current progress
+See this repository's [project board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
 
-> **Note**
+### macOS version support:
+> **Warning**
 > This repository is still a work in progress.
 >
 > The below versions are recommended for testing:
@@ -28,15 +25,13 @@ See the original repository license (protected under GNU GPL license).
 > * macOS Version: macOS Monterey 12.4 (Build 21F79, Public Release)
 >
 > All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) from @shiecldk.
-
-
-### Current macOS version support:
 <table>
   <thead>
     <tr>
       <th>Codebase</th>
       <th colspan=2>Status</th>
       <th>Minimum version</th>
+      <th>Maximum version</th>
     </tr>
   </thead>
   <tbody>
@@ -52,8 +47,9 @@ See the original repository license (protected under GNU GPL license).
         macOS Ventura
       </td>
       <td style="text-align: center;">✅</td>
-      <td>Supported</td>
+      <td>Fully Supported.</td>
       <td>13.0 Release (Build 22A380)</td>
+      <td><code>(Latest)</code></td>
     </tr>
   <!-- macOS 12 -->
     <tr>
@@ -67,8 +63,9 @@ See the original repository license (protected under GNU GPL license).
         macOS Monterey
       </td>
       <td style="text-align: center;">✅</td>
-      <td>Supported</td>
+      <td>Fully Supported.</td>
       <td>12.3 Beta 5 (21E5227a)</td>
+      <td><code>(Latest)</code></td>
     </tr>
   <!-- macOS 11 -->
     <tr>
@@ -82,8 +79,9 @@ See the original repository license (protected under GNU GPL license).
         macOS Big Sur
       </td>
       <td style="text-align: center;">🚧</td>
-      <td>Untested</td>
+      <td>Untested.</td>
       <td>11.0.1 Release (Build 20B29)</td>
+      <td><code>(Latest)</code></td>
     </tr>
 <!-- macOS 11 -->
     <tr>
@@ -97,10 +95,12 @@ See the original repository license (protected under GNU GPL license).
         macOS Catalina
       </td>
       <td style="text-align: center;">🚧</td>
-      <td>Untested</td>
+      <td>Untested.</td>
       <td>10.15.4 Beta 1 (19E224G)</td>
+      <td><code>(Latest)</code></td>
     </tr>
 </table>
+
 
 ### Hardware features:
 <table>
@@ -145,16 +145,7 @@ See the original repository license (protected under GNU GPL license).
     </tr>
   <!-- Interfaces -->
     <tr>
-      <td rowspan=5>Interfaces</td>
-      <td rowspan=2>Touchscreen<br>(Primary Display)<br>(Screenpad Plus Display)</td>
-      <td style="text-align: center;">🚧</td>
-      <td>Work in progress.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center;">🚧</td>
-      <td>Work in progress.</td>
-    </tr>
-    <tr>
+      <td rowspan=6>Interfaces</td>
       <td>Built-in Keyboard</td>
       <td style="text-align: center;">✅</td>
       <td>Fully supported (with media keys).</td>
@@ -168,6 +159,20 @@ See the original repository license (protected under GNU GPL license).
       <td>(Physical) Trackpad Buttons</td>
       <td style="text-align: center;">🚧</td>
       <td>Work in progress.</td>
+    </tr>
+    <tr>
+      <td rowspan=2>Touchscreen<br>(Primary Display)<br>(Screenpad Plus Display)</td>
+      <td style="text-align: center;">🚧</td>
+      <td>Work in progress.</td>
+    </tr>
+    <tr>
+      <td style="text-align: center;">🚧</td>
+      <td>Work in progress.</td>
+    </tr>
+    <tr>
+      <td>Capacitive Stylus</td>
+      <td style="text-align: center;">🚧</td>
+      <td>Work in progress (works without pressure data).</td>
     </tr>
   <!-- Audio -->
     <tr>
@@ -227,11 +232,72 @@ See the original repository license (protected under GNU GPL license).
   </tbody>
 </table>
 
-Software features:
-- [x] Battery indication
-- [x] Touchscreen w/ multitouch gestures (screenpad-plus is a WIP)
-- [x] Brightness control (screenpad-plus screen is a WIP)
-- [ ] Stylus pen (untested; can work but without pressure data)
-- [x] Sleep/wake
-- [x] iCloud
-- [x] Continuity (only Handoff and Universal Clipboard)
+
+### Software features:
+> **Note** Please follow the below instructions before using this repository.
+> 
+> Please download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and follow [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) for generating SMBIOS data for enabling iServices functionality.
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Feature</th>
+      <th colspan=2>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+  <!-- iServices -->
+    <tr>
+      <td colspan=2>iServices (iCloud)</td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully supported.</td>
+    </tr>
+  <!-- Continuity -->
+    <tr>
+      <td rowspan=6>Continuity</td>
+      <td>Airplay to Mac</td>
+      <td style="text-align: center;">❌</td>
+      <td>Unsupported.</td>
+    <tr>
+      <td>Sidecar</td>
+      <td style="text-align: center;">❌</td>
+      <td>Unsupported.</td>
+    <tr>
+      <td>Handoff</td>
+      <td style="text-align: center;">✅</td>
+      <td>Supported</td>
+    </tr>
+    <tr>
+      <td>Continuity Camera</td>
+      <td style="text-align: center;">❌</td>
+      <td>Unsupported.</td>
+    </tr>
+    <tr>
+      <td>Universal Clipboard</td>
+      <td style="text-align: center;">✅</td>
+      <td>Supported</td>
+    </tr>
+    <tr>
+      <td>Universal Control</td>
+      <td style="text-align: center;">❌</td>
+      <td>Unsupported.</td>
+    </tr>
+  <!-- Sleep + Wake -->
+    <tr>
+      <td rowspan=2>Sleep / Wake</td>
+      <td>Sleep</td>
+      <td style="text-align: center;">✅</td>
+      <td>Supported.</td>
+    </tr>
+    <tr>
+      <td>Hybernation</td>
+      <td style="text-align: center;">🚧</td>
+      <td>Untested.</td>
+    </tr>
+  <!-- Battery meter -->
+    <tr>
+      <td colspan=2>Battery Indication</td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully supported.</td>
+    </tr>
+</table>
