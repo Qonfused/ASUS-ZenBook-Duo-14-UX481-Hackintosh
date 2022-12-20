@@ -35,7 +35,7 @@ See the original repository license (protected under GNU GPL license).
   <thead>
     <tr>
       <th>Codebase</th>
-      <th>Status</th>
+      <th colspan=2>Status</th>
       <th>Minimum supported version</th>
       <th>Maximum supported version</th>
     </tr>
@@ -53,6 +53,7 @@ See the original repository license (protected under GNU GPL license).
         macOS Ventura
       </td>
       <td style="text-align: center;">✅</td>
+      <td>Supported</td>
       <td>13.0 Release (Build 22A380)</td>
       <td><code>(Latest)</code></td>
     </tr>
@@ -68,6 +69,7 @@ See the original repository license (protected under GNU GPL license).
         macOS Monterey
       </td>
       <td style="text-align: center;">✅</td>
+      <td>Supported</td>
       <td>12.3 Beta 5 (21E5227a)</td>
       <td><code>(Latest)</code></td>
     </tr>
@@ -83,6 +85,7 @@ See the original repository license (protected under GNU GPL license).
         macOS Big Sur
       </td>
       <td style="text-align: center;">🚧</td>
+      <td>Untested</td>
       <td>11.0.1 Release (Build 20B29)</td>
       <td><code>(Latest)</code></td>
     </tr>
@@ -98,6 +101,7 @@ See the original repository license (protected under GNU GPL license).
         macOS Catalina
       </td>
       <td style="text-align: center;">🚧</td>
+      <td>Untested</td>
       <td>10.15.4 Beta 1 (19E224G)</td>
       <td><code>(Latest)</code></td>
     </tr>
