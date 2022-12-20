@@ -16,6 +16,8 @@ See the original repository license (protected under GNU GPL license).
 ## Current progress
 See this repository's [project board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
 
+All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) from @shiecldk.
+
 ### macOS version support:
 > **Warning**
 > This repository is still a work in progress.
@@ -23,8 +25,6 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
 > The below versions are recommended for testing:
 > * OpenCore Version: [0.8.7](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.7) (DEBUG version)
 > * macOS Version: macOS Monterey 12.4 (Build 21F79, Public Release)
->
-> All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) from @shiecldk.
 <table>
   <thead>
     <tr>
