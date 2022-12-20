@@ -36,8 +36,8 @@ See the original repository license (protected under GNU GPL license).
     <tr>
       <th>Codebase</th>
       <th colspan=2>Status</th>
-      <th>Minimum supported version</th>
-      <th>Maximum supported version</th>
+      <th>Minimum version</th>
+      <th>Maximum version</th>
     </tr>
   </thead>
   <tbody>
