@@ -690,27 +690,27 @@
 				<key>device-id</key>
 				<data>mz4AAA==</data>
 				<key>disable-external-gpu</key>
-				<true/>
+				<data>AQAAAA==</data>
 				<key>enable-backlight-smoother</key>
-				<true/>
+				<data>AQAAAA==</data>
 				<key>enable-lspcon-support</key>
-				<true/>
+				<data>AQAAAA==</data>
 				<key>force-online</key>
-				<true/>
+				<data>AQAAAA==</data>
 				<key>rps-control</key>
-				<true/>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con1-alldata</key>
 				<data>AQUJAAAEAACHAQAA</data>
 				<key>framebuffer-con1-enable</key>
-				<true/>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
 				<data>AgIKAAAIAACHAQAA</data>
 				<key>framebuffer-con2-enable</key>
-				<true/>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-has-lspcon</key>
-				<true/>
+				<data>AQAAAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<true/>
+				<data>AQAAAA==</data>
 				<key>model</key>
 				<string>Intel UHD Graphics 620</string>
 			</dict>
