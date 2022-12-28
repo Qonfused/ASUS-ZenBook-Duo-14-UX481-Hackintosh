@@ -197,6 +197,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
+				<string>[ATKD] FN+F4 - Rename _Q0E to XQ0E</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -226,7 +227,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>Rename _Q0F to XQ0F (Brightness Up)</string>
+				<string>[ATKD] FN+F5 - Rename _Q0F to XQ0F</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -286,7 +287,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>[ETPD] Change _CRS return to use SBFG instead of SBFI, pair with SSDT-ETPD.aml</string>
+				<string>[ETPD] Change _CRS return to use SBFG instead of SBFI</string>
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
@@ -316,7 +317,7 @@
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
-				<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
+				<string>[GPRW] Change Method(GPRW,2,N) to XPRW</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
