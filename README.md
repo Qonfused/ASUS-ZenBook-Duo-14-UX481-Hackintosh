@@ -256,12 +256,12 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
     <tr>
       <td rowspan=6>Continuity</td>
       <td>Airplay to Mac</td>
-      <td style="text-align: center;">❌</td>
-      <td>Unsupported.</td>
+      <td style="text-align: center;">✅</td>
+      <td>Supported.</td>
     <tr>
       <td>Sidecar</td>
-      <td style="text-align: center;">❌</td>
-      <td>Unsupported.</td>
+      <td style="text-align: center;">✅</td>
+      <td>Supported.</td>
     <tr>
       <td>Handoff</td>
       <td style="text-align: center;">✅</td>
@@ -279,8 +279,8 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
     </tr>
     <tr>
       <td>Universal Control</td>
-      <td style="text-align: center;">❌</td>
-      <td>Unsupported.</td>
+      <td style="text-align: center;">✅</td>
+      <td>Supported.</td>
     </tr>
   <!-- Sleep + Wake -->
     <tr>
