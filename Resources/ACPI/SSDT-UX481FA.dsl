@@ -42,21 +42,18 @@ DefinitionBlock ("", "SSDT", 2, "ASUS", "UX481FA", 0x00000000)
     {
         If (_OSI ("Darwin"))
         {
-            ATKP = One
-            ALSE = 0x02
-            HPTE = Zero
-            TPLP = Zero
-            \_SB.SLPB._STA = 0x0B
+            ATKP = One  // Enables Keyboard backlight (KBLD method)
+            ALSE = 0x02 // Enables ambient light sensor device (ALSD _STA method)
+            HPTE = Zero // Enables HPET system timer (HPET _STA method)
+            TPLP = Zero // Enables Screenpad Touchscreen (I2C3.TPL0 _STA method)
+            \_SB.SLPB._STA = 0x0B // Sleep Button
         }
     }
     
     // SSDT-AWAK
     Scope (_SB)
     {
-        If (_OSI ("Darwin"))
-        {
-            STAS = One
-        }
+        If (_OSI ("Darwin")) { STAS = One }
     }
     
     // Disable-Screenpad
