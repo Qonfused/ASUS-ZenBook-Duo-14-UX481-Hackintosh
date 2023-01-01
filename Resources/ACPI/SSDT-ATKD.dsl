@@ -1,52 +1,25 @@
 DefinitionBlock ("", "SSDT", 2, "ASUS", "ATKD", 0x00000000)
 {
-    External (_SB_.ATKD, DeviceObj)
     External (_SB_.ATKD.IANE, MethodObj)
-    External (_SB_.ATKP, DeviceObj)
-    External (_SB_.KBLV, IntObj)
+
     External (_SB_.PCI0.LPCB.EC0_, DeviceObj)
     External (_SB_.PCI0.LPCB.EC0_.ST9E, MethodObj)
     External (_SB_.PCI0.LPCB.EC0_.WEBC, MethodObj)
     
     // ACPI Renames
-    External (_SB_.PCI0.LPCB.EC0_.XQ0D, MethodObj)
-    External (_SB_.PCI0.LPCB.EC0_.XQ0E, MethodObj)
-    External (_SB_.PCI0.LPCB.EC0_.XQ0F, MethodObj)
     External (_SB_.PCI0.LPCB.EC0_.XQ17, MethodObj)
     External (_SB_.PCI0.LPCB.EC0_.XQ18, MethodObj)
     External (_SB_.PCI0.LPCB.EC0_.XQ32, MethodObj)
     External (_SB_.PCI0.LPCB.EC0_.XQ71, MethodObj)
     External (_SB_.PCI0.LPCB.EC0_.XQD5, MethodObj)
     
-    External (_SB_.SPPF, IntObj)
-    External (ATKP, IntObj)
-    External (KFSK, IntObj)
     External (OSYS, IntObj)
-    External (RMDT, DeviceObj)
 
     Name (FNKL, Zero)
     Name (SCPD, Zero)
-    Name (SPMD, Zero)
     Name (SCBL, Zero)
     Name (SCBX, Zero)
     Name (BACT, Zero)
-    Name (DKLV, One)
-
-    Scope (\_SB)
-    {
-        If (_OSI ("Darwin"))
-        {
-            Scope (ATKD)
-            {
-                Method (SKBV, 1, NotSerialized)
-                {
-                    \_SB.KBLV = (Arg0 / 0x10)
-                    \_SB.PCI0.LPCB.EC0.ST9E (0x1F, 0xFF, Arg0)
-                    Return (Arg0)
-                }
-            }
-        }
-    }
 
     Scope (_SB.PCI0.LPCB.EC0)
     {
@@ -71,38 +44,7 @@ DefinitionBlock ("", "SSDT", 2, "ASUS", "ATKD", 0x00000000)
             Else { XQD5 () }
         }
 
-		// FN + F4, Brightness Down
-        Method (_Q0E, 0, NotSerialized)
-        {
-            If (_OSI ("Darwin")) { \_SB.ATKD.IANE (0x20) }
-            Else { XQ0E () }
-        }
-
-		// FN + F5, Brightness Up
-        Method (_Q0F, 0, NotSerialized)
-        {
-            If (_OSI ("Darwin")) { \_SB.ATKD.IANE (0x10) }
-            Else { XQ0F () }
-        }
-
         // FN + F6, ???
-
-        // FN + F7, Keyboard Backlight
-        Method (_Q0D, 0, Serialized)
-        {
-            If (_OSI ("Darwin"))
-            {
-                Switch (ToInteger (KBLV))
-                {
-                    Case (Zero) { DKLV = Zero }
-                    Case (0x0F) { DKLV = One }
-                }
-
-                If ((DKLV == One)) { \_SB.ATKD.IANE (0xC5) }
-                Else { \_SB.ATKD.IANE (0xC4) }
-            }
-            Else { XQ0D () }
-        }
 
         // FN + F8, ???
 
