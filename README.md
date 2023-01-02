@@ -153,21 +153,20 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
     <tr>
       <td>Built-in Trackpad</td>
       <td style="text-align: center;">✅</td>
-      <td>Fully supported (with multi-touch gestures)</td>
+      <td>Fully supported (GPIO pinned with multi-touch gestures)</td>
     </tr>
     <tr>
       <td>(Physical) Trackpad Buttons</td>
       <td style="text-align: center;">🚧</td>
-      <td>Work in progress.</td>
+      <td>Work in progress (VoodooI2C issue; incorrect button map).</td>
     </tr>
     <tr>
       <td rowspan=2>Touchscreen<br>(Primary Display)<br>(Screenpad Plus Display)</td>
-      <td style="text-align: center;">🚧</td>
-      <td>Work in progress.</td>
+      <td style="text-align: center;">✅</td>
+      <td rowspan=2>Fully supported (GPIO pinned with multi-touch gestures)</td>
     </tr>
     <tr>
-      <td style="text-align: center;">🚧</td>
-      <td>Work in progress.</td>
+      <td style="text-align: center;">✅</td>
     </tr>
     <tr>
       <td>Capacitive Stylus</td>
