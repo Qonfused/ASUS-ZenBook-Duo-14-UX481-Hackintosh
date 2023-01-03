@@ -551,8 +551,6 @@
 				<string>Internal@0,2,0</string>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
-				<key>disable-external-gpu</key>
-				<true/>
 				<key>enable-backlight-smoother</key>
 				<true/>
 				<key>enable-lspcon-support</key>
