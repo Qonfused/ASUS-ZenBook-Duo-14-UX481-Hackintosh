@@ -23,7 +23,7 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
 > This repository is still a work in progress.
 >
 > The below versions are recommended for testing:
-> * OpenCore Version: [0.8.7](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.7) (DEBUG version)
+> * OpenCore Version: [0.8.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.8) (DEBUG version)
 > * macOS Version: macOS Monterey 12.4 (Build 21F79, Public Release)
 <table>
   <thead>
