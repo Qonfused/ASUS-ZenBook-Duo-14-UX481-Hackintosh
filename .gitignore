@@ -1,5 +1,6 @@
 .*
 !/.gitignore
+!/.github
 
 # macOS Boot Image
 /com.apple.recovery.boot
@@ -9,15 +10,13 @@ opencore-*[0-9].txt
 
 # local backups for windows restoration
 BACKUP.zip
-MONTEREY.zip
-VENTURA.zip
 
 # macOS specific caches
 /.fseventsd
 /.Spotlight-V100
 /.Trashes
 
-# windows specific caches
+# Windows specific caches
 /$RECYCLE.BIN
 /FOUND.000
 /FOUND.001
