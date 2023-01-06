@@ -8,11 +8,54 @@ body:
 - type: markdown
   attributes:
     value: |
-      Before posting a new issue, please check the [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues?q=is:issue+sort:updated-desc+is:open) and [known issues list](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues?q=is:issue+sort:updated-desc+label:"known+issue"+is:closed) to see if an issue already exists for the bug you encountered.
+      ## Before you begin
+      Please check the [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues?q=is:issue+sort:updated-desc+is:open) and [known issues list](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues?q=is:issue+sort:updated-desc+label:"known+issue"+is:closed) to see if an issue already exists for the bug you encountered.
 
       If you have a question or need help with your configuration, please open a [new discussion](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/discussions/new) instead.
 
       You can check out the project [wiki](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki) for an install/post-install guide, as well guides for various fixes and improvements.
+
+      ----
+- type: dropdown
+  id: variant
+  attributes:
+    label: Zenbook Duo Variant
+    description: What variant(s) of the Zenbook Duo (14", 2019) are you using?
+    multiple: true
+    options:
+      - i7 UX481FL (with Nvidia MX250)
+      - i5 UX481FL (with Nvidia MX250)
+      - i7 UX481FA (without Nvidia MX250)
+      - i5 UX481FA (without Nvidia MX250)
+  validations:
+    required: true
+- type: input
+  id: opencore
+  attributes:
+    label: OpenCore Version
+    description: |
+      What version of OpenCore are you using?
+
+      You can get the current OpenCore version from Terminal by running
+      ```sh
+      nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version
+      ```
+    placeholder: (Example) 0.8.6 Release or REL-086-2022-11-07
+  validations:
+    required: true
+- type: dropdown
+  id: macOS
+  attributes:
+    label: macOS Version
+    description: What macOS version(s) are you seeing the problem on?
+    multiple: true
+    options:
+      - Ventura (macOS 13)
+      - Monterey (macOS 12)
+      - Big Sur (macOS 11)
+      - Catalina (macOS 10.15)
+  validations:
+    required: false
 - type: textarea
   attributes:
     label: Current Behavior
@@ -23,40 +66,6 @@ body:
   attributes:
     label: Expected Behavior
     description: A concise description of what you expected to happen.
-  validations:
-    required: true
-- type: checkboxes
-  id: macOS
-  attributes:
-    label: What macOS version(s) are you seeing the problem on?
-    multiple: true
-    options:
-      - Ventura (macOS 13)
-      - Monterey (macOS 12)
-      - Big Sur (macOS 11)
-      - Catalina (macOS 10.15)
-    value: "(All versions)"
-  validations:
-    required: false
-- type: checkboxes
-  id: variant
-  attributes:
-    label: Zenbook Duo Variant
-    description: What variant(s) of the Zenbook Duo (14", 2019) does this affect?
-    multiple: true
-    options:
-      - i5/i7 UX481FL (with Nvidia MX250)
-      - i5/i7 UX481FA (without Nvidia MX250)
-    value: "(Both variants)"
-  validations:
-    required: false
-- type: textarea
-  attributes:
-    label: EssentialsList
-    description: |
-      Please attach the output of the [EssentialsList](https://github.com/corpnewt/EssentialsList) python script containing debugging info.
-
-      **Tip:** You can attach files by clicking this area to highlight it and then dragging files in.
   validations:
     required: true
 - type: textarea
@@ -76,14 +85,45 @@ body:
     description: |
       Links? References? Anything that will give us more context about the issue you are encountering!
 
-      To improve the readibility of your issue, it's recommended to spoiler long logs that you wish to paste directly into your message.
-      Ex:
+      <details><summary>Here are a list of helpful Terminal commands</summary>
+
+      - Find loaded kexts:
+          ```sh
+          kextstat | grep -v com.apple
+          ```
+      - Show last boot log:
+          ```sh
+          log show --last boot
+          ```
+      - Search for terms in last boot log:
+          ```sh
+          log show --last boot | grep "your search term"
+          ```
+      - Debug ACPI patches:
+          ```sh
+          log show --predicate "processID == 0" --start $(date "+%Y-%m-%d") --debug | grep "ACPI"
+          ```
+      - List ACPI errors:
+          ```sh
+          log show --last boot | grep AppleACPIPlatform
+          ```
+
+      **Tip:** You can pipe output from a command to a new file by appending the below to it:
+      ```sh
+      > ~/Desktop/Log_"$(date '+%Y-%m-%d_%H-%M-%S')".log
       ```
+
+      </details>
+
+      To improve readibility, please spoiler long logs that you wish to paste directly into your message:
+      ```html
       <details>
         <summary>MY LOGFILE</summary>
-        <code>INSERT LOG TEXT HERE</code>
+        <code>LOG TEXT HERE</code>
       </details>
       ```
+
+      Its encouraged to attach the (zip) output of the [EssentialsList](https://github.com/corpnewt/EssentialsList) python script to provide helpful debugging info for contributers.
 
       **Tip:** You can attach images or log files by clicking this area to highlight it and then dragging files in.
   validations:
