@@ -1946,9 +1946,9 @@
 			<key>JumpstartHotPlug</key>
 			<false/>
 			<key>MinDate</key>
-			<integer>-1</integer>
+			<integer>20200306</integer>
 			<key>MinVersion</key>
-			<integer>-1</integer>
+			<integer>1412101001000000</integer>
 		</dict>
 		<key>AppleInput</key>
 		<dict>
