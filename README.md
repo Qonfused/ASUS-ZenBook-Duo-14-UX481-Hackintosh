@@ -48,8 +48,8 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
       </td>
       <td style="text-align: center;">✅</td>
       <td>Fully Supported.</td>
-      <td>13.0 Release (Build 22A380)</td>
-      <td><code>(Latest)</code></td>
+      <td>(None)</td>
+      <td><a href="https://apps.apple.com/us/app/macos-ventura/id1638787999"><code>(Latest)</code></a></td>
     </tr>
   <!-- macOS 12 -->
     <tr>
@@ -64,8 +64,8 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
       </td>
       <td style="text-align: center;">✅</td>
       <td>Fully Supported.</td>
-      <td>12.3 Beta 5 (21E5227a)</td>
-      <td><code>(Latest)</code></td>
+      <td>(None)</td>
+      <td><a href="https://apps.apple.com/us/app/macos-monterey/id1576738294"><code>(Latest)</code></a></td>
     </tr>
   <!-- macOS 11 -->
     <tr>
@@ -78,12 +78,12 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
         />
         macOS Big Sur
       </td>
-      <td style="text-align: center;">🚧</td>
-      <td>Untested.</td>
-      <td>11.0.1 Release (Build 20B29)</td>
-      <td><code>(Latest)</code></td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully Supported.</td>
+      <td>(None)</td>
+      <td><a href="https://apps.apple.com/us/app/macos-big-sur/id1526878132"><code>(Latest)</code></a></td>
     </tr>
-<!-- macOS 11 -->
+<!-- macOS 10.15 -->
     <tr>
       <td>
         <img
@@ -94,10 +94,10 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
         />
         macOS Catalina
       </td>
-      <td style="text-align: center;">🚧</td>
-      <td>Untested.</td>
-      <td>10.15.4 Beta 1 (19E224G)</td>
-      <td><code>(Latest)</code></td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully Supported.</td>
+      <td>10.15.4 Public Release (19E2265)</td>
+      <td><a href="https://apps.apple.com/sg/app/macos-catalina/id1466841314"><code>(Latest)</code></a></td>
     </tr>
 </table>
 
@@ -153,21 +153,20 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
     <tr>
       <td>Built-in Trackpad</td>
       <td style="text-align: center;">✅</td>
-      <td>Fully supported (with multi-touch gestures)</td>
+      <td>Fully supported (GPIO pinned with multi-touch gestures)</td>
     </tr>
     <tr>
       <td>(Physical) Trackpad Buttons</td>
       <td style="text-align: center;">🚧</td>
-      <td>Work in progress.</td>
+      <td>Work in progress (VoodooI2C issue; incorrect button map).</td>
     </tr>
     <tr>
       <td rowspan=2>Touchscreen<br>(Primary Display)<br>(Screenpad Plus Display)</td>
-      <td style="text-align: center;">🚧</td>
-      <td>Work in progress.</td>
+      <td style="text-align: center;">✅</td>
+      <td rowspan=2>Fully supported (GPIO pinned with multi-touch gestures)</td>
     </tr>
     <tr>
-      <td style="text-align: center;">🚧</td>
-      <td>Work in progress.</td>
+      <td style="text-align: center;">✅</td>
     </tr>
     <tr>
       <td>Capacitive Stylus</td>
@@ -256,12 +255,12 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
     <tr>
       <td rowspan=6>Continuity</td>
       <td>Airplay to Mac</td>
-      <td style="text-align: center;">❌</td>
-      <td>Unsupported.</td>
+      <td style="text-align: center;">✅</td>
+      <td>Supported.</td>
     <tr>
       <td>Sidecar</td>
-      <td style="text-align: center;">❌</td>
-      <td>Unsupported.</td>
+      <td style="text-align: center;">✅</td>
+      <td>Supported.</td>
     <tr>
       <td>Handoff</td>
       <td style="text-align: center;">✅</td>
@@ -279,8 +278,8 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
     </tr>
     <tr>
       <td>Universal Control</td>
-      <td style="text-align: center;">❌</td>
-      <td>Unsupported.</td>
+      <td style="text-align: center;">✅</td>
+      <td>Supported.</td>
     </tr>
   <!-- Sleep + Wake -->
     <tr>
