@@ -2,3 +2,33 @@ name: Feature Request
 description: Suggest a new idea for this project.
 title: "[Feature Request]: "
 labels: ["feature-request", "triage"]
+assignees:
+- Qonfused
+body:
+- type: markdown
+  attributes:
+    value: |
+      ## Before you begin
+      Please check the [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues?q=is:issue+sort:updated-desc+is:open) and [known issues list](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues?q=is:issue+sort:updated-desc+label:"known+issue"+is:closed) to see if an issue already exists for your proposal.
+
+      If you have a question or need help with your configuration, please open a [new discussion](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/discussions/new) instead.
+
+      You can check out the project [wiki](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki) for an install/post-install guide, as well guides for various fixes and improvements.
+
+      ----
+- type: textarea
+  id: proposal
+  attributes:
+    label: Proposal
+    description: A concise description of your idea.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Anything else?
+    description: |
+      Links? References? Anything that will give us more context to understand your proposal better!
+
+      **Tip:** You can attach images or files by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: false
