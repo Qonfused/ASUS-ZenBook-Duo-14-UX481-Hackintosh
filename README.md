@@ -48,7 +48,7 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
       </td>
       <td style="text-align: center;">✅</td>
       <td>Fully Supported.</td>
-      <td>(None)</td>
+      <td><code>(None)</code></td>
       <td><a href="https://apps.apple.com/us/app/macos-ventura/id1638787999"><code>(Latest)</code></a></td>
     </tr>
   <!-- macOS 12 -->
@@ -64,7 +64,7 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
       </td>
       <td style="text-align: center;">✅</td>
       <td>Fully Supported.</td>
-      <td>(None)</td>
+      <td><code>(None)</code></td>
       <td><a href="https://apps.apple.com/us/app/macos-monterey/id1576738294"><code>(Latest)</code></a></td>
     </tr>
   <!-- macOS 11 -->
@@ -80,7 +80,7 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
       </td>
       <td style="text-align: center;">✅</td>
       <td>Fully Supported.</td>
-      <td>(None)</td>
+      <td><code>(None)</code></td>
       <td><a href="https://apps.apple.com/us/app/macos-big-sur/id1526878132"><code>(Latest)</code></a></td>
     </tr>
 <!-- macOS 10.15 -->
@@ -96,7 +96,7 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
       </td>
       <td style="text-align: center;">✅</td>
       <td>Fully Supported.</td>
-      <td>10.15.4 Public Release (19E2265)</td>
+      <td><code>10.15.4 Public Release (19E2265)</code></td>
       <td><a href="https://apps.apple.com/sg/app/macos-catalina/id1466841314"><code>(Latest)</code></a></td>
     </tr>
 </table>
@@ -182,8 +182,8 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
     </tr>
     <tr>
       <td>Built-in microphone</td>
-      <td style="text-align: center;">❌</td>
-      <td>Not working.</td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully supported.</td>
     </tr>
   <!-- Camera -->
     <tr>
