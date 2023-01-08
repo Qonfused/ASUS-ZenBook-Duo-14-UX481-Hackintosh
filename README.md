@@ -96,7 +96,7 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
       </td>
       <td style="text-align: center;">✅</td>
       <td>Fully Supported.</td>
-      <td><a href="https://support.apple.com/kb/DL2036?locale=en_US"><code>10.15.4 Public Release (19E2265)</code></a></td>
+      <td><a href="https://support.apple.com/kb/DL2036?locale=en_US"><code>10.15.4 (19E2265)</code></a></td>
       <td><a href="https://apps.apple.com/sg/app/macos-catalina/id1466841314"><code>(Latest)</code></a></td>
     </tr>
 </table>
