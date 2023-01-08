@@ -498,8 +498,6 @@
 				<string>Internal@0,31,3</string>
 				<key>device_type</key>
 				<string>Audio device</string>
-				<key>alc-verbs</key>
-				<data>AQAAAA==</data>
 				<key>layout-id</key>
 				<data>FQAAAA==</data>
 				<key>model</key>
