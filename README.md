@@ -28,7 +28,7 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
 <table>
   <thead>
     <tr>
-      <th>Codebase</th>
+      <th>macOS Version</th>
       <th colspan=2>Status</th>
       <th>Minimum version</th>
       <th>Maximum version</th>
@@ -44,7 +44,7 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
           hspace=2
           align="top"
         />
-        macOS Ventura
+        Ventura
       </td>
       <td style="text-align: center;">✅</td>
       <td>Fully Supported.</td>
@@ -60,7 +60,7 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
           hspace=2
           align="top"
         />
-        macOS Monterey
+        Monterey
       </td>
       <td style="text-align: center;">✅</td>
       <td>Fully Supported.</td>
@@ -76,7 +76,7 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
           hspace=2
           align="top"
         />
-        macOS Big Sur
+        Big Sur
       </td>
       <td style="text-align: center;">✅</td>
       <td>Fully Supported.</td>
@@ -92,11 +92,11 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
           hspace=2
           align="top"
         />
-        macOS Catalina
+        Catalina
       </td>
       <td style="text-align: center;">✅</td>
       <td>Fully Supported.</td>
-      <td><code>10.15.4 Public Release (19E2265)</code></td>
+      <td><a href="https://support.apple.com/kb/DL2036?locale=en_US"><code>10.15.4 Public Release (19E2265)</code></a></td>
       <td><a href="https://apps.apple.com/sg/app/macos-catalina/id1466841314"><code>(Latest)</code></a></td>
     </tr>
 </table>
