@@ -116,7 +116,7 @@ Regarding issue labels:
 
 This project follows the [git flow](http://nvie.com/posts/a-successful-git-branching-model/) branching model of development.
 
-The `origin/master` branch should always reflect a *production-ready* state, while the `origin/dev` branch is an *integration branch* reflecting the latest development changes.
+The `origin/master` branch should always reflect a *production-ready* state, while the `origin/development` branch is an *integration branch* reflecting the latest development changes.
 
 > TODO
 
