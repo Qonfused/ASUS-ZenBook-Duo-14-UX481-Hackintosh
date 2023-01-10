@@ -8,15 +8,8 @@ Hackintosh OpenCore configuration for ASUS ZenBook Duo 14 UX481(FA/FL)
   >
 </p>
 
-
-## License
-See the original repository license (protected under GNU GPL license).
-
-
 ## Current progress
 See this repository's [project board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
-
-All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) from @shiecldk.
 
 ### macOS version support:
 > **Warning**
@@ -300,3 +293,11 @@ All changes are based off the [Zenbook Pro Duo 15" (UX582) OpenCore configuratio
       <td>Fully supported.</td>
     </tr>
 </table>
+
+## License
+[BSD 3-Clause License](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/LICENSE).
+
+## Credits
+
+- [Apple](https://www.apple.com) for macOS
+- [shiecldk](https://github.com/shiecldk) for his work in the original [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) that inspired this project.
