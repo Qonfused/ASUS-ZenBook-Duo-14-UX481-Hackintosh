@@ -294,6 +294,9 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     </tr>
 </table>
 
+## License
+[BSD 3-Clause License](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/LICENSE).
+
 ## Credits
 
 - [Apple](https://www.apple.com) for macOS
