@@ -1,7 +1,7 @@
 name: Bug Report
 description: Create a new bug report to help this project improve.
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["type:bug", "triage"]
 assignees:
 - Qonfused
 body:
@@ -11,7 +11,7 @@ body:
       ## Before you begin
       Please check the [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues?q=is:issue+sort:updated-desc+is:open) and [known issues list](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues?q=is:issue+sort:updated-desc+label:"known+issue"+is:closed) to see if an issue already exists for the bug you encountered.
 
-      If you have a question or need help with your configuration, please open a [new discussion](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/discussions/new) instead.
+      If you have a question or need help with your configuration, please open a [new discussion](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/discussions/new/choose) instead.
 
       You can check out the project [wiki](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki) for an install/post-install guide, as well guides for various fixes and improvements.
 
@@ -23,10 +23,8 @@ body:
     description: What variant(s) of the Zenbook Duo (14", 2019) are you using?
     multiple: true
     options:
-      - i7 UX481FL (with Nvidia MX250)
-      - i5 UX481FL (with Nvidia MX250)
-      - i7 UX481FA (without Nvidia MX250)
-      - i5 UX481FA (without Nvidia MX250)
+      - i5/i7 UX481FL (with Nvidia MX250)
+      - i5/i7 UX481FA (without Nvidia MX250)
   validations:
     required: true
 - type: input
@@ -36,7 +34,7 @@ body:
     description: |
       What version of OpenCore are you using?
 
-      You can get the current OpenCore version from Terminal by running
+      You can get the current OpenCore version on macOS by running the below command in Terminal:
       ```sh
       nvram 4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:opencore-version
       ```
