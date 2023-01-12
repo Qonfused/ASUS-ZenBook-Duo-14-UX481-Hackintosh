@@ -261,8 +261,8 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     </tr>
     <tr>
       <td>Continuity Camera</td>
-      <td style="text-align: center;">❌</td>
-      <td>Unsupported.</td>
+      <td style="text-align: center;">🚧</td>
+      <td>Untested.</td>
     </tr>
     <tr>
       <td>Universal Clipboard</td>
