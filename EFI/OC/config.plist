@@ -341,71 +341,11 @@
 			</dict>
 			<dict>
 				<key>Base</key>
-				<string>\_SB.PCI0.I2C0.TPL1</string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>[GPI0] TPL1 - Rename _CRS to XCRS</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X0NSUw==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WENSUw==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Base</key>
 				<string>\_SB.PCI0.I2C1.ETPD</string>
 				<key>BaseSkip</key>
 				<integer>0</integer>
 				<key>Comment</key>
 				<string>[GPI0] ETPD - Rename _CRS to XCRS</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>X0NSUw==</data>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>OemTableId</key>
-				<data></data>
-				<key>Replace</key>
-				<data>WENSUw==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-				<key>TableLength</key>
-				<integer>0</integer>
-				<key>TableSignature</key>
-				<data></data>
-			</dict>
-			<dict>
-				<key>Base</key>
-				<string>\_SB.PCI0.I2C3.TPL0</string>
-				<key>BaseSkip</key>
-				<integer>0</integer>
-				<key>Comment</key>
-				<string>[GPI0] TPL0 - Rename _CRS to XCRS</string>
 				<key>Count</key>
 				<integer>1</integer>
 				<key>Enabled</key>
@@ -1755,7 +1695,7 @@
 				<key>SystemAudioVolume</key>
 				<data>KA==</data>
 				<key>boot-args</key>
-				<string>-v debug=0x100 keepsyms=1 -liludbg -wegdbg -igfxi2cdbg</string>
+				<string>-v debug=0x100 keepsyms=1 -msgbuf=1048576</string>
 				<key>#Note</key>
 				<string>Generally recommended to set to &lt;00000000&gt; and disable SIP using csrutil via recovery.</string>
 				<key>csr-active-config</key>
