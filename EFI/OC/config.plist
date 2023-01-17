@@ -455,22 +455,22 @@
 				<true/>
 				<key>enable-lspcon-support</key>
 				<true/>
-				<key>force-online</key>
+				<key>#force-online</key>
 				<true/>
-				<key>rps-control</key>
+				<key>#rps-control</key>
 				<true/>
 				<key>framebuffer-con1-alldata</key>
-				<data>AQEJAAAEAACHAQAA</data>
+				<data>AQUJAAAEAADHAwAA</data>
 				<key>framebuffer-con1-enable</key>
-				<integer>1</integer>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-alldata</key>
-				<data>AgIKAAAIAACHAQAA</data>
+				<data>AgIKAAAIAADHAwAA</data>
 				<key>framebuffer-con2-enable</key>
-				<integer>1</integer>
+				<data>AQAAAA==</data>
 				<key>framebuffer-con2-has-lspcon</key>
 				<true/>
 				<key>framebuffer-patch-enable</key>
-				<integer>1</integer>
+				<data>AQAAAA==</data>
 				<key>model</key>
 				<string>Intel UHD Graphics 620</string>
 			</dict>
