@@ -7,6 +7,7 @@
 
 # OpenCore specific caches
 opencore-*[0-9].txt
+!.contentVisibility
 
 # local backups for windows restoration
 BACKUP.zip
