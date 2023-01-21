@@ -50,11 +50,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-KBLU.aml</string>
+				<string>SSDT-KBLC.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-KBLU.aml</string>
+				<string>SSDT-KBLC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
