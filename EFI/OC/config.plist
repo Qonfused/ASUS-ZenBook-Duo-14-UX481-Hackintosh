@@ -80,6 +80,14 @@
 				<key>Path</key>
 				<string>SSDT-SMBUS-MCHC.aml</string>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-SPLC.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SPLC.aml</string>
+			</dict>
 		</array>
 		<key>Delete</key>
 		<array>
