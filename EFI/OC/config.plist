@@ -50,11 +50,11 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-KBLU.aml</string>
+				<string>SSDT-KBLC.aml</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
-				<string>SSDT-KBLU.aml</string>
+				<string>SSDT-KBLC.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -79,6 +79,14 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-SMBUS-MCHC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-SPLC.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-SPLC.aml</string>
 			</dict>
 		</array>
 		<key>Delete</key>
@@ -481,9 +489,9 @@
 				<string>Internal@0,2,0</string>
 				<key>device-id</key>
 				<data>mz4AAA==</data>
-				<key>enable-backlight-smoother</key>
+				<key>enable-backlight-registers-fix</key>
 				<true/>
-				<key>enable-lspcon-support</key>
+				<key>enable-backlight-smoother</key>
 				<true/>
 				<key>#force-online</key>
 				<true/>
@@ -497,8 +505,6 @@
 				<data>AgIKAAAIAADHAwAA</data>
 				<key>framebuffer-con2-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con2-has-lspcon</key>
-				<true/>
 				<key>framebuffer-patch-enable</key>
 				<data>AQAAAA==</data>
 				<key>model</key>
@@ -1135,6 +1141,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/DebugEnhancer</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AnyiSightCam.kext</string>
+				<key>Comment</key>
+				<string>AnyiSightCam.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
