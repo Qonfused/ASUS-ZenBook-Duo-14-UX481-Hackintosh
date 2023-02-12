@@ -87,6 +87,7 @@ NVRAM:
   Add:
     4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:
       revcpu:                         Number  | 1
+      # revcpuname:                     String  | "Intel Core i5-10210U CPU @ 1.60GHz"
       revcpuname:                     String  | "Intel Core i7-10510U CPU @ 1.80GHz"
     7C436110-AB2A-4BBB-A880-FE41995C9F82:
       SystemAudioVolume:              Data    | <28>
@@ -95,17 +96,17 @@ NVRAM:
       prev-lang:kbd:                  String  | "en-US:0"
 PlatformInfo:
   Generic:
-    MLB:                              String  | "{{}}"
+    # MLB:                              String  | "{{}}"
     ProcessorType:                    Number  | 1537
-    ROM:                              Data    | <{{}}>
+    # ROM:                              Data    | <{{}}>
     SystemProductName:                String  | "MacBookPro16,3"
-    SystemSerialNumber:               String  | "{{}}"
-    SystemUUID:                       String  | "{{}}"
+    # SystemSerialNumber:               String  | "{{}}"
+    # SystemUUID:                       String  | "{{}}"
   UpdateSMBIOSMode:                   String  | Custom
 UEFI:
   APFS:
     MinDate:                          Number  | 20200306
-    MinVersiion:                      Number  | 1412101001000000
+    MinVersion:                      Number  | 1412101001000000
   Audio:
     AudioDevice:                      String  | "PciRoot(0x0)/Pci(0x1F,0x3)"
     AudioOutMask:                     Number  | -1
