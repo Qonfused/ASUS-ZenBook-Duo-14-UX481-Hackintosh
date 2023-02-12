@@ -7,7 +7,7 @@ include:
   - ".contentVisibility"
   acpi:
     SSDT-ATKD: "ACPI/SSDT-ATKD.dsl"
-    SSDT-AWAK: "ACPI/SSDT-AWAC.dsl"
+    SSDT-AWAK: "../lib/ACPI/SSDT-AWAC.dsl"
     SSDT-EC-USBX: "../lib/ACPI/SSDT-EC-USBX.dsl"
     SSDT-GPIO: "ACPI/SSDT-GPIO.dsl"
     SSDT-GPU-DISABLE: "ACPI/SSDT-GPU-DISABLE.dsl"
