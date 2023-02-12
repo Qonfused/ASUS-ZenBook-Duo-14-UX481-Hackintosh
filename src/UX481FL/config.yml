@@ -81,6 +81,7 @@ Misc:
     PickerVariant:                    String  | "Acidanthera\GoldenGate"
   Entries:                            Macro   | @Clear
   Security:
+    AllowSetDefault:                  Boolean | true
     ScanPolicy:                       Number  | 0
     Vault:                            String  | "Optional"
 NVRAM:
