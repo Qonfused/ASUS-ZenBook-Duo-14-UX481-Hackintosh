@@ -300,4 +300,4 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
 ## Credits
 
 - [Apple](https://www.apple.com) for macOS
-- [shiecldk](https://github.com/shiecldk) for his work in the original [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) that inspired this project.
+- [shiecldk](https://github.com/shiecldk) for his contributions, and his work in the original [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) that inspired this project.

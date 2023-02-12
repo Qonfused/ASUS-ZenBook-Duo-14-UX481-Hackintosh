@@ -1,0 +1,79 @@
+---
+oc-version: 0.8.8
+oc-build: DEBUG
+---
+include:
+  "*":
+  - ".contentVisibility"
+  acpi:
+    SSDT-ATKD: "ACPI/SSDT-ATKD.dsl"
+    SSDT-AWAK: "ACPI/SSDT-AWAC.dsl"
+    SSDT-EC-USBX: "../lib/ACPI/SSDT-EC-USBX.dsl"
+    SSDT-GPIO: "ACPI/SSDT-GPIO.dsl"
+    SSDT-GPU-DISABLE: "ACPI/SSDT-GPU-DISABLE.dsl"
+    SSDT-KBLC: "ACPI/SSDT-KBLC.dsl"
+    SSDT-PLUG: "../lib/ACPI/SSDT-PLUG.dsl"
+    SSDT-PNLF: "../lib/ACPI/SSDT-PNLF.dsl"
+    SSDT-SMBUS-MCHC: "../lib/ACPI/SSDT-SMBUS-MCHC.dsl"
+    SSDT-SPLC: "ACPI/SSDT-SPLC.dsl"
+  drivers:
+  - AudioDxe
+  - HfsPlus
+  - OpenCanopy
+  - OpenRuntime
+  - ResetNvramEntry
+  kexts:
+    Lilu: latest
+    WhateverGreen: latest
+    AppleALC: latest
+    VirtualSMC: latest
+    AsusSMC: hieplpvip/AsusSMC=latest
+    SMCBatteryManager: "*"
+    SMCProcessor: "*"
+    SMCSuperIO: "*"
+    AirportItlwm-Ventura:
+      specifier: OpenIntelWireless/itlwm=^2.2.0
+      MaxKernel: "22.99.99"
+      MinKernel: "22.0.0"
+    AirportItlwm-Monterey:
+      specifier: OpenIntelWireless/itlwm=^2.2.0
+      MaxKernel: "21.99.99"
+      MinKernel: "21.0.0"
+    AirportItlwm-BigSur:
+      specifier: OpenIntelWireless/itlwm=^2.2.0
+      MaxKernel: "20.99.99"
+      MinKernel: "20.0.0"
+    AirportItlwm-Catalina:
+      specifier: OpenIntelWireless/itlwm=^2.2.0
+      MaxKernel: "19.99.99"
+      MinKernel: "19.0.0"
+    BlueToolFixup: acidanthera/BrcmPatchRAM=latest
+    IntelBluetoothFirmware: OpenIntelWireless/IntelBluetoothFirmware=latest
+    IntelBluetoothInjector:
+      specifier: "*"
+      MaxKernel: "20.99.99"
+    IntelBTPatcher: "*"
+    CpuTscSync: latest
+    DiskArbitrationFixup: "../lib/Kexts/DiskArbitrationFixup.kext"
+    ECEnabler: latest
+    FeatureUnlock: latest
+    HibernationFixup: latest
+    NVMeFix: latest
+    RealtekCardReader: 0xFireWolf/RealtekCardReader=latest
+    RealtekCardReaderFriend: 0xFireWolf/RealtekCardReaderFriend=latest
+    RestrictEvents: latest
+    USBToolBox: USBToolbox/kext=latest
+    UTBMap: "./Kexts/UTBMap.kext"
+    VoodooI2C/VoodooI2CServices: "*"
+    VoodooI2C/VoodooGPIO: "*"
+    VoodooI2C/VoodooInput: "*"
+    VoodooI2C: VoodooI2C/VoodooI2C=latest
+    VoodooI2CHID: "*"
+    VoodooPS2Controller: acidanthera/VoodooPS2=latest
+    VoodooPS2Controller/VoodooPS2Keyboard: "*"
+  tools:
+  - OpenShell
+  config: "./config.yaml"
+exclude:
+  "*":
+  - ".contentFlavour"
