@@ -5,8 +5,8 @@
 DefinitionBlock ("", "SSDT", 2, "UX481", "SPLC", 0x00000000)
 {
     External (_SB_.PCI0.LPCB.EC0_, DeviceObj)
-    External (_SB_.PCI0.LPCB.EC0_.REBC, MethodObj)    // 2 Arguments
-    External (_SB_.PCI0.LPCB.EC0_.WEBC, MethodObj)    // 3 Arguments
+    External (_SB_.PCI0.LPCB.EC0_.REBC, MethodObj)
+    External (_SB_.PCI0.LPCB.EC0_.WEBC, MethodObj)
 
     // Sets default screenpad backlight at max value (0xFF)
     Name (SPBL, Buffer (0x02) { 0x01, 0xFF })
@@ -16,6 +16,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "SPLC", 0x00000000)
     Scope (_SB.PCI0.LPCB.EC0)
     {
         // Screenpad backlight down
+        // Reference: (WMNB, IIA0=0x00050032)
         Method (SPLD, 0, Serialized)
         {
             Local0 = DerefOf (SPBL [One])
@@ -27,6 +28,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "SPLC", 0x00000000)
         }
 
         // Screenpad backlight up
+        // Reference: (WMNB, IIA0=0x00050032)
         Method (SPLU, 0, Serialized)
         {
             Local0 = DerefOf (SPBL [One])
@@ -61,6 +63,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "SPLC", 0x00000000)
         }
 
         // Resets backlight to last recorded value if out of sync or disabled.
+        // Reference: (WMNB, IIA0=0x00050035)
         Method (SPRS, 0, Serialized)
         {
             Local0 = REBC (0x12, 0x02)
@@ -79,6 +82,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "SPLC", 0x00000000)
         }
 
         // Toggles Screenpad connector power
+        // Reference: (WMNB, IIA0=0x00050031)
         Method (SPSW, 0, NotSerialized)
         {
             If (DerefOf (SPBL [Zero]))

@@ -45,7 +45,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "ATKD", 0x00000000)
     Scope (_SB.PCI0.LPCB.EC0)
     {
         // FN + Lock: Toggle
-        // Reference: (WMI: IIA0=0x00100023, IIA1=Zero)
+        // Reference: (WMNB, IIA0=0x00100023)
         Method (_QD5, 0, Serialized)
         {
             If (_OSI ("Darwin"))
@@ -125,6 +125,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "ATKD", 0x00000000)
         }
 
         // FN + F12: Battery charging threshold toggle
+        // Reference: (SRSC)
         Method (_Q18, 0, NotSerialized)
         {
             If (_OSI ("Darwin"))
