@@ -2,7 +2,7 @@
  * Creates a fake EC device for macOS and a USBX device for USB power properties.
  * @see https://dortania.github.io/Getting-Started-With-ACPI/Universal/ec-fix.html
  */
-DefinitionBlock ("", "SSDT", 2, "UX481", "EC-USBX", 0x00001000)
+DefinitionBlock ("", "SSDT", 2, "DRTNIA", "EC-USBX", 0x00001000)
 {
     External (_SB_.PCI0.LPCB, DeviceObj)
 

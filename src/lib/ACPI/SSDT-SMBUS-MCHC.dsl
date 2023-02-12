@@ -2,7 +2,7 @@
  * Re-enables system management bus support in macOS (SMBus/AppleSMBus)
  * @see https://dortania.github.io/Getting-Started-With-ACPI/Universal/smbus.html
  */
-DefinitionBlock ("", "SSDT", 2, "UX481", "SBUSMCHC", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "DRTNIA", "SBUSMCHC", 0x00000000)
 {
     External (_SB_.PCI0.SBUS, DeviceObj)
 

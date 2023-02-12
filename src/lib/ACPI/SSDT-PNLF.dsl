@@ -2,7 +2,7 @@
  * Creates a PNLF device for macOS to store display backlight information.
  * @see https://dortania.github.io/Getting-Started-With-ACPI/Laptops/backlight.html
  */
-DefinitionBlock ("", "SSDT", 2, "UX481", "PNLF", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "DRTNIA", "PNLF", 0x00000000)
 {
     External (_SB_.PCI0.GFX0, DeviceObj)
     External (ALSE, IntObj)
