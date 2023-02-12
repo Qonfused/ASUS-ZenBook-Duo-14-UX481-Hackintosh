@@ -106,7 +106,7 @@ PlatformInfo:
 UEFI:
   APFS:
     MinDate:                          Number  | 20200306
-    MinVersion:                      Number  | 1412101001000000
+    MinVersion:                       Number  | 1412101001000000
   Audio:
     AudioDevice:                      String  | "PciRoot(0x0)/Pci(0x1F,0x3)"
     AudioOutMask:                     Number  | -1

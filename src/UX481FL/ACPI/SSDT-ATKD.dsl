@@ -1,8 +1,8 @@
 /*
- * SSDT for restoring FN keys on macOS for the UX481FL/FA Zenbook Duo.
+ * SSDT for restoring FN keys on macOS for the UX481FA/FL Zenbook Duo.
  * 
  * This SSDT depends on SSDT-KBLC and SSDT-SPLC for keyboard/screenpad backlight
- * control meethods.
+ * control methods.
  */
 DefinitionBlock ("", "SSDT", 2, "UX481", "ATKD", 0x00000000)
 {
@@ -20,13 +20,32 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "ATKD", 0x00000000)
     External (_SB_.PCI0.LPCB.EC0_.XQ31, MethodObj)
     External (_SB_.PCI0.LPCB.EC0_.XQ32, MethodObj)
     External (_SB_.PCI0.LPCB.EC0_.XQD5, MethodObj)
+    External (ATKP, IntObj)
+    External (KFSK, IntObj)
+
+    Scope (_SB)
+    {
+        If (_OSI ("Darwin"))
+        {
+            // Enables media key EC methods (including KBLD and KBLU methods)
+            ATKP = One
+
+            // Sets FN+Lock disable default
+            If ((KFSK == Zero))
+            {
+                \_SB.PCI0.LPCB.EC0.ST9E (0x3C, 0xFF, 0x04)
+            }
+        }
+    }
 
     Name (FNKL, Zero)
     Name (DKLV, One)
     Name (BACT, Zero)
+
     Scope (_SB.PCI0.LPCB.EC0)
     {
         // FN + Lock: Toggle
+        // Reference: (WMI: IIA0=0x00100023, IIA1=Zero)
         Method (_QD5, 0, Serialized)
         {
             If (_OSI ("Darwin"))
