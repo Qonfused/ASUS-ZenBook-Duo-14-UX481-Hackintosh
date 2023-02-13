@@ -47,7 +47,9 @@ include:
       specifier: OpenIntelWireless/itlwm=^2.2.0
       MaxKernel: "19.99.99"
       MinKernel: "19.0.0"
-    BlueToolFixup: acidanthera/BrcmPatchRAM=latest
+    BlueToolFixup:
+      specifier: acidanthera/BrcmPatchRAM=latest
+      MinKernel: "21.0.0"
     IntelBluetoothFirmware: OpenIntelWireless/IntelBluetoothFirmware=latest
     IntelBluetoothInjector:
       specifier: "*"
