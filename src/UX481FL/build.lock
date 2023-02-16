@@ -3,10 +3,10 @@
 # Manual changes might be lost - proceed with caution!
 
 OpenCorePkg:
-  version: 0.8.8
-  url: https://github.com/dortania/build-repo/releases/download/OpenCorePkg-a753334/OpenCore-0.8.8-DEBUG.zip
-  resolution: '@acidanthera/OpenCorePkg@github:0.8.8#a753334'
-  checksum: 919c3cc4201f572f1d4d4860f98567fabb29b903fa33de6eaf6a2cc4fc5786b4
+  version: 0.8.9
+  url: https://github.com/dortania/build-repo/releases/download/OpenCorePkg-29274ba/OpenCore-0.8.9-DEBUG.zip
+  resolution: '@acidanthera/OpenCorePkg@github:0.8.9#29274ba'
+  checksum: c8bc1ed4c50dca826706a29e75a7a395d25c23cb6c41e95f3786bda3b4e97da5
   extract: ./X64/EFI/.
   type: directory
   dependencies:
@@ -25,17 +25,17 @@ Lilu:
   extract: ./Lilu.kext
   type: kext
 WhateverGreen:
-  version: 1.6.4
-  url: https://github.com/dortania/build-repo/releases/download/WhateverGreen-275dac8/WhateverGreen-1.6.4-DEBUG.zip
-  resolution: '@acidanthera/WhateverGreen@github:1.6.4#275dac8'
-  checksum: 71202f006ee0632f204ab08f3a768a91348722ef1812c8c853f57e31654d62bc
+  version: 1.6.5
+  url: https://github.com/dortania/build-repo/releases/download/WhateverGreen-6aaea33/WhateverGreen-1.6.5-DEBUG.zip
+  resolution: '@acidanthera/WhateverGreen@github:1.6.5#6aaea33'
+  checksum: f7fcc663076e6c37c6a491638a7ec98c60e7548e7dce8a463138f2522237eec6
   extract: ./WhateverGreen.kext
   type: kext
 AppleALC:
-  version: 1.7.9
-  url: https://github.com/dortania/build-repo/releases/download/AppleALC-39af701/AppleALC-1.7.9-DEBUG.zip
-  resolution: '@acidanthera/AppleALC@github:1.7.9#39af701'
-  checksum: d5f2f3caf540853a306e7305f4bea6d4a307832eb41574a1a1ae204e0a00981f
+  version: 1.8.0
+  url: https://github.com/dortania/build-repo/releases/download/AppleALC-c2b0228/AppleALC-1.8.0-DEBUG.zip
+  resolution: '@acidanthera/AppleALC@github:1.8.0#c2b0228'
+  checksum: fe9a9b5cad5e5227693a1689c41a3b9466ef053021946ddd9fec5e9981f29fa3
   extract: ./AppleALC.kext
   type: kext
 VirtualSMC:
@@ -46,14 +46,14 @@ VirtualSMC:
   extract: ./Kexts/VirtualSMC.kext
   type: kext
   bundled:
+    SMCSuperIO:
+      extract: ./Kexts/SMCSuperIO.kext
+      type: kext
     SMCBatteryManager:
       extract: ./Kexts/SMCBatteryManager.kext
       type: kext
     SMCProcessor:
       extract: ./Kexts/SMCProcessor.kext
-      type: kext
-    SMCSuperIO:
-      extract: ./Kexts/SMCSuperIO.kext
       type: kext
 AsusSMC:
   version: 1.4.1
@@ -105,11 +105,11 @@ IntelBluetoothFirmware:
   extract: ./IntelBluetoothFirmware.kext
   type: kext
   bundled:
-    IntelBluetoothInjector:
-      extract: ./IntelBluetoothInjector.kext
-      type: kext
     IntelBTPatcher:
       extract: ./IntelBTPatcher.kext
+      type: kext
+    IntelBluetoothInjector:
+      extract: ./IntelBluetoothInjector.kext
       type: kext
 CpuTscSync:
   version: 1.1.0
@@ -126,17 +126,17 @@ ECEnabler:
   extract: ./ECEnabler.kext
   type: kext
 FeatureUnlock:
-  version: 1.1.3
-  url: https://github.com/dortania/build-repo/releases/download/FeatureUnlock-fa7619a/FeatureUnlock-1.1.3-DEBUG.zip
-  resolution: '@acidanthera/FeatureUnlock@github:1.1.3#fa7619a'
-  checksum: d17d3b5cd35e3ac602fdf5799bd096b81819571fbf14980aa8f510550fd54c2a
+  version: 1.1.4
+  url: https://github.com/dortania/build-repo/releases/download/FeatureUnlock-c85c6aa/FeatureUnlock-1.1.4-DEBUG.zip
+  resolution: '@acidanthera/FeatureUnlock@github:1.1.4#c85c6aa'
+  checksum: f96ac4022f0f84aa4f6543df2e99b8da8457965efeacddc1ab0b9c5026ee5208
   extract: ./FeatureUnlock.kext
   type: kext
 HibernationFixup:
-  version: 1.4.8
-  url: https://github.com/dortania/build-repo/releases/download/HibernationFixup-f2891ef/HibernationFixup-1.4.8-DEBUG.zip
-  resolution: '@acidanthera/HibernationFixup@github:1.4.8#f2891ef'
-  checksum: af5c190adfa886ce188132b6bdf1b3ba777a3d28994b9d9e396156bfc6bf1e23
+  version: 1.4.9
+  url: https://github.com/dortania/build-repo/releases/download/HibernationFixup-84833cf/HibernationFixup-1.4.9-DEBUG.zip
+  resolution: '@acidanthera/HibernationFixup@github:1.4.9#84833cf'
+  checksum: 171b89aec324657e3c897cec8dc563a6e39527aac2848d9c5b40abf35798eb23
   extract: ./HibernationFixup.kext
   type: kext
 NVMeFix:
@@ -185,6 +185,7 @@ VoodooI2C:
     VoodooI2CHID:
       extract: ./VoodooI2CHID.kext
       type: kext
+
 VoodooPS2Controller:
   version: 2.3.4
   url: https://github.com/dortania/build-repo/releases/download/VoodooPS2-3f7f910/VoodooPS2Controller-2.3.4-DEBUG.zip
