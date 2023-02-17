@@ -35,3 +35,9 @@ $root
     ├── build.yml       # Build file specifying EFI build details
     └── config.yml      # Build file specifying config.plist build details
 ```
+
+You can verify the output build structure with the below scripts:
+```sh
+# Verify build output for the UX481FA/FL EFI
+bash ./scripts/validate-efi.sh
+```
