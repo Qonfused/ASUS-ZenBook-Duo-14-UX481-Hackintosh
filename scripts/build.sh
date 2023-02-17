@@ -10,11 +10,11 @@
 # Change CWD for imports
 __PWD__=$(pwd); cd "$(realpath $(dirname "${BASH_SOURCE[0]}")/../)"
 
+source ./scripts/lib/constants.sh
 source ./scripts/oc-build/lib/macros.sh
 
 
 # Run build script
-CONFIG=./src/build.yml
 bash ./scripts/oc-build/build.sh -c $CONFIG
 
 # Patch VoodooI2CHID Info.plist
