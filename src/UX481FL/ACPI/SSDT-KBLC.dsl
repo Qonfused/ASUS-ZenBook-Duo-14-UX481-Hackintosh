@@ -12,6 +12,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "KBLC", 0x00000000)
         If (_OSI ("Darwin"))
         {
             // Create keyboard backlight method for writing to EC register.
+            // Reference: (SLKB)
             Method (SKBV, 1, NotSerialized)
             {
                 \_SB.KBLV = (Arg0 / 0x10)

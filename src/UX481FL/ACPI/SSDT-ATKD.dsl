@@ -28,9 +28,11 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "ATKD", 0x00000000)
         If (_OSI ("Darwin"))
         {
             // Enables media key EC methods (including KBLD and KBLU methods)
+            // Reference: (ATKD.INIT)
             ATKP = One
 
             // Sets FN+Lock disable default
+            // Reference: (WMNB, IIA0=0x00100023)
             If ((KFSK == Zero))
             {
                 \_SB.PCI0.LPCB.EC0.ST9E (0x3C, 0xFF, 0x04)
@@ -125,7 +127,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "ATKD", 0x00000000)
         }
 
         // FN + F12: Battery charging threshold toggle
-        // Reference: (SRSC)
+        // Reference: (SRSC; WNMB, IIA0=0x00120057)
         Method (_Q18, 0, NotSerialized)
         {
             If (_OSI ("Darwin"))
