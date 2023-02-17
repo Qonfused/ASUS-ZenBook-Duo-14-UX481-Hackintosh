@@ -11,11 +11,11 @@
 __PWD__=$(pwd); cd "$(realpath $(dirname "${BASH_SOURCE[0]}")/../)"
 
 source ./scripts/lib/constants.sh
-source ./scripts/oc-build/lib/macros.sh
+source ./scripts/lib/oc-build/lib/macros.sh
 
 
 # Run build script
-bash ./scripts/oc-build/build.sh -c $CONFIG
+bash ./scripts/lib/oc-build/build.sh -c $CONFIG
 
 # Patch VoodooI2CHID Info.plist
-bash ./scripts/patch-voodooi2chid.sh
+bash ./scripts/lib/patch-voodooi2chid.sh

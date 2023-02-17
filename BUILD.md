@@ -10,10 +10,10 @@ bash ./scripts/build.sh
 # --- or ---
 
 # Build the UX481FA/FL EFI
-bash ./scripts/oc-build/build.sh -c ./src/build.yml
+bash ./scripts/lib/oc-build/build.sh -c ./src/build.yml
 
 # Apply VoodooI2CHID Info.plist patch
-bash ./scripts/patch-voodooi2chid.sh
+bash ./scripts/lib/patch-voodooi2chid.sh
 ```
 
 ### Build project structure

@@ -15,7 +15,7 @@ source ./scripts/lib/constants.sh
 CONFIG="$__PWD__/$CONFIG"
 
 # Change CWD for imports
-cd $__PWD__; cd "$(realpath $(dirname "${BASH_SOURCE[0]}"))/oc-build"
+cd $__PWD__; cd "$(realpath $(dirname "${BASH_SOURCE[0]}"))/lib/oc-build"
 
 source ./bin/yq/imports.sh
 source ./lib/config.sh

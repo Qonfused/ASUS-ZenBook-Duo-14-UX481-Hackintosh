@@ -8,9 +8,9 @@
 ##
 
 # Change CWD for imports
-__PWD__=$(pwd); cd "$(realpath $(dirname "${BASH_SOURCE[0]}")/../)"
+__PWD__=$(pwd); cd "$(realpath $(dirname "${BASH_SOURCE[0]}")/../../)"
 
-source ./scripts/oc-build/lib/plist.sh
+source ./scripts/lib/oc-build/lib/plist.sh
 
 
 # Apply VoodooI2CHID patch
