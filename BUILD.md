@@ -4,10 +4,15 @@
 
 Execute these commands at the root of the project:
 ```sh
+# Run build pipeline for the UX481FA/FL EFI
+bash ./scripts/build.sh
+
+# --- or ---
+
 # Build the UX481FA/FL EFI
 bash ./scripts/oc-build/build.sh -c ./src/build.yml
 
-# Apply VoodooI2CHID patch
+# Apply VoodooI2CHID Info.plist patch
 bash ./scripts/patch-voodooi2chid.sh
 ```
 
