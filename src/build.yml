@@ -7,14 +7,14 @@ include:
   - ".contentVisibility"
   acpi:
     SSDT-ATKD: "ACPI/SSDT-ATKD.dsl"
-    SSDT-AWAK: "../lib/ACPI/SSDT-AWAC.dsl"
-    SSDT-EC-USBX: "../lib/ACPI/SSDT-EC-USBX.dsl"
+    SSDT-AWAK: "ACPI/SSDT-AWAC.dsl"
+    SSDT-EC-USBX: "ACPI/SSDT-EC-USBX.dsl"
     SSDT-GPIO: "ACPI/SSDT-GPIO.dsl"
     SSDT-dGPU-DISABLE: "ACPI/SSDT-dGPU-DISABLE.dsl"
     SSDT-KBLC: "ACPI/SSDT-KBLC.dsl"
-    SSDT-PLUG: "../lib/ACPI/SSDT-PLUG.dsl"
-    SSDT-PNLF: "../lib/ACPI/SSDT-PNLF.dsl"
-    SSDT-SMBUS-MCHC: "../lib/ACPI/SSDT-SMBUS-MCHC.dsl"
+    SSDT-PLUG: "ACPI/SSDT-PLUG.dsl"
+    SSDT-PNLF: "ACPI/SSDT-PNLF.dsl"
+    SSDT-SMBUS-MCHC: "ACPI/SSDT-SMBUS-MCHC.dsl"
     SSDT-SPLC: "ACPI/SSDT-SPLC.dsl"
   drivers:
   - AudioDxe
@@ -56,7 +56,7 @@ include:
       MaxKernel: "20.99.99"
     IntelBTPatcher: "*"
     CpuTscSync: latest
-    DiskArbitrationFixup: "../lib/Kexts/DiskArbitrationFixup.kext"
+    DiskArbitrationFixup: "./Kexts/DiskArbitrationFixup.kext"
     ECEnabler: latest
     FeatureUnlock: latest
     HibernationFixup: latest
@@ -75,7 +75,6 @@ include:
     VoodooPS2Controller/VoodooPS2Keyboard: "*"
   tools:
   - OpenShell
-  config: "./config.yaml"
 exclude:
   "*":
   - ".contentFlavour"
