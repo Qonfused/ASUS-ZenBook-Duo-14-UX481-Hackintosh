@@ -2,7 +2,7 @@
 Hackintosh OpenCore configuration for ASUS ZenBook Duo 14 UX481(FA/FL)
 <p>
   <img
-    src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/assets/UX481FL.png"
+    src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/UX481FL.png"
     alt="UX481FL"
     class="center"
   >
@@ -32,7 +32,7 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     <tr>
       <td>
         <img
-          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/assets/ventura.png"
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/ventura.png"
           width=25
           hspace=2
           align="top"
@@ -48,7 +48,7 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     <tr>
       <td>
         <img
-          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/assets/monterey.png"
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/monterey.png"
           width=22
           hspace=2
           align="top"
@@ -64,7 +64,7 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     <tr>
       <td>
         <img
-          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/assets/bigsur.png"
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/bigsur.png"
           width=25
           hspace=2
           align="top"
@@ -80,7 +80,7 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     <tr>
       <td>
         <img
-          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/assets/catalina.png"
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/catalina.png"
           width=25
           hspace=2
           align="top"
