@@ -174,8 +174,11 @@ EDID conformity: FAIL
 - **Schematic**: [Asus ZenBook Duo UX481FL Rev 2.0.pdf](https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/resources/schematics/Asus%20ZenBook%20Duo%20UX481FL%20Rev%202.0.pdf)
 - **Boardview**: [UX481FL-W25Q128.BIN](https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/resources/schematics/UX481FL-W25Q128.BIN)
 
-**Parts**:
+**Datasheets**:
+- **BOE NV126B5M-N41**:
+  - https://www.panelook.com/NV126B5M-N41_BOE_12.6_LCM_overview_44187.html
 
+**Parts**:
 
 Item | Image
 --- | :-:
@@ -196,7 +199,6 @@ AC7 | DDI1_AUX#        |                     | DP_AUXP_C
 CN6 | DDPB_HPD0        | GPP_E13             | DP_HPD_PCH_C
 
 #### DP LCD Connector (J4501, Page 31)
-
 Pin | Signal           | PCH GPIO            | EC IT8225 GPIO   | CPU (U0301A)
 --- | ---------------- | ------------------- | ---------------- | ---
 1   | CABC_DP_EN       |                     | GPJ7 (CABC_EN)   |
@@ -233,3 +235,18 @@ Pin | Signal           | PCH GPIO            | EC IT8225 GPIO   | CPU (U0301A)
 32  | GND2             |                     |                  |
 33  | GND3             |                     |                  |
 34  | GND4             |                     |                  |
+
+## Specification
+
+### Intel DDI Specification
+**Datasheets**:
+- **Intel Comet Lake Processors**:
+  - [vol.1-datasheet.pdf](https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/resources/data%20sheets/intel-cometlake-processors/vol.1-datasheet.pdf)
+  - [vol.2-datasheet.pdf](https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/resources/data%20sheets/intel-cometlake-processors/vol.2-datasheet.pdf)
+  - [spec-update.pdf](https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/resources/data%20sheets/intel-cometlake-processors/spec-update.pdf)
+- **Intel 495 Series Chipset**:
+  - [vol.1-datasheet.pdf](https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/resources/data%20sheets/intel-495-series-chipset/vol.1-datasheet.pdf)
+  - [vol.2-datasheet.pdf](https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/resources/data%20sheets/intel-495-series-chipset/vol.2-datasheet.pdf)
+  - [spec-update.pdf](https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/resources/data%20sheets/intel-495-series-chipset/spec-update.pdf)
+- **BOE NV126B5M-N41**:
+  - https://www.panelook.com/NV126B5M-N41_BOE_12.6_LCM_overview_44187.html
