@@ -282,7 +282,7 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
       <td>Supported.</td>
     </tr>
     <tr>
-      <td>Hybernation</td>
+      <td>Hibernation</td>
       <td style="text-align: center;">🚧</td>
       <td>Untested.</td>
     </tr>
