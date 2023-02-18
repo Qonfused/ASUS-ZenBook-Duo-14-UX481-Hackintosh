@@ -8,6 +8,90 @@ Hackintosh OpenCore configuration for ASUS ZenBook Duo 14 UX481(FA/FL)
   >
 </p>
 
+## Quick start
+
+### 1. Clone this repository using Git
+
+To clone this repository locally with submodules:
+```sh
+# git versions 2.8+ (newest)
+git clone --recurse-submodules -j8 git@github.com:Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh.git
+
+# git versions 1.6.5 to 2.12
+git clone --recursive git@github.com:Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh.git
+
+# git versions <1.6.5 (older)
+git clone git@github.com:Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh.git
+git submodule update --init --recursive
+```
+
+> **Note**: Optionally, you can add the following git aliases to always resolve submodules:
+> ```sh
+> # git versions 2.8+ (newest)
+> git config --global alias.clone-all 'clone --recurse-submodules'
+> git config --global alias.pull-all 'pull --recurse-submodules'
+> 
+> # git versions 1.6.5 to 2.12
+> git config --global alias.clone-all 'clone --recursive'
+> git config --global alias.pull-all 'pull --recursive'
+> ```
+
+Change directory to project root:
+```sh
+cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
+```
+
+### 2. Build this repository using oc-build
+
+#### Build project structure
+```
+$root
+├── dist                # Contains built EFI and pre/post-install scripts
+|   ├── EFI
+|   └── scripts
+├── scripts             # Project build and post-build scripts
+|   ├── lib
+|   |   └── oc-build    # Contains oc-build tool for running EFI builds
+|   ├── build.sh
+|   └── verify-efi.sh
+└── src                 # Contains project SSDTs/Kexts and build files
+    ├── ACPI
+    ├── Kexts
+    ├── build.lock      # Lockfile generated after each build
+    ├── build.yml       # Build file specifying EFI build details
+    └── config.yml      # Build file specifying config.plist build details
+```
+
+#### Building this project
+
+> **Note** These commands must be run in a linux or macOS environment.
+> 
+> For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to wsl2.
+
+To build this project's EFI, execute the below command(s) at the root of the project:
+```sh
+# Run build pipeline for the UX481FA/FL EFI
+bash ./scripts/build.sh
+
+# --- or ---
+
+# Build the UX481FA/FL EFI
+bash ./scripts/lib/oc-build/build.sh -c ./src/build.yml
+
+# Apply VoodooI2CHID Info.plist patch
+bash ./scripts/lib/patch-voodooi2chid.sh
+```
+
+You can manually validate the EFI build with the below script:
+```sh
+# Verify build output for the UX481FA/FL EFI
+bash ./scripts/validate-efi.sh
+```
+
+#### 3. Using this EFI with macOS
+
+Refer to the [Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Install-Guide) and [Post-Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Post-Install-Guide) for installation instructions.
+
 ## Current progress
 See this repository's [project board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
 
@@ -134,14 +218,14 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     <tr>
       <td>12.6" Screenpad Plus Display<br>(IPS, 1920x515 @ 60 Hz)</td>
       <td style="text-align: center;">🚧</td>
-      <td>Work in progress.</td>
+      <td>Work in progress (with backlight control).</td>
     </tr>
   <!-- Interfaces -->
     <tr>
       <td rowspan=6>Interfaces</td>
       <td>Built-in Keyboard</td>
       <td style="text-align: center;">✅</td>
-      <td>Fully supported (with media keys).</td>
+      <td>Fully supported (with media keys and backlight control).</td>
     </tr>
     <tr>
       <td>Built-in Trackpad</td>
@@ -182,8 +266,8 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     <tr>
       <td>Camera</td>
       <td>Windows Hello HD Camera</td>
-      <td style="text-align: center;">❌</td>
-      <td>Not working.</td>
+      <td style="text-align: center;">🚧</td>
+      <td>Work in progress.</td>
     </tr>
   <!-- Wi-Fi + Bluetooth -->
     <tr>
@@ -219,16 +303,14 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     <tr>
       <td>AC Power Adapter</td>
       <td style="text-align: center;">✅</td>
-      <td>Fully supported (with charge limit features).</td>
+      <td>Fully supported (with hotplug and charge limit feature).</td>
     </tr>
   </tbody>
 </table>
 
 
 ### Software features:
-> **Note** Please follow the below instructions before using this repository.
-> 
-> Please download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and follow [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) for generating SMBIOS data for enabling iServices functionality.
+> **Note** To enable iServices functionality, download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and follow [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) for generating SMBIOS data for your machine.
 <table>
   <thead>
     <tr>
