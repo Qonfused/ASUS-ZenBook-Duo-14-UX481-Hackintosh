@@ -1,23 +1,24 @@
-# ASUS-ZenBook-Duo-14-UX481-Hackintosh
-Hackintosh OpenCore configuration for ASUS ZenBook Duo 14 UX481(FA/FL)
-<p>
+<h1 align="center">ASUS ZenBook Duo 14 UX481 Hackintosh</h1>
+<br>
+<p align="center">
   <img
-    src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/UX481FL.png"
-    alt="UX481FL"
-    class="center"
-  >
+      src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/README/UX481FL.png"
+      alt="UX481FL"
+      class="center"
+      width=500px
+    >
+  <br>
+  A <b>Hackintosh</b> project for the <b>ASUS ZenBook Duo 14</b> (2019, UX481FA/FL) built on top of the <a href="https://github.com/acidanthera/OpenCorePkg">OpenCore</a> bootloader and <a href="https://github.com/Qonfused/OC-Build">OC-Build</a> build manager.
 </p>
 
-## Current progress
-See this repository's [project board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
+## ⚙️ Current Progress
+
+> **Note** This repository is still a work in progress.
+>
+> See this repository's [project board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
 
 ### macOS version support:
-> **Warning**
-> This repository is still a work in progress.
->
-> The below versions are recommended for testing:
-> * OpenCore Version: [0.8.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.8) (DEBUG version)
-> * macOS Version: macOS Monterey 12.4 (Build 21F79, Public Release)
+
 <table>
   <thead>
     <tr>
@@ -32,7 +33,7 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     <tr>
       <td>
         <img
-          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/ventura.png"
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/README/ventura.png"
           width=25
           hspace=2
           align="top"
@@ -48,7 +49,7 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     <tr>
       <td>
         <img
-          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/monterey.png"
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/README/monterey.png"
           width=22
           hspace=2
           align="top"
@@ -64,7 +65,7 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     <tr>
       <td>
         <img
-          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/bigsur.png"
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/README/bigsur.png"
           width=25
           hspace=2
           align="top"
@@ -80,7 +81,7 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     <tr>
       <td>
         <img
-          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/catalina.png"
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/README/catalina.png"
           width=25
           hspace=2
           align="top"
@@ -226,7 +227,8 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
 
 
 ### Software features:
-> **Note** To enable iServices functionality, download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and follow [this guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) for generating SMBIOS data for your machine.
+
+> **Note** To enable iServices functionality, download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and [generate SMBIOS data](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) for your machine.
 <table>
   <thead>
     <tr>
@@ -292,7 +294,7 @@ See this repository's [project board](https://github.com/users/Qonfused/projects
     </tr>
 </table>
 
-## Quick start
+## ⚡ Getting Started
 
 ### 1. Clone this repository using Git
 
@@ -325,30 +327,8 @@ Change directory to project root:
 cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
 ```
 
-### 2. Build this repository using oc-build
-
-#### Build project structure
-```
-$root
-├── dist                # Contains built EFI and pre/post-install scripts
-|   ├── EFI
-|   └── scripts
-├── scripts             # Project build and post-build scripts
-|   ├── lib
-|   |   └── oc-build    # Contains oc-build tool for running EFI builds
-|   ├── build.sh
-|   └── verify-efi.sh
-└── src                 # Contains project SSDTs/Kexts and build files
-    ├── ACPI
-    ├── Kexts
-    ├── build.lock      # Lockfile generated after each build
-    ├── build.yml       # Build file specifying EFI build details
-    └── config.yml      # Build file specifying config.plist build details
-```
-
-#### Building this project
-
-> **Note** These commands must be run in a linux or macOS environment.
+### 2. Build this repository using OC-Build
+> **Note** **OC-Build** must be run in a Linux or macOS environment.
 > 
 > For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
 >
@@ -360,7 +340,7 @@ $root
 >    - Install with `sudo apt install acpica-tools`
 >    - Verify with `iasl -v`
 
-To build this project's EFI, execute the below command(s) at the root of the project:
+To build this project's EFI, run the below command(s) at the root of the project:
 ```sh
 # Run build pipeline for the UX481FA/FL EFI
 bash ./scripts/build.sh
@@ -381,13 +361,14 @@ bash ./scripts/validate-efi.sh
 ```
 
 #### 3. Using this EFI with macOS
-
 Refer to the [Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Install-Guide) and [Post-Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Post-Install-Guide) for installation instructions.
 
-## License
+## 🔥 Contributing
+Refer to [CONTRIBUTING.md](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/docs/CONTRIBUTING.md) for instructions on making contributions to this project.
+
+## ⚖️ License
 [BSD 3-Clause License](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/LICENSE).
 
-## Credits
-
+## 🌟 Credits
 - [Apple](https://www.apple.com) for macOS
 - [shiecldk](https://github.com/shiecldk) for his contributions, and his work in the original [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) that inspired this project.

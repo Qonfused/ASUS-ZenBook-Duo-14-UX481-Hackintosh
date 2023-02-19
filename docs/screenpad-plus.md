@@ -100,9 +100,9 @@
 
 **References**:
 - [linuxhw EDID](https://github.com/linuxhw/EDID) repo:
-  - MFG 	| Model 	| Name 	| Res 	| Inch 	| Made 	| ID
-    --- | --- | --- | --- | --- | --- | ---
-    BOE 	| BOE087F 	| HF NV126B5M-N41 	| 1920 x 515 	| 12.6 	| 2019 	|[46E74341751E](https://github.com/linuxhw/EDID/blob/master/Digital/BOE/BOE087F/46E74341751E)
+  MFG | Model | Name | Res | Inch | Made | ID
+  --- | --- | --- | --- | --- | --- | ---
+  BOE | BOE087F | HF NV126B5M-N41 | 1920 x 515 | 12.6 | 2019 |[46E74341751E](https://github.com/linuxhw/EDID/blob/master/Digital/BOE/BOE087F/46E74341751E)
 
 #### edid-decode output
 
@@ -182,7 +182,7 @@ EDID conformity: FAIL
 
 Item | Image
 --- | :-:
-[Asus Screen module blue touch screenpad FHD 12](https://en.accessoires-asus.com/asus-screen-module-blue-touch-screenpad-fhd-12-72395-75839.htm)<br><br>SKU: `MODULESCREENPADUX481BLUEFHD`<br>P/N: `90NB0P61-R20010`<br><br>EDP Cable reference: `1422-03ER0AS` | ![back-screenpad-topcase](https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/annotations/MODULESCREENPADUX481BLUEFHD-1.png)
+[Asus Screen module blue touch screenpad FHD 12](https://en.accessoires-asus.com/asus-screen-module-blue-touch-screenpad-fhd-12-72395-75839.htm)<br><br>SKU: `MODULESCREENPADUX481BLUEFHD`<br>P/N: `90NB0P61-R20010`<br><br>EDP Cable reference: `1422-03ER0AS` | ![back-screenpad-topcase](https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/MODULESCREENPADUX481BLUEFHD-1.png)
 [Asus Touch controller card for UX481FLY](https://en.accessoires-asus.com/asus-touch-controller-card-68447-72557.htm)<br><br>SKU: `TOUCHCONTBDUX481`<br>P/N: `90NB0P60-R10020`<br>Model: `60NB0P60-TP1020` | ![touch-controller](https://user-images.githubusercontent.com/32466081/184637888-8545964c-e64b-4db9-be64-bf17745431ba.png)
 
 #### CPU - Display Signals (U0301A, Page 3)
@@ -238,7 +238,6 @@ Pin | Signal           | PCH GPIO            | EC IT8225 GPIO   | CPU (U0301A)
 
 ## Specification
 
-### Intel DDI Specification
 **Datasheets**:
 - **Intel Comet Lake Processors**:
   - [vol.1-datasheet.pdf](https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/resources/data%20sheets/intel-cometlake-processors/vol.1-datasheet.pdf)
@@ -250,3 +249,5 @@ Pin | Signal           | PCH GPIO            | EC IT8225 GPIO   | CPU (U0301A)
   - [spec-update.pdf](https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/resources/data%20sheets/intel-495-series-chipset/spec-update.pdf)
 - **BOE NV126B5M-N41**:
   - https://www.panelook.com/NV126B5M-N41_BOE_12.6_LCM_overview_44187.html
+
+### Intel DDI Specification
