@@ -358,7 +358,7 @@ $root
 >    - Verify with `bsdtar --version`
 >  - **iasl**
 >    - Install with `sudo apt install acpica-tools`
->    - Verify with `iasl --version`
+>    - Verify with `iasl -v`
 
 To build this project's EFI, execute the below command(s) at the root of the project:
 ```sh
