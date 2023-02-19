@@ -66,7 +66,15 @@ $root
 
 > **Note** These commands must be run in a linux or macOS environment.
 > 
-> For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to wsl2.
+> For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
+>
+> For Linux users (or wsl), ensure you have the following commands available:
+>  - **bsdtar**
+>    - Install with `sudo apt install libarchive-tools`
+>    - Verify with `bsdtar --version`
+>  - **iasl**
+>    - Install with `sudo apt install acpica-tools`
+>    - Verify with `iasl --version`
 
 To build this project's EFI, execute the below command(s) at the root of the project:
 ```sh
