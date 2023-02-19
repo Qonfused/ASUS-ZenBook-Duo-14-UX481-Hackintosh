@@ -64,9 +64,12 @@ while read -r dir; do
       ((errors++)); echo "File '$key.$ext' missing from $dir."
     fi
     # Check if entry in config.plist exists
-    enabled=$([[ -z $(IS_EXCLUDED $key) ]] && echo 'true' || echo 'false')
-    entry=$(grep -oz ".*<key>Comment</key>\n.*<string>$key</string>\n.*<key>Enabled</key>\n.*<$enabled/>" <<< "$(cat EFI/OC/config.plist)")
-    if [[ -z "$entry" ]]; then
+    entry=$(grep -oz "<key>Comment</key>\n[^\<]*<string>$key</string>" <<< "$(cat EFI/OC/config.plist)")
+    if [[ -z $entry ]]; then
+      # Handle null bytes
+      entry=$(grep -oz "<key>Comment</key>[^\<]*<string>$key</string>" <<< "$(cat EFI/OC/config.plist)" | tr -d '\0')
+      if [[ $entry ]]; then continue; fi
+      # Report missing entries
       ((errors++)); echo "Entry for '$key.$ext' missing from config.plist"
     fi
   done <<< "$INCLUDE"

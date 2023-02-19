@@ -185,7 +185,6 @@ VoodooI2C:
     VoodooI2CHID:
       extract: ./VoodooI2CHID.kext
       type: kext
-
 VoodooPS2Controller:
   version: 2.3.4
   url: https://github.com/dortania/build-repo/releases/download/VoodooPS2-3f7f910/VoodooPS2Controller-2.3.4-DEBUG.zip
