@@ -14,8 +14,8 @@ Hackintosh OpenCore configuration for ASUS ZenBook Duo 14 UX481(FA/FL)
 
 To clone this repository locally with submodules:
 ```sh
-# git versions 2.8+ (newest)
-git clone --recurse-submodules -j8 https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh
+# git versions >2.12 to 2.8+ (newest)
+git clone --recurse-submodules https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh
 
 # git versions 1.6.5 to 2.12
 git clone --recursive https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh
@@ -27,7 +27,7 @@ git submodule update --init --recursive
 
 > **Note**: Optionally, you can add the following git aliases to always resolve submodules:
 > ```sh
-> # git versions 2.8+ (newest)
+> # git versions >2.12 to 2.8+ (newest)
 > git config --global alias.clone-all 'clone --recurse-submodules'
 > git config --global alias.pull-all 'pull --recurse-submodules'
 > 
