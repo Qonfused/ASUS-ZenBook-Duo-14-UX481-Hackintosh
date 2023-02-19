@@ -13,7 +13,8 @@ This minor version incorporates a project overhaul from the [#36 PR](https://git
 Refer to [README.md#Getting-Started](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/docs/README.md#-getting-started) for upgrade and build instructions.
 
 ### Changed
-- Updated OpenCore version to version 0.8.9 ([`#36@0e5793a`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/0e5793ae101c74b7131b7a1be90267acabb92fb1))
+- Updated OpenCore to version 0.8.9 ([`#36@0e5793a`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/0e5793ae101c74b7131b7a1be90267acabb92fb1))
+- Updated VoodooI2C Kext to version [2.8](https://github.com/VoodooI2C/VoodooI2C/releases/tag/2.8) w/ macOS 13+ crash fixes.
 
 ### Added
 - Added new OC-Build project structure and build script ([`#36@1da43cc`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/1da43ccd5627330de2a871bdd356ed1d14c235e5))
