@@ -1,8 +1,9 @@
 .*
+!/.github/
+!/.vscode/
+!/.gitattributes
 !/.gitignore
 !/.gitmodules
-!/.github
-!/.vscode
 
 # Build artifacts
 /dist
