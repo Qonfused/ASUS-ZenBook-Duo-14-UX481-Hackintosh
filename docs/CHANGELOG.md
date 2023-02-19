@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.5.0] - 2023-02-19
 
-This minor version incorporates a project overhaul from the [#36 PR](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36) for incorporating the OC-Build manager into the project.
+This minor version incorporates a project overhaul from the [#36 PR](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36) for incorporating the OC-Build manager by [**@Qonfused**](https://github.com/Qonfused) into the project.
 
 ### Changed
 - Added new OC-Build project structure and build script for UX481FL ([`#36@1da43cc`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/1da43ccd5627330de2a871bdd356ed1d14c235e5))
@@ -57,7 +57,7 @@ This minor version includes refactors for Windows multi-boot compatibility, incl
 
 ### Fixed
 - Resolved ALS confict with keyboard backlight ([`6c1dd86`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/6c1dd86e0d9ef729ba390d061d464f4e76b08c60))
-- Fixed built-in microphone ([`a162265`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/a162265cc4767df13f7de9ec45e4fbeb9ccbe90f)) (Thanks for @LeongWZ's direction!)
+- Fixed built-in microphone ([`a162265`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/a162265cc4767df13f7de9ec45e4fbeb9ccbe90f)) (Thanks for [**@LeongWZ**](https://github.com/LeongWZ)'s direction!)
 - Fix BTFixup dependency load issue ([`555b002`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/555b0027a9cd24baaeeef2c11a3c1d9bd01f48ef))
 - Fix VoodooI2C Services + GPIO load order ([`263f279`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/263f279f57f1237f598c0ae7b36688a7cd1e5248))
 - Resolve Kext OSBundleLibraries order manually ([`5bd4419`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/5bd441973f2ebbd18de129845f30f45b728ea431))
@@ -65,11 +65,11 @@ This minor version includes refactors for Windows multi-boot compatibility, incl
 
 ## [0.3.0] - 2023-01-05
 
-This minor version includes a major ACPI overhaul from [#19 PR](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19), incorporating ATKD/WMI methods from @wern-apfel. This includes an overhaul of previous/legacy SSDTs, along with with many ACPI, Kext, and Driver refactors.
+This minor version includes a major ACPI overhaul from [#19 PR](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19), incorporating ATKD/WMI methods from [**@wern-apfel**](https://github.com/wern-apfel). This includes an overhaul of previous/legacy SSDTs, along with with many ACPI, Kext, and Driver refactors.
 
 ### Changed
 - Update OpenCore to version 0.8.8 ([`#19@aae14c8`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/aae14c88d759d5dca77ade45b61ae74a50c39196))
-- Added ATKD w/ keyboard backlight EC functions from ([`4668403`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/466840358ea5321cbfcd408e788ed47bcdd043be)) (Thanks to @wern-apfel!)
+- Added ATKD w/ keyboard backlight EC functions from ([`4668403`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/466840358ea5321cbfcd408e788ed47bcdd043be)) (Thanks to [**@wern-apfel**](https://github.com/wern-apfel)!)
 
 ### Added
 - Add FeatureUnlock kext for Sidecar/etc. support ([`#19@424fbf8`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/424fbf8b44cc29db14b29dd708f4a534ad864b5a))
@@ -88,7 +88,7 @@ This minor version includes a major ACPI overhaul from [#19 PR](https://github.c
 ### Fixed
 - Fix LoadEarly driver values w/o OpenVariableRuntimeDxe ([`#19@4401757`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/44017571c00f8509603dfeea9cbb58b8cc4438d3))
 - Resolved native backlight handling with WhateverGreen ([`#19@6ed835d`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/6ed835db5192748d4e8bb925a819ac1547129000))
-- Added null check for SSDT-GPU-DISABLE per @UsedDiscord's suggestion ([`#19@a4d38da`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/a4d38dafc5c572a20adc726a4c3f8518a6cef0f5))
+- Added null check for SSDT-GPU-DISABLE per [**@UsedDiscord**](https://github.com/UsedDiscord)'s suggestion ([`#19@a4d38da`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/a4d38dafc5c572a20adc726a4c3f8518a6cef0f5))
 - Fix BluetoolFixup kext dependency order ([`7a5ba8f`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/7a5ba8fa45293cb446bbbe56f95200aa8494ce2f))
 
 ## [0.2.0] - 2022-12-18
@@ -110,7 +110,7 @@ This minor version includes small fixes for upgrading to OpenCore version 0.8.7,
 
 ## [0.1.0] - 2022-11-30
 
-This minor version includes a major overhaul for this project, incorporating new changes from OpenCore version 0.8.6. This verison removes many old or undocumented config.plist settings from @shiecldk's UX582 repo.
+This minor version includes a major overhaul for this project, incorporating new changes from OpenCore version 0.8.6. This verison removes many old or undocumented config.plist settings from [**@shiecldk**](https://github.com/shiecldk)'s UX582 repo.
 
 ### Breaking Changes
 - Overhauled base config for OpenCore version 0.8.6 ([#14](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/14))
@@ -126,7 +126,7 @@ This minor version includes a major overhaul for this project, incorporating new
 
 ## [0.0.1] - 2022-08-28
 
-This patch version incorporates many necessary changes for booting into macOS using the UX481FA/FL models from the base UX582 config from @shiecldk.
+This patch version incorporates many necessary changes for booting into macOS using the UX481FA/FL models from the base UX582 config from [**@shiecldk**](https://github.com/shiecldk).
 
 ### Changed
 - Replaced USB mapping with UX481 USB map w/ USBToolBox ([`7a03f24`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/7a03f240f5ba2960739ecad1cfd39bacba73d7ec))
