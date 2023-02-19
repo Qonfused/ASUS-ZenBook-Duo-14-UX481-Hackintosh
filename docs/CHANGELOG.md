@@ -89,7 +89,7 @@ This minor version includes a major ACPI overhaul from [#19 PR](https://github.c
 - Fix LoadEarly driver values w/o OpenVariableRuntimeDxe ([`#19@4401757`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/44017571c00f8509603dfeea9cbb58b8cc4438d3))
 - Resolved native backlight handling with WhateverGreen ([`#19@6ed835d`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/6ed835db5192748d4e8bb925a819ac1547129000))
 - Added null check for SSDT-GPU-DISABLE per @UsedDiscord's suggestion ([`#19@a4d38da`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/a4d38dafc5c572a20adc726a4c3f8518a6cef0f5))
-- Fix BluetoolFixup kext dependency order ([`7a5ba8f`]https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/7a5ba8fa45293cb446bbbe56f95200aa8494ce2f)
+- Fix BluetoolFixup kext dependency order ([`7a5ba8f`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/7a5ba8fa45293cb446bbbe56f95200aa8494ce2f))
 
 ## [0.2.0] - 2022-12-18
 
