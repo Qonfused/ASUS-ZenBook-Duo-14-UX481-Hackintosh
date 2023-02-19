@@ -10,14 +10,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 This minor version incorporates a project overhaul from the [#36 PR](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36) for incorporating the [OC-Build](https://github.com/Qonfused/OC-Build) manager by [**@Qonfused**](https://github.com/Qonfused) into the project. This includes minor updates for OpenCore version [0.8.9](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.9).
 
+Refer to [README.md#Getting-Started](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/docs/README.md#-getting-started) for upgrade and build instructions.
+
 ### Changed
-- Added new OC-Build project structure and build script for UX481FL ([`#36@1da43cc`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/1da43ccd5627330de2a871bdd356ed1d14c235e5))
 - Updated OpenCore version to version 0.8.9 ([`#36@0e5793a`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/0e5793ae101c74b7131b7a1be90267acabb92fb1))
 
 ### Added
+- Added new OC-Build project structure and build script ([`#36@1da43cc`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/1da43ccd5627330de2a871bdd356ed1d14c235e5))
 - Added VoodooI2CHID patch script ([`#36@97bdedd`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/97bdeddc7cb180f5e12b3355afce88b71215cd2b))
-- Added 10th gen CML datasheets ([`#36@f693ea3`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/f693ea3231e59f28d38f92ccbdba9ffae02c8458))
 - Added validate-efi script ([`#36@a0e68fb`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/a0e68fb9fd63ea83803061fa636c02614ec4d3f3))
+- Added 10th gen CML datasheets ([`#36@f693ea3`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/f693ea3231e59f28d38f92ccbdba9ffae02c8458))
 - Added ScreenPad-Plus docs ([`#36@975690a`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/975690a22fe9377e459397d935567713c657b3dd))
 
 ### Removed
@@ -26,7 +28,6 @@ This minor version incorporates a project overhaul from the [#36 PR](https://git
 ### Fixed
 - Re-enable default boot entry support ([`#36@433b7c6`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/433b7c6fc40ef149a2742912a79313b68d8b7d2f))
 - Changed BluetoolFixup restriction to macOS 12+ ([`#36@e397620`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/e3976205a69052a45baa46c0fb8c42c9890a4b5f))
-- Linux and wsl support for OC-Build tool ([`#36@a36ae1a`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/a36ae1a958a4a9b13a12bf60fde029a4e2376dba))
 
 ## [0.4.1] - 2023-02-05
 

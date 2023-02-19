@@ -18,7 +18,6 @@
 > See this repository's [project board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
 
 ### macOS version support:
-
 <table>
   <thead>
     <tr>
@@ -227,7 +226,6 @@
 
 
 ### Software features:
-
 > **Note** To enable iServices functionality, download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and [generate SMBIOS data](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) for your machine.
 <table>
   <thead>
@@ -328,43 +326,58 @@ cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
 ```
 
 ### 2. Build this repository using OC-Build
-> **Note** **OC-Build** must be run in a Linux or macOS environment.
-> 
-> For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
+**OC-Build** must be run in a Linux or macOS environment.
+
+> **Note** You
+> may need to upgrade your git version manually in order for sparse git cloning
+> to work with the OC-Build script (required).
 >
-> For Linux users (or wsl), ensure you have the following commands available:
->  - **bsdtar**
->    - Install with `sudo apt install libarchive-tools`
->    - Verify with `bsdtar --version`
->  - **iasl**
->    - Install with `sudo apt install acpica-tools`
->    - Verify with `iasl -v`
+> Standard package repos on Ubuntu install git version 2.25.1 by default. You can upgrade your git version to the latest release candidate by running:
+> ```sh
+> sudo add-apt-repository ppa:git-core/candidate
+> sudo apt update
+> ```
+>
+> Refer to https://launchpad.net/~git-core/+archive/ubuntu/candidate for more info.
+
+For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
+
+For Linux users (or wsl), ensure you have the following commands available:
+- **cURL**
+  - Install with `sudo apt install curl`
+  - Verify with `curl --version`
+- **bsdtar**
+  - Install with `sudo apt install libarchive-tools`
+  - Verify with `bsdtar --version`
+- **iasl**
+  - Install with `sudo apt install acpica-tools`
+  - Verify with `iasl -v`
 
 To build this project's EFI, run the below command(s) at the root of the project:
 ```sh
 # Run build pipeline for the UX481FA/FL EFI
-bash ./scripts/build.sh
+bash scripts/build.sh
 
 # --- or ---
 
 # Build the UX481FA/FL EFI
-bash ./scripts/lib/oc-build/build.sh -c ./src/build.yml
+bash scripts/lib/oc-build/build.sh -c src/build.yml
 
 # Apply VoodooI2CHID Info.plist patch
-bash ./scripts/lib/patch-voodooi2chid.sh
+bash scripts/lib/patch-voodooi2chid.sh
 ```
 
 You can manually validate the EFI build with the below script:
 ```sh
 # Verify build output for the UX481FA/FL EFI
-bash ./scripts/validate-efi.sh
+bash scripts/validate-efi.sh
 ```
 
 #### 3. Using this EFI with macOS
 Refer to the [Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Install-Guide) and [Post-Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Post-Install-Guide) for installation instructions.
 
 ## 🔥 Contributing
-Refer to [CONTRIBUTING.md](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/docs/CONTRIBUTING.md) for instructions on making contributions to this project.
+Contributions to this project are always welcome! Refer to [CONTRIBUTING.md](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/docs/CONTRIBUTING.md) for instructions (and tips) on making contributions to this project.
 
 ## ⚖️ License
 [BSD 3-Clause License](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/LICENSE).
