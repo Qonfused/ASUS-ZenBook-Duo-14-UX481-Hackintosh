@@ -1,4 +1,4 @@
-name: oc-build
+name: OC Build Pipeline
 on:
   # Skips build process for standalone **docs** or **github** directory changes.
   push:
