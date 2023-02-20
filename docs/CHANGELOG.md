@@ -6,11 +6,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unversioned - Latest
 
-## [0.5.0] - 2023-02-19
+## [0.5.0] - 2023-02-20
 
 This minor version incorporates a project overhaul from the [#36 PR](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36) for incorporating the [OC-Build](https://github.com/Qonfused/OC-Build) manager by [**@Qonfused**](https://github.com/Qonfused) into the project. This includes minor updates for OpenCore version [0.8.9](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.9).
 
-Refer to [README.md#Getting-Started](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/docs/README.md#-getting-started) for upgrade and build instructions.
+Refer to [README.md#Getting-Started](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh#-getting-started) for upgrade and build instructions.
 
 ### Changed
 - Updated OpenCore to version 0.8.9 ([`#36@0e5793a`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/0e5793ae101c74b7131b7a1be90267acabb92fb1))
