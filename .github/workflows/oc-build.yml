@@ -1,0 +1,98 @@
+name: oc-build
+on:
+  # Skips build process for standalone **docs** or **github** directory changes.
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '!.github/**'
+      - '!docs/**'
+      - '!.gitmodules'
+      - '!.gitattributes'
+      - '!.gitignore'
+      - 'src/**'
+  # Enables trigger for pull requests when making changes to **src** directory.
+  pull_request:
+    branches:
+      - 'main'
+      - 'development'
+    paths:
+      - 'src/**'
+  workflow_dispatch:
+# Cancel concurrent builds within the same PR.
+#
+# Push events made within the execution window of a prior commit's build will be
+# interpreted as hot-patches, and will cancel the previous build. This will
+# instead update the pull request's status check for this workflow using changes
+# from the new commit's changes instead.
+#
+# Refer to the GitHub docs page for more information on this topic:
+# * https://docs.github.com/en/actions/using-jobs/using-concurrency
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    name: Run OC-Build pipeline
+    timeout-minutes: 10
+    runs-on: ubuntu-latest
+    outputs:
+      LOCKFILE_HASH: ${{ steps.prepare-efi.outputs.LOCKFILE_HASH }}
+    steps:
+      # Installs dependencies needed for running OC-Build.
+      #
+      # This includes the following required commands:
+      # - libarchive-tools:
+      #   - **BSDTAR**: Used for unarchiving .zip files.
+      # - acpica-tools:
+      #   - **iasl**: Required for compiling .dsl files.
+      - name: Install OC-Build dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt install -qq -o=Dpkg::Use-Pty=0 \
+            libarchive-tools \
+            acpica-tools
+      # Fetches remote repository without --progress option.
+      #
+      # The default behavior of actions/checkout shows many
+      # noisy lines of status output in the workflow log,
+      # which can be problematic for log retention.
+      #
+      # Refer to the below PR for updates on this issue:
+      # - https://github.com/actions/checkout/pull/1067
+      - name: Checkout latest repository commit
+        # uses: actions/checkout@v3
+        uses: simonbaird/checkout@no-progress-option
+        with:
+          show-progress: false
+          submodules: recursive
+      # Runs EFI build pipeline using OC-Build.
+      - id: oc-build
+        name: Run OC-Build pipeline
+        shell: sh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: bash scripts/build.sh
+      # Runs quick validation of config.plist and EFI structure.
+      - id: validate-efi
+        name: Validate OC-Build output
+        shell: sh
+        run: bash scripts/validate-efi.sh
+      # Handles compression and lock-hash generation for upstream.
+      - id: prepare-efi
+        name: Prepares EFI directory for upload
+        shell: sh
+        run: |
+          : # Generate lockfile hash
+          echo "LOCKFILE_HASH=${{ hashFiles('src/build.lock') }}" \
+            | grep -Eo ".*=[a-zA-z0-9]{0,8}" >> "$GITHUB_OUTPUT"
+          : # Copy lockfile to EFI directory
+          cp src/build.lock dist/EFI/build.lock
+          : # Compress EFI directory
+          bsdtar -a -cf EFI.zip dist/EFI
+      # Upload built EFI as artifact
+      - name: Upload built EFI
+        uses: actions/upload-artifact@v3
+        with:
+          name: EFI-${{ steps.prepare-efi.outputs.LOCKFILE_HASH }}
+          path: EFI.zip

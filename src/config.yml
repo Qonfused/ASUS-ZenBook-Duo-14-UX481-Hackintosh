@@ -1,0 +1,118 @@
+ACPI:
+  Delete:                             Macro   | @Clear
+  Patch:
+    - Comment:                        String  | "[ATKD] FN Lock - Rename _QD5 to XQD5"
+      Find:                           Data    | <5F514435>
+      Replace:                        Data    | <58514435>
+    - Comment:                        String  | "[ATKD] FN+F4 - Rename _Q0E to XQ0E"
+      Find:                           Data    | <5F513045>
+      Replace:                        Data    | <58513045>
+    - Comment:                        String  | "[ATKD] FN+F5 - Rename _Q0F to XQ0F"
+      Find:                           Data    | <5F513046>
+      Replace:                        Data    | <58513046>
+    - Comment:                        String  | "[ATKD] FN+F7 - Rename _Q0D to XQ0D"
+      Find:                           Data    | <5F513044>
+      Replace:                        Data    | <58513044>
+    - Comment:                        String  | "[ATKD] FN+F12 - Rename _Q18 to XQ18"
+      Find:                           Data    | <5F513138>
+      Replace:                        Data    | <58513138>
+    - Comment:                        String  | "[ATKD] Screenpad Backlight - Rename _Q31 to XQ31"
+      Find:                           Data    | <5F513331>
+      Replace:                        Data    | <58513331>
+    - Comment:                        String  | "[ATKD] Screenpad Disable - Rename _Q32 to XQ32"
+      Find:                           Data    | <5F513332>
+      Replace:                        Data    | <58513332>
+    - Base:                           String  | "\_SB.PCI0.I2C1.ETPD"
+      Comment:                        String  | "[GPI0] ETPD - Rename _CRS to XCRS"
+      Count:                          Number  | 1
+      Find:                           Data    | <5F435253>
+      Replace:                        Data    | <58435253>
+    - Base:                           String  | "\_SB.PCI0.I2C0.TPL1"
+      Comment:                        String  | "[GPI0] TPL1 - Rename _CRS to XCRS"
+      Count:                          Number  | 1
+      Find:                           Data    | <5F435253>
+      Replace:                        Data    | <58435253>
+  Quirks:
+    ResetLogoStatus:                  Boolean | true
+Booter:
+  MmioWhitelist:                      Macro   | @Clear
+  Patch:                              Macro   | @Clear
+  Quirks:
+    DevirtualiseMmio:                 Boolean | true
+    ProtectUefiServices:              Boolean | true
+    RebuildAppleMemoryMap:            Boolean | true
+    SyncRuntimePermissions:           Boolean | true
+DeviceProperties:
+  Add:
+    PciRoot(0x0)/Pci(0x1F,0x0):
+      AAPL,slot-name:                 String  | "Internal@0,31,0"
+      device_type:                    String  | "Low Pin Count (LPC) Bus"
+    PciRoot(0x0)/Pci(0x1F,0x3):
+      AAPL,slot-name:                 String  | "Internal@0,31,3"
+      device_type:                    String  | "Audio device"
+      layout-id:                      Data    | <15000000>
+      model:                          String  | "Comet Lake PCH cAVS"
+    PciRoot(0x0)/Pci(0x2,0x0):
+      AAPL,ig-platform-id:            Data    | <00009B3E>
+      AAPL,slot-name:                 String  | "Internal@0,2,0"
+      device-id:                      Data    | <9B3E0000>
+      enable-backlight-registers-fix: Boolean | true
+      enable-backlight-smoother:      Boolean | true
+      framebuffer-con1-alldata:       Data    | <01050900 00040000 C7030000>
+      framebuffer-con1-enable:        Data    | <01000000>
+      framebuffer-con2-alldata:       Data    | <02020A00 00080000 C7030000>
+      framebuffer-con2-enable:        Data    | <01000000>
+      framebuffer-patch-enable:       Data    | <01000000>
+      model:                          String  | "Intel UHD Graphics 620"
+Kernel:
+  Block:                              Macro   | @Clear
+  Force:                              Macro   | @Clear
+  Patch:                              Macro   | @Clear
+  Quirks:
+    AppleXcpmCfgLock:                 Boolean | true
+    CustomSMBIOSGuid:                 Boolean | true
+    DisableIoMapper:                  Boolean | true
+    PanicNoKextDump:                  Boolean | true
+    PowerTimeoutKernelPanic:          Boolean | true
+    SetApfsTrimTimeout:               Number  | 0
+Misc:
+  Boot:
+    PickerMode:                       String  | "External"
+    PickerVariant:                    String  | "Acidanthera\GoldenGate"
+  Entries:                            Macro   | @Clear
+  Security:
+    AllowSetDefault:                  Boolean | true
+    ScanPolicy:                       Number  | 0
+    Vault:                            String  | "Optional"
+NVRAM:
+  Add:
+    4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:
+      revcpu:                         Number  | 1
+      # revcpuname:                     String  | "Intel Core i5-10210U CPU @ 1.60GHz"
+      revcpuname:                     String  | "Intel Core i7-10510U CPU @ 1.80GHz"
+    7C436110-AB2A-4BBB-A880-FE41995C9F82:
+      SystemAudioVolume:              Data    | <28>
+      boot-args:                      String  | "-v debug=0x100 keepsyms=1 -msgbuf=1048576"
+      csr-active-config:              Data    | <67000000>
+      prev-lang:kbd:                  String  | "en-US:0"
+PlatformInfo:
+  Generic:
+    # MLB:                              String  | "{{}}"
+    ProcessorType:                    Number  | 1537
+    # ROM:                              Data    | <{{}}>
+    SystemProductName:                String  | "MacBookPro16,3"
+    # SystemSerialNumber:               String  | "{{}}"
+    # SystemUUID:                       String  | "{{}}"
+  UpdateSMBIOSMode:                   String  | Custom
+UEFI:
+  APFS:
+    MinDate:                          Number  | 20200306
+    MinVersion:                       Number  | 1412101001000000
+  Audio:
+    AudioDevice:                      String  | "PciRoot(0x0)/Pci(0x1F,0x3)"
+    AudioOutMask:                     Number  | -1
+    AudioSupport:                     Boolean | true
+    PlayChime:                        String  | "Disabled"
+  Output:
+    UIScale:                          Number  | 1
+  ReservedMemory:                     Macro   | @Clear
