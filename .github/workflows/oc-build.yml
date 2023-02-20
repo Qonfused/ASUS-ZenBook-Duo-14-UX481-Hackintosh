@@ -1,4 +1,4 @@
-name: OC Build Pipeline
+name: OC Build
 on:
   # Skips build process for standalone **docs** or **github** directory changes.
   push:
@@ -74,6 +74,10 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: bash scripts/build.sh
       # Runs quick validation of config.plist and EFI structure.
+      #
+      # This runs a quick comparison between the build.yml,
+      # config.plist, and EFI folder for any missing or malformed
+      # entries. This does not resolve any machine testable issues.
       - id: validate-efi
         name: Validate OC-Build output
         shell: sh
