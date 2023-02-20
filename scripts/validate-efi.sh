@@ -8,9 +8,9 @@
 ##
 
 # Change CWD for imports
-__PWD__=$(pwd); cd "$(realpath $(dirname "${BASH_SOURCE[0]}"))/../"
+__PWD__=$(pwd); cd "$(realpath $(dirname "${BASH_SOURCE[0]}"))"
 
-source ./scripts/lib/constants.sh
+source ./lib/constants.sh
 
 CONFIG="$__PWD__/$CONFIG"
 
