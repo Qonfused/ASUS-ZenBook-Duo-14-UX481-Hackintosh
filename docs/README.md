@@ -8,13 +8,18 @@
       width=500px
     >
   <br>
-  A <b>Hackintosh</b> project for the <b>ASUS ZenBook Duo 14</b> (2019, UX481FA/FL) built on top of the <a href="https://github.com/acidanthera/OpenCorePkg">OpenCore</a> bootloader and <a href="https://github.com/Qonfused/OC-Build">OC-Build</a> build manager.
+  A <b>Hackintosh</b> project for the <b>ASUS ZenBook Duo 14"</b> built on top of the <a href="https://github.com/acidanthera/OpenCorePkg">OpenCore</a> bootloader and <a href="https://github.com/Qonfused/OC-Build">OC-Build</a> build manager.
 </p>
 
-[![SemVer](https://img.shields.io/badge/SemVer-v0.5.0-important?logo=SemVer&labelColor=3f4551)](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/docs/CHANGELOG.md#050---2023-02-19)
-![Supported Models](https://img.shields.io/badge/Supported%20Models-UX481FA%20%7C%20UX481FL-important?labelColor=3f4551)
-[![OpenCore](https://img.shields.io/badge/dynamic/yaml?label=OpenCore&logo=Osano&logoColor=0298e1&labelColor=3f4451&prefix=v&query=OpenCorePkg.version&url=https%3A%2F%2Fraw.githubusercontent.com%2FQonfused%2FASUS-ZenBook-Duo-14-UX481-Hackintosh%2Fmain%2Fsrc%2Fbuild.lock)](https://github.com/acidanthera/OpenCorePkg/releases)
-[![OC Build](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/actions/workflows/oc-build.yml/badge.svg?branch=main)](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/actions/workflows/oc-build.yml)
+<div align="center">
+
+  <a href="/LICENSE">![License](https://img.shields.io/badge/⚖_License-BSD_3_Clause-lightblue?labelColor=3f4551)</a>
+  <a href="/docs/CHANGELOG.md">![SemVer](https://img.shields.io/badge/SemVer-v0.5.0-important?logo=SemVer&labelColor=3f4551)</a>
+  <a href="">![Supported Models](https://img.shields.io/badge/Supported%20Models-UX481FA%20%7C%20UX481FL-important?labelColor=3f4551)</a>
+  <a href="https://github.com/acidanthera/OpenCorePkg/releases">![OpenCore](https://img.shields.io/badge/dynamic/yaml?label=OpenCore&logo=Osano&logoColor=0298e1&labelColor=3f4451&prefix=v&query=OpenCorePkg.version&url=https%3A%2F%2Fraw.githubusercontent.com%2FQonfused%2FASUS-ZenBook-Duo-14-UX481-Hackintosh%2Fmain%2Fsrc%2Fbuild.lock)</a>
+  <a href="https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/actions/workflows/oc-build.yml">![OC Build](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/actions/workflows/oc-build.yml/badge.svg?branch=main)</a>
+
+</div>
 
 ## ⚙️ Current Progress
 
