@@ -2,7 +2,7 @@
 <br>
 <p align="center">
   <img
-      src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/README/UX481FL.png"
+      src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/README/UX481.png"
       alt="UX481FL"
       class="center"
       width=500px
