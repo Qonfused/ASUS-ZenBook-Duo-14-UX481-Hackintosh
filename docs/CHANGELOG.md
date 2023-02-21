@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
+
 ## Unversioned - Latest
 
 ## [0.5.0] - 2023-02-20
@@ -14,7 +16,7 @@ Refer to [README.md#Getting-Started](https://github.com/Qonfused/ASUS-ZenBook-Du
 
 ### Changed
 - Updated OpenCore to version 0.8.9 ([`#36@0e5793a`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/0e5793ae101c74b7131b7a1be90267acabb92fb1))
-- Updated VoodooI2C Kext to version [2.8](https://github.com/VoodooI2C/VoodooI2C/releases/tag/2.8) w/ macOS 13+ crash fixes.
+- Updated VoodooI2C Kext to version [2.8](https://github.com/VoodooI2C/VoodooI2C/releases/tag/2.8) w/ macOS 13+ crash fixes. ([`#36@2a4b914`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/2a4b91421cb78cd18db66f817d258da2a07a4eab))
 
 ### Added
 - Added new OC-Build project structure and build script ([`#36@1da43cc`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/1da43ccd5627330de2a871bdd356ed1d14c235e5))
@@ -42,9 +44,9 @@ Patch version bump removing a depreciated tool.
 This minor version includes refactors for Windows multi-boot compatibility, including complete rewrites for harder spec-compliance for keyboard and screenpad backlight controls.
 
 ### Changed
-- Relicensed from GPLv3 to BSD-3-Clause (#26(https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/26))
+- Relicensed from GPLv3 to BSD-3-Clause ([#26](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/26))
 - Updated memory map quirks for more native handling ([`ba3ea5f`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/ba3ea5ff5570119c726a3c1a2676fc78307fbf4b))
-- Refactored Screenpad backlight/connector functions into SPLC ([`#32@9de3d05`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/32/commits/9de3d053fa7704d16a94a4466b66e14553afe70f), [`#32@da644e0`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/32/commitscommit/da644e00ed1149f159875ab473f9290e55dd937e))
+- Refactored Screenpad backlight/connector functions into SPLC ([`#32@9de3d05`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/32/commits/9de3d053fa7704d16a94a4466b66e14553afe70f), [`#32@da644e0`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/32/commits/da644e00ed1149f159875ab473f9290e55dd937e))
 
 ### Added
 - Added display-overrides for screenpad ([`91a8048`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/91a8048680c636716c5dd9575866d6ae1c3e388c))
@@ -70,7 +72,7 @@ This minor version includes refactors for Windows multi-boot compatibility, incl
 This minor version includes a major ACPI overhaul from [#19 PR](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19), incorporating ATKD/WMI methods from [**@wern-apfel**](https://github.com/wern-apfel). This includes minor updates to OpenCore version [0.8.8](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.7), as well as overhauls of previous/legacy SSDTs with many ACPI + Kext + Driver refactors.
 
 ### Changed
-- Update OpenCore to version 0.8.8 ([`#19@aae14c8`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/aae14c88d759d5dca77ade45b61ae74a50c39196))
+- Update OpenCore to version 0.8.8 ([`aae14c8`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/aae14c88d759d5dca77ade45b61ae74a50c39196))
 - Added ATKD w/ keyboard backlight EC functions from ([`4668403`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/466840358ea5321cbfcd408e788ed47bcdd043be)) (Thanks to [**@wern-apfel**](https://github.com/wern-apfel)!)
 
 ### Added
@@ -91,7 +93,7 @@ This minor version includes a major ACPI overhaul from [#19 PR](https://github.c
 - Fix LoadEarly driver values w/o OpenVariableRuntimeDxe ([`#19@4401757`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/44017571c00f8509603dfeea9cbb58b8cc4438d3))
 - Resolved native backlight handling with WhateverGreen ([`#19@6ed835d`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/6ed835db5192748d4e8bb925a819ac1547129000))
 - Added null check for SSDT-GPU-DISABLE per [**@UsedDiscord**](https://github.com/UsedDiscord)'s suggestion ([`#19@a4d38da`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/a4d38dafc5c572a20adc726a4c3f8518a6cef0f5))
-- Fix BluetoolFixup kext dependency order ([`7a5ba8f`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/19/commits/7a5ba8fa45293cb446bbbe56f95200aa8494ce2f))
+- Fix BluetoolFixup kext dependency order ([`7a5ba8f`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/44017571c00f8509603dfeea9cbb58b8cc4438d3))
 
 ## [0.2.0] - 2022-12-18
 

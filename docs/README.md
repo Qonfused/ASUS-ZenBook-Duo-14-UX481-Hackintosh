@@ -25,7 +25,7 @@
 
 > **Note** This repository is still a work in progress.
 >
-> See this repository's [project board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
+> See this repository's [task board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
 
 ### macOS version support:
 <table>
@@ -338,18 +338,6 @@ cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
 ### 2. Build this repository using OC-Build
 **OC-Build** must be run in a Linux or macOS environment.
 
-> **Note** You
-> may need to upgrade your git version manually in order for sparse git cloning
-> to work with the OC-Build script (required).
->
-> Standard package repos on Ubuntu install git version 2.25.1 by default. You can upgrade your git version to the latest release candidate by running:
-> ```sh
-> sudo add-apt-repository ppa:git-core/candidate
-> sudo apt update
-> ```
->
-> Refer to https://launchpad.net/~git-core/+archive/ubuntu/candidate for more info.
-
 For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
 
 For Linux users (or wsl), ensure you have the following commands available:
@@ -363,21 +351,23 @@ For Linux users (or wsl), ensure you have the following commands available:
   - Install with `sudo apt install acpica-tools`
   - Verify with `iasl -v`
 
-To build this project's EFI, run the below command(s) at the root of the project:
+> **Note** You may need to upgrade your git version to 2.25.0+ or greater to
+> support the **sparse-checkout** git feature required by the OC-Build script.
+>
+> For example, standard package repos on Ubuntu install git version 2.25.1 by
+> default, but you can upgrade git to the latest release candidate by running:
+> ```sh
+> sudo add-apt-repository ppa:git-core/candidate
+> sudo apt update
+> ```
+
+To build this project's EFI, run the below command at the root of the project:
 ```sh
 # Run build pipeline for the UX481FA/FL EFI
 bash scripts/build.sh
-
-# --- or ---
-
-# Build the UX481FA/FL EFI
-bash scripts/lib/oc-build/build.sh -c src/build.yml
-
-# Apply VoodooI2CHID Info.plist patch
-bash scripts/lib/patch-voodooi2chid.sh
 ```
 
-You can manually validate the EFI build with the below script:
+You can run a validation script to check the EFI build output by running:
 ```sh
 # Verify build output for the UX481FA/FL EFI
 bash scripts/validate-efi.sh

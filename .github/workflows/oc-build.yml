@@ -1,6 +1,6 @@
 name: OC Build
 on:
-  # Skips build process for standalone **docs** or **github** directory changes.
+  # Skips build process for changes to only **docs** or **.github** directories.
   push:
     branches:
       - 'main'
@@ -23,8 +23,8 @@ on:
 #
 # Push events made within the execution window of a prior commit's build will be
 # interpreted as hot-patches, and will cancel the previous build. This will
-# instead update the pull request's status check for this workflow using changes
-# from the new commit's changes instead.
+# update the pull request's status check for this workflow to instead pull from
+# the new commit's changes instead.
 #
 # Refer to the GitHub docs page for more information on this topic:
 # * https://docs.github.com/en/actions/using-jobs/using-concurrency
@@ -33,7 +33,7 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
-    name: Run OC-Build pipeline
+    name: Run OC-Build
     timeout-minutes: 10
     runs-on: ubuntu-latest
     outputs:
@@ -54,9 +54,8 @@ jobs:
             acpica-tools
       # Fetches remote repository without --progress option.
       #
-      # The default behavior of actions/checkout shows many
-      # noisy lines of status output in the workflow log,
-      # which can be problematic for log retention.
+      # The default behavior of @actions/checkout outputs many noisy lines of
+      # status output in the workflow log, which is problematic for log size.
       #
       # Refer to the below PR for updates on this issue:
       # - https://github.com/actions/checkout/pull/1067
@@ -67,22 +66,29 @@ jobs:
           show-progress: false
           submodules: recursive
       # Runs EFI build pipeline using OC-Build.
+      #
+      # Build **dist** directory containing **dist/EFI** and **dist/scripts**
+      # folders needed for downstream build tasks.
       - id: oc-build
-        name: Run OC-Build pipeline
+        name: Run OC-Build
         shell: sh
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: bash scripts/build.sh
       # Runs quick validation of config.plist and EFI structure.
       #
-      # This runs a quick comparison between the build.yml,
-      # config.plist, and EFI folder for any missing or malformed
-      # entries. This does not resolve any machine testable issues.
+      # This runs a quick comparison between the build.yml, config.plist, and
+      # EFI folder for any missing or malformed entries. This does not resolve
+      # any machine testable issues.
       - id: validate-efi
         name: Validate OC-Build output
         shell: sh
         run: bash scripts/validate-efi.sh
-      # Handles compression and lock-hash generation for upstream.
+      # Handles compression and lock-hash generation for upload task.
+      #
+      # This stores a hash of the output build's lockfile to associate with the
+      # output EFI directory. This is useful when running concurrent builds with
+      # this workflow in a matrix for testing prior or future OpenCore versions.
       - id: prepare-efi
         name: Prepares EFI directory for upload
         shell: sh
@@ -95,6 +101,9 @@ jobs:
           : # Compress EFI directory
           bsdtar -a -cf EFI.zip dist/EFI
       # Upload built EFI as artifact
+      #
+      # Uploads EFI with a short-sha slug. The uploaded EFI will be available
+      # for download after the current job run as finished.
       - name: Upload built EFI
         uses: actions/upload-artifact@v3
         with:
