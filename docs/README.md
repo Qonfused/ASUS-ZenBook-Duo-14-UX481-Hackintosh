@@ -26,6 +26,8 @@
 > **Note** This repository is still a work in progress.
 >
 > See this repository's [task board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
+> Upcoming or planned changes are also tracked on a [roadmap board](https://github.com/users/Qonfused/projects/2/views/9).
+> Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.com/users/Qonfused/projects/2/views/11) for changes implemented per release version. 
 
 ### macOS version support:
 <table>
