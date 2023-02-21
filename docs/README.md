@@ -27,7 +27,7 @@
 >
 > See this repository's [task board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
 > Upcoming or planned changes are also tracked on a [roadmap board](https://github.com/users/Qonfused/projects/2/views/9).
-> Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.com/users/Qonfused/projects/2/views/11) for changes implemented per release version. 
+> Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.com/users/Qonfused/projects/2/views/11) for changes implemented per release version.
 
 ### macOS version support:
 <table>
@@ -305,55 +305,39 @@
 </table>
 
 ## ⚡ Getting Started
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=521847844)
 
 ### 1. Clone this repository using Git
 
-To clone this repository locally with submodules:
+To clone this repository locally with submodules, run:
 ```sh
-# git versions >2.12 to 2.8+ (newest)
 git clone --recurse-submodules https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh
-
-# git versions 1.6.5 to 2.12
-git clone --recursive https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh
-
-# git versions <1.6.5 (older)
-git clone https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh
-git submodule update --init --recursive
-```
-
-> **Note**: Optionally, you can add the following git aliases to always resolve submodules:
-> ```sh
-> # git versions >2.12 to 2.8+ (newest)
-> git config --global alias.clone-all 'clone --recurse-submodules'
-> git config --global alias.pull-all 'pull --recurse-submodules'
-> 
-> # git versions 1.6.5 to 2.12
-> git config --global alias.clone-all 'clone --recursive'
-> git config --global alias.pull-all 'pull --recursive'
-> ```
-
-Change directory to project root:
-```sh
 cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
 ```
 
+> **Note**: Optionally, you can add git aliases to always resolve submodules:
+> ```sh
+> git config --global alias.clone-all 'clone --recurse-submodules'
+> git config --global alias.pull-all 'pull --recurse-submodules'
+> ```
+
 ### 2. Build this repository using OC-Build
-**OC-Build** must be run in a Linux or macOS environment.
-
-For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
-
-For Linux users (or wsl), ensure you have the following commands available:
-- **cURL**
-  - Install with `sudo apt install curl`
-  - Verify with `curl --version`
-- **bsdtar**
-  - Install with `sudo apt install libarchive-tools`
-  - Verify with `bsdtar --version`
-- **iasl**
-  - Install with `sudo apt install acpica-tools`
-  - Verify with `iasl -v`
-
-> **Note** You may need to upgrade your git version to 2.25.0+ or greater to
+> **Note** **OC-Build** must be run in a Linux or macOS environment.
+> 
+> For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended). You can install Linux directly from the Microsoft Store (e.g. [Ubuntu 20.04.5 LTS](https://apps.microsoft.com/store/detail/ubuntu-20045-lts/9MTTCL66CPXJ)).
+>
+> For Linux users (or wsl), ensure you have the following commands available:
+> - **cURL**
+>   - Check with `curl --version`
+>   - Install with `sudo apt install curl`
+> - **bsdtar**
+>   - Check with `bsdtar --version`
+>   - Install with `sudo apt install libarchive-tools`
+> - **iasl**
+>   - Check with `iasl -v`
+>   - Install with `sudo apt install acpica-tools`
+>
+> You may need to upgrade your git version to 2.25.0+ or greater to
 > support the **sparse-checkout** git feature required by the OC-Build script.
 >
 > For example, standard package repos on Ubuntu install git version 2.25.1 by
@@ -369,7 +353,7 @@ To build this project's EFI, run the below command at the root of the project:
 bash scripts/build.sh
 ```
 
-You can run a validation script to check the EFI build output by running:
+You can run a validation script to check the EFI build output with:
 ```sh
 # Verify build output for the UX481FA/FL EFI
 bash scripts/validate-efi.sh

@@ -1,4 +1,5 @@
 .*
+!/.devcontainer/
 !/.github/
 !/.vscode/
 !/.gitattributes
@@ -13,7 +14,6 @@
 
 # OpenCore specific caches
 opencore-*[0-9].txt
-!.contentVisibility
 
 # macOS specific caches
 /.fseventsd
@@ -22,6 +22,3 @@ opencore-*[0-9].txt
 
 # Windows specific caches
 /$RECYCLE.BIN
-/FOUND.000
-/FOUND.001
-/System Volume Information
