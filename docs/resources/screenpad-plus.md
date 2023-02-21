@@ -186,55 +186,55 @@ Item | Image
 [Asus Touch controller card for UX481FLY](https://en.accessoires-asus.com/asus-touch-controller-card-68447-72557.htm)<br><br>SKU: `TOUCHCONTBDUX481`<br>P/N: `90NB0P60-R10020`<br>Model: `60NB0P60-TP1020` | ![touch-controller](https://user-images.githubusercontent.com/32466081/184637888-8545964c-e64b-4db9-be64-bf17745431ba.png)
 
 #### CPU - Display Signals (U0301A, Page 3)
-Pin | Signal           | PCH GPIO            | DP LCD Connector (J4501)
---- | ---------------- | ------------------- | ---
-AL5 | DDI1_TXN_0       |                     | DDI1_TXN0_C
-AL6 | DDI1_TXP_0       |                     | DDI1_TXP0_C
-AJ5 | DDI1_TXN_1       |                     | DDI1_TXN1_C
-AJ6 | DDI1_TXP_1       |                     | DDI1_TXP1_C
-CC8 | DDPB_SCL_PCH     | GPP_E18             |
-CC9 | DDPB_SDA_PCH     | GPP_E19             |
-AC6 | DDI1_AUX_P       |                     | DP_AUXP_C
-AC7 | DDI1_AUX#        |                     | DP_AUXP_C
-CN6 | DDPB_HPD0        | GPP_E13             | DP_HPD_PCH_C
+Pin | Signal           | PCH GPIO            | DP LCD Connector (J4501)        | Description
+--- | ---------------- | ------------------- | ------------------------------- | ---
+AC6 | DDI1_AUX_P       |                     | DP_AUXP_C                       | DP1 Auxiliary Channel (AUX_​CH)
+AC7 | DDI1_AUX#        |                     | DP_AUXP_C                       | DP1 Auxiliary Channel (AUX_​CH)
+AL5 | DDI1_TXN_0       |                     | DDI1_TXN0_C                     | DP1 differential negative input (ML_Lane 0)
+AL6 | DDI1_TXP_0       |                     | DDI1_TXP0_C                     | DP1 differential positive input (ML_Lane 0)
+AJ5 | DDI1_TXN_1       |                     | DDI1_TXN1_C                     | DP1 differential negative input (ML_Lane 1)
+AJ6 | DDI1_TXP_1       |                     | DDI1_TXP1_C                     | DP1 differential positive input (ML_Lane 1)
+CN6 | DDPB_HPD0        | GPP_E13             | DP_HPD_PCH_C                    | Also known as **SPI1_MOSI**.<br>This handles sending SPI1 touchscreen serial input data to the PCH.
+CC8 | DDPB_SCL_PCH     | GPP_E18             |                                 | Also known as **DDP1_CTRLCLK**.<br>Handles control clock data for **Display Port C**.
+CC9 | DDPB_SDA_PCH     | GPP_E19             |                                 | Also known as **DDP1_CTRLDATA** (used as **TBT_LSX**).<br>Handles DDP1 I2C / TBT_LSX0 pins VCC configuration.<br>• `0` = DDP1 I2C / TBT_LSX0 pins at 1.8V<br>• `1` = DDP1 I2C / TBT_LSX0 pins at 3.3V
 
 #### DP LCD Connector (J4501, Page 31)
-Pin | Signal           | PCH GPIO            | EC IT8225 GPIO   | CPU (U0301A)
---- | ---------------- | ------------------- | ---------------- | ---
-1   | CABC_DP_EN       |                     | GPJ7 (CABC_EN)   |
-2   | (GND)            |                     |                  |
-3   | DP_TXN1_C        |                     |                  | DDI1_TXN_1
-4   | DP_TXP1_C        |                     |                  | DDI1_TXP_1
-5   | (GND)            |                     |                  |
-6   | DP_TXN0_C        |                     |                  | DDI1_TXN_0
-7   | DP_TXP0_C        |                     |                  | DDI1_TXP_0
-8   | (GND)            |                     |                  |
-9   | DP_AUXP_C        |                     |                  | DDI1_AUX_P
-10  | DP_AUXN_C        |                     |                  | DDI1_AUX#
-11  | (GND)            |                     |                  |
-12  | (GND)            |                     |                  |
-13  | -                |                     |                  |
-14  | +3VS_DP          |                     |                  |
-15  | +3VS_DP          |                     |                  |
-16  | -                |                     |                  |
-17  | DP_HPD_PCH_C     | GPP_E13 (DDPB_HPD0) | GPF4 (DP_HPD#)   |
-18  | DP_BLEN_C        |                     | GPB2 (DP_BL_EN)  |
-19  | DP_PWM_C         |                     | GPA7 (DP_PWM)    |
-20  | -                |                     |                  |
-21  | AC_BAT_SYS_DP    |                     |                  |
-22  | AC_BAT_SYS_DP    |                     |                  |
-23  | -                |                     |                  |
-24  | -                |                     |                  |
-25  | +3VS_TP          |                     |                  |
-26  | (GND)            |                     |                  |
-27  | DP_TP_Report_SW  |                     |                  |
-28  | I2C3_SCL_TCH_PNL | GPP_H7              |                  |
-29  | I2C3_SDA_TCH_PNL | GPP_H6              |                  |
-30  | TPanel_INT#_2ND  | GPP_B18             |                  |
-31  | GND1             |                     |                  |
-32  | GND2             |                     |                  |
-33  | GND3             |                     |                  |
-34  | GND4             |                     |                  |
+Pin | Signal           | PCH GPIO            | EC IT8225 GPIO   | CPU (U0301A) | Description
+--- | ---------------- | ------------------- | ---------------- | ------------ | ---
+1   | CABC_DP_EN       |                     | GPJ7 (CABC_EN)   |              |
+2   | (GND)            |                     |                  |              |
+3   | DP_TXN1_C        |                     |                  | DDI1_TXN_1   | [[^]](#cpu---display-signals-u0301a-page-3)
+4   | DP_TXP1_C        |                     |                  | DDI1_TXP_1   | [[^]](#cpu---display-signals-u0301a-page-3)
+5   | (GND)            |                     |                  |              |
+6   | DP_TXN0_C        |                     |                  | DDI1_TXN_0   | [[^]](#cpu---display-signals-u0301a-page-3)
+7   | DP_TXP0_C        |                     |                  | DDI1_TXP_0   | [[^]](#cpu---display-signals-u0301a-page-3)
+8   | (GND)            |                     |                  |              |
+9   | DP_AUXP_C        |                     |                  | DDI1_AUX_P   | [[^]](#cpu---display-signals-u0301a-page-3)
+10  | DP_AUXN_C        |                     |                  | DDI1_AUX#    | [[^]](#cpu---display-signals-u0301a-page-3)
+11  | (GND)            |                     |                  |              |
+12  | (GND)            |                     |                  |              |
+13  | -                |                     |                  |              |
+14  | +3VS_DP          |                     |                  |              |
+15  | +3VS_DP          |                     |                  |              |
+16  | -                |                     |                  |              |
+17  | DP_HPD_PCH_C     | GPP_E13 (DDPB_HPD0) | GPF4 (DP_HPD#)   |              | [[^]](#cpu---display-signals-u0301a-page-3)
+18  | DP_BLEN_C        |                     | GPB2 (DP_BL_EN)  |              |
+19  | DP_PWM_C         |                     | GPA7 (DP_PWM)    |              |
+20  | -                |                     |                  |              |
+21  | AC_BAT_SYS_DP    |                     |                  |              |
+22  | AC_BAT_SYS_DP    |                     |                  |              |
+23  | -                |                     |                  |              |
+24  | -                |                     |                  |              |
+25  | +3VS_TP          |                     |                  |              |
+26  | (GND)            |                     |                  |              |
+27  | DP_TP_Report_SW  |                     |                  |              |
+28  | I2C3_SCL_TCH_PNL | GPP_H7              |                  |              | I2C link 3 serial clock line (touchscreen).
+29  | I2C3_SDA_TCH_PNL | GPP_H6              |                  |              | I2C link 3 data clock line (touchscreen).
+30  | TPanel_INT#_2ND  | GPP_B18             |                  |              | Also known as **GSPIO_MOSI**.<br>This is a pin-up strap that toggles 'No Reboot' mode.<br>• `0` = Disable “No Reboot” mode. (Default)<br>• `1` = Enable “No Reboot” mode (PCH will disable the TCO Timer system reboot feature).
+31  | GND1             |                     |                  |              |
+32  | GND2             |                     |                  |              |
+33  | GND3             |                     |                  |              |
+34  | GND4             |                     |                  |              |
 
 ## Specification
 
