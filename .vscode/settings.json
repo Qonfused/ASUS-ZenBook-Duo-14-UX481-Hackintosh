@@ -1,5 +1,6 @@
 {
   "files.associations": {
     "*.lock": "yaml",
+    ".serialdata": "yaml"
   }
 }

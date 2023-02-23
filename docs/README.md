@@ -238,7 +238,6 @@
 
 
 ### Software features:
-> **Note** To enable iServices functionality, download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and [generate SMBIOS data](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) for your machine.
 <table>
   <thead>
     <tr>
@@ -361,6 +360,19 @@ bash scripts/validate-efi.sh
 
 #### 3. Using this EFI with macOS
 Refer to the [Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Install-Guide) and [Post-Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Post-Install-Guide) for installation instructions.
+
+> **Note** To enable **iServices** functionality, download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and [generate SMBIOS data](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) for your machine.
+>
+> You can optionally store your SMBIOS data in a new **.serialdata** file under the **src/** directory:
+> ```yaml
+> MLB:                String | "M0000000000000001"
+> ROM:                Data   | <112233445566>
+> SystemProductName:  String | "MacBookPro16,3"
+> SystemSerialNumber: String | "W00000000001"
+> SystemUUID:         String | "00000000-0000-0000-0000-000000000000"
+> ```
+>
+> You can apply these values by running `bash scripts/lib/patch-serial.sh` or by running the build script.
 
 ## 🔥 Contributing
 Contributions to this project are always welcome! Refer to [CONTRIBUTING.md](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/docs/CONTRIBUTING.md) for instructions (and tips) on making contributions to this project.

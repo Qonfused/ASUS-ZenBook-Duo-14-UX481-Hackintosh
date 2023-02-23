@@ -17,5 +17,7 @@ source ./scripts/lib/oc-build/lib/macros.sh
 # Run build script
 bash ./scripts/lib/oc-build/build.sh -c $CONFIG
 
+# Patch SMBIOS Serial data
+bash ./scripts/lib/patch-serial.sh
 # Patch VoodooI2CHID Info.plist
 bash ./scripts/lib/patch-voodooi2chid.sh

@@ -9,3 +9,4 @@
 
 
 CONFIG=./src/build.yml
+SERIAL=./src/.serialdata
