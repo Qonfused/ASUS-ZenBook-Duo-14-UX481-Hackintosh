@@ -69,7 +69,7 @@ include:
     VoodooI2C/VoodooI2CServices: "*"
     VoodooI2C/VoodooGPIO: "*"
     VoodooI2C/VoodooInput: "*"
-    VoodooI2C: VoodooI2C/VoodooI2C=2.7.1
+    VoodooI2C: VoodooI2C/VoodooI2C=latest
     VoodooI2CHID: "*"
     VoodooPS2Controller: acidanthera/VoodooPS2=latest
     VoodooPS2Controller/VoodooPS2Keyboard: "*"

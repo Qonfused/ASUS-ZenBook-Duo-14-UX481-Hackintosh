@@ -21,12 +21,12 @@ recursive_add_entries "$plist" "IOKitPersonalities.$driver.IOPropertyMatch"
 entry=\
 "<dict>
   <key>ProductID</key>
-  <integer>12545</integer>
+  <integer>12558</integer>
 </dict>"
 replace_entries "$plist" "IOKitPersonalities.$driver.IOPropertyMatch" "$entry"
 
 driver='VoodooI2CHIDDevice Touchscreen HID Event Driver'
 recursive_add_entries "$plist" "IOKitPersonalities.$driver.IOPCIMatch"
 entry=\
-"<string>0x2C5604f3&amp;0x2C2304f3</string>"
+"<string>0x2C5604f3\&amp;0x2C2304f3</string>"
 replace_entries "$plist" "IOKitPersonalities.$driver.IOPCIMatch" "$entry"
