@@ -8,6 +8,8 @@ The latest progress can be viewed on this repository's [project board](https://g
 
 ## [0.5.1] - Unreleased
 
+This minor version includes small feature improvements and fixes, adding support for SMBIOS data patching and resolving regression issues from the previous release.
+
 ### Changed
 
 ### Added
@@ -18,6 +20,7 @@ The latest progress can be viewed on this repository's [project board](https://g
 
 ### Fixed
 - Fixed config.yml parsing for OC GUI theme ([`05c39b2`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/05c39b216ee0588d4143188385cd226d960166c5))
+- Fixed VoodooI2CHID patch ([`edc5f86`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/edc5f86889ee5866c18b46aee1ce37d73e1a8a4a))
 
 ## [0.5.0] - 2023-02-20
 
