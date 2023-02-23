@@ -175,10 +175,10 @@ USBToolBox:
   extract: ./USBToolBox.kext
   type: kext
 VoodooI2C:
-  version: "2.8"
-  url: https://github.com/VoodooI2C/VoodooI2C/releases/download/2.8/VoodooI2C-2.8.zip
-  resolution: '@VoodooI2C/VoodooI2C@github:2.8#release'
-  checksum: 234ef07979bdeec95f8d6c53f050c38005bd542d7af8a29ca05ac103ee190924
+  version: 2.7.1
+  url: https://github.com/VoodooI2C/VoodooI2C/releases/download/2.7.1/VoodooI2C-2.7.1.zip
+  resolution: '@VoodooI2C/VoodooI2C@github:2.7.1#release'
+  checksum: 27bc0987a75dcd2bc14baea1f053be9e60c4b26cc7e2ea88e53d73440ee6dc3d
   extract: ./VoodooI2C.kext
   type: kext
   bundled:
