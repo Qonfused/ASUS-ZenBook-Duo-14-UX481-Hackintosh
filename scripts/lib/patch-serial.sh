@@ -16,6 +16,7 @@ cd $__PWD__; cd "$(realpath $(dirname "${BASH_SOURCE[0]}"))/oc-build"
 
 CONFIG="$__PWD__/$CONFIG"
 SERIAL="$__PWD__/$SERIAL"
+if [[ ! -f $SERIAL ]]; then exit 0; fi
 
 source ./bin/yq/imports.sh
 source ./lib/config.sh
