@@ -6,7 +6,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
 
-## Unversioned - Latest
+## [0.5.1] - Unreleased
+
+### Changed
+
+### Added
+- Added **.serialdata** patch script for custom SMBIOS data ([`e4ead15`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/e4ead158ef938c2a7c2cd02c62a28d1a2fc3f3dd))
+- Added [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) for dockerized local and remote development ([`dc36bc4`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/dc36bc424c5013bef97cac4d6dbe602ebe17f279))
+
+### Removed
+
+### Fixed
+- Fixed config.yml parsing for OC GUI theme ([`05c39b2`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/05c39b216ee0588d4143188385cd226d960166c5))
 
 ## [0.5.0] - 2023-02-20
 
