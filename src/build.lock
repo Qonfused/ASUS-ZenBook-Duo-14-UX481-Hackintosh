@@ -118,6 +118,13 @@ CpuTscSync:
   checksum: d916f19f824b19177c7b72c088c1baf91c2c87fb00224652a0261d1cc0152c28
   extract: ./CpuTscSync.kext
   type: kext
+DiskArbitrationFixup:
+  version: 1.0.0
+  url: https://github.com/Qonfused/DiskArbitrationFixup/releases/download/1.0.0/DiskArbitrationFixup-1.0.0-DevBuild-02272020_225112.zip
+  resolution: '@Qonfused/DiskArbitrationFixup@github:1.0.0#release'
+  checksum: abd5d88fd8c48be5549c9430b2441fb010f6f705210f69b56be603fe6b9fe083
+  extract: ./DiskArbitrationFixup.kext
+  type: kext
 ECEnabler:
   version: 1.0.3
   url: https://github.com/dortania/build-repo/releases/download/ECEnabler-b7625ec/ECEnabler-1.0.3-DEBUG.zip
