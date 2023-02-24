@@ -308,10 +308,16 @@
 
 ### 1. Clone this repository using Git
 
-To clone this repository locally with submodules, run:
+To clone this repository locally with submodules, run the below commands:
 ```sh
 git clone --recurse-submodules https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh
 cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
+```
+
+If you've cloned this project without resolving submodules, you'll need to initialize them:
+```sh
+git submodule init
+git submodule update
 ```
 
 > **Note**: Optionally, you can add git aliases to always resolve submodules:
@@ -323,7 +329,9 @@ cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
 ### 2. Build this repository using OC-Build
 > **Note** **OC-Build** must be run in a Linux or macOS environment.
 > 
-> For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended). You can install Linux directly from the Microsoft Store (e.g. [Ubuntu 20.04.5 LTS](https://apps.microsoft.com/store/detail/ubuntu-20045-lts/9MTTCL66CPXJ)).
+> For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
+> - You can install a Linux distribution directly from the Microsoft Store (e.g. [Ubuntu 20.04.5 LTS](https://apps.microsoft.com/store/detail/ubuntu-20045-lts/9MTTCL66CPXJ)).
+> - Alternatively, you can [setup devcontainers](https://code.visualstudio.com/docs/devcontainers/containers#_installation) with Docker and VSCode to run a containerized Linux environment on top of wsl. The [devcontainer](/.devcontainer/devcontainer.json) for this project will setup and build the project automatically upon container creation.
 >
 > For Linux users (or wsl), ensure you have the following commands available:
 > - **cURL**
@@ -335,16 +343,6 @@ cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
 > - **iasl**
 >   - Check with `iasl -v`
 >   - Install with `sudo apt install acpica-tools`
->
-> You may need to upgrade your git version to 2.25.0+ or greater to
-> support the **sparse-checkout** git feature required by the OC-Build script.
->
-> For example, standard package repos on Ubuntu install git version 2.25.1 by
-> default, but you can upgrade git to the latest release candidate by running:
-> ```sh
-> sudo add-apt-repository ppa:git-core/candidate
-> sudo apt update
-> ```
 
 To build this project's EFI, run the below command at the root of the project:
 ```sh
@@ -381,5 +379,6 @@ Contributions to this project are always welcome! Refer to [CONTRIBUTING.md](htt
 [BSD 3-Clause License](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/LICENSE).
 
 ## 🌟 Credits
-- [Apple](https://www.apple.com) for macOS
-- [shiecldk](https://github.com/shiecldk) for his contributions, and his work in the original [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) that inspired this project.
+- [@shiecldk](https://github.com/shiecldk) for their continued contributions and work in the original [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) that inspired this project.
+- [@UsedDiscord](https://github.com/UsedDiscord) for their contributions and direction helping investigate screenpad and trackpad functionality.
+- [@wern-apfel](https://github.com/wern-apfel) for their contribution helping to enable ATKD WMI functionality.
