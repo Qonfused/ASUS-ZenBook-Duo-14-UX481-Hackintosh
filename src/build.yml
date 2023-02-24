@@ -71,6 +71,7 @@ include:
     VoodooI2C/VoodooInput: "*"
     VoodooI2C: VoodooI2C/VoodooI2C=latest
     VoodooI2CHID: "*"
+    VoodooInjector: Qonfused/VoodooInjector=latest
     VoodooPS2Controller: acidanthera/VoodooPS2=latest
     VoodooPS2Controller/VoodooPS2Keyboard: "*"
   tools:
