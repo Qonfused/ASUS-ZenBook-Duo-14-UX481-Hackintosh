@@ -373,10 +373,10 @@ Refer to the [Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX4
 > You can apply these values by running `bash scripts/lib/patch-serial.sh` or by running the build script.
 
 ## 🔥 Contributing
-Contributions to this project are always welcome! Refer to [CONTRIBUTING.md](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/docs/CONTRIBUTING.md) for instructions (and tips) on making contributions to this project.
+Contributions to this project are always welcome! Refer to [CONTRIBUTING.md](/docs/CONTRIBUTING.md) for instructions (and tips) on making contributions to this project.
 
 ## ⚖️ License
-[BSD 3-Clause License](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/LICENSE).
+[BSD 3-Clause License](/LICENSE).
 
 ## 🌟 Credits
 - [@shiecldk](https://github.com/shiecldk) for their continued contributions and work in the original [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) that inspired this project.
