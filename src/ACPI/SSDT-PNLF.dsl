@@ -5,13 +5,9 @@
 DefinitionBlock ("", "SSDT", 2, "DRTNIA", "PNLF", 0x00000000)
 {
     External (_SB_.PCI0.GFX0, DeviceObj)
-    External (ALSE, IntObj)
 
     If (_OSI ("Darwin"))
     {
-        // Enables ambient light sensor device.
-        ALSE = 0x02
-
         Device (\_SB.PCI0.GFX0.PNLF)
         {
             Name (_HID, EisaId ("APP0002"))
