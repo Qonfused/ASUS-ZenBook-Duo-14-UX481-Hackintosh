@@ -6,6 +6,7 @@ include:
   "*":
   - ".contentVisibility"
   acpi:
+    SSDT-ALSD: "ACPI/SSDT-ALSD.dsl"
     SSDT-ATKD: "ACPI/SSDT-ATKD.dsl"
     SSDT-AWAK: "ACPI/SSDT-AWAC.dsl"
     SSDT-EC-USBX: "ACPI/SSDT-EC-USBX.dsl"
