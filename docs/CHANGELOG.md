@@ -6,13 +6,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
 
-## [0.5.1] - Unreleased
+## [0.5.1] - 2023-02-27
 
 This minor version includes small feature improvements and fixes, adding support for SMBIOS data patching and resolving regression issues from the previous release.
 
 ### Changed
 - Moved DiskArbitrationFixup build to separate repo ([`cd21c5e`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/cd21c5ef04cc1f0516e54930d74fb375c0f44c02))
 - Replaced VoodooI2CHID patch with VoodooInjector kext ([`97eb080`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/97eb0805231b6b1b320de10ce15deb0d4997bb66))
+- Refactored keyboard backlight to use native EC methods ([#38 PR](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/38))
 
 ### Added
 - Added **.serialdata** patch script for custom SMBIOS data ([`e4ead15`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/e4ead158ef938c2a7c2cd02c62a28d1a2fc3f3dd))
