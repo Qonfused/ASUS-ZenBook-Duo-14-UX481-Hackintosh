@@ -1,6 +1,11 @@
 ACPI:
   Delete:                             Macro   | @Clear
   Patch:
+    - Base:                           String  | "_SB.ATKD"
+      Comment:                        String  | "[KBLC] Keyboard Backlight - Rename IANE to XANE"
+      Count:                          Number  | 1
+      Find:                           Data    | <49414E45>
+      Replace:                        Data    | <58414E45>
     - Comment:                        String  | "[ATKD] FN Lock - Rename _QD5 to XQD5"
       Find:                           Data    | <5F514435>
       Replace:                        Data    | <58514435>
@@ -10,9 +15,6 @@ ACPI:
     - Comment:                        String  | "[ATKD] FN+F5 - Rename _Q0F to XQ0F"
       Find:                           Data    | <5F513046>
       Replace:                        Data    | <58513046>
-    - Comment:                        String  | "[ATKD] FN+F7 - Rename _Q0D to XQ0D"
-      Find:                           Data    | <5F513044>
-      Replace:                        Data    | <58513044>
     - Comment:                        String  | "[ATKD] FN+F12 - Rename _Q18 to XQ18"
       Find:                           Data    | <5F513138>
       Replace:                        Data    | <58513138>
