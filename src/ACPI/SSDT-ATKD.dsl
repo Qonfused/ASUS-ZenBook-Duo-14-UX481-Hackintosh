@@ -30,13 +30,11 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "ATKD", 0x00000000)
         }
     }
 
-    Name (FNKL, Zero)
-    Name (BACT, Zero)
-
     Scope (_SB.PCI0.LPCB.EC0)
     {
         // FN + Lock: Toggle
         // Reference: (WMNB, IIA0=0x00100023)
+        Name (FNKL, Zero)
         Method (_QD5, 0, Serialized)
         {
             If (_OSI ("Darwin"))
@@ -65,7 +63,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "ATKD", 0x00000000)
         {
             If (_OSI ("Darwin"))
             {
-                \_SB.ATKD.IANE (0x20)
+                ^^^^ATKD.IANE (0x20)
             }
             Else
             {
@@ -78,7 +76,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "ATKD", 0x00000000)
         {
             If (_OSI ("Darwin"))
             {
-                \_SB.ATKD.IANE (0x10)
+                ^^^^ATKD.IANE (0x10)
             }
             Else
             {
@@ -88,6 +86,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "ATKD", 0x00000000)
 
         // FN + F12: Battery charging threshold toggle
         // Reference: (SRSC; WNMB, IIA0=0x00120057)
+        Name (BACT, Zero)
         Method (_Q18, 0, NotSerialized)
         {
             If (_OSI ("Darwin"))

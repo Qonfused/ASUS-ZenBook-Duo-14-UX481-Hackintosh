@@ -21,7 +21,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "KBLC", 0x00000000)
             Name (DKLV, One)
 
             // Modifies IANE method to override backlight notifier events.
-            // Reference: (KBLD, KBLU)
+            // Reference: (KBLD; KBLU)
             Method (IANE, 1, Serialized)
             {
                 // Hijacks KBLU notifier calls in macOS
@@ -34,28 +34,25 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "KBLC", 0x00000000)
                 XANE (Local0)
             }
 
-            If (_OSI ("Darwin"))
+            // Create keyboard backlight method for writing to EC register.
+            // Reference: (SLKB)
+            Method (SKBV, 1, NotSerialized)
             {
-                // Create keyboard backlight method for writing to EC register.
-                // Reference: (SLKB)
-                Method (SKBV, 1, NotSerialized)
+                Local0 = (Arg0 / 0x10)
+                // Switch direction at min/max backlight
+                Switch (Local0)
                 {
-                    Local0 = (Arg0 / 0x10)
-                    // Switch direction at min/max backlight
-                    Switch (Local0)
-                    {
-                        Case (Zero) { DKLV = Zero }
-                        Case (0x0F) { DKLV = One }
-                    }
-                    // Handle unset initial backlight
-                    If (!^^KBLV && DKLV) { DKLV-- }
-
-                    // Set new backlight value
-                    ^^KBLV = Local0
-                    ^^PCI0.LPCB.EC0.ST9E (0x1F, 0xFF, Arg0)
-
-                    Return (Arg0)
+                    Case (Zero) { DKLV = Zero }
+                    Case (0x0F) { DKLV = One }
                 }
+                // Handle unset initial backlight
+                If (!^^KBLV && DKLV) { DKLV-- }
+
+                // Set new backlight value
+                ^^KBLV = Local0
+                ^^PCI0.LPCB.EC0.ST9E (0x1F, 0xFF, Arg0)
+
+                Return (Arg0)
             }
         }
     }

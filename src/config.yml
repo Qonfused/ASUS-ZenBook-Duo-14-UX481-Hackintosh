@@ -24,12 +24,12 @@ ACPI:
     - Comment:                        String  | "[ATKD] Screenpad Disable - Rename _Q32 to XQ32"
       Find:                           Data    | <5F513332>
       Replace:                        Data    | <58513332>
-    - Base:                           String  | "\_SB.PCI0.I2C1.ETPD"
+    - Base:                           String  | "_SB.PCI0.I2C1.ETPD"
       Comment:                        String  | "[GPI0] ETPD - Rename _CRS to XCRS"
       Count:                          Number  | 1
       Find:                           Data    | <5F435253>
       Replace:                        Data    | <58435253>
-    - Base:                           String  | "\_SB.PCI0.I2C0.TPL1"
+    - Base:                           String  | "_SB.PCI0.I2C0.TPL1"
       Comment:                        String  | "[GPI0] TPL1 - Rename _CRS to XCRS"
       Count:                          Number  | 1
       Find:                           Data    | <5F435253>
