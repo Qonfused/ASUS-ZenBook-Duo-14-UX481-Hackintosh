@@ -18,12 +18,12 @@ This minor version includes small feature improvements and fixes, adding support
 ### Added
 - Added **.serialdata** patch script for custom SMBIOS data ([`e4ead15`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/e4ead158ef938c2a7c2cd02c62a28d1a2fc3f3dd))
 - Added [devcontainers](https://code.visualstudio.com/docs/devcontainers/containers) for dockerized local and remote development ([`dc36bc4`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/dc36bc424c5013bef97cac4d6dbe602ebe17f279))
-
-### Removed
+- Added RTS5227S driver (for RTS522A microSD reader) ([`22608c6`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/22608c64184a1ff81b15ed614124ca956536b1ce))
 
 ### Fixed
 - Fixed config.yml parsing for OC GUI theme ([`05c39b2`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/05c39b216ee0588d4143188385cd226d960166c5))
 - Fixed VoodooI2CHID patch ([`edc5f86`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/edc5f86889ee5866c18b46aee1ce37d73e1a8a4a))
+- ACPI patches correctly parse with OC-Build fix ([`2ec5c96`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/2ec5c96afe8cc64a535dcefa51c297885cd3e026))
 
 ## [0.5.0] - 2023-02-20
 
