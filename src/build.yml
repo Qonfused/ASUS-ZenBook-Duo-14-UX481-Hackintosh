@@ -23,6 +23,7 @@ include:
   - OpenCanopy
   - OpenRuntime
   - ResetNvramEntry
+  - Rts5227S
   kexts:
     Lilu: latest
     WhateverGreen: latest
