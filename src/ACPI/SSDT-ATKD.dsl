@@ -20,13 +20,16 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "ATKD", 0x00000000)
     External (_SB_.PCI0.LPCB.EC0_.XQD5, MethodObj)
     External (KFSK, IntObj)
 
-    If (_OSI ("Darwin"))
+    Scope (_SB)
     {
-        // Sets FN+Lock disable default
-        // Reference: (WMNB, IIA0=0x00100023)
-        If ((KFSK == Zero))
+        If (_OSI ("Darwin"))
         {
-            \_SB.PCI0.LPCB.EC0.ST9E (0x3C, 0xFF, 0x04)
+            // Sets FN+Lock disable default
+            // Reference: (WMNB, IIA0=0x00100023)
+            If ((KFSK == Zero))
+            {
+                \_SB.PCI0.LPCB.EC0.ST9E (0x3C, 0xFF, 0x04)
+            }
         }
     }
 
