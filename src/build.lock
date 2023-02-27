@@ -3,10 +3,10 @@
 # Manual changes might be lost - proceed with caution!
 
 OpenCorePkg:
-  version: 0.8.9
-  url: https://github.com/dortania/build-repo/releases/download/OpenCorePkg-29274ba/OpenCore-0.8.9-DEBUG.zip
-  resolution: '@acidanthera/OpenCorePkg@github:0.8.9#29274ba'
-  checksum: c8bc1ed4c50dca826706a29e75a7a395d25c23cb6c41e95f3786bda3b4e97da5
+  version: 0.9.0
+  url: https://github.com/dortania/build-repo/releases/download/OpenCorePkg-457c68d/OpenCore-0.9.0-DEBUG.zip
+  resolution: '@acidanthera/OpenCorePkg@github:0.9.0#457c68d'
+  checksum: b6cafaa1bc1f6aadb4e7f70360cc890a73048b2206f6f79b27ac150059becebe
   extract: ./X64/EFI/.
   type: directory
   dependencies:

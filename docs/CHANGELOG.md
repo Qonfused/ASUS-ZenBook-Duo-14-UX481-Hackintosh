@@ -24,6 +24,7 @@ This minor version includes small feature improvements and fixes, adding support
 - Fixed config.yml parsing for OC GUI theme ([`05c39b2`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/05c39b216ee0588d4143188385cd226d960166c5))
 - Fixed VoodooI2CHID patch ([`edc5f86`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/edc5f86889ee5866c18b46aee1ce37d73e1a8a4a))
 - ACPI patches correctly parse with OC-Build fix ([`2ec5c96`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/2ec5c96afe8cc64a535dcefa51c297885cd3e026))
+- Bumped OC version to [v0.9.0#457c68d](https://github.com/acidanthera/OpenCorePkg/commit/457c68dcdead63b33c2715e57fbe8a7ad0366db0) to fix OC picker
 
 ## [0.5.0] - 2023-02-20
 
