@@ -93,13 +93,13 @@ jobs:
         name: Prepares EFI directory for upload
         shell: sh
         run: |
-          : # Generate lockfile hash
+          # Generate lockfile hash
           echo "LOCKFILE_HASH=${{ hashFiles('src/build.lock') }}" \
             | grep -Eo ".*=[a-zA-z0-9]{0,8}" >> "$GITHUB_OUTPUT"
-          : # Copy lockfile to EFI directory
+          # Copy lockfile to EFI directory
           cp src/build.lock dist/EFI/build.lock
-          : # Compress EFI directory
-          bsdtar -a -cf EFI.zip dist/EFI
+          # Compress EFI directory
+          zip -r -X EFI.zip dist/EFI
       # Upload built EFI as artifact
       #
       # Uploads EFI with a short-sha slug. The uploaded EFI will be available
