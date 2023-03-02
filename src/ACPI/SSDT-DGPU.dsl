@@ -5,7 +5,7 @@
  * Credit for the Bumblebee (S3) method goes to Bumblebee-Project
  * @see https://github.com/Bumblebee-Project/Bumblebee/wiki/ACPI-for-Developers#acpi-and-the-nvidia-card
  */
-DefinitionBlock ("", "SSDT", 2, "UX481", "dGPU-Off", 0x00000000)
+DefinitionBlock ("", "SSDT", 2, "UX481", "DGPU", 0x00000000)
 {
     External (_SB_.PCI0.RP05.PEGP._DSM, MethodObj)
     External (_SB_.PCI0.RP05.PEGP._OFF, MethodObj)
@@ -23,10 +23,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "dGPU-Off", 0x00000000)
                 {
                     Return (0x0F)
                 }
-                Else
-                {
-                    Return (Zero)
-                }
+                Else { Return (Zero) }
             }
 
             Method (_INI, 0, NotSerialized)
@@ -50,10 +47,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "dGPU-Off", 0x00000000)
                 {
                     Return (0x0F)
                 }
-                Else
-                {
-                    Return (Zero)
-                }
+                Else { Return (Zero) }
             }
 
             Method (_INI, 0, NotSerialized)
@@ -63,7 +57,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "dGPU-Off", 0x00000000)
                     // dGPU off request
                     \_SB.PCI0.RP05.PEGP._DSM (ToUUID ("a486d8f8-0bda-471b-a72b-6042a6b5bee0"), 0x0100, 0x1A, Buffer (0x04)
                         {
-                             0x01, 0x00, 0x00, 0x03
+                            0x01, 0x00, 0x00, 0x03
                         })
                     // Power dGPU off
                     \_SB.PCI0.RP05.PEGP._PS3 ()

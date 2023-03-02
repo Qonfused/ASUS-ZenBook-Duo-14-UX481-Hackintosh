@@ -15,10 +15,7 @@ DefinitionBlock ("", "SSDT", 2, "DRTNIA", "SBUSMCHC", 0x00000000)
             {
                 Return (0x0F)
             }
-            Else
-            {
-                Return (Zero)
-            }
+            Else { Return (Zero) }
         }
     }
 
@@ -51,10 +48,7 @@ DefinitionBlock ("", "SSDT", 2, "DRTNIA", "SBUSMCHC", 0x00000000)
             {
                 Return (0x0F)
             }
-            Else
-            {
-                Return (Zero)
-            }
+            Else { Return (Zero) }
         }
     }
 }
