@@ -27,7 +27,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "KBLC", 0x00000000)
         Method (SKBV, 1, NotSerialized)
         {
             Local0 = (Arg0 / 0x10)
-            If ((^^KBLV != Local0))
+            If ((^^KBLV != Local0) || !Local0)
             {
                 // Switch direction at min/max backlight
                 If ((!Local0 || (Local0 == 0x0F))) { DKLV ^= One }
