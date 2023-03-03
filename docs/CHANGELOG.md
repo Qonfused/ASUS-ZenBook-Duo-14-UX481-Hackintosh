@@ -8,6 +8,16 @@ The latest progress can be viewed on this repository's [project board](https://g
 
 ## [0.5.2] - Unreleased
 
+### Added
+- Added XWAK SSDT for fixing some device wake behaviors ([`8dbc419`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/8dbc419aadacd708a0fb785f71bf90b915c15fbb))
+
+### Removed
+- Properly nullified primary + screenpad display GPIO pinning ([`ddbdeee`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/ddbdeee79cccdebb887b0a9fbbb21e4c8912df44))
+
+### Fixed
+- Addressed macOS SSDTs being injected into Linux/Windows ([`ddbdeee`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/ddbdeee79cccdebb887b0a9fbbb21e4c8912df44))
+- Fixed keyboard backlight edge case on startup ([`ddbdeee`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/ddbdeee79cccdebb887b0a9fbbb21e4c8912df44))
+
 ## [0.5.1] - 2023-02-27
 
 This minor version includes small feature improvements and fixes, adding support for SMBIOS data patching and resolving regression issues from the previous release.
