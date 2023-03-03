@@ -6,12 +6,9 @@ DefinitionBlock ("", "SSDT", 2, "DRTNIA", "AWAC", 0x00000000)
 {
     External (STAS, IntObj)
 
-    Scope (_SB)
+    If (_OSI ("Darwin"))
     {
-        If (_OSI ("Darwin"))
-        {
-            // Enables _STA method in legacy RTC
-            STAS = One
-        }
+        // Enables _STA method in legacy RTC
+        STAS = One
     }
 }

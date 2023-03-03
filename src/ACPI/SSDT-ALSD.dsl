@@ -13,17 +13,10 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "ALSD", 0x00000000)
 		// Enables ambient light sensor device.
 		// Reference: (ALSD)
 		ALSE = 0x02
-			
-		Scope (\_SB.ATKD)
-		{
-			Method (ALSS, 0, NotSerialized)
-			{
-				Return (^^ALSD._ALI ())
-			}
 
-			Method (ALSC, 1, NotSerialized)
-			{
-			}
+		Method (_SB.ATKD.ALSS, 0, NotSerialized)
+		{
+			Return (^^ALSD._ALI ())
 		}
 	}
 }

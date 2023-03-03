@@ -17,22 +17,26 @@ include:
     SSDT-PNLF: "ACPI/SSDT-PNLF.dsl"
     SSDT-SBUS-MCHC: "ACPI/SSDT-SBUS-MCHC.dsl"
     SSDT-SPLC: "ACPI/SSDT-SPLC.dsl"
+    SSDT-XWAK: "ACPI/SSDT-XWAK.dsl"
   drivers:
   - AudioDxe
   - HfsPlus
   - OpenCanopy
   - OpenRuntime
   - ResetNvramEntry
+  # Required for booting from built-in microSD reader
   - Rts5227S
   kexts:
     Lilu: latest
     WhateverGreen: latest
     AppleALC: latest
+    # VirtualSMC + plugins
     VirtualSMC: latest
     AsusSMC: hieplpvip/AsusSMC=latest
     SMCBatteryManager: "*"
     SMCProcessor: "*"
     SMCSuperIO: "*"
+    # Wi-Fi / Bluetooth
     AirportItlwm-Ventura:
       specifier: OpenIntelWireless/itlwm=^2.2.0
       MaxKernel: "22.99.99"
@@ -57,6 +61,7 @@ include:
       specifier: "*"
       MaxKernel: "20.99.99"
     IntelBTPatcher: "*"
+    # Misc. Lilu plugins
     CpuTscSync: latest
     DiskArbitrationFixup: Qonfused/DiskArbitrationFixup=latest
     ECEnabler: latest
@@ -66,16 +71,18 @@ include:
     RealtekCardReader: 0xFireWolf/RealtekCardReader=latest
     RealtekCardReaderFriend: 0xFireWolf/RealtekCardReaderFriend=latest
     RestrictEvents: latest
+    # Misc. non-Lilu kexts
     USBToolBox: USBToolbox/kext=latest
     UTBMap: "./Kexts/UTBMap.kext"
+    # Voodoo kexts + plugins
     VoodooI2C/VoodooI2CServices: "*"
     VoodooI2C/VoodooGPIO: "*"
     VoodooI2C/VoodooInput: "*"
     VoodooI2C: VoodooI2C/VoodooI2C=latest
     VoodooI2CHID: "*"
-    VoodooInjector: Qonfused/VoodooInjector=latest
     VoodooPS2Controller: acidanthera/VoodooPS2=latest
     VoodooPS2Controller/VoodooPS2Keyboard: "*"
+    VoodooInjector: Qonfused/VoodooInjector=latest
   tools:
   - OpenShell
 exclude:

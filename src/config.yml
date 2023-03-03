@@ -1,11 +1,6 @@
 ACPI:
   Delete:                             Macro   | @Clear
   Patch:
-    - Base:                           String  | "_SB.ATKD"
-      Comment:                        String  | "[KBLC] Keyboard Backlight - Rename IANE to XANE"
-      Count:                          Number  | 1
-      Find:                           Data    | <49414E45>
-      Replace:                        Data    | <58414E45>
     - Comment:                        String  | "[ATKD] FN Lock - Rename _QD5 to XQD5"
       Find:                           Data    | <5F514435>
       Replace:                        Data    | <58514435>
@@ -25,17 +20,25 @@ ACPI:
       Find:                           Data    | <5F513332>
       Replace:                        Data    | <58513332>
     - Base:                           String  | "_SB.PCI0.I2C1.ETPD"
-      Comment:                        String  | "[GPI0] ETPD - Rename _CRS to XCRS"
+      Comment:                        String  | "[GPI0] Trackpad - Rename _CRS to XCRS"
       Count:                          Number  | 1
       Find:                           Data    | <5F435253>
       Replace:                        Data    | <58435253>
     - Base:                           String  | "_SB.PCI0.I2C0.TPL1"
-      Comment:                        String  | "[GPI0] TPL1 - Rename _CRS to XCRS"
+      Comment:                        String  | "[GPI0] Primary Display - Rename _CRS to XCRS"
       Count:                          Number  | 1
       Find:                           Data    | <5F435253>
       Replace:                        Data    | <58435253>
-  Quirks:
-    ResetLogoStatus:                  Boolean | true
+    - Base:                           String  | "_SB.PCI0.I2C3.TPL0"
+      Comment:                        String  | "[GPI0] Screenpad Plus - Rename _CRS to XCRS"
+      Count:                          Number  | 1
+      Find:                           Data    | <5F435253>
+      Replace:                        Data    | <58435253>
+    - Base:                           String  | "_SB.ATKD"
+      Comment:                        String  | "[KBLC] Keyboard Backlight - Rename IANE to XANE"
+      Count:                          Number  | 1
+      Find:                           Data    | <49414E45>
+      Replace:                        Data    | <58414E45>
 Booter:
   MmioWhitelist:                      Macro   | @Clear
   Patch:                              Macro   | @Clear

@@ -8,7 +8,7 @@ DefinitionBlock ("", "SSDT", 2, "DRTNIA", "PNLF", 0x00000000)
 
     If (_OSI ("Darwin"))
     {
-        Device (\_SB.PCI0.GFX0.PNLF)
+        Device (_SB.PCI0.GFX0.PNLF)
         {
             Name (_HID, EisaId ("APP0002"))
             Name (_CID, "backlight")
