@@ -46,10 +46,10 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "KBLC", 0x00000000)
         {
             // Hijacks KBLU notifier calls in macOS
             If (_OSI ("Darwin") && Arg0 == 0xC7) {
-                Local0 = 0xC4           // 0xC4 - Backlight Up
-                If (DKLV) { Local0++ }  // 0xC5 - Backlight Down
+                Local0 = 0xC4                    // 0xC4 - Backlight Up
+                If (DKLV && ^^KBLV) { Local0++ } // 0xC5 - Backlight Down
             }
-            Else { Local0 = Arg0 }      // For all other events
+            Else { Local0 = Arg0 }               // For all other events
 
             XANE (Local0)
         }
