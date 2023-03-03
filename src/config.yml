@@ -39,6 +39,9 @@ ACPI:
       Count:                          Number  | 1
       Find:                           Data    | <49414E45>
       Replace:                        Data    | <58414E45>
+    - Comment:                        String  | "[XWAK] Rename _WAK to XWAK"
+      Find:                           Data    | <5F57414B>
+      Replace:                        Data    | <5857414B>
 Booter:
   MmioWhitelist:                      Macro   | @Clear
   Patch:                              Macro   | @Clear
