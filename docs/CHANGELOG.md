@@ -6,10 +6,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
 
-## [0.5.2] - Unreleased
+## [0.5.3] - Unreleased
+
+## [0.5.2] - 2023-03-20
+
+This minor version includes some small refinements and stability fixes with overall improved code quality.
+
+### Changed
+- Bumped OpenCore version to version 0.9.0 release ([`978dc81`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/978dc8100d310e71f32b66e954a15cc159443636))
+- Reverted ScreenPad Plus busID to `0x01` ([`f58e77e`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/f58e77e9b44aea6f733a9d723ab4f513a4adeffc))
 
 ### Added
 - Added XWAK SSDT for fixing some device wake behaviors ([`8dbc419`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/8dbc419aadacd708a0fb785f71bf90b915c15fbb))
+- Added [`gen-debug.sh`](/scripts/gen-debug.sh) script for kernel logs + diagnostics. ([`aa70c04`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/aa70c044063f963f1d9b3d1211315b382d494314))
 
 ### Removed
 - Properly nullified primary + screenpad display GPIO pinning ([`ddbdeee`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/ddbdeee79cccdebb887b0a9fbbb21e4c8912df44))
