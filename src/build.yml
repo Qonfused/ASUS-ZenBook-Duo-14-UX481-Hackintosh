@@ -1,5 +1,5 @@
 ---
-oc-version: 0.9.0#457c68d
+oc-version: 0.9.0
 oc-build: DEBUG
 ---
 include:

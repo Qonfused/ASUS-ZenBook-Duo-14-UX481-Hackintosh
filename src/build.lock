@@ -4,9 +4,9 @@
 
 OpenCorePkg:
   version: 0.9.0
-  url: https://github.com/dortania/build-repo/releases/download/OpenCorePkg-457c68d/OpenCore-0.9.0-DEBUG.zip
-  resolution: '@acidanthera/OpenCorePkg@github:0.9.0#457c68d'
-  checksum: b6cafaa1bc1f6aadb4e7f70360cc890a73048b2206f6f79b27ac150059becebe
+  url: https://github.com/dortania/build-repo/releases/download/OpenCorePkg-e4f0ba1/OpenCore-0.9.0-DEBUG.zip
+  resolution: '@acidanthera/OpenCorePkg@github:0.9.0#e4f0ba1'
+  checksum: 9e29d3d254b15ad23bf8b51f45c04b99c15f84eb9a1c30ea172b3ad3fccfa7b6
   extract: ./X64/EFI/.
   type: directory
   dependencies:
@@ -18,10 +18,10 @@ OpenCorePkg:
         - ./Resources/.
       type: binary
 Lilu:
-  version: 1.6.4
-  url: https://github.com/dortania/build-repo/releases/download/Lilu-307f1f8/Lilu-1.6.4-DEBUG.zip
-  resolution: '@acidanthera/Lilu@github:1.6.4#307f1f8'
-  checksum: cc75d95d073a79cf8898f2ae4bc1ce8e44673b43864bece625716436cc05a5e0
+  version: 1.6.5
+  url: https://github.com/dortania/build-repo/releases/download/Lilu-3f61754/Lilu-1.6.5-DEBUG.zip
+  resolution: '@acidanthera/Lilu@github:1.6.5#3f61754'
+  checksum: 4c76ff13df3221d7d23971db82df5617e41df8a757d661b413dfdd798b62c429
   extract: ./Lilu.kext
   type: kext
 WhateverGreen:
@@ -32,17 +32,17 @@ WhateverGreen:
   extract: ./WhateverGreen.kext
   type: kext
 AppleALC:
-  version: 1.8.0
-  url: https://github.com/dortania/build-repo/releases/download/AppleALC-c2b0228/AppleALC-1.8.0-DEBUG.zip
-  resolution: '@acidanthera/AppleALC@github:1.8.0#c2b0228'
-  checksum: fe9a9b5cad5e5227693a1689c41a3b9466ef053021946ddd9fec5e9981f29fa3
+  version: 1.8.1
+  url: https://github.com/dortania/build-repo/releases/download/AppleALC-79c8650/AppleALC-1.8.1-DEBUG.zip
+  resolution: '@acidanthera/AppleALC@github:1.8.1#79c8650'
+  checksum: 03a404d17082e699d3df88c28041b1b5b56dd3d295a3f81dc59eea46f9041cca
   extract: ./AppleALC.kext
   type: kext
 VirtualSMC:
-  version: 1.3.1
-  url: https://github.com/dortania/build-repo/releases/download/VirtualSMC-8623634/VirtualSMC-1.3.1-DEBUG.zip
-  resolution: '@acidanthera/VirtualSMC@github:1.3.1#8623634'
-  checksum: cbb3fb94c096fed7a439ad2feb79826a48cb79917976d0baf06110764dd46df5
+  version: 1.3.2
+  url: https://github.com/dortania/build-repo/releases/download/VirtualSMC-87e726c/VirtualSMC-1.3.2-DEBUG.zip
+  resolution: '@acidanthera/VirtualSMC@github:1.3.2#87e726c'
+  checksum: 9eafd4bb6924f132e9641c87855044c5abb2ae5da77f84785c0504092bee47e2
   extract: ./Kexts/VirtualSMC.kext
   type: kext
   bundled:
@@ -105,11 +105,11 @@ IntelBluetoothFirmware:
   extract: ./IntelBluetoothFirmware.kext
   type: kext
   bundled:
-    IntelBTPatcher:
-      extract: ./IntelBTPatcher.kext
-      type: kext
     IntelBluetoothInjector:
       extract: ./IntelBluetoothInjector.kext
+      type: kext
+    IntelBTPatcher:
+      extract: ./IntelBTPatcher.kext
       type: kext
 CpuTscSync:
   version: 1.1.0
@@ -134,9 +134,9 @@ ECEnabler:
   type: kext
 FeatureUnlock:
   version: 1.1.4
-  url: https://github.com/dortania/build-repo/releases/download/FeatureUnlock-c85c6aa/FeatureUnlock-1.1.4-DEBUG.zip
-  resolution: '@acidanthera/FeatureUnlock@github:1.1.4#c85c6aa'
-  checksum: f96ac4022f0f84aa4f6543df2e99b8da8457965efeacddc1ab0b9c5026ee5208
+  url: https://github.com/dortania/build-repo/releases/download/FeatureUnlock-ec664b2/FeatureUnlock-1.1.4-DEBUG.zip
+  resolution: '@acidanthera/FeatureUnlock@github:1.1.4#ec664b2'
+  checksum: d68e9ca1faf5e47d4aa301c2746e34928d4bc9644f90ed1f9b9a340465a73d01
   extract: ./FeatureUnlock.kext
   type: kext
 HibernationFixup:
@@ -192,17 +192,17 @@ VoodooI2C:
     VoodooI2CHID:
       extract: ./VoodooI2CHID.kext
       type: kext
+VoodooPS2Controller:
+  version: 2.3.5
+  url: https://github.com/dortania/build-repo/releases/download/VoodooPS2-89ae563/VoodooPS2Controller-2.3.5-DEBUG.zip
+  resolution: '@acidanthera/VoodooPS2@github:2.3.5#89ae563'
+  checksum: 4d595b0a424d550347ed3cfa33c3da2a1d45701cec0a5143c9443e80a54a6bb0
+  extract: ./VoodooPS2Controller.kext
+  type: kext
 VoodooInjector:
   version: 1.0.0
   url: https://github.com/Qonfused/VoodooInjector/releases/download/1.0.0/VoodooInjector-1.0.0-DevBuild-02242023_232212.kext.zip
   resolution: '@Qonfused/VoodooInjector@github:1.0.0#release'
   checksum: 90f8edd5ebaf793e0ecc91e6b1cfe68e77119c0af1a8f7d30869b9872aed7d42
   extract: ./VoodooInjector.kext
-  type: kext
-VoodooPS2Controller:
-  version: 2.3.4
-  url: https://github.com/dortania/build-repo/releases/download/VoodooPS2-3f7f910/VoodooPS2Controller-2.3.4-DEBUG.zip
-  resolution: '@acidanthera/VoodooPS2@github:2.3.4#3f7f910'
-  checksum: b0f9938b873c9bd31d65db98676d442cf95a7d3d194171314900c256597e8847
-  extract: ./VoodooPS2Controller.kext
   type: kext
