@@ -292,8 +292,8 @@
     </tr>
     <tr>
       <td>Hibernation</td>
-      <td style="text-align: center;">🚧</td>
-      <td>Untested.</td>
+      <td style="text-align: center;">✅</td>
+      <td>Supported.</td>
     </tr>
   <!-- Battery meter -->
     <tr>
