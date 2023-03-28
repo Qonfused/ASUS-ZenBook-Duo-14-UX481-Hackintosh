@@ -1,6 +1,51 @@
+## @file
+# config.plist configuration file for the UX481FA/UX481FL
+#
+# Copyright (c) 2023, Cory Bennett. All rights reserved.
+# SPDX-License-Identifier: BSD-3-Clause
+##
+
+# Refer to the below resources for more information on sensible defaults:
+# - https://dortania.github.io/OpenCore-Install-Guide/config-laptop.plist/coffee-lake-plus.html
+# - https://github.com/acidanthera/OpenCorePkg/blob/master/Docs/Configuration.pdf
+#   (or https://dortania.github.io/docs/latest/Configuration.html)
+
+# Clean reduntant or unused entries with the '@Clear' parsing macro.
 ACPI:
   Delete:                             Macro   | @Clear
+Booter:
+  MmioWhitelist:                      Macro   | @Clear
+  Patch:                              Macro   | @Clear
+DeviceProperties:
+  Add:                                Macro   | @Clear
+Misc:
+  Entries:                            Macro   | @Clear
+Kernel:
+  Block:                              Macro   | @Clear
+  Force:                              Macro   | @Clear
+  Patch:                              Macro   | @Clear
+UEFI:
+  ReservedMemory:                     Macro   | @Clear
+
+# These entries are expected to be overwritten based on the build.yml file.
+# Clearing these entries is largely redundant due to being overwritten, but this
+# also ensures consistent behavior across various build environments.
+ACPI:
+  Add:                                Macro   | @Clear
+Kernel:
+  Add:                                Macro   | @Clear
+Misc:
+  Tools:                              Macro   | @Clear
+UEFI:
+  Drivers:                            Macro   | @Clear
+
+################################################################################
+#                               ACPI related fixes                             #
+################################################################################
+
+ACPI:
   Patch:
+    # Companion to src/ACPI/SSDT-ATKD.dsl -> EFI/OC/ACPI/SSDT-ATKD.aml
     - Comment:                        String  | "[ATKD] FN Lock - Rename _QD5 to XQD5"
       Find:                           Data    | <5F514435>
       Replace:                        Data    | <58514435>
@@ -19,6 +64,7 @@ ACPI:
     - Comment:                        String  | "[ATKD] Screenpad Disable - Rename _Q32 to XQ32"
       Find:                           Data    | <5F513332>
       Replace:                        Data    | <58513332>
+    # Companion to src/ACPI/SSDT-GPIO.dsl -> EFI/OC/ACPI/SSDT-GPIO.aml
     - Base:                           String  | "_SB.PCI0.I2C1.ETPD"
       Comment:                        String  | "[GPI0] Trackpad - Rename _CRS to XCRS"
       Count:                          Number  | 1
@@ -34,93 +80,249 @@ ACPI:
       Count:                          Number  | 1
       Find:                           Data    | <5F435253>
       Replace:                        Data    | <58435253>
+    # Companion to src/ACPI/SSDT-KBLC.dsl -> EFI/OC/ACPI/SSDT-KBLC.aml
     - Base:                           String  | "_SB.ATKD"
       Comment:                        String  | "[KBLC] Keyboard Backlight - Rename IANE to XANE"
       Count:                          Number  | 1
       Find:                           Data    | <49414E45>
       Replace:                        Data    | <58414E45>
+    # Companion to src/ACPI/SSDT-XWAK.dsl -> EFI/OC/ACPI/SSDT-XWAK.aml
     - Comment:                        String  | "[XWAK] Rename _WAK to XWAK"
       Find:                           Data    | <5F57414B>
       Replace:                        Data    | <5857414B>
-Booter:
-  MmioWhitelist:                      Macro   | @Clear
-  Patch:                              Macro   | @Clear
+
+################################################################################
+#                           BIOS/firmware related fixes                        #
+################################################################################
+
+Kernel:
   Quirks:
+    # Disables 0xE2 MSR modification in XNU kernel.
+    # - Addresses early panic issues due to 0xE2 write conflicts.
+    # - Note: Is equivalent to disabling `CFG-Lock` in BIOS.
+    AppleXcpmCfgLock:                 Boolean | true
+    # Disables IOMapper (VT-D) support in XNU kernel.
+    # - Addresses IOMMU misconfiguration which can result in broken devices like
+    #   Wi-Fi or Ethernet adapters.
+    # - This quirk only affects macOS and does not obstruct VT-D support in
+    #   Windows or Linux.
+    # - Note: Is equivalent to disabling `VT-D` in BIOS.
+    DisableIoMapper:                  Boolean | true
+Booter:
+  Quirks:
+    # Reduces stolen memory footprint by removing runtime attributes from known
+    # MMIO regions. Saves between 64-256 MB of memory for bootloader allocation.
     DevirtualiseMmio:                 Boolean | true
+    # Disables memory map analysis of firmware as all slides (1-255) are usable.
+    EnableSafeModeSlide:              Boolean | false
+    ProvideCustomSlide:               Boolean | false
+    # Prevents kernel panic on `Invalid frame pointer`.
+    # - Addresses macOS conflict with CR0 MRS register.
+    # - The below options reflect support for MATs (2018+ firmware).
+    # - https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/extended/kernel-issues.html#kernel-panic-on-invalid-frame-pointer
+    EnableWriteUnprotector:           Boolean | false
     ProtectUefiServices:              Boolean | true
     RebuildAppleMemoryMap:            Boolean | true
     SyncRuntimePermissions:           Boolean | true
+
+# Sets hibernation behavior defaults.
+# - This leverages functionality from the HibernationFixup kext.
+# - https://github.com/acidanthera/HibernationFixup
+NVRAM:
+  Add:
+    E09B9297-7928-4440-9AAB-D1F8536FBF0A:
+      # Controls auto-hibernation feature:
+      # 01 - `EnableAutoHibernation`
+      # 04 - `WhenExternalPowerIsDisconnected`
+      # 08 - `WhenBatteryIsNotCharging`
+      hbfx-ahbm:                      Number  | 13
+
+################################################################################
+#                                  Boot fixes                                  #
+################################################################################
+
+# Boot picker drive scan fixes
+Misc:
+  Security:
+    # Allows setting a default boot entries when holding the CTRL key.
+    AllowSetDefault:                  Boolean | true
+    # Allows all bootable parition types to show in the boot picker.
+    # - https://dortania.github.io/OpenCore-Post-Install/universal/security/scanpolicy.html
+    ScanPolicy:                       Number  | 0
+UEFI:
+  APFS:
+    # Sets min APFS version to macOS Catalina.
+    # - Overrides default minimum (Big Sur) to allow Catalina multi-boot.
+    # - This will also hide incompatible APFS boot entries in the boot picker.
+    MinDate:                          Number  | 20200306
+    MinVersion:                       Number  | 1412101001000000
+  Output:
+    # Sets proper display scaling for boot picker + debug logging.
+    # - https://dortania.github.io/OpenCore-Post-Install/universal/security/scanpolicy.html
+    UIScale:                          Number  | 1
+
+# Misc functional boot fixes
+Booter:
+  Quirks:
+    # Reduces stolen memory footprint by removing runtime attributes from known
+    # MMIO regions. Saves between 64-256 MB of memory for bootloader allocation.
+    DevirtualiseMmio:                 Boolean | true
+Kernel:
+  Quirks:
+    # Prevents SSD scan timeouts that may stall booting.
+    SetApfsTrimTimeout:               Number  | 0
+
+################################################################################
+#                           CPU/Graphics related fixes                         #
+################################################################################
+
+# Spoof CPU name (cosmetic)
+# - This leverages functionality from the RestrictEvents kext (`revcpu=1`).
+NVRAM:
+  Add:
+    4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:
+      revcpu:                         Number  | 1
+      revcpuname:                     String  | "Intel Core i7-10510U CPU @ 1.80GHz"
+      # revcpuname:                     String  | "Intel Core i5-10210U CPU @ 1.60GHz"
+PlatformInfo:
+  Generic:
+    ProcessorType:                    Number  | 1537
+
+# UHD 620 iGPU patches
 DeviceProperties:
   Add:
-    PciRoot(0x0)/Pci(0x1F,0x0):
-      AAPL,slot-name:                 String  | "Internal@0,31,0"
-      device_type:                    String  | "Low Pin Count (LPC) Bus"
-    PciRoot(0x0)/Pci(0x1F,0x3):
-      AAPL,slot-name:                 String  | "Internal@0,31,3"
-      device_type:                    String  | "Audio device"
-      layout-id:                      Data    | <15000000>
-      model:                          String  | "Comet Lake PCH cAVS"
     PciRoot(0x0)/Pci(0x2,0x0):
       AAPL,ig-platform-id:            Data    | <00009B3E>
       AAPL,slot-name:                 String  | "Internal@0,2,0"
+      model:                          String  | "Intel UHD Graphics 620"
+      # Spoof as UHD 630 integrated graphics.
       device-id:                      Data    | <9B3E0000>
+      # Misc. Comet-Lake backlight fixes.
       enable-backlight-registers-fix: Boolean | true
       enable-backlight-smoother:      Boolean | true
+      # Framebuffer connector patches.
+      # - con0 [eDP/LVDS]: Internal Display
+      # - con1 [DP]      : ScreenPad-Plus
+      # - con2 [HDMI]    : HDMI 1.4 port
       framebuffer-con1-alldata:       Data    | <01010900 00040000 C7030000>
       framebuffer-con1-enable:        Data    | <01000000>
       framebuffer-con2-alldata:       Data    | <02020A00 00080000 C7030000>
       framebuffer-con2-enable:        Data    | <01000000>
       framebuffer-patch-enable:       Data    | <01000000>
-      model:                          String  | "Intel UHD Graphics 620"
-Kernel:
-  Block:                              Macro   | @Clear
-  Force:                              Macro   | @Clear
-  Patch:                              Macro   | @Clear
-  Quirks:
-    AppleXcpmCfgLock:                 Boolean | true
-    CustomSMBIOSGuid:                 Boolean | true
-    DisableIoMapper:                  Boolean | true
-    PanicNoKextDump:                  Boolean | true
-    PowerTimeoutKernelPanic:          Boolean | true
-    SetApfsTrimTimeout:               Number  | 0
-Misc:
-  Boot:
-    PickerMode:                       String  | "External"
-    PickerVariant:                    String  | "Acidanthera\GoldenGate"
-  Entries:                            Macro   | @Clear
-  Security:
-    AllowSetDefault:                  Boolean | true
-    ScanPolicy:                       Number  | 0
-    Vault:                            String  | "Optional"
+
+################################################################################
+#                             Audio related fixes                              #
+################################################################################
+
+# Audio controller fix (layout also addresses built-in microphone + speakers)
+# - https://dortania.github.io/OpenCore-Post-Install/universal/audio.html
+DeviceProperties:
+  Add:
+    PciRoot(0x0)/Pci(0x1F,0x3):
+      AAPL,slot-name:                 String  | "Internal@0,31,3"
+      device_type:                    String  | "Audio device"
+      model:                          String  | "Comet Lake PCH cAVS"
+      # Specifies AppleALC layout 15 for Realtek ALC294 controller.
+      # - Possible layouts: 11, 12, 13, 15, 21, 22, 28, 44, 66, 99
+      # - https://github.com/acidanthera/AppleALC/tree/master/Resources/ALC294/Info.plist
+      layout-id:                      Data    | <15000000> 
+
+# Configure Boot chime (optional and also cosmetic)
+# - https://dortania.github.io/OpenCore-Post-Install/cosmetic/gui.html#setting-up-boot-chime-with-audiodxe
 NVRAM:
   Add:
-    4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:
-      revcpu:                         Number  | 1
-      # revcpuname:                     String  | "Intel Core i5-10210U CPU @ 1.60GHz"
-      revcpuname:                     String  | "Intel Core i7-10510U CPU @ 1.80GHz"
     7C436110-AB2A-4BBB-A880-FE41995C9F82:
       SystemAudioVolume:              Data    | <28>
-      boot-args:                      String  | "-v debug=0x100 keepsyms=1 -msgbuf=1048576"
-      csr-active-config:              Data    | <67000000>
-      prev-lang:kbd:                  String  | "en-US:0"
-PlatformInfo:
-  Generic:
-    # MLB:                              String  | "{{}}"
-    ProcessorType:                    Number  | 1537
-    # ROM:                              Data    | <{{}}>
-    SystemProductName:                String  | "MacBookPro16,3"
-    # SystemSerialNumber:               String  | "{{}}"
-    # SystemUUID:                       String  | "{{}}"
-  UpdateSMBIOSMode:                   String  | Custom
 UEFI:
-  APFS:
-    MinDate:                          Number  | 20200306
-    MinVersion:                       Number  | 1412101001000000
   Audio:
     AudioDevice:                      String  | "PciRoot(0x0)/Pci(0x1F,0x3)"
     AudioOutMask:                     Number  | -1
     AudioSupport:                     Boolean | true
     PlayChime:                        String  | "Disabled"
-  Output:
-    UIScale:                          Number  | 1
-  ReservedMemory:                     Macro   | @Clear
+
+################################################################################
+#                           Platform (SMBIOS) fixes                            #
+################################################################################
+
+# Spoof device SMBIOS as MacBookPro16,3 or A2289 (EMC 3456) model.
+# - Affects CPU power management in macOS (XCPM).
+# - Affects iGPU display outputs in macOS (AGDP).
+# - https://dortania.github.io/OpenCore-Install-Guide/extras/smbios-support.html
+PlatformInfo:
+  Generic:
+    SystemProductName:                String  | "MacBookPro16,3"
+
+# Prevents SMBIOS injection into non-Apple operating systems.
+Kernel:
+  Quirks:
+    CustomSMBIOSGuid:                 Boolean | true
+PlatformInfo:
+  UpdateSMBIOSMode:                   String  | Custom
+
+################################################################################
+#                             Misc. Cosmetic fixes                             #
+################################################################################
+
+# Use default GoldenGate theme with OpenCanopy.
+# - https://dortania.github.io/OpenCore-Post-Install/cosmetic/gui.html
+Misc:
+  Boot:
+    PickerMode:                       String  | "External"
+    PickerVariant:                    String  | "Acidanthera\GoldenGate"
+
+# Changes default macOS installer/keyboard language to English.
+# - You can find a list of supported languages below (convert HEX -> ASCI):
+#   https://github.com/acidanthera/OpenCorePkg/blob/master/Utilities/AppleKeyboardLayouts/AppleKeyboardLayouts.txt
+NVRAM:
+  Add:
+    7C436110-AB2A-4BBB-A880-FE41995C9F82:
+      prev-lang:kbd:                  String  | "en-US:0"
+
+################################################################################
+#                             Security related fixes                           #
+################################################################################
+
+Misc:
+  Security:
+    # OpenCore vaulting configuration (optional=no vault enforced, insecure)
+    # - https://dortania.github.io/OpenCore-Post-Install/universal/security/vault.html
+    Vault:                            String  | "Optional"
+NVRAM:
+  Add:
+    7C436110-AB2A-4BBB-A880-FE41995C9F82:
+      # Enables System Integrity Protection (SIP) setting in macOS.
+      # - Possible values include:
+      #   - 00000000: Default (enabled)
+      #   - 67000000: Disables all SIP protections
+      #   - 03000000: Disables Kext signing and filesystem restrictions.
+      # - https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/extended/post-issues.html#disabling-sip
+      csr-active-config:              Data    | <00000000>
+
+################################################################################
+
+#ifdef DEBUG
+
+# Debugging quirks (recommended with DEBUG version of OpenCore)
+# - https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
+# - https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/kernel-debugging.html#config-plist-setup
+Kernel:
+  Quirks:
+    PanicNoKextDump:                  Boolean | true
+    PowerTimeoutKernelPanic:          Boolean | true
+Misc:
+  Debug:
+    AppleDebug:                       Boolean | true
+    ApplePanic:                       Boolean | true
+    DisableWatchDog:                  Boolean | true
+    Target:                           Number  | 67
+NVRAM:
+  Add:
+    7C436110-AB2A-4BBB-A880-FE41995C9F82:
+      # Breakdown of used boot args:
+      # `-v`              (verbose mode)
+      # `debug=0x100`     (debug mask; disables watchdog to avoid panic reboot)
+      # `keepsyms=1`      (show panic log debug symbols)
+      # `msgbuf=1048576`  (Resizes kernel msg buffer to 1 MB; avoids truncation)
+      boot-args:                      String  | "-v debug=0x100 keepsyms=1 msgbuf=1048576"
+
+#endif
