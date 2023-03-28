@@ -6,6 +6,9 @@
 !/.gitignore
 !/.gitmodules
 
+# Build config files
+!.serialdata.example
+
 # Build artifacts
 /dist
 

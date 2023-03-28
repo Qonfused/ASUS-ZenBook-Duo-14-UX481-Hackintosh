@@ -1,7 +1,7 @@
 {
   "files.associations": {
     "*.lock": "yaml",
-    ".serialdata": "yaml"
+    ".serialdata*": "yaml"
   },
   "[dsl]": {
     "editor.detectIndentation": false,
