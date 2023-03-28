@@ -118,8 +118,8 @@ Booter:
     ProvideCustomSlide:               Boolean | false
     # Prevents kernel panic on `Invalid frame pointer`.
     # - Addresses macOS conflict with CR0 MRS register.
-    # - The below options reflect support for MATs (2018+ firmware).
     # - https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/extended/kernel-issues.html#kernel-panic-on-invalid-frame-pointer
+    # - Note: The below options reflect support for MATs (2018+ firmware).
     EnableWriteUnprotector:           Boolean | false
     ProtectUefiServices:              Boolean | true
     RebuildAppleMemoryMap:            Boolean | true
@@ -161,15 +161,9 @@ UEFI:
     # - https://dortania.github.io/OpenCore-Post-Install/universal/security/scanpolicy.html
     UIScale:                          Number  | 1
 
-# Misc functional boot fixes
-Booter:
-  Quirks:
-    # Reduces stolen memory footprint by removing runtime attributes from known
-    # MMIO regions. Saves between 64-256 MB of memory for bootloader allocation.
-    DevirtualiseMmio:                 Boolean | true
+# Prevent SSD scan timeouts that may stall booting.
 Kernel:
   Quirks:
-    # Prevents SSD scan timeouts that may stall booting.
     SetApfsTrimTimeout:               Number  | 0
 
 ################################################################################
