@@ -25,7 +25,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
         USTP = One
     }
 
-    // Trackpad
+    // GPIO - Trackpad
     Scope (_SB.PCI0.I2C1.ETPD)
     {
         Name (SBFG, ResourceTemplate ()
@@ -37,6 +37,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
                     0x0055
                 }
         })
+        
         Method (_CRS, 0, Serialized)
         {
             Name (SBFB, ResourceTemplate ()
@@ -54,11 +55,10 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
         }
     }
 
-    // Touchscreen - Primary Display
+    // APIC - Primary Display Touchscreen
     Scope (_SB.PCI0.I2C0.TPL1)
     {
-        Method (_CRS, 0, NotSerialized) { Return (XCRS ()) }
-
+        /* Reference - GPIO Pinning */
         // Name (SBFG, ResourceTemplate ()
         // {
         //     GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
@@ -68,28 +68,41 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
         //             0x0072
         //         }
         // })
-        // Method (_CRS, 0, Serialized)
-        // {
-        //     Name (SBFB, ResourceTemplate ()
-        //     {
-        //         I2cSerialBusV2 (0x0010, ControllerInitiated, 0x00061A80,
-        //             AddressingMode7Bit, "\\_SB.PCI0.I2C0",
-        //             0x00, ResourceConsumer, , Exclusive,
-        //             )
-        //     })
-        //     If (_OSI ("Darwin"))
-        //     {
-        //         Return (ConcatenateResTemplate (SBFB, SBFG))
-        //     }
-        //     Else { Return (XCRS ()) }
-        // }
+
+        Name (SBFA, ResourceTemplate ()
+        {
+            Interrupt (ResourceConsumer, Level, ActiveLow, Exclusive, ,, )
+            {
+                // Pin list
+                0x1B
+            }
+        })
+        
+        Method (_CRS, 0, Serialized)
+        {
+            Name (SBFB, ResourceTemplate ()
+            {
+                I2cSerialBusV2 (0x0010, ControllerInitiated, 0x00061A80,
+                    AddressingMode7Bit, "\\_SB.PCI0.I2C0",
+                    0x00, ResourceConsumer, _Y00, Exclusive,
+                    )
+            })
+            CreateWordField(SBFB, \_SB.PCI0.I2C0.TPL1._CRS._Y00._ADR, ADR0)
+            ADR0 = 0x10 // DerefOf (SADR [MTLI])
+
+            If (_OSI ("Darwin"))
+            {
+                // Return (ConcatenateResTemplate (SBFB, SBFG))
+                Return (ConcatenateResTemplate (SBFB, SBFA))
+            }
+            Else { Return (XCRS ()) }
+        }
     }
 
-    // Touchscreen - Secondary Display
+    // APIC - Secondary Display Touchscreen
     Scope (_SB.PCI0.I2C3.TPL0)
     {
-        Method (_CRS, 0, NotSerialized) { Return (XCRS ()) }
-
+        /* Reference - GPIO Pinning */
         // Name (SBFG, ResourceTemplate ()
         // {
         //     GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
@@ -99,20 +112,34 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
         //             0x0032
         //         }
         // })
-        // Method (_CRS, 0, Serialized)
-        // {
-        //     Name (SBFB, ResourceTemplate ()
-        //     {
-        //         I2cSerialBusV2 (0x0010, ControllerInitiated, 0x00061A80,
-        //             AddressingMode7Bit, "\\_SB.PCI0.I2C3",
-        //             0x00, ResourceConsumer, , Exclusive,
-        //             )
-        //     })
-        //     If (_OSI ("Darwin"))
-        //     {
-        //         Return (ConcatenateResTemplate (SBFB, SBFG))
-        //     }
-        //     Else { Return (XCRS ()) }
-        // }
+
+        Name (SBFA, ResourceTemplate ()
+        {
+            Interrupt (ResourceConsumer, Level, ActiveLow, Exclusive, ,, )
+            {
+                // Pin list
+                0x1C
+            }
+        })
+
+        Method (_CRS, 0, Serialized)
+        {
+            Name (SBFB, ResourceTemplate ()
+            {
+                I2cSerialBusV2 (0x0010, ControllerInitiated, 0x00061A80,
+                    AddressingMode7Bit, "\\_SB.PCI0.I2C3",
+                    0x00, ResourceConsumer, _Y01, Exclusive,
+                    )
+            })
+            CreateWordField(SBFB, \_SB.PCI0.I2C3.TPL0._CRS._Y01._ADR, ADR0)
+            ADR0 = 0x10 // DerefOf (SADR [TPLI])
+
+            If (_OSI ("Darwin"))
+            {
+                // Return (ConcatenateResTemplate (SBFB, SBFG))
+                Return (ConcatenateResTemplate (SBFB, SBFA))
+            }
+            Else { Return (XCRS ()) }
+        }
     }
 }
