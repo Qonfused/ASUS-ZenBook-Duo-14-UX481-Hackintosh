@@ -14,6 +14,7 @@ The latest progress can be viewed on this repository's [project board](https://g
 ### Added
 - Added ScreenPad connector datasheet ([`91757a6`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/91757a62f8014852529ab66c02bd547c565f478c))
 - Added template ALSC dummy method ([`01dab52`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/01dab5221c73319813ad1ad3aee63b832bc1bfd6))
+- Added SSDT-GPRW to fix RTC/USB wake issue ([`6c3ede2`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/6c3ede2bf55c6dfc43324c454c374f833483517e))
 
 ### Fixed
 - Fixed GPIO root pinning for touchscreens (superceded by APIC) ([`16569fa`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/16569fa2962329af2e33b3b0cc5bdcba9d207141))
