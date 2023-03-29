@@ -21,15 +21,30 @@
 
 </div>
 
+## ⚡Quick Links
+
+- [Current Progress](#%EF%B8%8F-current-progress)
+  - [macOS Version Support](#macos-version-support)
+  - [Hardware Features](#hardware-features)
+  - [Software Features](#software-features)
+- [Getting Started](#-getting-started)
+  - [1. Clone this repository using git](#1-clone-this-repository-using-git)
+  - [2. Build this repository using OC-Build](#2-build-this-repository-using-oc-build)
+  - [3. Using this EFI with macOS](#3-using-this-efi-with-macos)
+- [Contributing](#-contributing)
+- [License](#%EF%B8%8F-license)
+- [Credits](#-credits)
+
 ## ⚙️ Current Progress
 
 > **Note** This repository is still a work in progress.
 >
 > See this repository's [task board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
 > Upcoming or planned changes are also tracked on a [roadmap board](https://github.com/users/Qonfused/projects/2/views/9).
+>
 > Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.com/users/Qonfused/projects/2/views/11) for changes implemented per release version.
 
-### macOS version support:
+### macOS Version Support:
 <table>
   <thead>
     <tr>
@@ -107,7 +122,7 @@
 </table>
 
 
-### Hardware features:
+### Hardware Features:
 <table>
   <thead>
     <tr>
@@ -237,7 +252,7 @@
 </table>
 
 
-### Software features:
+### Software Features:
 <table>
   <thead>
     <tr>
@@ -266,7 +281,7 @@
     <tr>
       <td>Handoff</td>
       <td style="text-align: center;">✅</td>
-      <td>Supported</td>
+      <td>Supported.</td>
     </tr>
     <tr>
       <td>Continuity Camera</td>
@@ -276,7 +291,7 @@
     <tr>
       <td>Universal Clipboard</td>
       <td style="text-align: center;">✅</td>
-      <td>Supported</td>
+      <td>Supported.</td>
     </tr>
     <tr>
       <td>Universal Control</td>
@@ -356,7 +371,7 @@ You can run a validation script to check the EFI build output with:
 bash scripts/validate-efi.sh
 ```
 
-#### 3. Using this EFI with macOS
+### 3. Using this EFI with macOS
 Refer to the [Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Install-Guide) and [Post-Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Post-Install-Guide) for installation instructions.
 
 > **Note** To enable **iServices** functionality, download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) and [generate SMBIOS data](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) for your machine.
@@ -373,7 +388,9 @@ Refer to the [Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX4
 > You can apply these values by running `bash scripts/lib/patch-serial.sh` or by running the build script.
 
 ## 🔥 Contributing
-Contributions to this project are always welcome! Refer to [CONTRIBUTING.md](/docs/CONTRIBUTING.md) for instructions (and tips) on making contributions to this project.
+Contributions of any size to this project are always welcome!
+
+Refer to [CONTRIBUTING.md](/docs/CONTRIBUTING.md) for instructions (and tips) on making contributions to this project.
 
 ## ⚖️ License
 [BSD 3-Clause License](/LICENSE).
