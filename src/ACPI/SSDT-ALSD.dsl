@@ -18,5 +18,11 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "ALSD", 0x00000000)
 		{
 			Return (^^ALSD._ALI ())
 		}
+
+		// ALS Enable - Unimplemented
+		// Reference: (WMI, IIA0=0x00050001)
+		Method (_SB.ATKD.ALSC, 0, NotSerialized)
+		{
+		}
 	}
 }
