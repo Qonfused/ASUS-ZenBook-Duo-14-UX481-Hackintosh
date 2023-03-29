@@ -28,6 +28,15 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
     // Trackpad
     Scope (_SB.PCI0.I2C1.ETPD)
     {
+        Name (SBFG, ResourceTemplate ()
+        {
+            GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
+                "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
+                )
+                {   // Pin list
+                    0x0055
+                }
+        })
         Method (_CRS, 0, Serialized)
         {
             Name (SBFB, ResourceTemplate ()
@@ -37,15 +46,6 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
                     0x00, ResourceConsumer, , Exclusive,
                     )
             })
-            Name (SBFG, ResourceTemplate ()
-            {
-                GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
-                    "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
-                    )
-                    {   // Pin list
-                        0x0055
-                    }
-            })
             If (_OSI ("Darwin"))
             {
                 Return (ConcatenateResTemplate (SBFB, SBFG))
@@ -54,10 +54,20 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
         }
     }
 
-    // Primary Display
+    // Touchscreen - Primary Display
     Scope (_SB.PCI0.I2C0.TPL1)
     {
         Method (_CRS, 0, NotSerialized) { Return (XCRS ()) }
+
+        // Name (SBFG, ResourceTemplate ()
+        // {
+        //     GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
+        //         "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
+        //         )
+        //         {   // Pin list
+        //             0x0072
+        //         }
+        // })
         // Method (_CRS, 0, Serialized)
         // {
         //     Name (SBFB, ResourceTemplate ()
@@ -67,15 +77,6 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
         //             0x00, ResourceConsumer, , Exclusive,
         //             )
         //     })
-        //     Name (SBFG, ResourceTemplate ()
-        //     {
-        //         GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
-        //             "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
-        //             )
-        //             {   // Pin list
-        //                 0x0072
-        //             }
-        //     })
         //     If (_OSI ("Darwin"))
         //     {
         //         Return (ConcatenateResTemplate (SBFB, SBFG))
@@ -84,10 +85,20 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
         // }
     }
 
-    // Secondary Display
+    // Touchscreen - Secondary Display
     Scope (_SB.PCI0.I2C3.TPL0)
     {
         Method (_CRS, 0, NotSerialized) { Return (XCRS ()) }
+
+        // Name (SBFG, ResourceTemplate ()
+        // {
+        //     GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
+        //         "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
+        //         )
+        //         {   // Pin list
+        //             0x0032
+        //         }
+        // })
         // Method (_CRS, 0, Serialized)
         // {
         //     Name (SBFB, ResourceTemplate ()
@@ -96,15 +107,6 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
         //             AddressingMode7Bit, "\\_SB.PCI0.I2C3",
         //             0x00, ResourceConsumer, , Exclusive,
         //             )
-        //     })
-        //     Name (SBFG, ResourceTemplate ()
-        //     {
-        //         GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
-        //             "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
-        //             )
-        //             {   // Pin list
-        //                 0x0032
-        //             }
         //     })
         //     If (_OSI ("Darwin"))
         //     {
