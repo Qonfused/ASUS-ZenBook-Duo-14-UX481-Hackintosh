@@ -80,6 +80,10 @@ ACPI:
       Count:                          Number  | 1
       Find:                           Data    | <5F435253>
       Replace:                        Data    | <58435253>
+    # Companion to src/ACPI/SSDT-GPRW.dsl -> EFI/OC/ACPI/SSDT-GPRW.aml
+    - Comment:                        String  | "[GPRW] Instant Wake fix - Rename GPRW to XPRW"
+      Find:                           Data    | <47505257 02>
+      Replace:                        Data    | <58505257 02>
     # Companion to src/ACPI/SSDT-KBLC.dsl -> EFI/OC/ACPI/SSDT-KBLC.aml
     - Base:                           String  | "_SB.ATKD"
       Comment:                        String  | "[KBLC] Keyboard Backlight - Rename IANE to XANE"
