@@ -298,7 +298,7 @@ NVRAM:
 
 ################################################################################
 
-#ifdef DEBUG
+'@ifdef': DEBUG
 
 # Debugging quirks (recommended with DEBUG version of OpenCore)
 # - https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html
@@ -323,4 +323,4 @@ NVRAM:
       # `msgbuf=1048576`  (Resizes kernel msg buffer to 1 MB; avoids truncation)
       boot-args:                      String  | "-v debug=0x100 keepsyms=1 msgbuf=1048576"
 
-#endif
+'@endif':
