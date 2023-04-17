@@ -1,8 +1,7 @@
 name: Generate Release
-on: [push, workflow_dispatch]
+on: workflow_dispatch
 jobs:
   release:
-    if: github.event.head_commit.message == 'Bump version'
     runs-on: ubuntu-latest
     steps:
       # Installs dependencies needed for running OC-Build.
