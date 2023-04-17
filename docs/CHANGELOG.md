@@ -6,7 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
 
-## [0.5.3] - Unreleased
+## [0.5.3] - 2023-04-17
+
+This minor version includes some small documentation additions and progressional fixes. Notably, this version may result in a decrease in resolution quality for touchscreen gesture inputs, which will be fixed in a later patch version.
 
 ### Changed
 - Documented source [config.yml](/src/config.yml) file ([`1ed24aa`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/1ed24aaf8cc642f3afd2db892c0e622d8f38b919))
