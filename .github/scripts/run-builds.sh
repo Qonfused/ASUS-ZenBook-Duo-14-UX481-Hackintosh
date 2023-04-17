@@ -17,4 +17,4 @@ while read -r BUILD; do
   bash scripts/lib/oc-build/build.sh -c "$CONFIG"
   # Compress EFI directory
   (cd dist && zip -r -X "../EFI-$TAG-$BUILD.zip" EFI >/dev/null)
-done <<< $'RELEASE' #\nDEBUG'
+done <<< $'RELEASE\nDEBUG'
