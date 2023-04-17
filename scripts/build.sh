@@ -15,7 +15,8 @@ source ./scripts/lib/oc-build/lib/macros.sh
 
 
 # Run build script
-bash ./scripts/lib/oc-build/build.sh -c $CONFIG
+bash ./scripts/lib/oc-build/build.sh -c "$CONFIG"
 
-# Patch SMBIOS Serial data
+# Patch SMBIOS serial data
+if [[ ! -f ./src/.serialdata ]]; then bash ./scripts/lib/gen-serial.sh; fi
 bash ./scripts/lib/patch-serial.sh
