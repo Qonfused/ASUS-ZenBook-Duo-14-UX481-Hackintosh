@@ -10,6 +10,7 @@ The latest progress can be viewed on this repository's [project board](https://g
 
 ### Changed
 - Documented source [config.yml](/src/config.yml) file ([`1ed24aa`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/1ed24aaf8cc642f3afd2db892c0e622d8f38b919))
+- Bumped OpenCore version to version 0.9.1 ([`6375fa8`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/6375fa8a15867adfeacd74330fa2522fca964abc))
 
 ### Added
 - Added ScreenPad connector datasheet ([`91757a6`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/91757a62f8014852529ab66c02bd547c565f478c))
@@ -19,6 +20,8 @@ The latest progress can be viewed on this repository's [project board](https://g
 ### Fixed
 - Fixed GPIO root pinning for touchscreens (superceded by APIC) ([`16569fa`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/16569fa2962329af2e33b3b0cc5bdcba9d207141))
 - Fixed I2CHID intermittency issue with APIC interrupts ([`6fb418f`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/6fb418f160ccc1b27533e9fb651305e9cf5464b0))
+- Fixed preprocessor macros in `config.yml` file ([`c3699df`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/c3699dfa6e3d36d940e2328faa2eb43b27dfaad0))
+- Fixed `SecureBootModel` policy for macOS installer ([`dd22c99`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/dd22c9993e5e42695098227f099125db3c6d4d5a))
 
 ## [0.5.2] - 2023-03-20
 
