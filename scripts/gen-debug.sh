@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC2086,SC2164
 
 ## @file
 # Debug logging script for the UX481FA/UX481FL
@@ -7,7 +8,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 ##
 
-__PWD__=$(pwd); cd "$(realpath $(dirname "${BASH_SOURCE[0]}"))"
+__PWD__=$(pwd); cd "$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
 
 # Prepare /tmp/debug/ directory
 cd /tmp/ && rm -fr debug/ >/dev/null 2>&1 && mkdir debug/ && cd debug/

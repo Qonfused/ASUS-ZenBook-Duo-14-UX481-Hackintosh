@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC1091,SC2164
 
 ## @file
 # EFI build script for the UX481FA/UX481FL
@@ -8,7 +9,7 @@
 ##
 
 # Change CWD for imports
-__PWD__=$(pwd); cd "$(realpath $(dirname "${BASH_SOURCE[0]}")/../)"
+__PWD__=$(pwd); cd "$(realpath "$(dirname "${BASH_SOURCE[0]}")"/../)"
 
 source ./scripts/lib/constants.sh
 source ./scripts/lib/oc-build/lib/macros.sh

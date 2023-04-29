@@ -8,5 +8,5 @@
 ##
 
 
-CONFIG=./src/build.yml
-SERIAL=./src/.serialdata
+export CONFIG=./src/build.yml
+export SERIAL=./src/.serialdata

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#shellcheck disable=SC1091,SC2164
 
 ## @file
 # EFI validation script for the UX481FA/UX481FL
@@ -8,20 +9,20 @@
 ##
 
 # Change CWD for imports
-__PWD__=$(pwd); cd "$(realpath $(dirname "${BASH_SOURCE[0]}"))"
+__PWD__=$(pwd); cd "$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
 
 source ./lib/constants.sh
 
 CONFIG="$__PWD__/$CONFIG"
 
 # Change CWD for imports
-cd $__PWD__; cd "$(realpath $(dirname "${BASH_SOURCE[0]}"))/lib/oc-build"
+cd "$__PWD__"; cd "$(realpath "$(dirname "${BASH_SOURCE[0]}")")/lib/oc-build"
 
 source ./bin/yq/imports.sh
 source ./lib/config.sh
 source ./lib/constants.sh
 
-cd $BUILD_DIR
+cd "$BUILD_DIR" || exit 1
 
 
 # Validate that folder structure is proper
@@ -60,7 +61,7 @@ while read -r dir; do
   while read -r key; do
     if [[ -z $key ]]; then continue; fi
     # Check if file is present
-    if [[ -z $(IS_EXCLUDED $key) && ! -e "$dir/$key.$ext" ]]; then
+    if [[ -z $(IS_EXCLUDED "$key") && ! -e "$dir/$key.$ext" ]]; then
       ((errors++)); echo "File '$key.$ext' missing from $dir."
     fi
     # Check if entry in config.plist exists
@@ -76,9 +77,9 @@ while read -r dir; do
 done <<< "$(find EFI/OC -mindepth 1 -maxdepth 1 -type d 2>&1)"
 
 # Check config.plist with ocvalidate
-ocvalidate=$($OCVALIDATE EFI/OC/config.plist | sed '/^NOTE:/d; /^$/d; $d')
-if [[ -n $ocvalidate ]]; then
-  ((errors+="$(wc -l <<< "ocvalidate")"-0)); echo "$ocvalidate"
+output=$("$OCVALIDATE" EFI/OC/config.plist | sed '/^NOTE:/d; /^$/d; $d')
+if [[ -n $output ]]; then
+  ((errors+="$(wc -l <<< "$output")"-0)); echo "$output"
 fi
 
 if [[ $errors -gt 0 ]]; then exit 1; fi
