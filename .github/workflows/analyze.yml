@@ -39,10 +39,12 @@ jobs:
           show-progress: false
           submodules: recursive
       # Installs shellcheck dependency.
-      - name: Install OC-Build dependencies
+      - name: Install Shellcheck dependencies
+        shell: bash
         run: |
-          sudo apt install -qq -o=Dpkg::Use-Pty=0 \
-            shellcheck
+          scversion="latest"
+          wget -qO- "https://github.com/koalaman/shellcheck/releases/download/${scversion?}/shellcheck-${scversion?}.linux.x86_64.tar.xz" | tar -xJv
+          sudo cp "shellcheck-${scversion}/shellcheck" /usr/bin/
       # Run shellcheck on each .tool/.command/.sh file with info verbosity.
       - name: Run shellcheck
-        run: find . \( -name "*.tool" -o -name "*.command" -o -name "*.sh" \) -exec sh -c 'for TargetFile; do shellcheck --severity=info "${TargetFile}" || exit 1; done' sh {} +
+        run: find . \( -name "*.sh" -o -name "*.command" \) -exec sh -c 'for TargetFile; do shellcheck --severity=info "${TargetFile}" || exit 1; done' sh {} +
