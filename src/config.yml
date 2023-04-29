@@ -101,7 +101,7 @@ ACPI:
 
 Kernel:
   Quirks:
-    # Disables 0xE2 MSR modification in XNU kernel.
+    # Disables CFG Lock (0xE2 MSR) modification in XNU kernel.
     # - Addresses early panic issues due to 0xE2 write conflicts.
     # - Note: Is equivalent to disabling `CFG-Lock` in BIOS.
     AppleXcpmCfgLock:                 Boolean | true
@@ -284,9 +284,9 @@ Misc:
   Security:
     # Apple Secure Boot hardware model and policy
     # - Possible values include:
-    #  - Disabled: No model, Secure Boot will be disabled.
-    #  - Default: Currently set to x86legacy
-    #  - j223: Secure Boot policy for MacBookPro16,3
+    #   - Disabled: No model, Secure Boot will be disabled.
+    #   - Default: Currently set to x86legacy
+    #   - j223: Secure Boot policy for MacBookPro16,3
     # - https://dortania.github.io/OpenCore-Post-Install/universal/security/applesecureboot.html#securebootmodel
     SecureBootModel:                  String  | "j223"
     # OpenCore vaulting configuration (optional=no vault enforced, insecure)
