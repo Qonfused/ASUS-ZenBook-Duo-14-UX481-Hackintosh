@@ -1,0 +1,48 @@
+name: Analyze
+on:
+  # Skips build process for changes to only **docs** or **.github** directories.
+  push:
+    branches:
+      - 'main'
+    paths:
+      - '!.github/**'
+      - '!docs/**'
+      - '!.gitmodules'
+      - '!.gitattributes'
+      - '!.gitignore'
+      - 'scripts/**'
+  # Enables trigger for pull requests when making changes to **src** directory.
+  pull_request:
+    branches:
+      - 'main'
+      - 'development'
+    paths:
+      - 'scripts/**'
+  workflow_dispatch:
+jobs:
+  shellcheck:
+    name: Run Shellcheck
+    timeout-minutes: 2
+    runs-on: ubuntu-latest
+    steps:
+      # Fetches remote repository without --progress option.
+      #
+      # The default behavior of @actions/checkout outputs many noisy lines of
+      # status output in the workflow log, which is problematic for log size.
+      #
+      # Refer to the below PR for updates on this issue:
+      # - https://github.com/actions/checkout/pull/1067
+      - name: Checkout latest repository commit
+        # uses: actions/checkout@v3
+        uses: simonbaird/checkout@no-progress-option
+        with:
+          show-progress: false
+          submodules: recursive
+      # Installs shellcheck dependency.
+      - name: Install OC-Build dependencies
+        run: |
+          sudo apt install -qq -o=Dpkg::Use-Pty=0 \
+            shellcheck
+      # Run shellcheck on each .tool/.command/.sh file with info verbosity.
+      - name: Run shellcheck
+        run: find . \( -name "*.tool" -o -name "*.command" -o -name "*.sh" \) -exec sh -c 'for TargetFile; do shellcheck --severity=info "${TargetFile}" || exit 1; done' sh {} +
