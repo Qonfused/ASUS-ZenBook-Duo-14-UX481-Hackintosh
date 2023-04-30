@@ -72,9 +72,9 @@ jobs:
       - id: oc-build
         name: Run OC-Build
         shell: sh
+        run: bash scripts/build.sh --skip-serial
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: bash scripts/build.sh
       # Runs quick validation of config.plist and EFI structure.
       #
       # This runs a quick comparison between the build.yml, config.plist, and

@@ -19,5 +19,7 @@ source ./scripts/lib/oc-build/lib/macros.sh
 bash ./scripts/lib/oc-build/build.sh -c "$CONFIG"
 
 # Patch SMBIOS serial data
-if [[ ! -f ./src/.serialdata ]]; then bash ./scripts/lib/gen-serial.sh; fi
+if printf '%s\n' "$@" | grep -Fxq -- '--skip-serial'; then
+  echo "Skipping SMBIOS serial generation..."
+elif [[ ! -f ./src/.serialdata ]]; then bash ./scripts/lib/gen-serial.sh; fi
 bash ./scripts/lib/patch-serial.sh
