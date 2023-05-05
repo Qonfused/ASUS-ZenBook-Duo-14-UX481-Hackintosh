@@ -99,6 +99,12 @@ ACPI:
 #                           BIOS/firmware related fixes                        #
 ################################################################################
 
+# AppleXcpmCfgLock has since been replaced with unlocking via ControlMsrE2.efi.
+#
+# You can disable this option after unlocking using the ControlMsrE2 tool.
+# Refer to the below issue for more information:
+# - https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues/44
+
 Kernel:
   Quirks:
     # Disables CFG Lock (0xE2 MSR) modification in XNU kernel.

@@ -85,7 +85,10 @@ include:
     VoodooPS2Controller/VoodooPS2Keyboard: "*"
     VoodooInjector: Qonfused/VoodooInjector=latest
   tools:
+  # Also known as UEFIShell
   - OpenShell
+  # Required for unlocking CFG-Lock
+  - ControlMsrE2
 exclude:
   "*":
   - ".contentFlavour"
