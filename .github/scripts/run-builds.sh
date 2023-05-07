@@ -10,16 +10,16 @@
 __PWD__=$(pwd); cd "$(realpath "$(dirname "${BASH_SOURCE[0]}")/../../")"
 
 source ./scripts/lib/constants.sh
-source ./scripts/lib/oc-build/lib/macros.sh
+source ./scripts/lib/oce-build/lib/macros.sh
 
 
 while read -r BUILD; do
   # Set build type in config to target build version
-  REPLACE="$(sed "s/oc-build: [A-Z]*/oc-build: $BUILD/" src/build.yml)"
+  REPLACE="$(sed "s/oce-build: [A-Z]*/oce-build: $BUILD/" src/build.yml)"
   echo "$REPLACE" > src/build.yml
   # Run build script
   echo "Building \"EFI-$TAG-$BUILD.zip\"..."
-  bash scripts/lib/oc-build/build.sh -c "$CONFIG"
+  bash scripts/lib/oce-build/build.sh -c "$CONFIG"
   # Compress EFI directory
   (cd dist && zip -r -X "../EFI-$TAG-$BUILD.zip" EFI >/dev/null)
 done <<< $'RELEASE\nDEBUG'

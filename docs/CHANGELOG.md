@@ -61,12 +61,12 @@ This minor version includes small feature improvements and fixes, adding support
 ### Fixed
 - Fixed config.yml parsing for OC GUI theme ([`05c39b2`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/05c39b216ee0588d4143188385cd226d960166c5))
 - Fixed VoodooI2CHID patch ([`edc5f86`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/edc5f86889ee5866c18b46aee1ce37d73e1a8a4a))
-- ACPI patches correctly parse with OC-Build fix ([`2ec5c96`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/2ec5c96afe8cc64a535dcefa51c297885cd3e026))
+- ACPI patches correctly parse with OCE-Build fix ([`2ec5c96`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/2ec5c96afe8cc64a535dcefa51c297885cd3e026))
 - Bumped OC version to pre-release [v0.9.0#457c68d](https://github.com/acidanthera/OpenCorePkg/commit/457c68dcdead63b33c2715e57fbe8a7ad0366db0) to fix OC picker ([`46de66e`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/46de66e52ccb87e26e8a8955c2db999e2c636164))
 
 ## [0.5.0] - 2023-02-20
 
-This minor version incorporates a project overhaul from the [#36 PR](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36) for incorporating the [OC-Build](https://github.com/Qonfused/OC-Build) manager by [**@Qonfused**](https://github.com/Qonfused) into the project. This includes minor updates for OpenCore version [0.8.9](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.9).
+This minor version incorporates a project overhaul from the [#36 PR](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36) for incorporating the [OCE-Build](https://github.com/Qonfused/OCE-Build) manager by [**@Qonfused**](https://github.com/Qonfused) into the project. This includes minor updates for OpenCore version [0.8.9](https://github.com/acidanthera/OpenCorePkg/releases/tag/0.8.9).
 
 Refer to [README.md#Getting-Started](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh#-getting-started) for upgrade and build instructions.
 
@@ -75,7 +75,7 @@ Refer to [README.md#Getting-Started](https://github.com/Qonfused/ASUS-ZenBook-Du
 - Updated VoodooI2C Kext to version [2.8](https://github.com/VoodooI2C/VoodooI2C/releases/tag/2.8) w/ macOS 13+ crash fixes. ([`#36@2a4b914`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/2a4b91421cb78cd18db66f817d258da2a07a4eab))
 
 ### Added
-- Added new OC-Build project structure and build script ([`#36@1da43cc`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/1da43ccd5627330de2a871bdd356ed1d14c235e5))
+- Added new OCE-Build project structure and build script ([`#36@1da43cc`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/1da43ccd5627330de2a871bdd356ed1d14c235e5))
 - Added VoodooI2CHID patch script ([`#36@97bdedd`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/97bdeddc7cb180f5e12b3355afce88b71215cd2b))
 - Added validate-efi script ([`#36@a0e68fb`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/a0e68fb9fd63ea83803061fa636c02614ec4d3f3))
 - Added 10th gen CML datasheets ([`#36@f693ea3`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/pull/36/commits/f693ea3231e59f28d38f92ccbdba9ffae02c8458))

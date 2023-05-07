@@ -8,7 +8,7 @@
       width=500px
     >
   <br>
-  A <b>Hackintosh</b> project for the <b>ASUS ZenBook Duo 14"</b> built on top of the <a href="https://github.com/acidanthera/OpenCorePkg">OpenCore</a> bootloader and <a href="https://github.com/Qonfused/OC-Build">OC-Build</a> build manager.
+  A <b>Hackintosh</b> project for the <b>ASUS ZenBook Duo 14"</b> built on top of the <a href="https://github.com/acidanthera/OpenCorePkg">OpenCore</a> bootloader and <a href="https://github.com/Qonfused/OCE-Build">OCE-Build</a> build manager.
 </p>
 
 <div align="center">
@@ -17,7 +17,7 @@
   <a href="/docs/CHANGELOG.md">![SemVer](https://img.shields.io/badge/SemVer-v0.5.3-important?logo=SemVer&labelColor=3f4551)</a>
   <a href="">![Supported Models](https://img.shields.io/badge/Supported%20Models-UX481FA%20%7C%20UX481FL-important?labelColor=3f4551)</a>
   <a href="https://github.com/acidanthera/OpenCorePkg/releases">![OpenCore](https://img.shields.io/badge/dynamic/yaml?label=OpenCore&logo=Osano&logoColor=0298e1&labelColor=3f4451&prefix=v&query=OpenCorePkg.version&url=https%3A%2F%2Fraw.githubusercontent.com%2FQonfused%2FASUS-ZenBook-Duo-14-UX481-Hackintosh%2Fmain%2Fsrc%2Fbuild.lock)</a>
-  <a href="https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/actions/workflows/oc-build.yml">![OC Build](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/actions/workflows/oc-build.yml/badge.svg?branch=main)</a>
+  <a href="https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/actions/workflows/oce-build.yml">![OCE Build](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/actions/workflows/oce-build.yml/badge.svg?branch=main)</a>
 
 </div>
 
@@ -29,7 +29,7 @@
   - [Software Features](#software-features)
 - [Getting Started](#-getting-started)
   - [1. Clone this repository using git](#1-clone-this-repository-using-git)
-  - [2. Build this repository using OC-Build](#2-build-this-repository-using-oc-build)
+  - [2. Build this repository using OCE-Build](#2-build-this-repository-using-oce-build)
   - [3. Using this EFI with macOS](#3-using-this-efi-with-macos)
 - [Contributing](#-contributing)
 - [License](#%EF%B8%8F-license)
@@ -341,8 +341,8 @@ git submodule update
 > git config --global alias.pull-all 'pull --recurse-submodules'
 > ```
 
-### 2. Build this repository using OC-Build
-> **Note** **OC-Build** must be run in a Linux or macOS environment.
+### 2. Build this repository using OCE-Build
+> **Note** **OCE-Build** must be run in a Linux or macOS environment.
 > 
 > For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
 > - You can install a Linux distribution directly from the Microsoft Store (e.g. [Ubuntu 20.04.5 LTS](https://apps.microsoft.com/store/detail/ubuntu-20045-lts/9MTTCL66CPXJ)).

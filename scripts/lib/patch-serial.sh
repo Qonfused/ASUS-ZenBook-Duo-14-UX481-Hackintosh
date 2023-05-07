@@ -13,7 +13,7 @@ __PWD__=$(pwd); cd "$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
 source ./constants.sh
 
 # Change CWD for imports
-cd "$__PWD__"; cd "$(realpath "$(dirname "${BASH_SOURCE[0]}")")"/oc-build
+cd "$__PWD__"; cd "$(realpath "$(dirname "${BASH_SOURCE[0]}")")"/oce-build
 
 CONFIG="$__PWD__/$CONFIG"
 SERIAL="$__PWD__/$SERIAL"

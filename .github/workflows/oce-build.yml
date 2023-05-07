@@ -1,4 +1,4 @@
-name: OC Build
+name: OCE Build
 on:
   # Skips build process for changes to only **docs** or **.github** directories.
   push:
@@ -33,20 +33,20 @@ concurrency:
   cancel-in-progress: true
 jobs:
   build:
-    name: Run OC-Build
+    name: Run OCE-Build
     timeout-minutes: 10
     runs-on: ubuntu-latest
     outputs:
       LOCKFILE_HASH: ${{ steps.prepare-efi.outputs.LOCKFILE_HASH }}
     steps:
-      # Installs dependencies needed for running OC-Build.
+      # Installs dependencies needed for running OCE-Build.
       #
       # This includes the following required commands:
       # - libarchive-tools:
       #   - **BSDTAR**: Used for unarchiving .zip files.
       # - acpica-tools:
       #   - **iasl**: Required for compiling .dsl files.
-      - name: Install OC-Build dependencies
+      - name: Install OCE-Build dependencies
         if: runner.os == 'Linux'
         run: |
           sudo apt install -qq -o=Dpkg::Use-Pty=0 \
@@ -65,12 +65,12 @@ jobs:
         with:
           show-progress: false
           submodules: recursive
-      # Runs EFI build pipeline using OC-Build.
+      # Runs EFI build pipeline using OCE-Build.
       #
       # Build **dist** directory containing **dist/EFI** and **dist/scripts**
       # folders needed for downstream build tasks.
-      - id: oc-build
-        name: Run OC-Build
+      - id: oce-build
+        name: Run OCE-Build
         shell: sh
         run: bash scripts/build.sh --skip-serial
         env:
@@ -81,7 +81,7 @@ jobs:
       # EFI folder for any missing or malformed entries. This does not resolve
       # any machine testable issues.
       - id: validate-efi
-        name: Validate OC-Build output
+        name: Validate OCE-Build output
         shell: sh
         run: bash scripts/validate-efi.sh
       # Handles compression and lock-hash generation for upload task.
