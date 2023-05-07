@@ -99,6 +99,7 @@ ACPI:
 #                           BIOS/firmware related fixes                        #
 ################################################################################
 
+# ---- Notice ----
 # AppleXcpmCfgLock has since been replaced with unlocking via ControlMsrE2.efi.
 #
 # You can disable this option after unlocking using the ControlMsrE2 tool.
@@ -168,7 +169,6 @@ UEFI:
     MinVersion:                       Number  | 1412101001000000
   Output:
     # Sets proper display scaling for boot picker + debug logging.
-    # - https://dortania.github.io/OpenCore-Post-Install/universal/security/scanpolicy.html
     UIScale:                          Number  | 1
 
 # Prevent SSD scan timeouts that may stall booting.
@@ -205,11 +205,13 @@ DeviceProperties:
       enable-backlight-registers-fix: Boolean | true
       enable-backlight-smoother:      Boolean | true
       # Framebuffer connector patches.
-      # - con0 [eDP/LVDS]: Internal Display
-      # - con1 [DP]      : ScreenPad-Plus
-      # - con2 [HDMI]    : HDMI 1.4 port
+      # - con0 [eDP]   Primary Display
+      framebuffer-con0-alldata:       Data    | <00000800 02000000 98000000>
+      framebuffer-con0-enable:        Data    | <01000000>
+      # - con1 [DP]    ScreenPad-Plus
       framebuffer-con1-alldata:       Data    | <01010900 00040000 C7030000>
       framebuffer-con1-enable:        Data    | <01000000>
+      # - con2 [HDMI]  HDMI 1.4 port
       framebuffer-con2-alldata:       Data    | <02020A00 00080000 C7030000>
       framebuffer-con2-enable:        Data    | <01000000>
       framebuffer-patch-enable:       Data    | <01000000>
