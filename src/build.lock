@@ -188,10 +188,6 @@ VoodooI2C:
   checksum: 234ef07979bdeec95f8d6c53f050c38005bd542d7af8a29ca05ac103ee190924
   extract: ./VoodooI2C.kext
   type: kext
-  bundled:
-    VoodooI2CHID:
-      extract: ./VoodooI2CHID.kext
-      type: kext
 VoodooPS2Controller:
   version: 2.3.6
   url: https://github.com/dortania/build-repo/releases/download/VoodooPS2-7f4e069/VoodooPS2Controller-2.3.6-DEBUG.zip

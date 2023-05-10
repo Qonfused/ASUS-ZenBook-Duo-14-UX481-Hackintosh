@@ -80,7 +80,9 @@ include:
     VoodooI2C/VoodooGPIO: "*"
     VoodooI2C/VoodooInput: "*"
     VoodooI2C: VoodooI2C/VoodooI2C=latest
-    VoodooI2CHID: "*"
+#   FIXME: Vendor kext until VoodooI2CHID PR is merged
+    VoodooI2CHID: "./Kexts/VoodooI2CHID.kext"
+#     VoodooI2CHID: "*"
     VoodooPS2Controller: acidanthera/VoodooPS2=latest
     VoodooPS2Controller/VoodooPS2Keyboard: "*"
     VoodooInjector: Qonfused/VoodooInjector=latest
