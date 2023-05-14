@@ -3,10 +3,10 @@
 # Manual changes might be lost - proceed with caution!
 
 OpenCorePkg:
-  version: 0.9.2
-  url: https://github.com/dortania/build-repo/releases/download/OpenCorePkg-0c7caae/OpenCore-0.9.2-DEBUG.zip
-  resolution: '@acidanthera/OpenCorePkg@github:0.9.2#0c7caae'
-  checksum: 423b1837991efa8e47530a726e57e735252ea489c5af34ad38074dc7860db4f9
+  version: 0.9.3
+  url: https://github.com/dortania/build-repo/releases/download/OpenCorePkg-a33b5b3/OpenCore-0.9.3-DEBUG.zip
+  resolution: '@acidanthera/OpenCorePkg@github:0.9.3#a33b5b3'
+  checksum: 2b49be97a00632cf3d0ef2e76c2f583d3d5c835f8074b5e44853f9ecb6fc84bb
   extract: ./X64/EFI/.
   type: directory
   dependencies:
@@ -18,24 +18,24 @@ OpenCorePkg:
         - ./Resources/.
       type: binary
 Lilu:
-  version: 1.6.5
-  url: https://github.com/dortania/build-repo/releases/download/Lilu-f07e333/Lilu-1.6.5-DEBUG.zip
-  resolution: '@acidanthera/Lilu@github:1.6.5#f07e333'
-  checksum: 2f89a6669f9eaf44a5b030a2b970a6c76175303fec8cbf0f4ce0a3e552e2c126
+  version: 1.6.6
+  url: https://github.com/dortania/build-repo/releases/download/Lilu-f2addba/Lilu-1.6.6-DEBUG.zip
+  resolution: '@acidanthera/Lilu@github:1.6.6#f2addba'
+  checksum: b21416c5d5f1fce305dbc35f2c91182396bd0dde171611f5119fcacb91e8c013
   extract: ./Lilu.kext
   type: kext
 WhateverGreen:
   version: 1.6.5
-  url: https://github.com/dortania/build-repo/releases/download/WhateverGreen-d839cea/WhateverGreen-1.6.5-DEBUG.zip
-  resolution: '@acidanthera/WhateverGreen@github:1.6.5#d839cea'
-  checksum: 91cebbf2ec5f23bb727edb2b4c548bf97e344b54845ae7955cc506815683a9f2
+  url: https://github.com/dortania/build-repo/releases/download/WhateverGreen-5ee88cd/WhateverGreen-1.6.5-DEBUG.zip
+  resolution: '@acidanthera/WhateverGreen@github:1.6.5#5ee88cd'
+  checksum: 9cb49875fbd3679b8d266458f506647ec4918d18c036145d2fbb83e0e2eab804
   extract: ./WhateverGreen.kext
   type: kext
 AppleALC:
-  version: 1.8.2
-  url: https://github.com/dortania/build-repo/releases/download/AppleALC-1882105/AppleALC-1.8.2-DEBUG.zip
-  resolution: '@acidanthera/AppleALC@github:1.8.2#1882105'
-  checksum: e4326dd6eb8bcef64e51da74bb036641ae0cd130b6b72507fa71cb35fbac3350
+  version: 1.8.3
+  url: https://github.com/dortania/build-repo/releases/download/AppleALC-5329ac7/AppleALC-1.8.3-DEBUG.zip
+  resolution: '@acidanthera/AppleALC@github:1.8.3#5329ac7'
+  checksum: 6cff0c0b448cf0f1a801b5614c13703d443e448ef23868f31ca0616e5e67f04b
   extract: ./AppleALC.kext
   type: kext
 VirtualSMC:
@@ -64,37 +64,37 @@ AsusSMC:
   type: kext
 AirportItlwm-Ventura:
   version: 2.2.0
-  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0-alpha/AirportItlwm-Ventura-v2.2.0-DEBUG-alpha-ddd2768.zip
+  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0-alpha/AirportItlwm-Ventura-v2.2.0-DEBUG-alpha-5e30dc1.zip
   resolution: '@OpenIntelWireless/itlwm@github:2.2.0#release'
-  checksum: ae6bdd14ba15918ee71fcb7a78819d84ab7775a7b924a97972d29c2e64aecaa9
+  checksum: 4c50cefc198bc8ff572bd088a2fc649adff2d97058d5380b1b9e24be33a92758
   extract: ./Ventura/AirportItlwm.kext
   type: kext
 AirportItlwm-Monterey:
   version: 2.2.0
-  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0-alpha/AirportItlwm-Monterey-v2.2.0-DEBUG-alpha-ddd2768.zip
+  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0-alpha/AirportItlwm-Monterey-v2.2.0-DEBUG-alpha-5e30dc1.zip
   resolution: '@OpenIntelWireless/itlwm@github:2.2.0#release'
-  checksum: 815487da1b4b47004b81363b7584afbf1439b0e030188b272a1fcff0f0fe35ea
+  checksum: 0300dda31e853585ea283c556123a5948cd0149a2f825c5078233d4206ac2ddd
   extract: ./Monterey/AirportItlwm.kext
   type: kext
 AirportItlwm-BigSur:
   version: 2.2.0
-  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0-alpha/itlwm-v2.2.0-DEBUG-alpha-ddd2768.zip
+  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0-alpha/itlwm-v2.2.0-DEBUG-alpha-5e30dc1.zip
   resolution: '@OpenIntelWireless/itlwm@github:2.2.0#release'
-  checksum: b70d5f29b526042dd14e0dfafc93a3c011b209cdf4bf60a37e53e62ac7746c02
+  checksum: 24f5999cff57f29ea38f790faa71219e0b00f4ea858d4d9ba1beda66c6b0c34f
   extract: ./itlwm.kext
   type: kext
 AirportItlwm-Catalina:
   version: 2.2.0
-  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0-alpha/AirportItlwm-Catalina-v2.2.0-DEBUG-alpha-ddd2768.zip
+  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0-alpha/AirportItlwm-Catalina-v2.2.0-DEBUG-alpha-5e30dc1.zip
   resolution: '@OpenIntelWireless/itlwm@github:2.2.0#release'
-  checksum: d4a7b2be9707f5976875aa47ce71785f48541e95906aced2d2521c3180e29c37
+  checksum: f9439dd677e602c87503eebe8fe9b659e8668110a6b2170b28720d05451ddc4f
   extract: ./Catalina/AirportItlwm.kext
   type: kext
 BlueToolFixup:
-  version: 2.6.6
-  url: https://github.com/dortania/build-repo/releases/download/BrcmPatchRAM-7e14a5a/BrcmPatchRAM-2.6.6-DEBUG.zip
-  resolution: '@acidanthera/BrcmPatchRAM@github:2.6.6#7e14a5a'
-  checksum: de38918a628d581c7cdc6002147771dcad56d34850bfcb575a27067440ce1644
+  version: 2.6.7
+  url: https://github.com/dortania/build-repo/releases/download/BrcmPatchRAM-1e3c9c1/BrcmPatchRAM-2.6.7-DEBUG.zip
+  resolution: '@acidanthera/BrcmPatchRAM@github:2.6.7#1e3c9c1'
+  checksum: f1b55d24514408beeacfbc37280094474e1bc8b4856b0b713e44d7912f53a88b
   extract: ./BlueToolFixup.kext
   type: kext
 IntelBluetoothFirmware:
@@ -168,10 +168,10 @@ RealtekCardReaderFriend:
   extract: ./RealtekCardReaderFriend.kext
   type: kext
 RestrictEvents:
-  version: 1.1.1
-  url: https://github.com/dortania/build-repo/releases/download/RestrictEvents-495f4d5/RestrictEvents-1.1.1-DEBUG.zip
-  resolution: '@acidanthera/RestrictEvents@github:1.1.1#495f4d5'
-  checksum: cc21e26eda2902bcac137d93431c057bebff01898dccd78a4ce99a7c127cec31
+  version: 1.1.2
+  url: https://github.com/dortania/build-repo/releases/download/RestrictEvents-5c54dcd/RestrictEvents-1.1.2-DEBUG.zip
+  resolution: '@acidanthera/RestrictEvents@github:1.1.2#5c54dcd'
+  checksum: 69c4f73a87dfa8e354a3eb1afaee99fbb8dace88391e081fe6919d88734bc367
   extract: ./RestrictEvents.kext
   type: kext
 USBToolBox:

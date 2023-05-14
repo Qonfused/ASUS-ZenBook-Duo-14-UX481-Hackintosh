@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
 
-## [0.5.4] - 2023-05-15
+## [0.5.4] - 2023-05-14
 
 This patch version includes small feature and build system fixes, with some tweaks to post-install scripts.
 
