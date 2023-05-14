@@ -6,9 +6,27 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
 
+## [0.5.4] - 2023-05-15
+
+This patch version includes small feature and build system fixes, with some tweaks to post-install scripts.
+
+### Changed
+- Fixed display overrides script for local builds ([`04e3bc5`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/04e3bc52bd16460ebc2de539aada023d6b543f33))
+- Use `latest` oc-version with OCE-Build ([`e721330`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/e721330cd48fe403effd756a8916db5750448d50))
+- Renamed **OC-Build** to **OCE-Build** ([`7a6679d`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/7a6679d2d1ed839496ef5e23190bc84db8533835))
+
+### Added
+- Added `ControlMsrE2` tool for unlocking CFG-Lock ([`1a1993e`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/1a1993eef9ee3d0ccc7a779108a28a1bbf9df5f5))
+
+### Fixed
+- Resolved [**#8**](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues/8), fixing trackpad buttons ([`109fcd5`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/109fcd5a28f4617da313dc78d0dfaa19d7095d11)) (Thanks to [**@1Revenger1**](https://github.com/1Revenger1)!)
+
+### Removed
+- Removed `DVL0` device from `SSDT-SBUS-MCHC` ([`be4e197`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/be4e19786256c98523238f2c4d4cefd57df6b23b))
+
 ## [0.5.3] - 2023-04-17
 
-This minor version includes some small documentation additions and progressional fixes. Notably, this version may result in a decrease in resolution quality for touchscreen gesture inputs, which will be fixed in a later patch version.
+This patch version includes some small documentation additions and progressional fixes. Notably, this version may result in a decrease in resolution quality for touchscreen gesture inputs, which will be fixed in a later patch version.
 
 ### Changed
 - Documented source [config.yml](/src/config.yml) file ([`1ed24aa`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/1ed24aaf8cc642f3afd2db892c0e622d8f38b919))
@@ -27,7 +45,7 @@ This minor version includes some small documentation additions and progressional
 
 ## [0.5.2] - 2023-03-20
 
-This minor version includes some small refinements and stability fixes with overall improved code quality.
+This patch version includes some small refinements and stability fixes with overall improved code quality.
 
 ### Changed
 - Bumped OpenCore version to version 0.9.0 release ([`978dc81`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/978dc8100d310e71f32b66e954a15cc159443636))
@@ -46,7 +64,7 @@ This minor version includes some small refinements and stability fixes with over
 
 ## [0.5.1] - 2023-02-27
 
-This minor version includes small feature improvements and fixes, adding support for SMBIOS data patching and resolving regression issues from the previous release.
+This patch version includes small feature improvements and fixes, adding support for SMBIOS data patching and resolving regression issues from the previous release.
 
 ### Changed
 - Moved DiskArbitrationFixup build to separate repo ([`cd21c5e`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/cd21c5ef04cc1f0516e54930d74fb375c0f44c02))
