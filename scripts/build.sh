@@ -12,7 +12,6 @@
 __PWD__=$(pwd); cd "$(realpath "$(dirname "${BASH_SOURCE[0]}")"/../)"
 
 source ./scripts/lib/constants.sh
-source ./scripts/lib/oce-build/lib/macros.sh
 
 
 # Run build script
@@ -21,5 +20,4 @@ bash ./scripts/lib/oce-build/build.sh -c "$CONFIG"
 # Patch SMBIOS serial data
 if printf '%s\n' "$@" | grep -Fxq -- '--skip-serial'; then
   echo "Skipping SMBIOS serial generation..."
-elif [[ ! -f ./src/.serialdata ]]; then bash ./scripts/lib/gen-serial.sh; fi
-bash ./scripts/lib/patch-serial.sh
+else bash ./scripts/lib/oce-build/scripts/patch-serial.sh -c "$CONFIG"; fi

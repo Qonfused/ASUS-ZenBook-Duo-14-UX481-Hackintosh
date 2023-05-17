@@ -83,7 +83,7 @@ jobs:
       - id: validate-efi
         name: Validate OCE-Build output
         shell: sh
-        run: bash scripts/validate-efi.sh
+        run: bash scripts/lib/oce-build/scripts/validate-efi.sh -c src/config.yml
       # Handles compression and lock-hash generation for upload task.
       #
       # This stores a hash of the output build's lockfile to associate with the

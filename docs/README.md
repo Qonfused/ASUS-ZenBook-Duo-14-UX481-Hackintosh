@@ -365,20 +365,14 @@ To build this project's EFI, run the below command at the root of the project:
 bash scripts/build.sh
 ```
 
-You can run a validation script to check the EFI build output with:
-```sh
-# Verify build output for the UX481FA/FL EFI
-bash scripts/validate-efi.sh
-```
-
 ### 3. Using this EFI with macOS
 Refer to the [Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Install-Guide) and [Post-Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Post-Install-Guide) for installation instructions.
 
 > **Note** To enable **iServices** functionality, please refer to the notice in
 > the build-generated **.serialdata** file under the **src/** directory for instructions on validating your
-> serial number. Remember that you can re-generate this data by running `bash scripts/lib/gen-serial.sh` or by removing this file and re-running the build script.
+> serial number. This is automatically generated each time you run a new build using the build script as long as no existing **.serialdata** file exists. Remember that you can re-generate this data by running `bash scripts/lib/oce-build/scripts/patch-serial.sh -c src/config.yml` or by removing **.serialdata** and re-running the build script.
 >
-> You can optionally instead download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) follow the [iServices guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) to generate new SMBIOS data for your machine. You'll then need to store your SMBIOS data in a new **.serialdata** file:
+> You can optionally instead download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) follow the [iServices guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) to generate new SMBIOS data for your machine to be applied before running the build script. You'll then need to store your SMBIOS data in a new **.serialdata** file:
 > ```yaml
 > MLB:                String | "M0000000000000001"
 > ROM:                Data   | <112233445566>
@@ -386,8 +380,6 @@ Refer to the [Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX4
 > SystemSerialNumber: String | "W00000000001"
 > SystemUUID:         String | "00000000-0000-0000-0000-000000000000"
 > ```
->
-> You can apply these values by running `bash scripts/lib/patch-serial.sh` or by re-running the build script.
 
 ## 🔥 Contributing
 Contributions of any size to this project are always welcome!
