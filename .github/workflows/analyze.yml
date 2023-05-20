@@ -47,4 +47,5 @@ jobs:
           sudo cp "shellcheck-${scversion}/shellcheck" /usr/bin/
       # Run shellcheck on each .tool/.command/.sh file with info verbosity.
       - name: Run shellcheck
-        run: find . \( -name "*.sh" -o -name "*.command" \) -exec sh -c 'for TargetFile; do shellcheck --severity=info "${TargetFile}" || exit 1; done' sh {} +
+        shell: sh
+        run: bash .github/scripts/shellcheck.sh
