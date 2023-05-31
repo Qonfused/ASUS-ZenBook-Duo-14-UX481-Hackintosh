@@ -64,31 +64,31 @@ AsusSMC:
   type: kext
 AirportItlwm-Ventura:
   version: 2.2.0
-  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0-alpha/AirportItlwm-Ventura-v2.2.0-DEBUG-alpha-5e30dc1.zip
+  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0/AirportItlwm_v2.2.0_stable_Ventura.kext.zip
   resolution: '@OpenIntelWireless/itlwm@github:2.2.0#release'
-  checksum: 4c50cefc198bc8ff572bd088a2fc649adff2d97058d5380b1b9e24be33a92758
-  extract: ./Ventura/AirportItlwm.kext
+  checksum: d74d607225cf2b6c5ffdf8424e8353e362eac241639faa063601070b722ceab4
+  extract: ./AirportItlwm.kext
   type: kext
 AirportItlwm-Monterey:
   version: 2.2.0
-  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0-alpha/AirportItlwm-Monterey-v2.2.0-DEBUG-alpha-5e30dc1.zip
+  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0/AirportItlwm_v2.2.0_stable_Monterey.kext.zip
   resolution: '@OpenIntelWireless/itlwm@github:2.2.0#release'
-  checksum: 0300dda31e853585ea283c556123a5948cd0149a2f825c5078233d4206ac2ddd
-  extract: ./Monterey/AirportItlwm.kext
+  checksum: bc17dfad93f2e7d7d780640fd26219e27c1afea298b2ce8e05e4328c24931fbd
+  extract: ./AirportItlwm.kext
   type: kext
 AirportItlwm-BigSur:
   version: 2.2.0
-  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0-alpha/itlwm-v2.2.0-DEBUG-alpha-5e30dc1.zip
+  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0/AirportItlwm_v2.2.0_stable_BigSur.kext.zip
   resolution: '@OpenIntelWireless/itlwm@github:2.2.0#release'
-  checksum: 24f5999cff57f29ea38f790faa71219e0b00f4ea858d4d9ba1beda66c6b0c34f
-  extract: ./itlwm.kext
+  checksum: c09cf2216004519c8d210c15ce16becc5952b44cacaf0ac8c67513f1ee1225d8
+  extract: ./AirportItlwm.kext
   type: kext
 AirportItlwm-Catalina:
   version: 2.2.0
-  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0-alpha/AirportItlwm-Catalina-v2.2.0-DEBUG-alpha-5e30dc1.zip
+  url: https://github.com/OpenIntelWireless/itlwm/releases/download/v2.2.0/AirportItlwm_v2.2.0_stable_Catalina.kext.zip
   resolution: '@OpenIntelWireless/itlwm@github:2.2.0#release'
-  checksum: f9439dd677e602c87503eebe8fe9b659e8668110a6b2170b28720d05451ddc4f
-  extract: ./Catalina/AirportItlwm.kext
+  checksum: f948d733b02e3ec4c93fb835e8042fe9ee4adc998e345b26dbb07c657a4c1581
+  extract: ./AirportItlwm.kext
   type: kext
 BlueToolFixup:
   version: 2.6.7
