@@ -148,9 +148,9 @@ HibernationFixup:
   type: kext
 NVMeFix:
   version: 1.1.1
-  url: https://github.com/dortania/build-repo/releases/download/NVMeFix-42d59d2/NVMeFix-1.1.1-DEBUG.zip
-  resolution: '@acidanthera/NVMeFix@github:1.1.1#42d59d2'
-  checksum: de2c8fa68961ee7379015cff0ed80882355eb4797fb9cbb301a947de8f400b45
+  url: https://github.com/dortania/build-repo/releases/download/NVMeFix-af93868/NVMeFix-1.1.1-DEBUG.zip
+  resolution: '@acidanthera/NVMeFix@github:1.1.1#af93868'
+  checksum: d87f177c26412165fa1a4d06ae12cc6ca15266132970c77ee7fc013464e18c54
   extract: ./NVMeFix.kext
   type: kext
 RealtekCardReader:

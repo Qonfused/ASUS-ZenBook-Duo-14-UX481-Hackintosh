@@ -68,9 +68,7 @@ include:
     ECEnabler: latest
     FeatureUnlock: latest
     HibernationFixup: latest
-    NVMeFix:
-      specifier: latest
-      MaxKernel: "22.99.99"
+    NVMeFix: latest
     RealtekCardReader: 0xFireWolf/RealtekCardReader=latest
     RealtekCardReaderFriend: 0xFireWolf/RealtekCardReaderFriend=latest
     RestrictEvents: latest
