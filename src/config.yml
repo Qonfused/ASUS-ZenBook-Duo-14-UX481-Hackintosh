@@ -19,6 +19,7 @@
 ################################################################################
 
 ACPI:
+  @override
   Patch:
     # Companion to src/ACPI/SSDT-ATKD.dsl -> EFI/OC/ACPI/SSDT-ATKD.aml
     - Comment:                        String  | "[ATKD] FN Lock - Rename _QD5 to XQD5"
@@ -195,6 +196,9 @@ DeviceProperties:
 #                             Audio related fixes                              #
 ################################################################################
 
+# Remove redundant audio device from Sample.plist
+@delete(DeviceProperties.Add.PciRoot(0x0)/Pci(0x1b,0x0))
+
 # Audio controller fix (layout also addresses built-in microphone + speakers)
 # - https://dortania.github.io/OpenCore-Post-Install/universal/audio.html
 DeviceProperties:
@@ -206,7 +210,7 @@ DeviceProperties:
       # Specifies AppleALC layout 15 for Realtek ALC294 controller.
       # - Possible layouts: 11, 12, 13, 15, 21, 22, 28, 44, 66, 99
       # - https://github.com/acidanthera/AppleALC/tree/master/Resources/ALC294/Info.plist
-      layout-id:                      Data    | <15000000> 
+      layout-id:                      Data    | <15000000>
 
 # Configure Boot chime (optional and also cosmetic)
 # - https://dortania.github.io/OpenCore-Post-Install/cosmetic/gui.html#setting-up-boot-chime-with-audiodxe
@@ -232,6 +236,14 @@ UEFI:
 PlatformInfo:
   Generic:
     SystemProductName:                String  | "MacBookPro16,3"
+
+# Forces the VMM SB model on macOS 11.3+ to allow OTA updates
+# - This leverages functionality from the RestrictEvents kext.
+# - Requires a build from the `force-vmm-install` branch for fresh installs.
+NVRAM:
+  Add:
+    4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102:
+      revpatch:                       String  | "sbvmm"
 
 ################################################################################
 #                             Security related fixes                           #
