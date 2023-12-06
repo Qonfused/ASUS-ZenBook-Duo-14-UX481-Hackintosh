@@ -6,6 +6,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
 
+## [0.6.0] - 2023-12-06
+
+This patch version includes major feature and build system fixes, with some tweaks to post-install scripts.
+
+### Changed
+- Modularize analyze workflow ([`1948fcb`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/1948fcb835d185caf379e7aac21999ade04c1cf5))
+- Upgraded config to new schema ([`f4b563a`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/f4b563a4284ec93a150787d198511f5218955f12))
+- Refactor build scripts, CI workflows ([`845da6a`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/845da6a96097fe242684b3d228f6807e36903cc9))
+- Vendor base configuration, cleanup build spec ([`fb0f8aa`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/fb0f8aa916dc7fc7e1a53c52e11281a2265ff2a1))
+
 ## [0.5.4] - 2023-05-14
 
 This patch version includes small feature and build system fixes, with some tweaks to post-install scripts.
