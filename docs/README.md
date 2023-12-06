@@ -13,8 +13,8 @@
 
 <div align="center">
 
-  <a href="/LICENSE">![License](https://img.shields.io/badge/⚖_License-BSD_3_Clause-lightblue?labelColor=3f4551)</a>
-  <a href="/docs/CHANGELOG.md">![SemVer](https://img.shields.io/badge/SemVer-v0.5.4-important?logo=SemVer&labelColor=3f4551)</a>
+  <a href="/LICENSE">![License](https://img.shields.io/github/license/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh?label=⚖%20License&labelColor=3f4551&color=9dc4d0)</a>
+  <a href="/docs/CHANGELOG.md">![SemVer](https://img.shields.io/badge/SemVer-v0.6.0-important?logo=SemVer&labelColor=3f4551)</a>
   <a href="">![Supported Models](https://img.shields.io/badge/Supported%20Models-UX481FA%20%7C%20UX481FL-important?labelColor=3f4551)</a>
   <a href="https://github.com/acidanthera/OpenCorePkg/releases">![OpenCore](https://img.shields.io/badge/dynamic/yaml?label=OpenCore&logo=Osano&logoColor=0298e1&labelColor=3f4451&prefix=v&query=OpenCorePkg.version&url=https%3A%2F%2Fraw.githubusercontent.com%2FQonfused%2FASUS-ZenBook-Duo-14-UX481-Hackintosh%2Fmain%2Fsrc%2Fbuild.lock)</a>
   <a href="https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/actions/workflows/oce-build.yml">![OCE Build](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/actions/workflows/oce-build.yml/badge.svg?branch=main)</a>
@@ -326,7 +326,7 @@
 
 To clone this repository locally with submodules, run the below commands:
 ```sh
-git clone --recurse-submodules https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh
+git clone https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh
 cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
 ```
 
@@ -338,7 +338,9 @@ To build this project's EFI, run the below command at the root of the project:
 bash scripts/build.sh
 ```
 
-> **Note** For Windows users, running Bash scripts requires a Linux environment (provided by Cygwin, MinGW, Git Bash, or WSL). You can also manually download [OCE Build](https://github.com/Qonfused/OCE-Build/releases) and run the `ocebuild build` command from the root of the project.
+You can also manually download [OCE Build](https://github.com/Qonfused/OCE-Build/releases) and run the `ocebuild build` command from the root of the project.
+
+> **Note** For Windows users, running Bash scripts requires a Linux environment (provided by [Cygwin](https://www.cygwin.com/), [MinGW](https://www.mingw-w64.org/), [Git Bash](https://gitforwindows.org/), or [WSL](https://learn.microsoft.com/en-us/windows/wsl/about)).
 > 
 > Refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
 > - You can install a Linux distribution directly from the Microsoft Store (e.g. [Ubuntu 20.04.5 LTS](https://apps.microsoft.com/store/detail/ubuntu-20045-lts/9MTTCL66CPXJ)).
