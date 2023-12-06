@@ -90,43 +90,43 @@ dependencies:
     AirportItlwm-BigSur:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Big_Sur-v2.3.0-DEBUG-alpha-d939230.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=d93923051d205f9dc245c69c38e9f0f35bfb5e89'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.2.0'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Big_Sur-v2.3.0-DEBUG-alpha-ff1138b.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: d93923051d205f9dc245c69c38e9f0f35bfb5e89 }'
+      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
     AirportItlwm-Catalina:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Catalina-v2.3.0-DEBUG-alpha-d939230.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=d93923051d205f9dc245c69c38e9f0f35bfb5e89'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.2.0'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Catalina-v2.3.0-DEBUG-alpha-ff1138b.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: d93923051d205f9dc245c69c38e9f0f35bfb5e89 }'
+      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
     AirportItlwm-Monterey:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Monterey-v2.3.0-DEBUG-alpha-d939230.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=d93923051d205f9dc245c69c38e9f0f35bfb5e89'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.2.0'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Monterey-v2.3.0-DEBUG-alpha-ff1138b.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: d93923051d205f9dc245c69c38e9f0f35bfb5e89 }'
+      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
     AirportItlwm-Ventura:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Ventura-v2.3.0-DEBUG-alpha-d939230.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=d93923051d205f9dc245c69c38e9f0f35bfb5e89'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Ventura-v2.3.0-DEBUG-alpha-ff1138b.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
       specifier: 'OpenIntelWireless/itlwm@github:^2.2.0'
       kind: Kext
-      revision: '{ SHA1: d93923051d205f9dc245c69c38e9f0f35bfb5e89 }'
+      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
     AppleALC:
       build: DEBUG
-      version: 1.8.4
-      url: 'https://github.com/dortania/build-repo/releases/download/AppleALC-5aed745/AppleALC-1.8.4-DEBUG.zip'
-      resolution: 'acidanthera/AppleALC@github:1.8.4#commit=5aed745deb6f23173cb03e28aef2c1e48ca70246'
+      version: 1.8.8
+      url: 'https://github.com/dortania/build-repo/releases/download/AppleALC-02549d9/AppleALC-1.8.8-DEBUG.zip'
+      resolution: 'acidanthera/AppleALC@github:1.8.8#commit=02549d912b8cda120111cdf0d7b6744bc46ba40b'
       specifier: 'acidanthera/AppleALC@github'
       kind: Kext
-      revision: '{ SHA1: 5aed745deb6f23173cb03e28aef2c1e48ca70246 }'
+      revision: '{ SHA1: 02549d912b8cda120111cdf0d7b6744bc46ba40b }'
     AsusSMC:
       build: DEBUG
       version: 1.4.1
@@ -193,20 +193,20 @@ dependencies:
       revision: '{ SHA1: 592507aa8cb3d0df3e524bb869f2836271e4fb48 }'
     Lilu:
       build: DEBUG
-      version: 1.6.7
-      url: 'https://github.com/dortania/build-repo/releases/download/Lilu-1827e19/Lilu-1.6.7-DEBUG.zip'
-      resolution: 'acidanthera/Lilu@github:1.6.7#commit=1827e19108e93128856e5426a3c6fc5d0c106096'
+      version: 1.6.8
+      url: 'https://github.com/dortania/build-repo/releases/download/Lilu-472442f/Lilu-1.6.8-DEBUG.zip'
+      resolution: 'acidanthera/Lilu@github:1.6.8#commit=472442f344531f88d31628da44f0778655a8e532'
       specifier: 'acidanthera/Lilu@github'
       kind: Kext
-      revision: '{ SHA1: 1827e19108e93128856e5426a3c6fc5d0c106096 }'
+      revision: '{ SHA1: 472442f344531f88d31628da44f0778655a8e532 }'
     NVMeFix:
       build: DEBUG
-      version: 1.1.1
-      url: 'https://github.com/dortania/build-repo/releases/download/NVMeFix-af93868/NVMeFix-1.1.1-DEBUG.zip'
-      resolution: 'acidanthera/NVMeFix@github:1.1.1#commit=af93868c86da3a0a4be6419a4949e5f4437ba4eb'
+      version: 1.1.2
+      url: 'https://github.com/dortania/build-repo/releases/download/NVMeFix-8680dde/NVMeFix-1.1.2-DEBUG.zip'
+      resolution: 'acidanthera/NVMeFix@github:1.1.2#commit=8680ddeab13ca176b263590222cd9d5e9afa69a8'
       specifier: 'acidanthera/NVMeFix@github'
       kind: Kext
-      revision: '{ SHA1: af93868c86da3a0a4be6419a4949e5f4437ba4eb }'
+      revision: '{ SHA1: 8680ddeab13ca176b263590222cd9d5e9afa69a8 }'
     RealtekCardReader:
       build: DEBUG
       version: 0.9.7
@@ -225,12 +225,12 @@ dependencies:
       revision: '{ SHA1: e1e3301ae82483b4e5f84e492ca9dea231845ea1 }'
     RestrictEvents:
       build: DEBUG
-      version: 1.1.3
-      url: 'https://github.com/dortania/build-repo/releases/download/RestrictEvents-9f45386/RestrictEvents-1.1.3-DEBUG.zip'
-      resolution: 'acidanthera/RestrictEvents@github:1.1.3#commit=9f45386b846c48de83a2df33837596713a43f384'
+      version: 1.1.4
+      url: 'https://github.com/dortania/build-repo/releases/download/RestrictEvents-b712414/RestrictEvents-1.1.4-DEBUG.zip'
+      resolution: 'acidanthera/RestrictEvents@github:1.1.4#commit=b7124142cb6fdbab82f2d40ce6579109343832a8'
       specifier: 'acidanthera/RestrictEvents@github'
       kind: Kext
-      revision: '{ SHA1: 9f45386b846c48de83a2df33837596713a43f384 }'
+      revision: '{ SHA1: b7124142cb6fdbab82f2d40ce6579109343832a8 }'
     USBToolBox:
       build: DEBUG
       version: 1.1.1
@@ -285,12 +285,12 @@ dependencies:
       revision: '{ SHA1: 410118bd89723b7e5290ae9f21f5e00078f6fd04 }'
     WhateverGreen:
       build: DEBUG
-      version: 1.6.6
-      url: 'https://github.com/dortania/build-repo/releases/download/WhateverGreen-c7c8dc7/WhateverGreen-1.6.6-DEBUG.zip'
-      resolution: 'acidanthera/WhateverGreen@github:1.6.6#commit=c7c8dc70381af3b48a4b65c177acf8835da080eb'
+      version: 1.6.7
+      url: 'https://github.com/dortania/build-repo/releases/download/WhateverGreen-c5a5f50/WhateverGreen-1.6.7-DEBUG.zip'
+      resolution: 'acidanthera/WhateverGreen@github:1.6.7#commit=c5a5f507f54a6ff1d17e048fb9456302ef2a3702'
       specifier: 'acidanthera/WhateverGreen@github'
       kind: Kext
-      revision: '{ SHA1: c7c8dc70381af3b48a4b65c177acf8835da080eb }'
+      revision: '{ SHA1: c5a5f507f54a6ff1d17e048fb9456302ef2a3702 }'
   OpenCorePkg:
     OcBinaryData:
       build: DEBUG
@@ -301,9 +301,9 @@ dependencies:
       revision: '{ SHA1: 4e7e1b7465aae297d706afe5de5c4d1572d86917 }'
     OpenCore:
       build: DEBUG
-      version: 0.9.4
-      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/0.9.4/OpenCore-0.9.4-DEBUG.zip'
-      resolution: 'acidanthera/OpenCorePkg@github:0.9.4#commit=d74d43bb0279e494a75546fad8834d75172eb01e'
+      version: 0.9.6
+      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/0.9.6/OpenCore-0.9.6-DEBUG.zip'
+      resolution: 'acidanthera/OpenCorePkg@github:0.9.6#commit=1bc9e74ed116a7413c87aaaeba388606d94429e9'
       specifier: 'acidanthera/OpenCorePkg@github:latest'
       kind: Binary
-      revision: '{ SHA1: d74d43bb0279e494a75546fad8834d75172eb01e }'
+      revision: '{ SHA1: 1bc9e74ed116a7413c87aaaeba388606d94429e9 }'

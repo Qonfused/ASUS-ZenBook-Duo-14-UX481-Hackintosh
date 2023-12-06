@@ -19,7 +19,9 @@ ACPI:
 Drivers:
   - AudioDxe
   - HfsPlus
+@ifdef(RELEASE)
   - OpenCanopy
+@endif
   - OpenRuntime
   - ResetNvramEntry
   # Required for booting from built-in microSD reader
@@ -41,17 +43,17 @@ Kexts:
       MaxKernel: "22.99.99"
       MinKernel: "22.0.0"
   AirportItlwm-Monterey:
-    specifier: OpenIntelWireless/itlwm=^2.2.0
+    specifier: OpenIntelWireless/itlwm=^2.0.0
     properties:
       MaxKernel: "21.99.99"
       MinKernel: "21.0.0"
   AirportItlwm-BigSur:
-    specifier: OpenIntelWireless/itlwm=^2.2.0
+    specifier: OpenIntelWireless/itlwm=^2.0.0
     properties:
       MaxKernel: "20.99.99"
       MinKernel: "20.0.0"
   AirportItlwm-Catalina:
-    specifier: OpenIntelWireless/itlwm=^2.2.0
+    specifier: OpenIntelWireless/itlwm=^2.0.0
     properties:
       MaxKernel: "19.99.99"
       MinKernel: "19.0.0"
@@ -85,9 +87,9 @@ Kexts:
       - VoodooI2CServices
       - VoodooGPIO
       - VoodooInput
-#   FIXME: Vendor kext until VoodooI2CHID PR is merged
+#   FIXME: Vendor kext until VoodooI2C 2.9 is released
   VoodooI2CHID: "Kexts/VoodooI2CHID.kext"
-#     VoodooI2CHID: "*"
+#     - VoodooI2CHID
   VoodooPS2Controller:
     specifier: acidanthera/VoodooPS2=latest
     bundled:
