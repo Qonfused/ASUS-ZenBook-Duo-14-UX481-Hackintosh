@@ -39,11 +39,10 @@
 
 > [!NOTE]
 > This repository is still a work in progress.
->
-> See this repository's [task board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
-> Upcoming or planned changes are also tracked on a [roadmap board](https://github.com/users/Qonfused/projects/2/views/9).
->
-> Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.com/users/Qonfused/projects/2/views/11) for changes implemented per release version.
+
+See this repository's [task board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress. Upcoming or planned changes are also tracked on a [roadmap board](https://github.com/users/Qonfused/projects/2/views/9).
+
+Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.com/users/Qonfused/projects/2/views/11) for changes implemented per release version.
 
 ### macOS Version Support:
 <table>
@@ -340,7 +339,8 @@ bash scripts/build.sh
 
 You can also manually download [OCE Build](https://github.com/Qonfused/OCE-Build/releases) and run the `ocebuild build` command from the root of the project.
 
-> **Note** For Windows users, running Bash scripts requires a Linux environment (provided by [Cygwin](https://www.cygwin.com/), [MinGW](https://www.mingw-w64.org/), [Git Bash](https://gitforwindows.org/), or [WSL](https://learn.microsoft.com/en-us/windows/wsl/about)).
+> [!NOTE]
+> For Windows users, running Bash scripts requires a Linux environment (provided by [Cygwin](https://www.cygwin.com/), [MinGW](https://www.mingw-w64.org/), [Git Bash](https://gitforwindows.org/), or [WSL](https://learn.microsoft.com/en-us/windows/wsl/about)).
 > 
 > Refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
 > - You can install a Linux distribution directly from the Microsoft Store (e.g. [Ubuntu 20.04.5 LTS](https://apps.microsoft.com/store/detail/ubuntu-20045-lts/9MTTCL66CPXJ)).
