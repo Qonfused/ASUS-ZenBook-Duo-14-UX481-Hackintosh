@@ -37,7 +37,8 @@
 
 ## ⚙️ Current Progress
 
-> **Note** This repository is still a work in progress.
+> [!NOTE]
+> This repository is still a work in progress.
 >
 > See this repository's [task board](https://github.com/users/Qonfused/projects/2/views/4) and [issues page](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues) for current progress.
 > Upcoming or planned changes are also tracked on a [roadmap board](https://github.com/users/Qonfused/projects/2/views/9).
@@ -177,8 +178,8 @@
     </tr>
     <tr>
       <td>(Physical) Trackpad Buttons</td>
-      <td style="text-align: center;">🚧</td>
-      <td>Work in progress (VoodooI2C issue; incorrect button map).</td>
+      <td style="text-align: center;">✅</td>
+      <td>Fully supported.</td>
     </tr>
     <tr>
       <td rowspan=2>Touchscreen<br>(Primary Display)<br>(Screenpad Plus Display)</td>
@@ -329,35 +330,7 @@ git clone --recurse-submodules https://github.com/Qonfused/ASUS-ZenBook-Duo-14-U
 cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
 ```
 
-If you've cloned this project without resolving submodules, you'll need to initialize them:
-```sh
-git submodule init
-git submodule update
-```
-
-> **Note**: Optionally, you can add git aliases to always resolve submodules:
-> ```sh
-> git config --global alias.clone-all 'clone --recurse-submodules'
-> git config --global alias.pull-all 'pull --recurse-submodules'
-> ```
-
 ### 2. Build this repository using OCE-Build
-> **Note** **OCE-Build** must be run in a Linux or macOS environment.
-> 
-> For Windows users, refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
-> - You can install a Linux distribution directly from the Microsoft Store (e.g. [Ubuntu 20.04.5 LTS](https://apps.microsoft.com/store/detail/ubuntu-20045-lts/9MTTCL66CPXJ)).
-> - Alternatively, you can [setup devcontainers](https://code.visualstudio.com/docs/devcontainers/containers#_installation) with Docker and VSCode to run a containerized Linux environment on top of wsl. The [devcontainer](/.devcontainer/devcontainer.json) for this project will setup and build the project automatically upon container creation.
->
-> For Linux users (or wsl), ensure you have the following commands available:
-> - **cURL**
->   - Check with `curl --version`
->   - Install with `sudo apt install curl`
-> - **bsdtar**
->   - Check with `bsdtar --version`
->   - Install with `sudo apt install libarchive-tools`
-> - **iasl**
->   - Check with `iasl -v`
->   - Install with `sudo apt install acpica-tools`
 
 To build this project's EFI, run the below command at the root of the project:
 ```sh
@@ -365,14 +338,17 @@ To build this project's EFI, run the below command at the root of the project:
 bash scripts/build.sh
 ```
 
+> **Note** For Windows users, running Bash scripts requires a Linux environment (provided by Cygwin, MinGW, Git Bash, or WSL). You can also manually download [OCE Build](https://github.com/Qonfused/OCE-Build/releases) and run the `ocebuild build` command from the root of the project.
+> 
+> Refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
+> - You can install a Linux distribution directly from the Microsoft Store (e.g. [Ubuntu 20.04.5 LTS](https://apps.microsoft.com/store/detail/ubuntu-20045-lts/9MTTCL66CPXJ)).
+> - Alternatively, you can [setup devcontainers](https://code.visualstudio.com/docs/devcontainers/containers#_installation) with Docker and VSCode to run a containerized Linux environment on top of wsl. The [devcontainer](/.devcontainer/devcontainer.json) for this project will setup and build the project automatically upon container creation.
+
 ### 3. Using this EFI with macOS
 Refer to the [Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Install-Guide) and [Post-Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Post-Install-Guide) for installation instructions.
 
-> **Note** To enable **iServices** functionality, please refer to the notice in
-> the build-generated **.serialdata** file under the **src/** directory for instructions on validating your
-> serial number. This is automatically generated each time you run a new build using the build script as long as no existing **.serialdata** file exists. Remember that you can re-generate this data by running `bash scripts/lib/oce-build/scripts/patch-serial.sh -c src/config.yml` or by removing **.serialdata** and re-running the build script.
->
-> You can optionally instead download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) follow the [iServices guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) to generate new SMBIOS data for your machine to be applied before running the build script. You'll then need to store your SMBIOS data in a new **.serialdata** file:
+> [!NOTE]
+> To enable **iServices** functionality, download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) follow the [iServices guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) to generate new SMBIOS data for your machine to be applied before running the build script. You'll then need to store your SMBIOS data in a new **.serialdata** file:
 > ```yaml
 > MLB:                String | "M0000000000000001"
 > ROM:                Data   | <112233445566>
@@ -392,4 +368,5 @@ Refer to [CONTRIBUTING.md](/docs/CONTRIBUTING.md) for instructions (and tips) on
 ## 🌟 Credits
 - [@shiecldk](https://github.com/shiecldk) for their continued contributions and work in the original [Zenbook Pro Duo 15" (UX582) OpenCore configuration and guide](https://github.com/shiecldk/ASUS-ZenBook-Pro-Duo-15-OLED-UX582-Hackintosh) that inspired this project.
 - [@UsedDiscord](https://github.com/UsedDiscord) for their contributions and direction helping investigate screenpad and trackpad functionality.
-- [@wern-apfel](https://github.com/wern-apfel) for their contribution helping to enable ATKD WMI functionality.
+- [@1Revenger](https://github.com/1Revenger1) for their contributions in fixing trackpad buttons and multi-touchscreen inputs in VoodooI2CHID.
+- [@wern-apfel](https://github.com/wern-apfel) for their contributions helping to enable ATKD WMI functionality.
