@@ -2,6 +2,7 @@
 !/.devcontainer/
 !/.github/
 !/.vscode/
+!/.env-example
 !/.gitattributes
 !/.gitignore
 !/.gitmodules
@@ -11,6 +12,8 @@
 
 # Build artifacts
 /dist
+EFI-*
+ocebuild*
 
 # macOS Boot Image
 /com.apple.recovery.boot

@@ -1,11 +1,6 @@
 {
   "name": "main-devcontainer",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-      "packages": "curl,libarchive-tools,acpica-tools"
-    }
-  },
   "customizations": {
     "vscode": {
       "extensions": [

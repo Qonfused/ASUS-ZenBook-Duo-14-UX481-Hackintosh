@@ -1,96 +1,102 @@
 ---
-oc-version: latest
-oc-build: DEBUG
+version: latest
+build: DEBUG
 ---
-include:
-  "*":
-  - ".contentVisibility"
-  acpi:
-    SSDT-ALSD: "ACPI/SSDT-ALSD.dsl"
-    SSDT-ATKD: "ACPI/SSDT-ATKD.dsl"
-    SSDT-AWAK: "ACPI/SSDT-AWAC.dsl"
-    SSDT-DGPU: "ACPI/SSDT-DGPU.dsl"
-    SSDT-EC-USBX: "ACPI/SSDT-EC-USBX.dsl"
-    SSDT-GPIO: "ACPI/SSDT-GPIO.dsl"
-    SSDT-GPRW: "ACPI/SSDT-GPRW.dsl"
-    SSDT-KBLC: "ACPI/SSDT-KBLC.dsl"
-    SSDT-PLUG: "ACPI/SSDT-PLUG.dsl"
-    SSDT-PNLF: "ACPI/SSDT-PNLF.dsl"
-    SSDT-SBUS-MCHC: "ACPI/SSDT-SBUS-MCHC.dsl"
-    SSDT-SPLC: "ACPI/SSDT-SPLC.dsl"
-    SSDT-XWAK: "ACPI/SSDT-XWAK.dsl"
-  drivers:
+ACPI:
+  SSDT-ALSD: "ACPI/SSDT-ALSD.dsl"
+  SSDT-ATKD: "ACPI/SSDT-ATKD.dsl"
+  SSDT-AWAK: "ACPI/SSDT-AWAC.dsl"
+  SSDT-DGPU: "ACPI/SSDT-DGPU.dsl"
+  SSDT-EC-USBX: "ACPI/SSDT-EC-USBX.dsl"
+  SSDT-GPIO: "ACPI/SSDT-GPIO.dsl"
+  SSDT-GPRW: "ACPI/SSDT-GPRW.dsl"
+  SSDT-KBLC: "ACPI/SSDT-KBLC.dsl"
+  SSDT-PLUG: "ACPI/SSDT-PLUG.dsl"
+  SSDT-PNLF: "ACPI/SSDT-PNLF.dsl"
+  SSDT-SBUS-MCHC: "ACPI/SSDT-SBUS-MCHC.dsl"
+  SSDT-SPLC: "ACPI/SSDT-SPLC.dsl"
+  SSDT-XWAK: "ACPI/SSDT-XWAK.dsl"
+Drivers:
   - AudioDxe
   - HfsPlus
+@ifdef(RELEASE)
   - OpenCanopy
+@endif
   - OpenRuntime
   - ResetNvramEntry
   # Required for booting from built-in microSD reader
   - Rts5227S
-  kexts:
-    Lilu: latest
-    WhateverGreen: latest
-    AppleALC: latest
-    # VirtualSMC + plugins
-    VirtualSMC: latest
-    AsusSMC: hieplpvip/AsusSMC=latest
-    SMCBatteryManager: "*"
-    SMCProcessor: "*"
-    SMCSuperIO: "*"
-    # Wi-Fi / Bluetooth
-    AirportItlwm-Ventura:
-      specifier: OpenIntelWireless/itlwm=^2.2.0
+Kexts:
+  Lilu: latest
+  WhateverGreen: latest
+  AppleALC: latest
+  # VirtualSMC + plugins
+  VirtualSMC: latest
+  AsusSMC: hieplpvip/AsusSMC=latest
+  SMCBatteryManager: "*"
+  SMCProcessor: "*"
+  SMCSuperIO: "*"
+  # Wi-Fi / Bluetooth
+  AirportItlwm-Ventura:
+    specifier: OpenIntelWireless/itlwm=^2.2.0
+    properties:
       MaxKernel: "22.99.99"
       MinKernel: "22.0.0"
-    AirportItlwm-Monterey:
-      specifier: OpenIntelWireless/itlwm=^2.2.0
+  AirportItlwm-Monterey:
+    specifier: OpenIntelWireless/itlwm=^2.0.0
+    properties:
       MaxKernel: "21.99.99"
       MinKernel: "21.0.0"
-    AirportItlwm-BigSur:
-      specifier: OpenIntelWireless/itlwm=^2.2.0
+  AirportItlwm-BigSur:
+    specifier: OpenIntelWireless/itlwm=^2.0.0
+    properties:
       MaxKernel: "20.99.99"
       MinKernel: "20.0.0"
-    AirportItlwm-Catalina:
-      specifier: OpenIntelWireless/itlwm=^2.2.0
+  AirportItlwm-Catalina:
+    specifier: OpenIntelWireless/itlwm=^2.0.0
+    properties:
       MaxKernel: "19.99.99"
       MinKernel: "19.0.0"
-    BlueToolFixup:
-      specifier: acidanthera/BrcmPatchRAM=latest
+  BlueToolFixup:
+    specifier: acidanthera/BrcmPatchRAM=latest
+    properties:
       MinKernel: "21.0.0"
-    IntelBluetoothFirmware: OpenIntelWireless/IntelBluetoothFirmware=latest
-    IntelBluetoothInjector:
-      specifier: "*"
+  IntelBluetoothFirmware: OpenIntelWireless/IntelBluetoothFirmware=latest
+  IntelBluetoothInjector:
+    specifier: "*"
+    properties:
       MaxKernel: "20.99.99"
-    IntelBTPatcher: "*"
-    # Misc. Lilu plugins
-    CpuTscSync: latest
-    DiskArbitrationFixup: Qonfused/DiskArbitrationFixup=latest
-    ECEnabler: latest
-    FeatureUnlock: latest
-    HibernationFixup: latest
-    NVMeFix: latest
-    RealtekCardReader: 0xFireWolf/RealtekCardReader=latest
-    RealtekCardReaderFriend: 0xFireWolf/RealtekCardReaderFriend=latest
-    RestrictEvents: latest
-    # Misc. non-Lilu kexts
-    USBToolBox: USBToolbox/kext=latest
-    UTBMap: "./Kexts/UTBMap.kext"
-    # Voodoo kexts + plugins
-    VoodooI2C/VoodooI2CServices: "*"
-    VoodooI2C/VoodooGPIO: "*"
-    VoodooI2C/VoodooInput: "*"
-    VoodooI2C: VoodooI2C/VoodooI2C=latest
-#   FIXME: Vendor kext until VoodooI2CHID PR is merged
-    VoodooI2CHID: "./Kexts/VoodooI2CHID.kext"
-#     VoodooI2CHID: "*"
-    VoodooPS2Controller: acidanthera/VoodooPS2=latest
-    VoodooPS2Controller/VoodooPS2Keyboard: "*"
-    VoodooInjector: Qonfused/VoodooInjector=latest
-  tools:
+  IntelBTPatcher: "*"
+  # Misc. Lilu plugins
+  CpuTscSync: latest
+  DiskArbitrationFixup: Qonfused/DiskArbitrationFixup=latest
+  ECEnabler: 1Revenger1/ECEnabler=latest
+  FeatureUnlock: latest
+  HibernationFixup: latest
+  NVMeFix: latest
+  RealtekCardReader: 0xFireWolf/RealtekCardReader=latest
+  RealtekCardReaderFriend: 0xFireWolf/RealtekCardReaderFriend=latest
+  RestrictEvents: latest
+  # Misc. non-Lilu kexts
+  USBToolBox: USBToolbox/kext=latest
+  UTBMap: "Kexts/UTBMap.kext"
+  # Voodoo kexts + plugins
+  VoodooI2C:
+    specifier: VoodooI2C/VoodooI2C=latest
+    bundled:
+      - VoodooI2CServices
+      - VoodooGPIO
+      - VoodooInput
+#   FIXME: Vendor kext until VoodooI2C 2.9 is released
+  VoodooI2CHID: "Kexts/VoodooI2CHID.kext"
+#     - VoodooI2CHID
+  VoodooPS2Controller:
+    specifier: acidanthera/VoodooPS2=latest
+    bundled:
+      - VoodooPS2Keyboard
+  VoodooInjector: Qonfused/VoodooInjector=latest
+Tools:
   # Also known as UEFIShell
   - OpenShell
   # Required for unlocking CFG-Lock
   - ControlMsrE2
-exclude:
-  "*":
-  - ".contentFlavour"

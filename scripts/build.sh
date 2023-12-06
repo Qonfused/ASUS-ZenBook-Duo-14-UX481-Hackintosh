@@ -11,13 +11,6 @@
 # Change CWD for imports
 __PWD__=$(pwd); cd "$(realpath "$(dirname "${BASH_SOURCE[0]}")"/../)"
 
-source ./scripts/lib/constants.sh
-
-
 # Run build script
-bash ./scripts/lib/oce-build/build.sh -c "$CONFIG"
-
-# Patch SMBIOS serial data
-if printf '%s\n' "$@" | grep -Fxq -- '--skip-serial'; then
-  echo "Skipping SMBIOS serial generation..."
-else bash ./scripts/lib/oce-build/scripts/patch-serial.sh -c "$CONFIG"; fi
+curl -sL https://raw.githubusercontent.com/Qonfused/OCE-Build/main/ci/bootstrap.sh \
+  | bash -s build "$@"
