@@ -110,7 +110,15 @@ dependencies:
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=3e1624df2168594ac15bbfe539c751deeedf24cb'
       specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: 3e1624df2168594ac15bbfe539c751deeedf24cb }'
+      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
+    AirportItlwm-Sonoma:
+      build: DEBUG
+      version: 2.3.0
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Sonoma-v2.3.0-DEBUG-alpha-ff1138b.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
+      kind: Kext
+      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
     AirportItlwm-Ventura:
       build: DEBUG
       version: 2.3.0
