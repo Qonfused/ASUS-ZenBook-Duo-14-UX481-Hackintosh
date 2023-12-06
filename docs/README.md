@@ -55,6 +55,22 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
     </tr>
   </thead>
   <tbody>
+  <!-- macOS 14 -->
+    <tr>
+      <td>
+        <img
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/README/sonoma.png"
+          width=25
+          hspace=2
+          align="top"
+        />
+        Sonoma
+      </td>
+      <td style="text-align: center;">🚧</td>
+      <td>Untested.</td>
+      <td><code>(None)</code></td>
+      <td><a href="https://apps.apple.com/us/app/macos-sonoma/id6450717509"><code>(Latest)</code></a></td>
+    </tr>
   <!-- macOS 13 -->
     <tr>
       <td>
