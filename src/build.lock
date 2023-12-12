@@ -121,12 +121,12 @@ dependencies:
       revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
     AppleALC:
       build: DEBUG
-      version: 1.8.8
-      url: 'https://github.com/dortania/build-repo/releases/download/AppleALC-02549d9/AppleALC-1.8.8-DEBUG.zip'
-      resolution: 'acidanthera/AppleALC@github:1.8.8#commit=02549d912b8cda120111cdf0d7b6744bc46ba40b'
+      version: 1.8.9
+      url: 'https://github.com/dortania/build-repo/releases/download/AppleALC-7e7cdc8/AppleALC-1.8.9-DEBUG.zip'
+      resolution: 'acidanthera/AppleALC@github:1.8.9#commit=7e7cdc8f4ffd1184a849b75de8f5ccb6c1d339ba'
       specifier: 'acidanthera/AppleALC@github'
       kind: Kext
-      revision: '{ SHA1: 02549d912b8cda120111cdf0d7b6744bc46ba40b }'
+      revision: '{ SHA1: 7e7cdc8f4ffd1184a849b75de8f5ccb6c1d339ba }'
     AsusSMC:
       build: DEBUG
       version: 1.4.1
@@ -301,9 +301,9 @@ dependencies:
       revision: '{ SHA1: 4e7e1b7465aae297d706afe5de5c4d1572d86917 }'
     OpenCore:
       build: DEBUG
-      version: 0.9.6
-      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/0.9.6/OpenCore-0.9.6-DEBUG.zip'
-      resolution: 'acidanthera/OpenCorePkg@github:0.9.6#commit=1bc9e74ed116a7413c87aaaeba388606d94429e9'
+      version: 0.9.7
+      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/0.9.7/OpenCore-0.9.7-DEBUG.zip'
+      resolution: 'acidanthera/OpenCorePkg@github:0.9.7#commit=6a961f1652ef485f4f295e38e17b3c353dbdbf15'
       specifier: 'acidanthera/OpenCorePkg@github:latest'
       kind: Binary
-      revision: '{ SHA1: 1bc9e74ed116a7413c87aaaeba388606d94429e9 }'
+      revision: '{ SHA1: 6a961f1652ef485f4f295e38e17b3c353dbdbf15 }'
