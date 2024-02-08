@@ -82,51 +82,51 @@ dependencies:
       revision: '{ SHA256: ef3bf8302f62f3b4d57a01b39cc418d269be9f0d8ff751c60f3f38a4701fce05 }'
     SSDT-XWAK:
       path: './ACPI/SSDT-XWAK.dsl'
-      resolution: 'SSDT-XWAK@file:ACPI/SSDT-XWAK.dsl#checksum=e4ed63741b08bfffc8b7224b1457deb4d99af34831c04dbff90b716c3936ddae'
+      resolution: 'SSDT-XWAK@file:ACPI/SSDT-XWAK.dsl#checksum=763596cced248220e7578f88e4dfe78d659e8ba6dce59fe6dfd91ad58381563e'
       specifier: 'SSDT-XWAK@file:ACPI/SSDT-XWAK.dsl'
       kind: SSDT
-      revision: '{ SHA256: e4ed63741b08bfffc8b7224b1457deb4d99af34831c04dbff90b716c3936ddae }'
+      revision: '{ SHA256: 763596cced248220e7578f88e4dfe78d659e8ba6dce59fe6dfd91ad58381563e }'
   Kexts:
     AirportItlwm-BigSur:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Big_Sur-v2.3.0-DEBUG-alpha-ff1138b.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Big_Sur-v2.3.0-DEBUG-alpha-3e1624d.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=3e1624df2168594ac15bbfe539c751deeedf24cb'
       specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
+      revision: '{ SHA1: 3e1624df2168594ac15bbfe539c751deeedf24cb }'
     AirportItlwm-Catalina:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Catalina-v2.3.0-DEBUG-alpha-ff1138b.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Catalina-v2.3.0-DEBUG-alpha-3e1624d.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=3e1624df2168594ac15bbfe539c751deeedf24cb'
       specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
+      revision: '{ SHA1: 3e1624df2168594ac15bbfe539c751deeedf24cb }'
     AirportItlwm-Monterey:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Monterey-v2.3.0-DEBUG-alpha-ff1138b.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Monterey-v2.3.0-DEBUG-alpha-3e1624d.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=3e1624df2168594ac15bbfe539c751deeedf24cb'
       specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
+      revision: '{ SHA1: 3e1624df2168594ac15bbfe539c751deeedf24cb }'
     AirportItlwm-Ventura:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Ventura-v2.3.0-DEBUG-alpha-ff1138b.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Ventura-v2.3.0-DEBUG-alpha-3e1624d.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=3e1624df2168594ac15bbfe539c751deeedf24cb'
       specifier: 'OpenIntelWireless/itlwm@github:^2.2.0'
       kind: Kext
-      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
+      revision: '{ SHA1: 3e1624df2168594ac15bbfe539c751deeedf24cb }'
     AppleALC:
       build: DEBUG
-      version: 1.8.9
-      url: 'https://github.com/dortania/build-repo/releases/download/AppleALC-7e7cdc8/AppleALC-1.8.9-DEBUG.zip'
-      resolution: 'acidanthera/AppleALC@github:1.8.9#commit=7e7cdc8f4ffd1184a849b75de8f5ccb6c1d339ba'
+      version: 1.9.0
+      url: 'https://github.com/dortania/build-repo/releases/download/AppleALC-191660f/AppleALC-1.9.0-DEBUG.zip'
+      resolution: 'acidanthera/AppleALC@github:1.9.0#commit=191660f4f71fd9a206c6713d5f095195943146f0'
       specifier: 'acidanthera/AppleALC@github'
       kind: Kext
-      revision: '{ SHA1: 7e7cdc8f4ffd1184a849b75de8f5ccb6c1d339ba }'
+      revision: '{ SHA1: 191660f4f71fd9a206c6713d5f095195943146f0 }'
     AsusSMC:
       build: DEBUG
       version: 1.4.1
@@ -294,16 +294,16 @@ dependencies:
   OpenCorePkg:
     OcBinaryData:
       build: DEBUG
-      url: 'https://github.com/acidanthera/OcBinaryData/archive/4e7e1b7465aae297d706afe5de5c4d1572d86917.tar.gz'
-      resolution: 'acidanthera/OcBinaryData@github#commit=4e7e1b7465aae297d706afe5de5c4d1572d86917'
+      url: 'https://github.com/acidanthera/OcBinaryData/archive/af09b0bf763363ec9f4ecdbbe2f0adeb970948d8.tar.gz'
+      resolution: 'acidanthera/OcBinaryData@github#commit=af09b0bf763363ec9f4ecdbbe2f0adeb970948d8'
       specifier: 'acidanthera/OcBinaryData@github:latest'
       kind: Binary
-      revision: '{ SHA1: 4e7e1b7465aae297d706afe5de5c4d1572d86917 }'
+      revision: '{ SHA1: af09b0bf763363ec9f4ecdbbe2f0adeb970948d8 }'
     OpenCore:
       build: DEBUG
-      version: 0.9.7
-      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/0.9.7/OpenCore-0.9.7-DEBUG.zip'
-      resolution: 'acidanthera/OpenCorePkg@github:0.9.7#commit=6a961f1652ef485f4f295e38e17b3c353dbdbf15'
+      version: 0.9.8
+      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/0.9.8/OpenCore-0.9.8-DEBUG.zip'
+      resolution: 'acidanthera/OpenCorePkg@github:0.9.8#commit=7a3f8cc4269a2f176969534c036b3951c07c3a26'
       specifier: 'acidanthera/OpenCorePkg@github:latest'
       kind: Binary
-      revision: '{ SHA1: 6a961f1652ef485f4f295e38e17b3c353dbdbf15 }'
+      revision: '{ SHA1: 7a3f8cc4269a2f176969534c036b3951c07c3a26 }'
