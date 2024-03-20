@@ -287,13 +287,18 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
   <!-- Continuity -->
     <tr>
       <td rowspan=6>Continuity</td>
-      <td>Airplay to Mac</td>
+      <td>AirDrop</td>
+      <td style="text-align: center;">❌</td>
+      <td>Unsupported.</td>
+    <tr>
+    <tr>
+      <td>AirPlay to Mac</td>
       <td style="text-align: center;">✅</td>
       <td>Supported.</td>
     <tr>
       <td>Sidecar</td>
-      <td style="text-align: center;">✅</td>
-      <td>Supported.</td>
+      <td style="text-align: center;">❌</td>
+      <td>Unsupported.</td>
     <tr>
       <td>Handoff</td>
       <td style="text-align: center;">✅</td>
@@ -301,8 +306,8 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
     </tr>
     <tr>
       <td>Continuity Camera</td>
-      <td style="text-align: center;">🚧</td>
-      <td>Untested.</td>
+      <td style="text-align: center;">❌</td>
+      <td>Unsupported.</td>
     </tr>
     <tr>
       <td>Universal Clipboard</td>
@@ -311,8 +316,8 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
     </tr>
     <tr>
       <td>Universal Control</td>
-      <td style="text-align: center;">✅</td>
-      <td>Supported.</td>
+      <td style="text-align: center;">❌</td>
+      <td>Unsupported.</td>
     </tr>
   <!-- Sleep + Wake -->
     <tr>
