@@ -90,43 +90,52 @@ dependencies:
     AirportItlwm-BigSur:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Big_Sur-v2.3.0-DEBUG-alpha-ff1138b.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Big_Sur-v2.3.0-DEBUG-alpha-e886ebb.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
       specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
+      revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
     AirportItlwm-Catalina:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Catalina-v2.3.0-DEBUG-alpha-ff1138b.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Catalina-v2.3.0-DEBUG-alpha-e886ebb.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
       specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
+      revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
     AirportItlwm-Monterey:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Monterey-v2.3.0-DEBUG-alpha-ff1138b.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Monterey-v2.3.0-DEBUG-alpha-e886ebb.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
       specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
-    AirportItlwm-Sonoma:
-      build: DEBUG
-      version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Sonoma-v2.3.0-DEBUG-alpha-ff1138b.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
-      kind: Kext
-      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
+      revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
+    AirportItlwm-Sonoma-14:
+      0:
+        build: DEBUG
+        version: 2.3.0
+        url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Sonoma14.0-v2.3.0-DEBUG-alpha-e886ebb.zip'
+        resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
+        specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
+        kind: Kext
+        revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
+      4:
+        build: DEBUG
+        version: 2.3.0
+        url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Sonoma14.4-v2.3.0-DEBUG-alpha-e886ebb.zip'
+        resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
+        specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
+        kind: Kext
+        revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
     AirportItlwm-Ventura:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Ventura-v2.3.0-DEBUG-alpha-ff1138b.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=ff1138b026d3198beb9a716f73efe4f4a86ed68b'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Ventura-v2.3.0-DEBUG-alpha-e886ebb.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
       specifier: 'OpenIntelWireless/itlwm@github:^2.2.0'
       kind: Kext
-      revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
+      revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
     AppleALC:
       build: DEBUG
       version: 1.9.0
@@ -314,3 +323,4 @@ dependencies:
       resolution: 'acidanthera/OpenCorePkg@github:0.9.9#commit=9b5fb72da3a38446417a7577f8e5e293fdad672e'
       specifier: 'acidanthera/OpenCorePkg@github:latest'
       kind: Binary
+      revision: '{ SHA1: 9b5fb72da3a38446417a7577f8e5e293fdad672e }'
