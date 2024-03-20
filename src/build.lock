@@ -193,12 +193,12 @@ dependencies:
       revision: '{ SHA1: 1eb0ddb6cd7b2cd0a72e157a15e8833399afe7e8 }'
     IntelBluetoothFirmware:
       build: DEBUG
-      version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/download/v2.3.0/IntelBluetooth-v2.3.0.zip'
-      resolution: 'OpenIntelWireless/IntelBluetoothFirmware@github:2.3.0#commit=592507aa8cb3d0df3e524bb869f2836271e4fb48'
+      version: 2.4.0
+      url: 'https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/download/v2.4.0/IntelBluetooth-v2.4.0.zip'
+      resolution: 'OpenIntelWireless/IntelBluetoothFirmware@github:2.4.0#commit=b9127f5e1ede477577470cc4d4f55134a2901f5b'
       specifier: 'OpenIntelWireless/IntelBluetoothFirmware@github:latest'
       kind: Kext
-      revision: '{ SHA1: 592507aa8cb3d0df3e524bb869f2836271e4fb48 }'
+      revision: '{ SHA1: b9127f5e1ede477577470cc4d4f55134a2901f5b }'
     Lilu:
       build: DEBUG
       version: 1.6.8
@@ -309,9 +309,8 @@ dependencies:
       revision: '{ SHA1: af09b0bf763363ec9f4ecdbbe2f0adeb970948d8 }'
     OpenCore:
       build: DEBUG
-      version: 0.9.8
-      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/0.9.8/OpenCore-0.9.8-DEBUG.zip'
-      resolution: 'acidanthera/OpenCorePkg@github:0.9.8#commit=7a3f8cc4269a2f176969534c036b3951c07c3a26'
+      version: 0.9.9
+      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/0.9.9/OpenCore-0.9.9-DEBUG.zip'
+      resolution: 'acidanthera/OpenCorePkg@github:0.9.9#commit=9b5fb72da3a38446417a7577f8e5e293fdad672e'
       specifier: 'acidanthera/OpenCorePkg@github:latest'
       kind: Binary
-      revision: '{ SHA1: 7a3f8cc4269a2f176969534c036b3951c07c3a26 }'
