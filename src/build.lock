@@ -129,12 +129,12 @@ dependencies:
       revision: '{ SHA1: ff1138b026d3198beb9a716f73efe4f4a86ed68b }'
     AppleALC:
       build: DEBUG
-      version: 1.8.8
-      url: 'https://github.com/dortania/build-repo/releases/download/AppleALC-02549d9/AppleALC-1.8.8-DEBUG.zip'
-      resolution: 'acidanthera/AppleALC@github:1.8.8#commit=02549d912b8cda120111cdf0d7b6744bc46ba40b'
+      version: 1.9.0
+      url: 'https://github.com/dortania/build-repo/releases/download/AppleALC-191660f/AppleALC-1.9.0-DEBUG.zip'
+      resolution: 'acidanthera/AppleALC@github:1.9.0#commit=191660f4f71fd9a206c6713d5f095195943146f0'
       specifier: 'acidanthera/AppleALC@github'
       kind: Kext
-      revision: '{ SHA1: 02549d912b8cda120111cdf0d7b6744bc46ba40b }'
+      revision: '{ SHA1: 191660f4f71fd9a206c6713d5f095195943146f0 }'
     AsusSMC:
       build: DEBUG
       version: 1.4.1
@@ -193,12 +193,12 @@ dependencies:
       revision: '{ SHA1: 1eb0ddb6cd7b2cd0a72e157a15e8833399afe7e8 }'
     IntelBluetoothFirmware:
       build: DEBUG
-      version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/download/v2.3.0/IntelBluetooth-v2.3.0.zip'
-      resolution: 'OpenIntelWireless/IntelBluetoothFirmware@github:2.3.0#commit=592507aa8cb3d0df3e524bb869f2836271e4fb48'
+      version: 2.4.0
+      url: 'https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/download/v2.4.0/IntelBluetooth-v2.4.0.zip'
+      resolution: 'OpenIntelWireless/IntelBluetoothFirmware@github:2.4.0#commit=b9127f5e1ede477577470cc4d4f55134a2901f5b'
       specifier: 'OpenIntelWireless/IntelBluetoothFirmware@github:latest'
       kind: Kext
-      revision: '{ SHA1: 592507aa8cb3d0df3e524bb869f2836271e4fb48 }'
+      revision: '{ SHA1: b9127f5e1ede477577470cc4d4f55134a2901f5b }'
     Lilu:
       build: DEBUG
       version: 1.6.8
@@ -302,16 +302,15 @@ dependencies:
   OpenCorePkg:
     OcBinaryData:
       build: DEBUG
-      url: 'https://github.com/acidanthera/OcBinaryData/archive/4e7e1b7465aae297d706afe5de5c4d1572d86917.tar.gz'
-      resolution: 'acidanthera/OcBinaryData@github#commit=4e7e1b7465aae297d706afe5de5c4d1572d86917'
+      url: 'https://github.com/acidanthera/OcBinaryData/archive/af09b0bf763363ec9f4ecdbbe2f0adeb970948d8.tar.gz'
+      resolution: 'acidanthera/OcBinaryData@github#commit=af09b0bf763363ec9f4ecdbbe2f0adeb970948d8'
       specifier: 'acidanthera/OcBinaryData@github:latest'
       kind: Binary
-      revision: '{ SHA1: 4e7e1b7465aae297d706afe5de5c4d1572d86917 }'
+      revision: '{ SHA1: af09b0bf763363ec9f4ecdbbe2f0adeb970948d8 }'
     OpenCore:
       build: DEBUG
-      version: 0.9.6
-      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/0.9.6/OpenCore-0.9.6-DEBUG.zip'
-      resolution: 'acidanthera/OpenCorePkg@github:0.9.6#commit=1bc9e74ed116a7413c87aaaeba388606d94429e9'
+      version: 0.9.9
+      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/0.9.9/OpenCore-0.9.9-DEBUG.zip'
+      resolution: 'acidanthera/OpenCorePkg@github:0.9.9#commit=9b5fb72da3a38446417a7577f8e5e293fdad672e'
       specifier: 'acidanthera/OpenCorePkg@github:latest'
       kind: Binary
-      revision: '{ SHA1: 1bc9e74ed116a7413c87aaaeba388606d94429e9 }'
