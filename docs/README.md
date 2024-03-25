@@ -16,7 +16,7 @@
   <a href="/LICENSE">![License](https://img.shields.io/github/license/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh?label=⚖%20License&labelColor=3f4551&color=9dc4d0)</a>
   <a href="/docs/CHANGELOG.md">![SemVer](https://img.shields.io/badge/SemVer-v0.6.0-important?logo=SemVer&labelColor=3f4551)</a>
   <a href="">![Supported Models](https://img.shields.io/badge/Supported%20Models-UX481FA%20%7C%20UX481FL-important?labelColor=3f4551)</a>
-  <a href="https://github.com/acidanthera/OpenCorePkg/releases">![OpenCore](https://img.shields.io/badge/OpenCore-0.9.8-0c7dbe?logo=Osano&logoColor=0298e1&labelColor=3f4451)</a>
+  <a href="https://github.com/acidanthera/OpenCorePkg/releases">![OpenCore](https://img.shields.io/badge/OpenCore-0.9.9-0c7dbe?logo=Osano&logoColor=0298e1&labelColor=3f4451)</a>
   <a href="https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/actions/workflows/oce-build.yml">![OCE Build](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/actions/workflows/oce-build.yml/badge.svg?branch=main)</a>
 
 </div>
@@ -55,6 +55,22 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
     </tr>
   </thead>
   <tbody>
+  <!-- macOS 14 -->
+    <tr>
+      <td>
+        <img
+          src="https://raw.githubusercontent.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/main/docs/assets/README/sonoma.png"
+          width=25
+          hspace=2
+          align="top"
+        />
+        Sonoma
+      </td>
+      <td style="text-align: center;">🚧</td>
+      <td>Untested.</td>
+      <td><code>(None)</code></td>
+      <td><a href="https://apps.apple.com/us/app/macos-sonoma/id6450717509"><code>(Latest)</code></a></td>
+    </tr>
   <!-- macOS 13 -->
     <tr>
       <td>
@@ -271,13 +287,18 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
   <!-- Continuity -->
     <tr>
       <td rowspan=6>Continuity</td>
-      <td>Airplay to Mac</td>
+      <td>AirDrop</td>
+      <td style="text-align: center;">❌</td>
+      <td>Unsupported.</td>
+    <tr>
+    <tr>
+      <td>AirPlay to Mac</td>
       <td style="text-align: center;">✅</td>
       <td>Supported.</td>
     <tr>
       <td>Sidecar</td>
-      <td style="text-align: center;">✅</td>
-      <td>Supported.</td>
+      <td style="text-align: center;">❌</td>
+      <td>Unsupported.</td>
     <tr>
       <td>Handoff</td>
       <td style="text-align: center;">✅</td>
@@ -285,8 +306,8 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
     </tr>
     <tr>
       <td>Continuity Camera</td>
-      <td style="text-align: center;">🚧</td>
-      <td>Untested.</td>
+      <td style="text-align: center;">❌</td>
+      <td>Unsupported.</td>
     </tr>
     <tr>
       <td>Universal Clipboard</td>
@@ -295,8 +316,8 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
     </tr>
     <tr>
       <td>Universal Control</td>
-      <td style="text-align: center;">✅</td>
-      <td>Supported.</td>
+      <td style="text-align: center;">❌</td>
+      <td>Unsupported.</td>
     </tr>
   <!-- Sleep + Wake -->
     <tr>
@@ -323,7 +344,7 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
 
 ### 1. Clone this repository using Git
 
-To clone this repository locally with submodules, run the below commands:
+To clone this repository locally, run the below command:
 ```sh
 git clone https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh
 cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
@@ -331,33 +352,35 @@ cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
 
 ### 2. Build this repository using OCE-Build
 
-To build this project's EFI, run the below command at the root of the project:
-```sh
-# Run build pipeline for the UX481FA/FL EFI
-bash scripts/build.sh
+This project uses [OCE-Build](https://github.com/Qonfused/OCE-Build) to automatically version and build this repository's EFI.
+
+To build this project's EFI, run either of the below commands at the root of the project:
+```powershell
+# In PowerShell
+scripts/build.ps1
+
+# In Bash/WSL
+scripts/build.sh
 ```
 
-You can also manually download [OCE Build](https://github.com/Qonfused/OCE-Build/releases) and run the `ocebuild build` command from the root of the project.
+> [!IMPORTANT]
+> To run powershell scripts, you may need to set your execution policy using:
+> ```powershell
+> Set-ExecutionPolicy RemoteSigned
+> ```
 
-> [!NOTE]
-> For Windows users, running Bash scripts requires a Linux environment (provided by [Cygwin](https://www.cygwin.com/), [MinGW](https://www.mingw-w64.org/), [Git Bash](https://gitforwindows.org/), or [WSL](https://learn.microsoft.com/en-us/windows/wsl/about)).
-> 
-> Refer to [aka.ms/wslinstall](aka.ms/wslinstall) and [aka.ms/wsl2](aka.ms/wsl2) for instructions on installing wsl and upgrading to the wsl2 kernel (recommended).
-> - You can install a Linux distribution directly from the Microsoft Store (e.g. [Ubuntu 20.04.5 LTS](https://apps.microsoft.com/store/detail/ubuntu-20045-lts/9MTTCL66CPXJ)).
-> - Alternatively, you can [setup devcontainers](https://code.visualstudio.com/docs/devcontainers/containers#_installation) with Docker and VSCode to run a containerized Linux environment on top of wsl. The [devcontainer](/.devcontainer/devcontainer.json) for this project will setup and build the project automatically upon container creation.
+You can also download [OCE-Build](https://github.com/Qonfused/OCE-Build/releases) and run the `ocebuild build` command from the root of the project.
 
 ### 3. Using this EFI with macOS
-Refer to the [Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Install-Guide) and [Post-Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Post-Install-Guide) for installation instructions.
 
-> [!NOTE]
-> To enable **iServices** functionality, download [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS) follow the [iServices guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) to generate new SMBIOS data for your machine to be applied before running the build script. You'll then need to store your SMBIOS data in a new **.serialdata** file:
-> ```yaml
-> MLB:                String | "M0000000000000001"
-> ROM:                Data   | <112233445566>
-> SystemProductName:  String | "MacBookPro16,3"
-> SystemSerialNumber: String | "W00000000001"
-> SystemUUID:         String | "00000000-0000-0000-0000-000000000000"
-> ```
+To enable **iServices** functionality, you can:
+1. Generate SMBIOS data with [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
+  - Follow the Dortania [iServices guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html#using-gensmbios) to generate new SMBIOS data for your machine.
+2. For local builds of this EFI, patch *existing* SMBIOS data automatically.
+  - This is automatically patched each time you run a build using the **.serialdata** file (using existing data or data generated by GenSMBIOS).
+  - Refer to the [**.serialdata.example**](/src/.serialdata.example) file for an example of the entry format.
+
+Refer to the [Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Install-Guide) and [Post-Install Guide](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/wiki/Post-Install-Guide) for installation instructions.
 
 ## 🔥 Contributing
 Contributions of any size to this project are always welcome!

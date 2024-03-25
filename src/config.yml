@@ -270,7 +270,7 @@ DeviceProperties:
       enable-backlight-smoother:      Boolean | true
       # Framebuffer connector patches.
       # - con0 [eDP]   Primary Display
-      framebuffer-con0-alldata:       Data    | <00000800 02000000 98000000>
+      framebuffer-con0-alldata:       Data    | <00000800 02000000 98010000>
       framebuffer-con0-enable:        Data    | <01000000>
       # - con1 [DP]    ScreenPad-Plus
       framebuffer-con1-alldata:       Data    | <01010900 00040000 C7030000>
