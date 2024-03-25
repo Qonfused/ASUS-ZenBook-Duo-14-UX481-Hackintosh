@@ -111,23 +111,22 @@ dependencies:
       specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
       revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
-    AirportItlwm-Sonoma-14:
-      0:
-        build: DEBUG
-        version: 2.3.0
-        url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Sonoma14.0-v2.3.0-DEBUG-alpha-e886ebb.zip'
-        resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
-        specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
-        kind: Kext
-        revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
-      4:
-        build: DEBUG
-        version: 2.3.0
-        url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Sonoma14.4-v2.3.0-DEBUG-alpha-e886ebb.zip'
-        resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
-        specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
-        kind: Kext
-        revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
+    AirportItlwm-Sonoma-14.0:
+      build: DEBUG
+      version: 2.3.0
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Sonoma14.0-v2.3.0-DEBUG-alpha-e886ebb.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
+      specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
+      kind: Kext
+      revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
+    AirportItlwm-Sonoma-14.4:
+      build: DEBUG
+      version: 2.3.0
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Sonoma14.4-v2.3.0-DEBUG-alpha-e886ebb.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
+      specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
+      kind: Kext
+      revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
     AirportItlwm-Ventura:
       build: DEBUG
       version: 2.3.0
