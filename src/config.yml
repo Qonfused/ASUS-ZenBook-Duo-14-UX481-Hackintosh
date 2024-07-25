@@ -185,9 +185,6 @@ Kernel:
     DisableIoMapper:                  Boolean | true
 Booter:
   Quirks:
-    # Reduces stolen memory footprint by removing runtime attributes from known
-    # MMIO regions. Saves between 64-256 MB of memory for bootloader allocation.
-    DevirtualiseMmio:                 Boolean | true
     # Disables memory map analysis of firmware as all slides (1-255) are usable.
     EnableSafeModeSlide:              Boolean | false
     ProvideCustomSlide:               Boolean | false
@@ -197,20 +194,7 @@ Booter:
     # - Note: The below options reflect support for MATs (2018+ firmware).
     EnableWriteUnprotector:           Boolean | false
     ProtectUefiServices:              Boolean | true
-    RebuildAppleMemoryMap:            Boolean | true
     SyncRuntimePermissions:           Boolean | true
-
-# Sets hibernation behavior defaults.
-# - This leverages functionality from the HibernationFixup kext.
-# - https://github.com/acidanthera/HibernationFixup
-NVRAM:
-  Add:
-    E09B9297-7928-4440-9AAB-D1F8536FBF0A:
-      # Controls auto-hibernation feature:
-      # 01 - `EnableAutoHibernation`
-      # 04 - `WhenExternalPowerIsDisconnected`
-      # 08 - `WhenBatteryIsNotCharging`
-      hbfx-ahbm:                      Number  | 13
 
 ################################################################################
 #                                  Boot fixes                                  #
@@ -239,6 +223,49 @@ UEFI:
 Kernel:
   Quirks:
     SetApfsTrimTimeout:               Number  | 0
+
+# Hibernation fixes for macOS
+Booter:
+  Quirks:
+    DevirtualiseMmio:                 Boolean | false
+    # Fixes abrupt resets on the login screen after wake from hibernation.
+    DiscardHibernateMap:              Boolean | true
+    RebuildAppleMemoryMap:            Boolean | false
+Misc:
+  Boot:
+    HibernateMode:                    String  | "NVRAM"
+    HibernateSkipsPicker:             Boolean | true
+NVRAM:
+  Add:
+    # Sets hibernation behavior defaults.
+    # - This leverages functionality from the HibernationFixup kext.
+    # - https://github.com/acidanthera/HibernationFixup
+    E09B9297-7928-4440-9AAB-D1F8536FBF0A:
+      # Controls behavior of the auto-hibernation feature:
+      #  01 - `EnableAutoHibernation`
+      #  16 - `WhenBatteryIsAtWarnLevel`
+      #  32 - `WhenBatteryIsAtCriticalLevel`
+      # 128 - `DisableStimulusDarkWakeActivityTickle`
+      hbfx-ahbm:                      Number  | 187
+    7C436110-AB2A-4BBB-A880-FE41995C9F82:
+      # Disables RTC hibernation on macOS and fixes DC6 power state conflicts.
+      # - `hbfx-dump-nvram` - Dumps NVRAM variables to `nvram.plist` before
+      #                       hibernation and after kernel panic.
+      # - `rtcfx_exclude=80-AB` - Excludes offsets used to store RTC hibernation
+      #                           variables (aka IOHibernateRTCvariables);
+      #                           requires the RTCMemoryFixup kext.
+      #                         - https://github.com/acidanthera/RTCMemoryFixup
+      # - `dc6config=0` - Disables writes to `DC_STATE_EN` from `enableHWDC6()`
+      #                   to fix random wakes during hibernation 25 between
+      #                   macOS Catalina and Monterey.
+      @append
+      boot-args:                      String  | "-hbfx-dump-nvram rtcfx_exclude=80-AB dc6config=0"
+UEFI:
+  ReservedMemory:
+    - Address:                        Number  | 569344
+      Comment:                        String  | "Fixes black screen after hibernation 25"
+      Size:                           Number  | 4096
+      Type:                           String  | "RuntimeCode"
 
 ################################################################################
 #                           CPU/Graphics related fixes                         #
