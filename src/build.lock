@@ -90,59 +90,59 @@ dependencies:
     AirportItlwm-BigSur:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Big_Sur-v2.3.0-DEBUG-alpha-e886ebb.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_BigSur.kext.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
       specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
+      revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AirportItlwm-Catalina:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Catalina-v2.3.0-DEBUG-alpha-e886ebb.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Catalina.kext.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
       specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
+      revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AirportItlwm-Monterey:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Monterey-v2.3.0-DEBUG-alpha-e886ebb.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Monterey.kext.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
       specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
       kind: Kext
-      revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
+      revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AirportItlwm-Sonoma-14.0:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Sonoma14.0-v2.3.0-DEBUG-alpha-e886ebb.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Sonoma14.0.kext.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
       specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
       kind: Kext
-      revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
+      revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AirportItlwm-Sonoma-14.4:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Sonoma14.4-v2.3.0-DEBUG-alpha-e886ebb.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Sonoma14.4.kext.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
       specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
       kind: Kext
-      revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
+      revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AirportItlwm-Ventura:
       build: DEBUG
       version: 2.3.0
-      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0-alpha/AirportItlwm-Ventura-v2.3.0-DEBUG-alpha-e886ebb.zip'
-      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=e886ebb06658d6aee70f87e30a6bbbd0acad1f57'
+      url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Ventura.kext.zip'
+      resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
       specifier: 'OpenIntelWireless/itlwm@github:^2.2.0'
       kind: Kext
-      revision: '{ SHA1: e886ebb06658d6aee70f87e30a6bbbd0acad1f57 }'
+      revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AppleALC:
       build: DEBUG
-      version: 1.9.0
-      url: 'https://github.com/dortania/build-repo/releases/download/AppleALC-191660f/AppleALC-1.9.0-DEBUG.zip'
-      resolution: 'acidanthera/AppleALC@github:1.9.0#commit=191660f4f71fd9a206c6713d5f095195943146f0'
+      version: 1.9.1
+      url: 'https://github.com/dortania/build-repo/releases/download/AppleALC-9abbb02/AppleALC-1.9.1-DEBUG.zip'
+      resolution: 'acidanthera/AppleALC@github:1.9.1#commit=9abbb0290ee9446296c627000a98c4dfd60f10dc'
       specifier: 'acidanthera/AppleALC@github'
       kind: Kext
-      revision: '{ SHA1: 191660f4f71fd9a206c6713d5f095195943146f0 }'
+      revision: '{ SHA1: 9abbb0290ee9446296c627000a98c4dfd60f10dc }'
     AsusSMC:
       build: DEBUG
       version: 1.4.1
@@ -162,11 +162,11 @@ dependencies:
     CpuTscSync:
       build: DEBUG
       version: 1.1.1
-      url: 'https://github.com/dortania/build-repo/releases/download/CpuTscSync-15df7f0/CpuTscSync-1.1.1-DEBUG.zip'
-      resolution: 'acidanthera/CpuTscSync@github:1.1.1#commit=15df7f00c8c6b0c002c236a74ba4c5b3ea10c788'
+      url: 'https://github.com/dortania/build-repo/releases/download/CpuTscSync-bc32031/CpuTscSync-1.1.1-DEBUG.zip'
+      resolution: 'acidanthera/CpuTscSync@github:1.1.1#commit=bc320318407f9daaabf640932f8fba855210be65'
       specifier: 'acidanthera/CpuTscSync@github'
       kind: Kext
-      revision: '{ SHA1: 15df7f00c8c6b0c002c236a74ba4c5b3ea10c788 }'
+      revision: '{ SHA1: bc320318407f9daaabf640932f8fba855210be65 }'
     DiskArbitrationFixup:
       build: DEBUG
       version: 1.0.0
@@ -186,19 +186,19 @@ dependencies:
     FeatureUnlock:
       build: DEBUG
       version: 1.1.6
-      url: 'https://github.com/dortania/build-repo/releases/download/FeatureUnlock-8a6bbec/FeatureUnlock-1.1.6-DEBUG.zip'
-      resolution: 'acidanthera/FeatureUnlock@github:1.1.6#commit=8a6bbec4a512e61219d461b1c8f3630e3ad4e26b'
+      url: 'https://github.com/dortania/build-repo/releases/download/FeatureUnlock-118f3ec/FeatureUnlock-1.1.6-DEBUG.zip'
+      resolution: 'acidanthera/FeatureUnlock@github:1.1.6#commit=118f3ecd6d43a3d8177e0529753dddc4d3e26583'
       specifier: 'acidanthera/FeatureUnlock@github'
       kind: Kext
-      revision: '{ SHA1: 8a6bbec4a512e61219d461b1c8f3630e3ad4e26b }'
+      revision: '{ SHA1: 118f3ecd6d43a3d8177e0529753dddc4d3e26583 }'
     HibernationFixup:
       build: DEBUG
-      version: 1.5.0
-      url: 'https://github.com/dortania/build-repo/releases/download/HibernationFixup-1eb0ddb/HibernationFixup-1.5.0-DEBUG.zip'
-      resolution: 'acidanthera/HibernationFixup@github:1.5.0#commit=1eb0ddb6cd7b2cd0a72e157a15e8833399afe7e8'
+      version: 1.5.1
+      url: 'https://github.com/dortania/build-repo/releases/download/HibernationFixup-7b8e26b/HibernationFixup-1.5.1-DEBUG.zip'
+      resolution: 'acidanthera/HibernationFixup@github:1.5.1#commit=7b8e26b31a0fc611e98c46c03e64f523b8228a5c'
       specifier: 'acidanthera/HibernationFixup@github'
       kind: Kext
-      revision: '{ SHA1: 1eb0ddb6cd7b2cd0a72e157a15e8833399afe7e8 }'
+      revision: '{ SHA1: 7b8e26b31a0fc611e98c46c03e64f523b8228a5c }'
     IntelBluetoothFirmware:
       build: DEBUG
       version: 2.4.0
@@ -210,11 +210,11 @@ dependencies:
     Lilu:
       build: DEBUG
       version: 1.6.8
-      url: 'https://github.com/dortania/build-repo/releases/download/Lilu-472442f/Lilu-1.6.8-DEBUG.zip'
-      resolution: 'acidanthera/Lilu@github:1.6.8#commit=472442f344531f88d31628da44f0778655a8e532'
+      url: 'https://github.com/dortania/build-repo/releases/download/Lilu-4256f43/Lilu-1.6.8-DEBUG.zip'
+      resolution: 'acidanthera/Lilu@github:1.6.8#commit=4256f4315bf029c4a775cc52100a0d4a0c94663d'
       specifier: 'acidanthera/Lilu@github'
       kind: Kext
-      revision: '{ SHA1: 472442f344531f88d31628da44f0778655a8e532 }'
+      revision: '{ SHA1: 4256f4315bf029c4a775cc52100a0d4a0c94663d }'
     NVMeFix:
       build: DEBUG
       version: 1.1.2
@@ -302,11 +302,11 @@ dependencies:
     WhateverGreen:
       build: DEBUG
       version: 1.6.7
-      url: 'https://github.com/dortania/build-repo/releases/download/WhateverGreen-c5a5f50/WhateverGreen-1.6.7-DEBUG.zip'
-      resolution: 'acidanthera/WhateverGreen@github:1.6.7#commit=c5a5f507f54a6ff1d17e048fb9456302ef2a3702'
+      url: 'https://github.com/dortania/build-repo/releases/download/WhateverGreen-d87a4c4/WhateverGreen-1.6.7-DEBUG.zip'
+      resolution: 'acidanthera/WhateverGreen@github:1.6.7#commit=d87a4c494a49c54101e9856a76bcc922c2eff6ff'
       specifier: 'acidanthera/WhateverGreen@github'
       kind: Kext
-      revision: '{ SHA1: c5a5f507f54a6ff1d17e048fb9456302ef2a3702 }'
+      revision: '{ SHA1: d87a4c494a49c54101e9856a76bcc922c2eff6ff }'
   OpenCorePkg:
     OcBinaryData:
       build: DEBUG
@@ -317,9 +317,9 @@ dependencies:
       revision: '{ SHA1: af09b0bf763363ec9f4ecdbbe2f0adeb970948d8 }'
     OpenCore:
       build: DEBUG
-      version: 0.9.9
-      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/0.9.9/OpenCore-0.9.9-DEBUG.zip'
-      resolution: 'acidanthera/OpenCorePkg@github:0.9.9#commit=9b5fb72da3a38446417a7577f8e5e293fdad672e'
+      version: 1.0.0
+      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/1.0.0/OpenCore-1.0.0-DEBUG.zip'
+      resolution: 'acidanthera/OpenCorePkg@github:1.0.0#commit=b83537dde8b146ba4f3f4a3d2c7e6ea43b0522fa'
       specifier: 'acidanthera/OpenCorePkg@github:latest'
       kind: Binary
-      revision: '{ SHA1: 9b5fb72da3a38446417a7577f8e5e293fdad672e }'
+      revision: '{ SHA1: b83537dde8b146ba4f3f4a3d2c7e6ea43b0522fa }'
