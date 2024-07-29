@@ -338,6 +338,8 @@ NVRAM:
 ################################################################################
 
 Misc:
+  # Note: Combine the `j223` SecureBootModel with ApCEID for full security.
+  # - https://dortania.github.io/OpenCore-Post-Install/universal/security/applesecureboot.html#apecid
   Security:
     # Apple Secure Boot hardware model and policy
     # - Possible values include:
@@ -345,7 +347,8 @@ Misc:
     #   - Default: Currently set to x86legacy
     #   - j223: Secure Boot policy for MacBookPro16,3
     # - https://dortania.github.io/OpenCore-Post-Install/universal/security/applesecureboot.html#securebootmodel
-    SecureBootModel:                  String  | "j223"
+    SecureBootModel:                  String  | "Disabled"
+#     SecureBootModel:                  String  | "j223"
     # OpenCore vaulting configuration (optional=no vault enforced, insecure)
     # - https://dortania.github.io/OpenCore-Post-Install/universal/security/vault.html
     Vault:                            String  | "Optional"
