@@ -137,12 +137,12 @@ dependencies:
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AppleALC:
       build: DEBUG
-      version: 1.9.1
-      url: 'https://github.com/dortania/build-repo/releases/download/AppleALC-9abbb02/AppleALC-1.9.1-DEBUG.zip'
-      resolution: 'acidanthera/AppleALC@github:1.9.1#commit=9abbb0290ee9446296c627000a98c4dfd60f10dc'
+      version: 1.9.5
+      url: 'https://github.com/dortania/build-repo/releases/download/AppleALC-b3cd81e/AppleALC-1.9.5-DEBUG.zip'
+      resolution: 'acidanthera/AppleALC@github:1.9.5#commit=b3cd81e1b023d563c516b979293ee3d0270ff7bd'
       specifier: 'acidanthera/AppleALC@github'
       kind: Kext
-      revision: '{ SHA1: 9abbb0290ee9446296c627000a98c4dfd60f10dc }'
+      revision: '{ SHA1: b3cd81e1b023d563c516b979293ee3d0270ff7bd }'
     AsusSMC:
       build: DEBUG
       version: 1.4.1
@@ -153,20 +153,20 @@ dependencies:
       revision: '{ SHA1: c15d2f297c86b65a3cb866cc2bcece595c136417 }'
     BlueToolFixup:
       build: DEBUG
-      version: 2.6.8
-      url: 'https://github.com/acidanthera/BrcmPatchRAM/releases/download/2.6.8/BrcmPatchRAM-2.6.8-DEBUG.zip'
-      resolution: 'acidanthera/BrcmPatchRAM@github:2.6.8#commit=2305aaa145a0021559f444d33a5adaacb6469050'
+      version: 2.7.0
+      url: 'https://github.com/acidanthera/BrcmPatchRAM/releases/download/2.7.0/BrcmPatchRAM-2.7.0-DEBUG.zip'
+      resolution: 'acidanthera/BrcmPatchRAM@github:2.7.0#commit=5b45ad91195110ebc419f235ba3642768e1a9230'
       specifier: 'acidanthera/BrcmPatchRAM@github:latest'
       kind: Kext
-      revision: '{ SHA1: 2305aaa145a0021559f444d33a5adaacb6469050 }'
+      revision: '{ SHA1: 5b45ad91195110ebc419f235ba3642768e1a9230 }'
     CpuTscSync:
       build: DEBUG
-      version: 1.1.1
-      url: 'https://github.com/dortania/build-repo/releases/download/CpuTscSync-bc32031/CpuTscSync-1.1.1-DEBUG.zip'
-      resolution: 'acidanthera/CpuTscSync@github:1.1.1#commit=bc320318407f9daaabf640932f8fba855210be65'
+      version: 1.1.2
+      url: 'https://github.com/dortania/build-repo/releases/download/CpuTscSync-68110b6/CpuTscSync-1.1.2-DEBUG.zip'
+      resolution: 'acidanthera/CpuTscSync@github:1.1.2#commit=68110b61cb68c642acc31839d5aecd5d36b8d1ca'
       specifier: 'acidanthera/CpuTscSync@github'
       kind: Kext
-      revision: '{ SHA1: bc320318407f9daaabf640932f8fba855210be65 }'
+      revision: '{ SHA1: 68110b61cb68c642acc31839d5aecd5d36b8d1ca }'
     DiskArbitrationFixup:
       build: DEBUG
       version: 1.0.0
@@ -177,28 +177,28 @@ dependencies:
       revision: '{ SHA1: 5670dddc49cfaf5b5fb54b0335f98a4df7ada1a0 }'
     ECEnabler:
       build: DEBUG
-      version: 1.0.4
-      url: 'https://github.com/1Revenger1/ECEnabler/releases/download/1.0.4/ECEnabler-1.0.4-DEBUG.zip'
-      resolution: '1Revenger1/ECEnabler@github:1.0.4#commit=501420f2c01ce28166327a5027567ef6db8f0adc'
+      version: 1.0.5
+      url: 'https://github.com/1Revenger1/ECEnabler/releases/download/1.0.5/ECEnabler-1.0.5-DEBUG.zip'
+      resolution: '1Revenger1/ECEnabler@github:1.0.5#commit=bd81da698fdd2012d7508595113efcb7d9a6d990'
       specifier: '1Revenger1/ECEnabler@github:latest'
       kind: Kext
-      revision: '{ SHA1: 501420f2c01ce28166327a5027567ef6db8f0adc }'
+      revision: '{ SHA1: bd81da698fdd2012d7508595113efcb7d9a6d990 }'
     FeatureUnlock:
       build: DEBUG
-      version: 1.1.6
-      url: 'https://github.com/dortania/build-repo/releases/download/FeatureUnlock-118f3ec/FeatureUnlock-1.1.6-DEBUG.zip'
-      resolution: 'acidanthera/FeatureUnlock@github:1.1.6#commit=118f3ecd6d43a3d8177e0529753dddc4d3e26583'
+      version: 1.1.8
+      url: 'https://github.com/dortania/build-repo/releases/download/FeatureUnlock-934b64b/FeatureUnlock-1.1.8-DEBUG.zip'
+      resolution: 'acidanthera/FeatureUnlock@github:1.1.8#commit=934b64b31b13f1a3aafeefa4d9eb0007f703cbc2'
       specifier: 'acidanthera/FeatureUnlock@github'
       kind: Kext
-      revision: '{ SHA1: 118f3ecd6d43a3d8177e0529753dddc4d3e26583 }'
+      revision: '{ SHA1: 934b64b31b13f1a3aafeefa4d9eb0007f703cbc2 }'
     HibernationFixup:
       build: DEBUG
-      version: 1.5.1
-      url: 'https://github.com/dortania/build-repo/releases/download/HibernationFixup-7b8e26b/HibernationFixup-1.5.1-DEBUG.zip'
-      resolution: 'acidanthera/HibernationFixup@github:1.5.1#commit=7b8e26b31a0fc611e98c46c03e64f523b8228a5c'
+      version: 1.5.3
+      url: 'https://github.com/dortania/build-repo/releases/download/HibernationFixup-afd1923/HibernationFixup-1.5.3-DEBUG.zip'
+      resolution: 'acidanthera/HibernationFixup@github:1.5.3#commit=afd192378c5ca0318964daf11a97e4ab075073cb'
       specifier: 'acidanthera/HibernationFixup@github'
       kind: Kext
-      revision: '{ SHA1: 7b8e26b31a0fc611e98c46c03e64f523b8228a5c }'
+      revision: '{ SHA1: afd192378c5ca0318964daf11a97e4ab075073cb }'
     IntelBluetoothFirmware:
       build: DEBUG
       version: 2.4.0
@@ -209,20 +209,20 @@ dependencies:
       revision: '{ SHA1: b9127f5e1ede477577470cc4d4f55134a2901f5b }'
     Lilu:
       build: DEBUG
-      version: 1.6.8
-      url: 'https://github.com/dortania/build-repo/releases/download/Lilu-4256f43/Lilu-1.6.8-DEBUG.zip'
-      resolution: 'acidanthera/Lilu@github:1.6.8#commit=4256f4315bf029c4a775cc52100a0d4a0c94663d'
+      version: 1.7.1
+      url: 'https://github.com/dortania/build-repo/releases/download/Lilu-41269ae/Lilu-1.7.1-DEBUG.zip'
+      resolution: 'acidanthera/Lilu@github:1.7.1#commit=41269ae2b2bc9d3b21a710a86237d239568bc6d2'
       specifier: 'acidanthera/Lilu@github'
       kind: Kext
-      revision: '{ SHA1: 4256f4315bf029c4a775cc52100a0d4a0c94663d }'
+      revision: '{ SHA1: 41269ae2b2bc9d3b21a710a86237d239568bc6d2 }'
     NVMeFix:
       build: DEBUG
-      version: 1.1.2
-      url: 'https://github.com/dortania/build-repo/releases/download/NVMeFix-8680dde/NVMeFix-1.1.2-DEBUG.zip'
-      resolution: 'acidanthera/NVMeFix@github:1.1.2#commit=8680ddeab13ca176b263590222cd9d5e9afa69a8'
+      version: 1.1.3
+      url: 'https://github.com/dortania/build-repo/releases/download/NVMeFix-bde96c5/NVMeFix-1.1.3-DEBUG.zip'
+      resolution: 'acidanthera/NVMeFix@github:1.1.3#commit=bde96c5aef90715ee95687a8e49e7664ee870fb2'
       specifier: 'acidanthera/NVMeFix@github'
       kind: Kext
-      revision: '{ SHA1: 8680ddeab13ca176b263590222cd9d5e9afa69a8 }'
+      revision: '{ SHA1: bde96c5aef90715ee95687a8e49e7664ee870fb2 }'
     RealtekCardReader:
       build: DEBUG
       version: 0.9.7
@@ -241,12 +241,12 @@ dependencies:
       revision: '{ SHA1: e1e3301ae82483b4e5f84e492ca9dea231845ea1 }'
     RestrictEvents:
       build: DEBUG
-      version: 1.1.4
-      url: 'https://github.com/dortania/build-repo/releases/download/RestrictEvents-b712414/RestrictEvents-1.1.4-DEBUG.zip'
-      resolution: 'acidanthera/RestrictEvents@github:1.1.4#commit=b7124142cb6fdbab82f2d40ce6579109343832a8'
+      version: 1.1.6
+      url: 'https://github.com/dortania/build-repo/releases/download/RestrictEvents-41eb8cb/RestrictEvents-1.1.6-DEBUG.zip'
+      resolution: 'acidanthera/RestrictEvents@github:1.1.6#commit=41eb8cb8c1caf737eb6636638a1c76d0679c6400'
       specifier: 'acidanthera/RestrictEvents@github'
       kind: Kext
-      revision: '{ SHA1: b7124142cb6fdbab82f2d40ce6579109343832a8 }'
+      revision: '{ SHA1: 41eb8cb8c1caf737eb6636638a1c76d0679c6400 }'
     USBToolBox:
       build: DEBUG
       version: 1.1.1
@@ -263,20 +263,20 @@ dependencies:
       revision: '{ SHA256: 872f8d5644ba2358dead1fdd657979dd76c1408546efa9411a44e8a8106e6732 }'
     VirtualSMC:
       build: DEBUG
-      version: 1.3.3
-      url: 'https://github.com/dortania/build-repo/releases/download/VirtualSMC-038200e/VirtualSMC-1.3.3-DEBUG.zip'
-      resolution: 'acidanthera/VirtualSMC@github:1.3.3#commit=038200ee31a73b1c038c865a18cfc7ae6384bc53'
+      version: 1.3.6
+      url: 'https://github.com/dortania/build-repo/releases/download/VirtualSMC-03ff310/VirtualSMC-1.3.6-DEBUG.zip'
+      resolution: 'acidanthera/VirtualSMC@github:1.3.6#commit=03ff31014d1e0388b2714479add66b01817f5362'
       specifier: 'acidanthera/VirtualSMC@github'
       kind: Kext
-      revision: '{ SHA1: 038200ee31a73b1c038c865a18cfc7ae6384bc53 }'
+      revision: '{ SHA1: 03ff31014d1e0388b2714479add66b01817f5362 }'
     VoodooI2C:
       build: DEBUG
-      version: 2.8
-      url: 'https://github.com/VoodooI2C/VoodooI2C/releases/download/2.8/VoodooI2C-2.8.zip'
-      resolution: 'VoodooI2C/VoodooI2C@github:2.8#commit=17a5f58227a164b426011fd077a5c549766474b3'
+      version: 2.9.1
+      url: 'https://github.com/VoodooI2C/VoodooI2C/releases/download/v2.9.1/VoodooI2C-2.9.1-DEBUG.zip'
+      resolution: 'VoodooI2C/VoodooI2C@github:2.9.1#commit=e3ac3ed207170c39db88d6a67a76cc9fd3a1895a'
       specifier: 'VoodooI2C/VoodooI2C@github:latest'
       kind: Kext
-      revision: '{ SHA1: 17a5f58227a164b426011fd077a5c549766474b3 }'
+      revision: '{ SHA1: e3ac3ed207170c39db88d6a67a76cc9fd3a1895a }'
     VoodooI2CHID:
       path: ./Kexts/VoodooI2CHID.kext
       resolution: 'VoodooI2CHID@file:Kexts/VoodooI2CHID.kext#checksum=da6a7e9e349f58cc314b9a4949f9510bd13ef40850dc77c81c61a9b8bd1c1838'
@@ -293,20 +293,20 @@ dependencies:
       revision: '{ SHA1: c8ecde5acf8bf1b7c0b4d93f2044144ecbdee7b0 }'
     VoodooPS2Controller:
       build: DEBUG
-      version: 2.3.5
-      url: 'https://github.com/acidanthera/VoodooPS2/releases/download/2.3.5/VoodooPS2Controller-2.3.5-DEBUG.zip'
-      resolution: 'acidanthera/VoodooPS2@github:2.3.5#commit=410118bd89723b7e5290ae9f21f5e00078f6fd04'
+      version: 2.3.7
+      url: 'https://github.com/acidanthera/VoodooPS2/releases/download/2.3.7/VoodooPS2Controller-2.3.7-DEBUG.zip'
+      resolution: 'acidanthera/VoodooPS2@github:2.3.7#commit=bdbf80639936701337f4574bae8c3ea25bb8dd3d'
       specifier: 'acidanthera/VoodooPS2@github:latest'
       kind: Kext
-      revision: '{ SHA1: 410118bd89723b7e5290ae9f21f5e00078f6fd04 }'
+      revision: '{ SHA1: bdbf80639936701337f4574bae8c3ea25bb8dd3d }'
     WhateverGreen:
       build: DEBUG
-      version: 1.6.7
-      url: 'https://github.com/dortania/build-repo/releases/download/WhateverGreen-d87a4c4/WhateverGreen-1.6.7-DEBUG.zip'
-      resolution: 'acidanthera/WhateverGreen@github:1.6.7#commit=d87a4c494a49c54101e9856a76bcc922c2eff6ff'
+      version: 1.7.0
+      url: 'https://github.com/dortania/build-repo/releases/download/WhateverGreen-bc1b7c3/WhateverGreen-1.7.0-DEBUG.zip'
+      resolution: 'acidanthera/WhateverGreen@github:1.7.0#commit=bc1b7c334eefd00a9cf30429d686764c18ed59ae'
       specifier: 'acidanthera/WhateverGreen@github'
       kind: Kext
-      revision: '{ SHA1: d87a4c494a49c54101e9856a76bcc922c2eff6ff }'
+      revision: '{ SHA1: bc1b7c334eefd00a9cf30429d686764c18ed59ae }'
   OpenCorePkg:
     OcBinaryData:
       build: DEBUG
@@ -317,9 +317,9 @@ dependencies:
       revision: '{ SHA1: af09b0bf763363ec9f4ecdbbe2f0adeb970948d8 }'
     OpenCore:
       build: DEBUG
-      version: 1.0.0
-      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/1.0.0/OpenCore-1.0.0-DEBUG.zip'
-      resolution: 'acidanthera/OpenCorePkg@github:1.0.0#commit=b83537dde8b146ba4f3f4a3d2c7e6ea43b0522fa'
+      version: 1.0.4
+      url: 'https://github.com/acidanthera/OpenCorePkg/releases/download/1.0.4/OpenCore-1.0.4-DEBUG.zip'
+      resolution: 'acidanthera/OpenCorePkg@github:1.0.4#commit=ceb0e8d733c9afc32cebe5fcde69d1e4251ecc37'
       specifier: 'acidanthera/OpenCorePkg@github:latest'
       kind: Binary
-      revision: '{ SHA1: b83537dde8b146ba4f3f4a3d2c7e6ea43b0522fa }'
+      revision: '{ SHA1: ceb0e8d733c9afc32cebe5fcde69d1e4251ecc37 }'
