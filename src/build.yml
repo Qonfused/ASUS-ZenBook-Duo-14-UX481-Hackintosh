@@ -37,33 +37,39 @@ Kexts:
   SMCProcessor: "*"
   SMCSuperIO: "*"
   # Wi-Fi / Bluetooth
-  AirportItlwm-Sonoma-14.4:
-    specifier: OpenIntelWireless/itlwm=^2.3.0-alpha 
+  AirportItlwm-Sonoma14.4:
+    specifier: OpenIntelWireless/itlwm=2.3.0
+    build: RELEASE
     properties:
       MaxKernel: "23.99.99"
       MinKernel: "23.4.0"
-  AirportItlwm-Sonoma-14.0:
-    specifier: OpenIntelWireless/itlwm=^2.3.0-alpha 
+  AirportItlwm-Sonoma14.0:
+    specifier: OpenIntelWireless/itlwm=2.3.0
+    build: RELEASE
     properties:
       MaxKernel: "23.3.99"
       MinKernel: "23.0.0"
   AirportItlwm-Ventura:
-    specifier: OpenIntelWireless/itlwm=^2.2.0
+    specifier: OpenIntelWireless/itlwm=2.3.0
+    build: RELEASE
     properties:
       MaxKernel: "22.99.99"
       MinKernel: "22.0.0"
   AirportItlwm-Monterey:
-    specifier: OpenIntelWireless/itlwm=^2.0.0
+    specifier: OpenIntelWireless/itlwm=2.3.0
+    build: RELEASE
     properties:
       MaxKernel: "21.99.99"
       MinKernel: "21.0.0"
   AirportItlwm-BigSur:
-    specifier: OpenIntelWireless/itlwm=^2.0.0
+    specifier: OpenIntelWireless/itlwm=2.3.0
+    build: RELEASE
     properties:
       MaxKernel: "20.99.99"
       MinKernel: "20.0.0"
   AirportItlwm-Catalina:
-    specifier: OpenIntelWireless/itlwm=^2.0.0
+    specifier: OpenIntelWireless/itlwm=2.3.0
+    build: RELEASE
     properties:
       MaxKernel: "19.99.99"
       MinKernel: "19.0.0"

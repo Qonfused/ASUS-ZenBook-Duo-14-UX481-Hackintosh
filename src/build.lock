@@ -88,51 +88,51 @@ dependencies:
       revision: '{ SHA256: 763596cced248220e7578f88e4dfe78d659e8ba6dce59fe6dfd91ad58381563e }'
   Kexts:
     AirportItlwm-BigSur:
-      build: DEBUG
+      build: RELEASE
       version: 2.3.0
       url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_BigSur.kext.zip'
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
+      specifier: 'OpenIntelWireless/itlwm@github:2.3.0'
       kind: Kext
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AirportItlwm-Catalina:
-      build: DEBUG
+      build: RELEASE
       version: 2.3.0
       url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Catalina.kext.zip'
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
+      specifier: 'OpenIntelWireless/itlwm@github:2.3.0'
       kind: Kext
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AirportItlwm-Monterey:
-      build: DEBUG
+      build: RELEASE
       version: 2.3.0
       url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Monterey.kext.zip'
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
+      specifier: 'OpenIntelWireless/itlwm@github:2.3.0'
       kind: Kext
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
-    AirportItlwm-Sonoma-14.0:
-      build: DEBUG
+    AirportItlwm-Sonoma14.0:
+      build: RELEASE
       version: 2.3.0
       url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Sonoma14.0.kext.zip'
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
+      specifier: 'OpenIntelWireless/itlwm@github:2.3.0'
       kind: Kext
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
-    AirportItlwm-Sonoma-14.4:
-      build: DEBUG
+    AirportItlwm-Sonoma14.4:
+      build: RELEASE
       version: 2.3.0
       url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Sonoma14.4.kext.zip'
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
+      specifier: 'OpenIntelWireless/itlwm@github:2.3.0'
       kind: Kext
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AirportItlwm-Ventura:
-      build: DEBUG
+      build: RELEASE
       version: 2.3.0
       url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Ventura.kext.zip'
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.2.0'
+      specifier: 'OpenIntelWireless/itlwm@github:2.3.0'
       kind: Kext
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AppleALC:
