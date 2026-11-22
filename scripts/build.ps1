@@ -7,11 +7,25 @@
 
 [CmdletBinding(PositionalBinding=$false)]
 param (
-  [string]$pwd = "$((Get-Item "$PSScriptRoot\..").FullName)",
-  # Script arguments
   [parameter(ValueFromRemainingArguments)][string[]]$arguments
 )
 
-icm `
-  -ScriptBlock $([Scriptblock]::Create($(iwr 'https://raw.githubusercontent.com/Qonfused/OCE-Build/main/ci/bootstrap.ps1'))) `
-  -ArgumentList (@("build -c $pwd $patches") + $arguments)
+$ErrorActionPreference = 'Stop'
+$previousVersion = $env:OCEBUILD_VERSION
+
+Push-Location (Join-Path $PSScriptRoot '..')
+try {
+  $env:OCEBUILD_VERSION = if ($previousVersion) {
+    $previousVersion
+  } else {
+    'v0.2.0'
+  }
+  $sourceUrl = 'https://raw.githubusercontent.com/Qonfused/OCE-Build'
+  $bootstrap = Invoke-RestMethod `
+    -Uri "$sourceUrl/$env:OCEBUILD_VERSION/ci/bootstrap.ps1"
+  $buildArguments = @('build', '--cwd', 'src', '--out', '../dist') + $arguments
+  & ([ScriptBlock]::Create($bootstrap)) @buildArguments
+} finally {
+  Pop-Location
+  $env:OCEBUILD_VERSION = $previousVersion
+}
