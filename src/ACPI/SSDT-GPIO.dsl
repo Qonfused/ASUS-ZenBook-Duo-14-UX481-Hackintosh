@@ -55,27 +55,17 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
         }
     }
 
-    // APIC - Primary Display Touchscreen
+    // GPIO - Primary Display Touchscreen
     Scope (_SB.PCI0.I2C0.TPL1)
     {
-        /* Reference - GPIO Pinning */
-        // Name (SBFG, ResourceTemplate ()
-        // {
-        //     GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
-        //         "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
-        //         )
-        //         {   // Pin list
-        //             0x0072
-        //         }
-        // })
-
-        Name (SBFA, ResourceTemplate ()
+        Name (SBFG, ResourceTemplate ()
         {
-            Interrupt (ResourceConsumer, Level, ActiveLow, Exclusive, ,, )
-            {
-                // Pin list
-                0x1B
-            }
+            GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
+                "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
+                )
+                {   // Pin list
+                    0x0072
+                }
         })
         
         Method (_CRS, 0, Serialized)
@@ -92,34 +82,23 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
 
             If (_OSI ("Darwin"))
             {
-                // Return (ConcatenateResTemplate (SBFB, SBFG))
-                Return (ConcatenateResTemplate (SBFB, SBFA))
+                Return (ConcatenateResTemplate (SBFB, SBFG))
             }
             Else { Return (XCRS ()) }
         }
     }
 
-    // APIC - Secondary Display Touchscreen
+    // GPIO - Secondary Display Touchscreen
     Scope (_SB.PCI0.I2C3.TPL0)
     {
-        /* Reference - GPIO Pinning */
-        // Name (SBFG, ResourceTemplate ()
-        // {
-        //     GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
-        //         "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
-        //         )
-        //         {   // Pin list
-        //             0x0032
-        //         }
-        // })
-
-        Name (SBFA, ResourceTemplate ()
+        Name (SBFG, ResourceTemplate ()
         {
-            Interrupt (ResourceConsumer, Level, ActiveLow, Exclusive, ,, )
-            {
-                // Pin list
-                0x1C
-            }
+            GpioInt (Level, ActiveLow, ExclusiveAndWake, PullDefault, 0x0000,
+                "\\_SB.PCI0.GPI0", 0x00, ResourceConsumer, ,
+                )
+                {   // Pin list
+                    0x0032
+                }
         })
 
         Method (_CRS, 0, Serialized)
@@ -136,8 +115,7 @@ DefinitionBlock ("", "SSDT", 2, "UX481", "GPI0", 0x00000000)
 
             If (_OSI ("Darwin"))
             {
-                // Return (ConcatenateResTemplate (SBFB, SBFG))
-                Return (ConcatenateResTemplate (SBFB, SBFA))
+                Return (ConcatenateResTemplate (SBFB, SBFG))
             }
             Else { Return (XCRS ()) }
         }

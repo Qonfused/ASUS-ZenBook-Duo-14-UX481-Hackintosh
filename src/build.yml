@@ -85,6 +85,12 @@ Kexts:
   IntelBTPatcher: "*"
   # Misc. Lilu plugins
   CpuTscSync: latest
+  DuoLink:
+    specifier: Qonfused/DuoLink=latest
+    bundled:
+      - DuoLinkTouch
+  DuoLinkTouch:
+    specifier: "*"
   DiskArbitrationFixup: Qonfused/DiskArbitrationFixup=latest
   ECEnabler: 1Revenger1/ECEnabler=latest
   FeatureUnlock: latest
@@ -97,15 +103,20 @@ Kexts:
   USBToolBox: USBToolbox/kext=latest
   UTBMap: "Kexts/UTBMap.kext"
   # Voodoo kexts + plugins
+  # DuoLink hooks support the official 2.9.1 RELEASE core and HID binaries.
   VoodooI2C:
-    specifier: VoodooI2C/VoodooI2C=latest
+    specifier: Qonfused/VoodooI2C=2.9.1
+    build: RELEASE
     bundled:
       - VoodooI2CServices
-      - VoodooGPIO
       - VoodooInput
-#   FIXME: Vendor kext until VoodooI2C 2.9 is released
-  VoodooI2CHID: "Kexts/VoodooI2CHID.kext"
-#     - VoodooI2CHID
+  VoodooI2CHID:
+    specifier: Qonfused/VoodooI2CHID=2.9.1
+    build: RELEASE
+  # Upstream 44fc744 includes GPIO corrections absent from the 2.9.1 release.
+  VoodooGPIO:
+    specifier: Qonfused/VoodooI2C=2.9.1
+    build: RELEASE
   VoodooPS2Controller:
     specifier: acidanthera/VoodooPS2=latest
     bundled:
