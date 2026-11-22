@@ -40,10 +40,10 @@ dependencies:
       revision: '{ SHA256: 49ba0195688fe1b74bfa00ff331a8a2cea8e833c2d2b350a5319b8d4db55d609 }'
     SSDT-GPIO:
       path: './ACPI/SSDT-GPIO.dsl'
-      resolution: 'SSDT-GPIO@file:ACPI/SSDT-GPIO.dsl#checksum=cd71fed3a69865ebb922d89af6d945c9942e474fd7c6c6c7f8b94d714e4e2930'
+      resolution: 'SSDT-GPIO@file:ACPI/SSDT-GPIO.dsl#checksum=3fc5d08444ad35715f50203369ffaa748b1d4ec60f03f37f48b454f3292413bf'
       specifier: 'SSDT-GPIO@file:ACPI/SSDT-GPIO.dsl'
       kind: SSDT
-      revision: '{ SHA256: cd71fed3a69865ebb922d89af6d945c9942e474fd7c6c6c7f8b94d714e4e2930 }'
+      revision: '{ SHA256: 3fc5d08444ad35715f50203369ffaa748b1d4ec60f03f37f48b454f3292413bf }'
     SSDT-GPRW:
       path: './ACPI/SSDT-GPRW.dsl'
       resolution: 'SSDT-GPRW@file:ACPI/SSDT-GPRW.dsl#checksum=c70ecd13e447b535346f8c5f2630c7583298f96d8a340e9f969ed6c46037d9f7'
@@ -88,51 +88,51 @@ dependencies:
       revision: '{ SHA256: 763596cced248220e7578f88e4dfe78d659e8ba6dce59fe6dfd91ad58381563e }'
   Kexts:
     AirportItlwm-BigSur:
-      build: DEBUG
+      build: RELEASE
       version: 2.3.0
       url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_BigSur.kext.zip'
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
+      specifier: 'OpenIntelWireless/itlwm@github:2.3.0'
       kind: Kext
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AirportItlwm-Catalina:
-      build: DEBUG
+      build: RELEASE
       version: 2.3.0
       url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Catalina.kext.zip'
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
+      specifier: 'OpenIntelWireless/itlwm@github:2.3.0'
       kind: Kext
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AirportItlwm-Monterey:
-      build: DEBUG
+      build: RELEASE
       version: 2.3.0
       url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Monterey.kext.zip'
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.0.0'
+      specifier: 'OpenIntelWireless/itlwm@github:2.3.0'
       kind: Kext
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
-    AirportItlwm-Sonoma-14.0:
-      build: DEBUG
+    AirportItlwm-Sonoma14.0:
+      build: RELEASE
       version: 2.3.0
       url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Sonoma14.0.kext.zip'
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
+      specifier: 'OpenIntelWireless/itlwm@github:2.3.0'
       kind: Kext
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
-    AirportItlwm-Sonoma-14.4:
-      build: DEBUG
+    AirportItlwm-Sonoma14.4:
+      build: RELEASE
       version: 2.3.0
       url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Sonoma14.4.kext.zip'
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.3.0-alpha'
+      specifier: 'OpenIntelWireless/itlwm@github:2.3.0'
       kind: Kext
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AirportItlwm-Ventura:
-      build: DEBUG
+      build: RELEASE
       version: 2.3.0
       url: 'https://github.com/OpenIntelWireless/itlwm/releases/download/v2.3.0/AirportItlwm_v2.3.0_stable_Ventura.kext.zip'
       resolution: 'OpenIntelWireless/itlwm@github:2.3.0#commit=4ac4c79bc7e34f8764038fc382630a29eb46213d'
-      specifier: 'OpenIntelWireless/itlwm@github:^2.2.0'
+      specifier: 'OpenIntelWireless/itlwm@github:2.3.0'
       kind: Kext
       revision: '{ SHA1: 4ac4c79bc7e34f8764038fc382630a29eb46213d }'
     AppleALC:
@@ -175,6 +175,14 @@ dependencies:
       specifier: 'Qonfused/DiskArbitrationFixup@github:latest'
       kind: Kext
       revision: '{ SHA1: 5670dddc49cfaf5b5fb54b0335f98a4df7ada1a0 }'
+    DuoLink:
+      build: DEBUG
+      version: 1.0.0
+      url: 'https://github.com/Qonfused/DuoLink/releases/download/v1.0.0/DuoLink-1.0.0-DEBUG.zip'
+      resolution: 'Qonfused/DuoLink@github:1.0.0#commit=41211f5da7fe2c21fa42db1c7661d30a9851be60'
+      specifier: 'Qonfused/DuoLink@github:latest'
+      kind: Kext
+      revision: '{ SHA1: 41211f5da7fe2c21fa42db1c7661d30a9851be60 }'
     ECEnabler:
       build: DEBUG
       version: 1.0.5
@@ -269,20 +277,30 @@ dependencies:
       specifier: 'acidanthera/VirtualSMC@github'
       kind: Kext
       revision: '{ SHA1: 03ff31014d1e0388b2714479add66b01817f5362 }'
-    VoodooI2C:
-      build: DEBUG
+    VoodooGPIO:
+      build: RELEASE
       version: 2.9.1
-      url: 'https://github.com/VoodooI2C/VoodooI2C/releases/download/v2.9.1/VoodooI2C-2.9.1-DEBUG.zip'
-      resolution: 'VoodooI2C/VoodooI2C@github:2.9.1#commit=e3ac3ed207170c39db88d6a67a76cc9fd3a1895a'
-      specifier: 'VoodooI2C/VoodooI2C@github:latest'
+      url: 'https://github.com/Qonfused/VoodooI2C/releases/download/v2.9.1/VoodooGPIO-1.1-RELEASE.zip'
+      resolution: 'Qonfused/VoodooI2C@github:2.9.1#commit=e3ac3ed207170c39db88d6a67a76cc9fd3a1895a'
+      specifier: 'Qonfused/VoodooI2C@github:2.9.1'
+      kind: Kext
+      revision: '{ SHA1: e3ac3ed207170c39db88d6a67a76cc9fd3a1895a }'
+    VoodooI2C:
+      build: RELEASE
+      version: 2.9.1
+      url: 'https://github.com/Qonfused/VoodooI2C/releases/download/v2.9.1/VoodooI2C-2.9.1-RELEASE.zip'
+      resolution: 'Qonfused/VoodooI2C@github:2.9.1#commit=e3ac3ed207170c39db88d6a67a76cc9fd3a1895a'
+      specifier: 'Qonfused/VoodooI2C@github:2.9.1'
       kind: Kext
       revision: '{ SHA1: e3ac3ed207170c39db88d6a67a76cc9fd3a1895a }'
     VoodooI2CHID:
-      path: ./Kexts/VoodooI2CHID.kext
-      resolution: 'VoodooI2CHID@file:Kexts/VoodooI2CHID.kext#checksum=da6a7e9e349f58cc314b9a4949f9510bd13ef40850dc77c81c61a9b8bd1c1838'
-      specifier: 'VoodooI2CHID@file:Kexts/VoodooI2CHID.kext'
+      build: RELEASE
+      version: 2.9.1
+      url: 'https://github.com/Qonfused/VoodooI2CHID/releases/download/v2.9.1/VoodooI2CHID-2.9.1-RELEASE.zip'
+      resolution: 'Qonfused/VoodooI2CHID@github:2.9.1#commit=a478fd605043989269584a73e23a15cc78994f5b'
+      specifier: 'Qonfused/VoodooI2CHID@github:2.9.1'
       kind: Kext
-      revision: '{ SHA256: da6a7e9e349f58cc314b9a4949f9510bd13ef40850dc77c81c61a9b8bd1c1838 }'
+      revision: '{ SHA1: a478fd605043989269584a73e23a15cc78994f5b }'
     VoodooInjector:
       build: DEBUG
       version: 1.0.0

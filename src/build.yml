@@ -37,33 +37,39 @@ Kexts:
   SMCProcessor: "*"
   SMCSuperIO: "*"
   # Wi-Fi / Bluetooth
-  AirportItlwm-Sonoma-14.4:
-    specifier: OpenIntelWireless/itlwm=^2.3.0-alpha 
+  AirportItlwm-Sonoma14.4:
+    specifier: OpenIntelWireless/itlwm=2.3.0
+    build: RELEASE
     properties:
       MaxKernel: "23.99.99"
       MinKernel: "23.4.0"
-  AirportItlwm-Sonoma-14.0:
-    specifier: OpenIntelWireless/itlwm=^2.3.0-alpha 
+  AirportItlwm-Sonoma14.0:
+    specifier: OpenIntelWireless/itlwm=2.3.0
+    build: RELEASE
     properties:
       MaxKernel: "23.3.99"
       MinKernel: "23.0.0"
   AirportItlwm-Ventura:
-    specifier: OpenIntelWireless/itlwm=^2.2.0
+    specifier: OpenIntelWireless/itlwm=2.3.0
+    build: RELEASE
     properties:
       MaxKernel: "22.99.99"
       MinKernel: "22.0.0"
   AirportItlwm-Monterey:
-    specifier: OpenIntelWireless/itlwm=^2.0.0
+    specifier: OpenIntelWireless/itlwm=2.3.0
+    build: RELEASE
     properties:
       MaxKernel: "21.99.99"
       MinKernel: "21.0.0"
   AirportItlwm-BigSur:
-    specifier: OpenIntelWireless/itlwm=^2.0.0
+    specifier: OpenIntelWireless/itlwm=2.3.0
+    build: RELEASE
     properties:
       MaxKernel: "20.99.99"
       MinKernel: "20.0.0"
   AirportItlwm-Catalina:
-    specifier: OpenIntelWireless/itlwm=^2.0.0
+    specifier: OpenIntelWireless/itlwm=2.3.0
+    build: RELEASE
     properties:
       MaxKernel: "19.99.99"
       MinKernel: "19.0.0"
@@ -79,6 +85,12 @@ Kexts:
   IntelBTPatcher: "*"
   # Misc. Lilu plugins
   CpuTscSync: latest
+  DuoLink:
+    specifier: Qonfused/DuoLink=latest
+    bundled:
+      - DuoLinkTouch
+  DuoLinkTouch:
+    specifier: "*"
   DiskArbitrationFixup: Qonfused/DiskArbitrationFixup=latest
   ECEnabler: 1Revenger1/ECEnabler=latest
   FeatureUnlock: latest
@@ -91,15 +103,20 @@ Kexts:
   USBToolBox: USBToolbox/kext=latest
   UTBMap: "Kexts/UTBMap.kext"
   # Voodoo kexts + plugins
+  # DuoLink hooks support the official 2.9.1 RELEASE core and HID binaries.
   VoodooI2C:
-    specifier: VoodooI2C/VoodooI2C=latest
+    specifier: Qonfused/VoodooI2C=2.9.1
+    build: RELEASE
     bundled:
       - VoodooI2CServices
-      - VoodooGPIO
       - VoodooInput
-#   FIXME: Vendor kext until VoodooI2C 2.9 is released
-  VoodooI2CHID: "Kexts/VoodooI2CHID.kext"
-#     - VoodooI2CHID
+  VoodooI2CHID:
+    specifier: Qonfused/VoodooI2CHID=2.9.1
+    build: RELEASE
+  # Upstream 44fc744 includes GPIO corrections absent from the 2.9.1 release.
+  VoodooGPIO:
+    specifier: Qonfused/VoodooI2C=2.9.1
+    build: RELEASE
   VoodooPS2Controller:
     specifier: acidanthera/VoodooPS2=latest
     bundled:

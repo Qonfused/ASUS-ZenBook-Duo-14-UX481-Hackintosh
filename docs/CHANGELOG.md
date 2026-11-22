@@ -6,6 +6,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
 
+## [0.7.0] - 2026-11-22
+
+### Changed
+
+- Updated Bash and PowerShell builds to [OCE-Build 0.2.0](https://github.com/Qonfused/OCE-Build/releases/tag/v0.2.0), preserving per-driver RELEASE selections in both DEBUG and RELEASE EFI archives. ([`9ce42e3`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/9ce42e35258db1cbc56460fc29f80b893004f194))
+- Pinned AirportItlwm to 2.3.0 RELEASE archives, retaining separate builds for Sonoma 14.0–14.3 and 14.4+. ([`792c315`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/792c315747787f341956bfddcea3c2ff98d153b2))
+- Replaced the vendored VoodooI2CHID bundle with stock VoodooI2C/VoodooI2CHID 2.9.1 RELEASE downloads and a standalone VoodooGPIO build from upstream [`44fc744`](https://github.com/VoodooI2C/VoodooGPIO/commit/44fc744d26b3e4971d6d8f0027d75c25e1388637). ([`20990ee`](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/commit/20990ee174f6b83c95346f68dd727bdfdac411f9))
+
+### Fixed
+
+- Resolved ScreenPad Plus static after Intel graphics initialization and restored its entry in Displays settings with [DuoLink 1.0.0](https://github.com/Qonfused/DuoLink/releases/tag/v1.0.0). ([#4](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues/4))
+- Replaced APIC resources with GPIO interrupts for both touchscreens to address skipped touch events. ([#43](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues/43))
+- Mapped finger and pen input to the corresponding display with DuoLinkTouch. Pen pointing works on both panels, without pressure or tilt in applications. ([#22](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues/22))
+- Fixed Dock startup placement so arranging ScreenPad Plus below the primary display no longer places the Dock on the lower panel. ([Display setup](https://github.com/Qonfused/DuoLink/blob/main/docs/displays-and-dock.md))
+
 ## [0.6.0] - 2023-12-06
 
 This patch version includes major feature and build system fixes, with some tweaks to post-install scripts.

@@ -8,9 +8,12 @@
 # SPDX-License-Identifier: BSD-3-Clause
 ##
 
-# Change CWD for imports
-__PWD__=$(pwd); cd "$(realpath "$(dirname "${BASH_SOURCE[0]}")"/../)"
+set -euo pipefail
 
-# Run build script
-curl -sL https://raw.githubusercontent.com/Qonfused/OCE-Build/main/ci/bootstrap.sh \
-  | bash -s build "$@"
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+
+export OCEBUILD_VERSION="${OCEBUILD_VERSION:-v0.2.0}"
+source_url="https://raw.githubusercontent.com/Qonfused/OCE-Build"
+
+curl -fsSL "$source_url/$OCEBUILD_VERSION/ci/bootstrap.sh" \
+  | bash -s build --cwd src --out ../dist "$@"

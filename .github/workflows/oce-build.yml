@@ -33,7 +33,6 @@ concurrency:
 jobs:
   build:
     name: Run OCE-Build
-    timeout-minutes: 10
     runs-on: ubuntu-latest
     outputs:
       LOCKFILE_HASH: ${{ steps.prepare-efi.outputs.LOCKFILE_HASH }}
@@ -55,7 +54,7 @@ jobs:
         shell: sh
         run: bash scripts/build.sh -v
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       # Runs quick validation of config.plist and EFI structure.
       #
       # This runs a quick comparison between the build.yml, config.plist, and
