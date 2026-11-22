@@ -192,8 +192,8 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
     </tr>
     <tr>
       <td>12.6" Screenpad Plus Display<br>(IPS, 1920x515 @ 60 Hz)</td>
-      <td style="text-align: center;">🚧</td>
-      <td>Work in progress (with backlight control).</td>
+      <td style="text-align: center;">✅</td>
+      <td>Supported with backlight control and DuoLink.</td>
     </tr>
   <!-- Interfaces -->
     <tr>
@@ -215,15 +215,15 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
     <tr>
       <td rowspan=2>Touchscreen<br>(Primary Display)<br>(Screenpad Plus Display)</td>
       <td style="text-align: center;">✅</td>
-      <td rowspan=2>Fully supported (GPIO pinned with multi-touch gestures)</td>
+      <td rowspan=2>GPIO interrupts and gestures, with input mapped to each display.</td>
     </tr>
     <tr>
       <td style="text-align: center;">✅</td>
     </tr>
     <tr>
-      <td>Capacitive Stylus</td>
-      <td style="text-align: center;">🚧</td>
-      <td>Work in progress (works without pressure data).</td>
+      <td>Active Pen</td>
+      <td style="text-align: center;">✅</td>
+      <td>Pointing on both displays, without pressure or tilt in applications.</td>
     </tr>
   <!-- Audio -->
     <tr>
@@ -283,6 +283,8 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
   </tbody>
 </table>
 
+
+On the UX481FL, [DuoLink](https://github.com/Qonfused/DuoLink) fixes ScreenPad static and makes the lower panel available in Displays settings. Its DuoLinkTouch companion maps finger and pen input to each panel. Follow the [display setup instructions](https://github.com/Qonfused/DuoLink/blob/main/docs/displays-and-dock.md) to arrange both screens and keep the Dock on the main display, then check [touch and pen mapping](https://github.com/Qonfused/DuoLink/blob/main/docs/input-mapping.md) after installation.
 
 ### Software Features:
 <table>
@@ -368,15 +370,16 @@ cd ASUS-ZenBook-Duo-14-UX481-Hackintosh
 
 ### 2. Build this repository using OCE-Build
 
-This project uses [OCE-Build](https://github.com/Qonfused/OCE-Build) to automatically version and build this repository's EFI.
+Run either build script from this project's root directory:
 
-To build this project's EFI, run either of the below commands at the root of the project:
 ```powershell
 # In PowerShell
-scripts/build.ps1
+.\scripts\build.ps1
+```
 
-# In Bash/WSL
-scripts/build.sh
+```sh
+# In Bash or WSL
+bash scripts/build.sh
 ```
 
 > [!IMPORTANT]
@@ -385,7 +388,7 @@ scripts/build.sh
 > Set-ExecutionPolicy RemoteSigned
 > ```
 
-You can also download [OCE-Build](https://github.com/Qonfused/OCE-Build/releases) and run the `ocebuild build` command from the root of the project.
+Both scripts download [OCE-Build](https://github.com/Qonfused/OCE-Build), fetch the dependencies declared in `src/build.yml`, and write the generated EFI to `dist/EFI`. See the [build instructions](building.md) for driver versions and kext load order.
 
 ### 3. Using this EFI with macOS
 
