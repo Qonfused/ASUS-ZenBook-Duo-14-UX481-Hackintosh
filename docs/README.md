@@ -286,6 +286,8 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
 
 On the UX481FL, [DuoLink](https://github.com/Qonfused/DuoLink) fixes ScreenPad static and makes the lower panel available in Displays settings. Its DuoLinkTouch companion maps finger and pen input to each panel. Follow the [display setup instructions](https://github.com/Qonfused/DuoLink/blob/main/docs/displays-and-dock.md) to arrange both screens and keep the Dock on the main display, then check [touch and pen mapping](https://github.com/Qonfused/DuoLink/blob/main/docs/input-mapping.md) after installation.
 
+The UX481FL reports both fan speeds through AsusSMC. See [UX481FL fan firmware and validation](resources/fan-control.md) for the boot arguments and measured response to Automatic and Full Speed.
+
 ### Software Features:
 <table>
   <thead>
