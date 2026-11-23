@@ -278,13 +278,15 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
     <tr>
       <td>AC Power Adapter</td>
       <td style="text-align: center;">✅</td>
-      <td>Fully supported (with hotplug and charge limit feature).</td>
+      <td>Supports hotplug. Press Fn+F12 to switch between an 80% charge limit and full charging.</td>
     </tr>
   </tbody>
 </table>
 
 
 On the UX481FL, [DuoLink](https://github.com/Qonfused/DuoLink) fixes ScreenPad static and makes the lower panel available in Displays settings. Its DuoLinkTouch companion maps finger and pen input to each panel. Follow the [display setup instructions](https://github.com/Qonfused/DuoLink/blob/main/docs/displays-and-dock.md) to arrange both screens and keep the Dock on the main display, then check [touch and pen mapping](https://github.com/Qonfused/DuoLink/blob/main/docs/input-mapping.md) after installation.
+
+The UX481FL reports both fan speeds through AsusSMC. See [UX481FL fan firmware and validation](resources/fan-control.md) for the boot arguments and measured response to Automatic and Full Speed.
 
 ### Software Features:
 <table>

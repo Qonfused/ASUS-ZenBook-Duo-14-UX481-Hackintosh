@@ -17,7 +17,7 @@
     + 61  | #define ASUS_WMI_DEVID_SCREENPAD        0x00050031
     + 62  | #define ASUS_WMI_DEVID_SCREENPAD_LIGHT  0x00050032
     ```
-- See [SSDT-SPLC.dsl](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/main/src/ACPI/SSDT-SPLC.dsl) (and issue [Screenpad Plus Backlight Control #6](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues/6)) for implementation notes:
+- The UX481 firmware exposes both controls through `ATKD.WMNB`. Our original backlight implementation called the underlying embedded controller methods directly. [UX481FL firmware](firmware/UX481FL/DSDT.dsl#L55528) · [Original SSDT-SPLC](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/blob/0babb3828e0a497668133c2e2a4bfc2e6fb80738/src/ACPI/SSDT-SPLC.dsl) · [ScreenPad Plus backlight control, issue #6](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues/6)
   - ```dsl
     External (\_SB.ATKD.WMNB, MethodObj)
     // Sets the screenpad plus backlight intensity,

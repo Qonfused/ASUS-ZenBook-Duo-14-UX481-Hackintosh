@@ -40,6 +40,9 @@ NVRAM:
   Add:
     7C436110-AB2A-4BBB-A880-FE41995C9F82:
       prev-lang:kbd:                  String  | "en-US:0"
+@ifdef(RELEASE)
+      boot-args:                      String  | "-v keepsyms=1 asussmcfans=2 -asussmcrawfan"
+@endif
 
 ################################################################################
 #                           Platform (SMBIOS) fixes                            #
@@ -97,7 +100,7 @@ NVRAM:
       # `debug=0x100`     (debug mask; disables watchdog to avoid panic reboot)
       # `keepsyms=1`      (show panic log debug symbols)
       # `msgbuf=1048576`  (Resizes kernel msg buffer to 1 MB; avoids truncation)
-      boot-args:                      String  | "-v debug=0x100 keepsyms=1 msgbuf=1048576"
+      boot-args:                      String  | "-v debug=0x100 keepsyms=1 msgbuf=1048576 asussmcfans=2 -asussmcrawfan"
 @endif
 
 #endregion
@@ -110,24 +113,12 @@ ACPI:
   @override
   Patch:
     # Companion to src/ACPI/SSDT-ATKD.dsl -> EFI/OC/ACPI/SSDT-ATKD.aml
-    - Comment:                        String  | "[ATKD] FN Lock - Rename _QD5 to XQD5"
-      Find:                           Data    | <5F514435>
-      Replace:                        Data    | <58514435>
     - Comment:                        String  | "[ATKD] FN+F4 - Rename _Q0E to XQ0E"
       Find:                           Data    | <5F513045>
       Replace:                        Data    | <58513045>
     - Comment:                        String  | "[ATKD] FN+F5 - Rename _Q0F to XQ0F"
       Find:                           Data    | <5F513046>
       Replace:                        Data    | <58513046>
-    - Comment:                        String  | "[ATKD] FN+F12 - Rename _Q18 to XQ18"
-      Find:                           Data    | <5F513138>
-      Replace:                        Data    | <58513138>
-    - Comment:                        String  | "[ATKD] Screenpad Backlight - Rename _Q31 to XQ31"
-      Find:                           Data    | <5F513331>
-      Replace:                        Data    | <58513331>
-    - Comment:                        String  | "[ATKD] Screenpad Disable - Rename _Q32 to XQ32"
-      Find:                           Data    | <5F513332>
-      Replace:                        Data    | <58513332>
     # Companion to src/ACPI/SSDT-GPIO.dsl -> EFI/OC/ACPI/SSDT-GPIO.aml
     - Base:                           String  | "_SB.PCI0.I2C1.ETPD"
       Comment:                        String  | "[GPI0] Trackpad - Rename _CRS to XCRS"
@@ -148,16 +139,6 @@ ACPI:
     - Comment:                        String  | "[GPRW] Instant Wake fix - Rename GPRW to XPRW"
       Find:                           Data    | <47505257 02>
       Replace:                        Data    | <58505257 02>
-    # Companion to src/ACPI/SSDT-KBLC.dsl -> EFI/OC/ACPI/SSDT-KBLC.aml
-    - Base:                           String  | "_SB.ATKD"
-      Comment:                        String  | "[KBLC] Keyboard Backlight - Rename IANE to XANE"
-      Count:                          Number  | 1
-      Find:                           Data    | <49414E45>
-      Replace:                        Data    | <58414E45>
-    # Companion to src/ACPI/SSDT-XWAK.dsl -> EFI/OC/ACPI/SSDT-XWAK.aml
-    - Comment:                        String  | "[XWAK] Rename _WAK to XWAK"
-      Find:                           Data    | <5F57414B>
-      Replace:                        Data    | <5857414B>
 
 ################################################################################
 #                           BIOS/firmware related fixes                        #
