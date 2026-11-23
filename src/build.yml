@@ -82,6 +82,7 @@ Kexts:
       MaxKernel: "20.99.99"
   IntelBTPatcher: "*"
   # Misc. Lilu plugins
+  AzureWaveUVCFix: Qonfused/AzureWaveUVCFix=latest
   CpuTscSync: latest
   DuoLink:
     specifier: Qonfused/DuoLink=latest

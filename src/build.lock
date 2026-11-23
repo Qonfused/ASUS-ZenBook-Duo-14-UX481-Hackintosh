@@ -139,6 +139,14 @@ dependencies:
       specifier: 'Qonfused/AsusSMC@github:1.5.0'
       kind: Kext
       revision: '{ SHA1: d4cf3660d6064dd5eb229a0fd7e7a88f4b787cff }'
+    AzureWaveUVCFix:
+      build: DEBUG
+      version: 1.0.0
+      url: 'https://github.com/Qonfused/AzureWaveUVCFix/releases/download/v1.0.0/AzureWaveUVCFix-1.0.0-DEBUG.zip'
+      resolution: 'Qonfused/AzureWaveUVCFix@github:1.0.0#commit=c6ef7d14c972eda5bd5b2e7a903ba55fc4d79400'
+      specifier: 'Qonfused/AzureWaveUVCFix@github:latest'
+      kind: Kext
+      revision: '{ SHA1: c6ef7d14c972eda5bd5b2e7a903ba55fc4d79400 }'
     BlueToolFixup:
       build: DEBUG
       version: 2.7.0

@@ -240,9 +240,9 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
   <!-- Camera -->
     <tr>
       <td>Camera</td>
-      <td>Windows Hello HD Camera</td>
-      <td style="text-align: center;">🚧</td>
-      <td>Work in progress.</td>
+      <td>AzureWave USB2.0 HD IR UVC WebCam</td>
+      <td style="text-align: center;">✅</td>
+      <td>Color video works with <a href="https://github.com/Qonfused/AzureWaveUVCFix">AzureWaveUVCFix</a>.</td>
     </tr>
   <!-- Wi-Fi + Bluetooth -->
     <tr>
