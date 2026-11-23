@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
 
+## [0.7.3] - 2026-11-22
+
+### Fixed
+
+- After login, you can move the pointer onto the ScreenPad and use F4/F5 to adjust its brightness without first toggling Fn Lock. [AsusSMC 1.5.1](https://github.com/Qonfused/AsusSMC/releases/tag/v1.5.1)
+
 ## [0.7.2] - 2026-11-22
 
 ### Fixed
