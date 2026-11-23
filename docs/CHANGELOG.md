@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
 
+## [0.7.2] - 2026-11-22
+
+### Fixed
+
+- Fixed an issue where macOS apps recognized the built-in webcam but received no color video. [AzureWaveUVCFix 1.0.0](https://github.com/Qonfused/AzureWaveUVCFix/releases/tag/v1.0.0) ([#23](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues/23))
+
 ## [0.7.1] - 2026-11-22
 
 ### Added
