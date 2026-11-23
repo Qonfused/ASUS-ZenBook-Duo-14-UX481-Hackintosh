@@ -6,6 +6,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
 
+## [0.7.1] - 2026-11-22
+
+### Added
+
+- Added fan monitoring and control through `fanctl`. On the UX481FL, it reports RPM for both fans and lets you switch between Automatic and Full Speed. ([#37](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues/37))
+- With the matching AsusSMCDaemon installed, F4/F5 now adjust brightness on whichever display contains the pointer. [AsusSMC 1.5.0](https://github.com/Qonfused/AsusSMC/releases/tag/v1.5.0)
+
+### Changed
+
+- Moved ScreenPad power and brightness, Fn Lock, keyboard illumination, and the Fn+F12 charge-limit shortcut into AsusSMC, retiring `SSDT-SPLC` and `SSDT-XWAK`. The keyboard backlight retains its 16 brightness steps. ([#40](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues/40))
+
 ## [0.7.0] - 2026-11-22
 
 ### Changed
