@@ -15,7 +15,6 @@ ACPI:
   SSDT-PNLF: "ACPI/SSDT-PNLF.dsl"
   SSDT-SBUS-MCHC: "ACPI/SSDT-SBUS-MCHC.dsl"
 Drivers:
-  - AudioDxe
   - HfsPlus
 @ifdef(RELEASE)
   - OpenCanopy

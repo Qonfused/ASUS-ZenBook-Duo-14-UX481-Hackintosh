@@ -291,7 +291,8 @@ UEFI:
   Audio:
     AudioDevice:                      String  | "PciRoot(0x0)/Pci(0x1F,0x3)"
     AudioOutMask:                     Number  | -1
-    AudioSupport:                     Boolean | true
+    # Skip codec initialization at boot while the chime and spoken picker are disabled.
+    AudioSupport:                     Boolean | false
     PlayChime:                        String  | "Disabled"
 
 ################################################################################
