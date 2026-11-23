@@ -278,7 +278,7 @@ Refer to the [CHANGELOG](/docs/CHANGELOG.md) or [SemVer board](https://github.co
     <tr>
       <td>AC Power Adapter</td>
       <td style="text-align: center;">✅</td>
-      <td>Fully supported (with hotplug and charge limit feature).</td>
+      <td>Supports hotplug. Press Fn+F12 to switch between an 80% charge limit and full charging.</td>
     </tr>
   </tbody>
 </table>

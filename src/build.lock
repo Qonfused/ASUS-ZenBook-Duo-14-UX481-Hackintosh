@@ -16,10 +16,10 @@ dependencies:
       revision: '{ SHA256: adb8c55ce3203d1b8427b1808a0be44d15f64f8704743e84b82fd3e0505c60a9 }'
     SSDT-ATKD:
       path: './ACPI/SSDT-ATKD.dsl'
-      resolution: 'SSDT-ATKD@file:ACPI/SSDT-ATKD.dsl#checksum=8d13a3cb16a42259b5d98be17e69ca3941f647b33b0c6495f1872718bb160618'
+      resolution: 'SSDT-ATKD@file:ACPI/SSDT-ATKD.dsl#checksum=eb806ffe9b7854a7ed7f11102f28c984f05a74cb73300426d74b8370034cb79f'
       specifier: 'SSDT-ATKD@file:ACPI/SSDT-ATKD.dsl'
       kind: SSDT
-      revision: '{ SHA256: 8d13a3cb16a42259b5d98be17e69ca3941f647b33b0c6495f1872718bb160618 }'
+      revision: '{ SHA256: eb806ffe9b7854a7ed7f11102f28c984f05a74cb73300426d74b8370034cb79f }'
     SSDT-AWAK:
       path: './ACPI/SSDT-AWAC.dsl'
       resolution: 'SSDT-AWAK@file:ACPI/SSDT-AWAC.dsl#checksum=a168d1dfe16d0d7311a012992a5853d51ce142c90afbff299bdb1477a538be8e'
@@ -52,10 +52,10 @@ dependencies:
       revision: '{ SHA256: c70ecd13e447b535346f8c5f2630c7583298f96d8a340e9f969ed6c46037d9f7 }'
     SSDT-KBLC:
       path: './ACPI/SSDT-KBLC.dsl'
-      resolution: 'SSDT-KBLC@file:ACPI/SSDT-KBLC.dsl#checksum=d58979767e24b7029b3810e88bab62cf89280bb3add58f686f530a645c6890a5'
+      resolution: 'SSDT-KBLC@file:ACPI/SSDT-KBLC.dsl#checksum=06d4bb05ac3a2c0a033195edc682a21a480805a5549abfec546c49bb4493a696'
       specifier: 'SSDT-KBLC@file:ACPI/SSDT-KBLC.dsl'
       kind: SSDT
-      revision: '{ SHA256: d58979767e24b7029b3810e88bab62cf89280bb3add58f686f530a645c6890a5 }'
+      revision: '{ SHA256: 06d4bb05ac3a2c0a033195edc682a21a480805a5549abfec546c49bb4493a696 }'
     SSDT-PLUG:
       path: './ACPI/SSDT-PLUG.dsl'
       resolution: 'SSDT-PLUG@file:ACPI/SSDT-PLUG.dsl#checksum=2147d01d7eff9ee160107b97e41c751e026a86aeafb58dbd127bd949b145d656'
@@ -74,18 +74,6 @@ dependencies:
       specifier: 'SSDT-SBUS-MCHC@file:ACPI/SSDT-SBUS-MCHC.dsl'
       kind: SSDT
       revision: '{ SHA256: c572955303bde5cd8dfeb44ab677260d329e18b0ab641517fbc6c45a446717d4 }'
-    SSDT-SPLC:
-      path: './ACPI/SSDT-SPLC.dsl'
-      resolution: 'SSDT-SPLC@file:ACPI/SSDT-SPLC.dsl#checksum=ef3bf8302f62f3b4d57a01b39cc418d269be9f0d8ff751c60f3f38a4701fce05'
-      specifier: 'SSDT-SPLC@file:ACPI/SSDT-SPLC.dsl'
-      kind: SSDT
-      revision: '{ SHA256: ef3bf8302f62f3b4d57a01b39cc418d269be9f0d8ff751c60f3f38a4701fce05 }'
-    SSDT-XWAK:
-      path: './ACPI/SSDT-XWAK.dsl'
-      resolution: 'SSDT-XWAK@file:ACPI/SSDT-XWAK.dsl#checksum=763596cced248220e7578f88e4dfe78d659e8ba6dce59fe6dfd91ad58381563e'
-      specifier: 'SSDT-XWAK@file:ACPI/SSDT-XWAK.dsl'
-      kind: SSDT
-      revision: '{ SHA256: 763596cced248220e7578f88e4dfe78d659e8ba6dce59fe6dfd91ad58381563e }'
   Kexts:
     AirportItlwm-BigSur:
       build: RELEASE
@@ -145,12 +133,12 @@ dependencies:
       revision: '{ SHA1: b3cd81e1b023d563c516b979293ee3d0270ff7bd }'
     AsusSMC:
       build: DEBUG
-      version: 1.4.1
-      url: 'https://github.com/hieplpvip/AsusSMC/releases/download/1.4.1/AsusSMC-1.4.1-DEBUG.zip'
-      resolution: 'hieplpvip/AsusSMC@github:1.4.1#commit=c15d2f297c86b65a3cb866cc2bcece595c136417'
-      specifier: 'hieplpvip/AsusSMC@github:latest'
+      version: 1.5.0
+      url: 'https://github.com/Qonfused/AsusSMC/releases/download/v1.5.0/AsusSMC-1.5.0-DEBUG.zip'
+      resolution: 'Qonfused/AsusSMC@github:1.5.0#commit=d4cf3660d6064dd5eb229a0fd7e7a88f4b787cff'
+      specifier: 'Qonfused/AsusSMC@github:1.5.0'
       kind: Kext
-      revision: '{ SHA1: c15d2f297c86b65a3cb866cc2bcece595c136417 }'
+      revision: '{ SHA1: d4cf3660d6064dd5eb229a0fd7e7a88f4b787cff }'
     BlueToolFixup:
       build: DEBUG
       version: 2.7.0

@@ -14,8 +14,6 @@ ACPI:
   SSDT-PLUG: "ACPI/SSDT-PLUG.dsl"
   SSDT-PNLF: "ACPI/SSDT-PNLF.dsl"
   SSDT-SBUS-MCHC: "ACPI/SSDT-SBUS-MCHC.dsl"
-  SSDT-SPLC: "ACPI/SSDT-SPLC.dsl"
-  SSDT-XWAK: "ACPI/SSDT-XWAK.dsl"
 Drivers:
   - AudioDxe
   - HfsPlus
@@ -32,7 +30,7 @@ Kexts:
   AppleALC: latest
   # VirtualSMC + plugins
   VirtualSMC: latest
-  AsusSMC: hieplpvip/AsusSMC=latest
+  AsusSMC: Qonfused/AsusSMC=1.5.0
   SMCBatteryManager: "*"
   SMCProcessor: "*"
   SMCSuperIO: "*"
