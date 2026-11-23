@@ -6,6 +6,18 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 The latest progress can be viewed on this repository's [project board](https://github.com/users/Qonfused/projects/2/views/11).
 
+## [0.7.4] - 2026-11-24
+
+### Changed
+
+- Removed `AudioDxe` so OpenCore can show the boot picker without first initializing audio for the disabled boot chime and spoken menus.
+- Pressing Switch Windows now toggles fan mode between Automatic and Full Speed. With AsusSMCDaemon running, the primary display briefly shows the selected mode. [AsusSMC 1.5.2](https://github.com/Qonfused/AsusSMC/releases/tag/v1.5.2)
+
+### Fixed
+
+- ScreenPad Plus remembers its brightness across restarts. If the panel is off at startup, AsusSMC restores the saved level when you turn it on.
+- ScreenPad Plus could be active but missing from display settings when CoreDisplay rejected its native 1920×515 mode. DuoLink now handles the size checks found in 11 Intel macOS builds from Catalina through Tahoe, including Sequoia 15.8.3. [DuoLink 1.1.0](https://github.com/Qonfused/DuoLink/releases/tag/v1.1.0) ([#61](https://github.com/Qonfused/ASUS-ZenBook-Duo-14-UX481-Hackintosh/issues/61))
+
 ## [0.7.3] - 2026-11-22
 
 ### Fixed
