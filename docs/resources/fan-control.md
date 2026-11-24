@@ -42,7 +42,7 @@ Automatic and Full Speed use WMI device `0x00110013`, with `DEVS` arguments `0` 
 
 Although the GPU fan-control branch has a separate WMI device ID, `0x00110014`, it writes the same bit. These setters therefore provide neither independent fan targets nor a parameter for an arbitrary RPM target; the effect of the CPU command on each fan is recorded in the test below.
 
-Because firmware can return success after skipping an EC write, AsusSMC checks availability through `ECAV` before issuing a mode request. Changes require administrator privileges and are limited to the two supported mode values. A successful command updates the cached mode used by `fanctl status`, which consequently reports the last accepted request rather than reading back the hardware override bit.
+Because firmware can return success after skipping an EC write, AsusSMC checks availability through `ECAV` before issuing a mode request. Changing modes with `fanctl` requires administrator privileges. Pressing Switch Windows calls the same firmware control directly. A successful command updates the cached mode used by `fanctl status`, which consequently reports the last accepted request rather than reading back the hardware override bit.
 
 ## Hardware validation
 

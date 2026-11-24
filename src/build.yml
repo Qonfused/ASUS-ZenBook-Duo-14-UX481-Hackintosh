@@ -29,7 +29,7 @@ Kexts:
   AppleALC: latest
   # VirtualSMC + plugins
   VirtualSMC: latest
-  AsusSMC: Qonfused/AsusSMC=1.5.1
+  AsusSMC: Qonfused/AsusSMC=1.5.2
   SMCBatteryManager: "*"
   SMCProcessor: "*"
   SMCSuperIO: "*"

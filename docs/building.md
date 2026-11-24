@@ -1,6 +1,8 @@
 # Building the EFI
 
-OCE-Build downloads the AsusSMC package matching your EFI build. Install AsusSMCDaemon from the same package so F4/F5 adjust brightness on the display under the pointer. Fn Lock starts off on the UX481, so you can use F4/F5 without holding Fn after boot. The package also includes `fanctl` for reading fan speeds and selecting Automatic or Full Speed. [AsusSMC releases](https://github.com/Qonfused/AsusSMC/releases)
+OCE-Build downloads the AsusSMC package matching your EFI build. Install AsusSMCDaemon from the same package so F4/F5 adjust brightness on the display under the pointer. Fn Lock starts off on the UX481, so you can use F4/F5 without holding Fn after boot. AsusSMC remembers your ScreenPad brightness across restarts.
+
+Press Switch Windows to toggle between Automatic and Full Speed. AsusSMCDaemon shows the selected fan mode on the primary display. The package also includes `fanctl` for reading fan speeds and changing the mode from Terminal. [AsusSMC releases](https://github.com/Qonfused/AsusSMC/releases)
 
 When upgrading an existing build, pass `--clean` to remove the obsolete `SSDT-SPLC.aml` and `SSDT-XWAK.aml` before OpenCore’s ACPI entries are generated.
 

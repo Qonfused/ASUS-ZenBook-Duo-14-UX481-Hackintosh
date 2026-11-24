@@ -133,12 +133,12 @@ dependencies:
       revision: '{ SHA1: b3cd81e1b023d563c516b979293ee3d0270ff7bd }'
     AsusSMC:
       build: DEBUG
-      version: 1.5.1
-      url: 'https://github.com/Qonfused/AsusSMC/releases/download/v1.5.1/AsusSMC-1.5.1-DEBUG.zip'
-      resolution: 'Qonfused/AsusSMC@github:1.5.1#commit=f9ca1330ff7ae249e48ed2f2dfc154448883d510'
-      specifier: 'Qonfused/AsusSMC@github:1.5.1'
+      version: 1.5.2
+      url: 'https://github.com/Qonfused/AsusSMC/releases/download/v1.5.2/AsusSMC-1.5.2-DEBUG.zip'
+      resolution: 'Qonfused/AsusSMC@github:1.5.2#commit=87bc9228a38ef1b270d87c8f5b9226d53af29019'
+      specifier: 'Qonfused/AsusSMC@github:1.5.2'
       kind: Kext
-      revision: '{ SHA1: f9ca1330ff7ae249e48ed2f2dfc154448883d510 }'
+      revision: '{ SHA1: 87bc9228a38ef1b270d87c8f5b9226d53af29019 }'
     AzureWaveUVCFix:
       build: DEBUG
       version: 1.0.0
