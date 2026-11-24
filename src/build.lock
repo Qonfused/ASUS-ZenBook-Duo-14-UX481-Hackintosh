@@ -173,12 +173,12 @@ dependencies:
       revision: '{ SHA1: 5670dddc49cfaf5b5fb54b0335f98a4df7ada1a0 }'
     DuoLink:
       build: DEBUG
-      version: 1.0.0
-      url: 'https://github.com/Qonfused/DuoLink/releases/download/v1.0.0/DuoLink-1.0.0-DEBUG.zip'
-      resolution: 'Qonfused/DuoLink@github:1.0.0#commit=41211f5da7fe2c21fa42db1c7661d30a9851be60'
+      version: 1.1.0
+      url: 'https://github.com/Qonfused/DuoLink/releases/download/v1.1.0/DuoLink-1.1.0-DEBUG.zip'
+      resolution: 'Qonfused/DuoLink@github:1.1.0#commit=3e39ccca0662b37e838a40aa0d5dbe1bb84b8d68'
       specifier: 'Qonfused/DuoLink@github:latest'
       kind: Kext
-      revision: '{ SHA1: 41211f5da7fe2c21fa42db1c7661d30a9851be60 }'
+      revision: '{ SHA1: 3e39ccca0662b37e838a40aa0d5dbe1bb84b8d68 }'
     ECEnabler:
       build: DEBUG
       version: 1.0.5
